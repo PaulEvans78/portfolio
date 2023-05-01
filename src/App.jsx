@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
+import Home from "./pages/Home";
+import Design from "./pages/Design";
+import About from "./pages/About";
 // import Background from "./assets/background.png";
 
 import {
@@ -45,12 +48,21 @@ const MainContainer = styled.div`
 grid-area: main;
 display: flex;
 flex-direction: row;
+/* flex-shrink: 4; */
 flex-wrap: wrap;
-align-items: center;
+align-items: flex-end;
+justify-items: center;
+justify-content: space-evenly;
+margin-bottom: 1.5em;
+/* flex-shrink: 1 2; */
+padding: 0em 2em 0em 2em;
 
 @media screen and (max-width: 767px) {
 flex-direction: column;
-flex-wrap: nowrap;
+/* flex-wrap: nowrap; */
+align-items: center;
+/* justify-items: center; */
+/* padding: 0em 2.5em 0em 0em; */
 
 }
 `;
@@ -68,19 +80,15 @@ function App() {
           <Switch>
 
             <Route exact path="/">
-              {/* <Home /> */}
+              <Home />
             </Route>
 
             <Route path="/about">
-              {/* <About /> */}
+              <About />
             </Route>
 
-            <Route path="/contact">
-              {/* <Contact /> */}
-            </Route>
-
-            <Route path="/web">
-               {/* <Web />  */}
+            <Route path="/design">
+              <Design />
             </Route>
 
             <Route path="/film">

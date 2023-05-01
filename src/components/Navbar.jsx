@@ -76,6 +76,7 @@ const StyledNavul = styled.ul`
         margin-top: 1em;
         margin-right: 0;
         margin-bottom: 0em;
+        z-index: 100;
     }
 
     
@@ -115,7 +116,7 @@ const StyledImageandName = styled.div `
 `;
 
 const StyledImg = styled.img`
-    height: 6em;
+    height: 5em;
     margin-left: 3em;
     margin-right: 1em;
     margin-top: 0.5em;
@@ -131,10 +132,11 @@ const StyledImg = styled.img`
 `;
 
 const StyledName = styled.div `
+    /* display: flex;   */
     float: right;
     font-family: 'Poppins';
-    font-size: 38px;
-    font-style: italic;
+    font-size: 32px;
+    /* font-style: italic; */
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0em;
@@ -148,9 +150,15 @@ const StyledName = styled.div `
   }
 
     @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        /* align-content: flex-end; */
+        /* justify-content: space-between; */
+        /* align-content: flex-end; */
         font-size: 24px;
         line-height: 24px;
-        margin-top: 0.3em;
+        /* margin-right: 1em; */
+        margin-top: 1.6em;
     }
 `;
 
@@ -223,21 +231,16 @@ const links = [
     
     {
         id: 1,
-        to: "/design",
-        text: "UX/UI",
+        to: "/Design",
+        text: "UX/UI & Frontend",
         onClick: () => { setOpen(false); }
     },
     {
         id:2,
-        to: "/Frontend",
-        text: "Frontend",
-        onClick: () => { setOpen(false); }
-    },
-    {
-        id: 3,
-        to: "/Film",
+        // to: "/Film",
+        href: "https://paulevans-dop.com/",
         text: "Film",
-        onClick: () => { setOpen(false); } 
+        onClick: () => { setOpen(false); }
     },
     {
         id: 3,
@@ -245,6 +248,12 @@ const links = [
         text: "About",
         onClick: () => { setOpen(false); } 
     },
+    // {
+    //     id: 3,
+    //     to: "/About",
+    //     text: "About",
+    //     onClick: () => { setOpen(false); } 
+    // },
     
 ];
     return (
@@ -270,7 +279,7 @@ const links = [
 
 
             <StyledNavul style={{transform: open ? "translateX(0px)" : ""}}>
-                 {links.map(link => <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
+                 {links.map(link => <StyledLink onClick={link.onClick} href={Link.href} to={link.to} key={link.id}>{link.text}</StyledLink>)}
 
                 
 

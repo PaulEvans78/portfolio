@@ -63,6 +63,9 @@ const StyledFooterLink = styled.p`
   color: white;
   border-radius: 8px;
   margin-left: 2em;
+  &:hover{
+    color: #29262a;
+  }
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
@@ -107,16 +110,16 @@ const StyledIcon = styled.a`
   /* box-shadow: 0px 4px 5px #1a1a1a;
   border-radius: 8px; */
   &:hover{
-    color: #d979ed;
+    color: #29262a;
   }
 
 
 
 @media screen and (max-width: 767px) {
   /* height: 2em; */
-  &:hover{
+  /* &:hover{
     color: #d979ed;
-  }
+  } */
 }
 `;
 
