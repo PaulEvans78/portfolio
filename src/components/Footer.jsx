@@ -45,13 +45,14 @@ const StyledFooter = styled.footer`
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 24px;
-  color: whitesmoke;
+  color: white;
   margin-bottom: 2em;
   /* text-shadow: 6px 6px 5px #1a1a1a; */
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    padding: 0em 2em 0em 0em;
   }
 `;
 
@@ -136,7 +137,7 @@ const IconDes = styled.p`
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 24px;
-  color: whitesmoke;
+  color: white;
   text-align: center;
   margin-top: 0.5em;
   /* margin-bottom: 2.5em; */

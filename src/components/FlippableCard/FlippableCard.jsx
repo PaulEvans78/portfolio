@@ -20,9 +20,11 @@ const StyledFlippingCard = styled.div`
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    transform-style: preserve-3d;
     animation: spin 8s infinite linear;*/
+    transform-style: preserve-3d;
     perspective: 100em; 
+
+  
 
 /* @keyframes spin {
     0% {
@@ -134,7 +136,7 @@ function FlippableCard () {
         
     <StyledFlippingCard>
         
-        <CardLandingPage/>
+        <CardLandingPage />
         {/* <StyledFrontCard>
             <Skills />
         </StyledFrontCard>

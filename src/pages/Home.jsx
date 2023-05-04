@@ -7,6 +7,7 @@ import FlippableCard from '../components/FlippableCard/FlippableCard';
 
 
 
+
 // FLIPPING CARD CONTAINER
 
 // const StyledFlippingCard = styled.div`
@@ -47,13 +48,14 @@ import FlippableCard from '../components/FlippableCard/FlippableCard';
 
 const Styledh1 = styled.h1`
   font-family: 'Poppins';
-  color: whitesmoke;
+  color: white;
   font-size: 8rem;
   font-weight: 600;
   line-height: 120px;
   flex-shrink: 2;
   margin-bottom: 0.25em;
   margin-right: 0.5em;
+  margin-left: 0.2em;
 
 @media screen and (max-width: 1115px) {
   font-size: 6rem;

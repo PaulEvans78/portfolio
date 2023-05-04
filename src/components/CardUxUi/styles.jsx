@@ -9,7 +9,7 @@ justify-content: space-between;
 align-items: center;
 margin-top: 3em;
 margin-bottom: 2em;
-margin-left: 0.5em;
+margin-left: 1em;
 width: 290px;
 height: 490px;
 background-color: whitesmoke;
@@ -36,6 +36,10 @@ perspective: 100em;
     }
 }
 
+@media screen and (max-width: 767px) {
+    margin-left: 0em;
+
+  }
 
 
 

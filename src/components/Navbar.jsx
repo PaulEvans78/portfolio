@@ -77,6 +77,7 @@ const StyledNavul = styled.ul`
         margin-right: 0;
         margin-bottom: 0em;
         z-index: 100;
+        /* overflow:hidden; */
     }
 
     
@@ -238,7 +239,7 @@ const links = [
     {
         id:2,
         // to: "/Film",
-        href: "https://paulevans-dop.com/",
+        to: {href:"https://paulevans-dop.com/"},
         text: "Film",
         onClick: () => { setOpen(false); }
     },
@@ -279,7 +280,7 @@ const links = [
 
 
             <StyledNavul style={{transform: open ? "translateX(0px)" : ""}}>
-                 {links.map(link => <StyledLink onClick={link.onClick} href={Link.href} to={link.to} key={link.id}>{link.text}</StyledLink>)}
+                 {links.map(link => <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
 
                 
 

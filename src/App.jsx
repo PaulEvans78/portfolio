@@ -62,7 +62,7 @@ flex-direction: column;
 /* flex-wrap: nowrap; */
 align-items: center;
 /* justify-items: center; */
-/* padding: 0em 2.5em 0em 0em; */
+padding: 0em 0em 0em 0em;
 
 }
 `;
