@@ -1,24 +1,18 @@
-
 import React from 'react';
 import backCard from '../../assets/backCard.png';
 import designPic from '../../assets/ux.png'
-// import filmPic from '../../assets/vikings.png';
 import styled from "styled-components";
 
 
 
-// const {StyledUxCard, StyledFilmCard} = styled.div`
+//CARD
 const StyledUxCard = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     margin-top: 3em;
     margin-bottom: 2em;
     margin-left: 0.5em;
-    /* padding: 15px; */
-    /* padding-top: 15px; */
     width: 290px;
     height: 490px;
     background-color: whitesmoke;
@@ -26,8 +20,8 @@ const StyledUxCard = styled.div`
     overflow: hidden;
     perspective: 100em;
     transform-style: preserve-3d;
-    /* transition: transform 500ms; */
     animation: spin 8s infinite linear;
+    transform: rotateY(180deg);
     
 
 @keyframes spin {
@@ -43,28 +37,12 @@ const StyledUxCard = styled.div`
         transform: rotateY(360deg);
     }
 }
-
-
-
 `;
 
-//FRONT & BACK
-// const FrontBack = css`
-//     position: absolute; 
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     height: 100%;
-//     background-color: whitesmoke;
-//     border-radius: 10px;
-//     overflow: hidden;   
-//     backface-visibility: hidden;
-// `;
+
 
 //FRONT CARD
-// const {StyledUxFrontCard, StyledFilmFrontCard} = styled.div`
+
 const StyledUxFrontCard = styled.div`
    
     position: absolute; 
@@ -80,13 +58,11 @@ const StyledUxFrontCard = styled.div`
     font-family: 'Poppins';
     font-size: 1.2rem;
     overflow: hidden;   
-    /* backface-visibility: hidden;  */
-    transform: rotateY(180deg);
-    /* z-index:0; */
+    backface-visibility: hidden; 
+    transform: rotateY(0deg);
 `;
 
    
-// const {StyledUxFrontCardImg, StyledFrontCardImg} = styled.img`
 const StyledUxFrontCardImg = styled.img`
     width: 90%;
     height: 230px;
@@ -140,10 +116,8 @@ const StyledBackCard = styled.div`
     background-color: whitesmoke;
     border-radius: 10px;
     overflow: hidden;
-    /* backface-visibility: hidden;   */
-    transform: rotateY(-180deg);
-    /* bottom: 100%; */
-
+    backface-visibility: hidden;  
+    transform: rotateY(180deg);
 `;
 
 const StyledBackCardImg = styled.img`
@@ -177,24 +151,6 @@ function CardLandingPage () {
         </StyledBackCard> 
 
     </StyledUxCard>
-
-    //   <StyledFilmCard>
-        
-    //      <StyledFilmFrontCard>
-    //          <StyledFrontCardImg src={filmPic } alt="UX Designer"/>
-    //          <Styledh2>Film/ Cinematographer</Styledh2>
-    //          <StyledCardp>Directs you to an external site.</StyledCardp>
-    //          <StyledButton>View More</StyledButton>
-    //      </StyledFilmFrontCard>
-
-    //      <StyledBackCard>
-    //      <StyledBackCardImg src={backCard} alt="Paul Evans"/>
-    //      </StyledBackCard> 
-
-    //  </StyledFilmCard> 
-    
-     
-     
    
     )
 }

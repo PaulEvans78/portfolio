@@ -91,9 +91,7 @@ function App() {
               <Design />
             </Route>
 
-            <Route path="/film">
-               {/* <Film />  */}
-            </Route>
+
 
           </Switch>
         </MainContainer>

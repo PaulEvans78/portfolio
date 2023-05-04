@@ -82,8 +82,8 @@ const Home = () => {
      <>
      <Styledh1>Paul <br/> Evans</Styledh1>
     
-     {/* <FlippableCard /> */}
-    <Skills />
+     <FlippableCard />
+    {/* <Skills /> */}
    
    
 

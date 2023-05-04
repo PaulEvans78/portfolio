@@ -103,6 +103,25 @@ const StyledLink = styled(Link)`
     }
 `;
 
+const ExternalStyledLink = styled.a`
+   display: flex; 
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    margin: 1em 1em 0em 1em;
+
+    @media screen and (max-width: 960px) {
+    
+  }
+
+    @media screen and (max-width: 767px) {
+        /* display: none;  */
+        justify-content: flex-end;
+        /* text-align: right; */
+        
+    
+    }
+`;
 
 
 // IMAGE AND NAME ID
@@ -208,10 +227,6 @@ const StyledBurgerBars = styled.div `
 
 
 
-
-
-
-
 //NAVBAR
 // https://www.youtube.com/watch?v=ZlDASfsL7FI
 
@@ -232,31 +247,28 @@ const links = [
     
     {
         id: 1,
-        to: "/Design",
+        to: "/design",
         text: "UX/UI & Frontend",
-        onClick: () => { setOpen(false); }
+        onClick: () => { setOpen(false); },
+        isExternal: false
     },
     {
         id:2,
         // to: "/Film",
-        to: {href:"https://paulevans-dop.com/"},
         text: "Film",
-        onClick: () => { setOpen(false); }
+        href: "https://www.paulevans-dop.com/",
+        onClick: () => { setOpen(false); },
+        isExternal: true
     },
     {
         id: 3,
-        to: "/About",
+        to: "/about",
         text: "About",
-        onClick: () => { setOpen(false); } 
+        onClick: () => { setOpen(false); },
+        isExternal: false 
     },
-    // {
-    //     id: 3,
-    //     to: "/About",
-    //     text: "About",
-    //     onClick: () => { setOpen(false); } 
-    // },
-    
 ];
+
     return (
         
         <StyledNav > 
@@ -280,7 +292,7 @@ const links = [
 
 
             <StyledNavul style={{transform: open ? "translateX(0px)" : ""}}>
-                 {links.map(link => <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
+                 {links.map(link => link.isExternal ? <ExternalStyledLink href={link.href}>{link.text}</ExternalStyledLink> : <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
 
                 
 

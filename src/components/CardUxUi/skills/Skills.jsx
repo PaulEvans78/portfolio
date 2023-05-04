@@ -9,6 +9,7 @@ import Card from '../../CardUxUi/Card';
 const Skills = () => {
     const skillsData = [
         {
+            // id: GitHub 4th May class / noob stories juiceghost + skills json
             mainPic: designPic,
             // upperPic: upperPic,
             // middlePic: middlePic,
