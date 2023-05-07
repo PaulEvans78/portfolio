@@ -1,0 +1,43 @@
+
+[
+    {
+        
+        "mainPic": "spotifyCardImg.png",
+        "headline": "Spotify",
+        "description": "Using Scrum we developed new accessiblity features for Spotify.",
+        "buttonText": "View More",
+        "buttonLink": "/"
+    },
+    {
+        "id": 600431837,
+        "mainPic": "paulevansfsfImg.png",
+        "headline": "Paul Evans fsf",
+        "description": "See my portfolio.",
+        "buttonText": "View Site",
+        "buttonLink": "https://www.paulevans-dop.com"
+    },
+    {
+        "id": 549453334,
+        "mainPic": "cvpageImg.png",
+        "headline": "CV Page",
+        "description": "Directs you to an external site.",
+        "buttonText": "github repo",
+        "buttonLink": "/"
+    },
+    {
+        "mainPic": "cookwiseImg.png",
+        "headline": "Cooke Wise",
+        "description": "An app to control you smart oven, wherever you are.",
+        "buttonText": "View More",
+        "buttonLink": "/"
+    },
+    {
+        "id": 432487373,
+        "mainPic": "neonImg.png",
+        "headline": "Neon Cinema",
+        "description": "Directs you to an external site.",
+        "buttonText": "github repo",
+        "buttonLink": "/"
+    }
+    
+]

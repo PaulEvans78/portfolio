@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import CardLandingPage from '../CardLandingPage/CardLandingPage';
+import Card from '../CardLandingPage/Card';
 
 // FLIPPING CARD CONTAINER
 
@@ -23,7 +23,7 @@ function FlippableCard () {
         
     <StyledFlippingCard>
         
-        <CardLandingPage />
+        <Card />
         
     </StyledFlippingCard>
     

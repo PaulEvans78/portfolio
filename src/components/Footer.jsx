@@ -33,6 +33,8 @@ const footerData = [
 ];
 
 const StyledFooter = styled.footer`
+  /* position: sticky; */
+  /* bottom: 0; */
   grid-area: footer;
   /* background-image: linear-gradient(#242424, #27dff7); */
   display: flex;
@@ -46,6 +48,7 @@ const StyledFooter = styled.footer`
   font-size: 16px;
   line-height: 24px;
   color: white;
+  /* background-color: #9e9f9f24; */
   margin-bottom: 2em;
   /* text-shadow: 6px 6px 5px #1a1a1a; */
 
@@ -65,7 +68,7 @@ const StyledFooterLink = styled.p`
   border-radius: 8px;
   margin-left: 2em;
   &:hover{
-    color: #29262a;
+    color: #ccae3f;
   }
 
   @media screen and (max-width: 767px) {
@@ -111,7 +114,7 @@ const StyledIcon = styled.a`
   /* box-shadow: 0px 4px 5px #1a1a1a;
   border-radius: 8px; */
   &:hover{
-    color: #29262a;
+    color: #ccae3f;
   }
 
 

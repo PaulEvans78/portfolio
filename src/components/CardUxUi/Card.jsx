@@ -1,7 +1,8 @@
 import React from 'react';
-import { CardContainer, StyledCardImg, StyledCardp, StyledButton, Styledh2 } from './styles';
+import { CardContainer, StyledCardImg, StyledInfoContainer ,StyledCardp, StyledButton, Styledh2 } from './styles';
 
-
+// import designPic from '../../../assets/ux.png'
+// import filmPic from '../../../assets/vikings.png'
 
 
 
@@ -16,10 +17,11 @@ function Card (props) {
             <StyledCardImg src={props.mainPic} alt="category Background" />
             {/* <StyledReactImg src={props.middlePic} alt="React Logo" /> */}
         
+            <StyledInfoContainer> 
             <Styledh2>{props.headline}</Styledh2>
-         <StyledCardp>{props.description}</StyledCardp>
-            <StyledButton>{props.buttonText}</StyledButton>
-        
+         <StyledCardp>{props.githubdescription ? props.githubdescription : props.description}</StyledCardp>
+            <a href={props.url ? props.url : props.buttonLink}><StyledButton>{props.buttonText}</StyledButton></a>
+            </StyledInfoContainer> 
         </CardContainer>
 
     

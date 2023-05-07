@@ -1,9 +1,9 @@
 import React from 'react';
 // import dude from '../assets/dude.png';
 import styled from "styled-components";
-import Skills from '../components/CardUxUi/skills/Skills';
+import Skills from '../components/CardLandingPage/skills';
 // import backCard from '../assets/backCard.png';
-import FlippableCard from '../components/FlippableCard/FlippableCard';
+// import FlippableCard from '../components/FlippableCard/FlippableCard';
 
 
 
@@ -82,8 +82,9 @@ const Home = () => {
      <>
      <Styledh1>Paul <br/> Evans</Styledh1>
     
-     <FlippableCard />
-    {/* <Skills /> */}
+     {/* <FlippableCard /> */}
+     <Skills />
+    
    
    
 

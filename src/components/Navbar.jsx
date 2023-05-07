@@ -15,6 +15,8 @@ import {
 //NAVBAR
 
 const StyledNav = styled.nav`
+    /* position: sticky;
+    top: 0; */
     grid-area: top;
     display: grid;
     grid-template-rows: auto;
@@ -25,6 +27,7 @@ const StyledNav = styled.nav`
     font-family: 'Poppins';
     font-size: 16px;
     line-height: 24px;
+    /* background-color: #0E0F0F; */
     color: whitesmoke;
     
     @media screen and (max-width: 960px) {
@@ -53,6 +56,7 @@ const StyledNavul = styled.ul`
     align-self: flex-end;
     list-style-type: none;
     margin-right: 3em;
+   
     
     @media screen and (max-width: 960px) {
         margin-bottom: 1.5em;
@@ -89,6 +93,9 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     text-align: right;
     margin: 1em 1em 0em 1em;
+    &:hover{
+    color: #ccae3f;
+    }
 
     @media screen and (max-width: 960px) {
     
@@ -109,6 +116,9 @@ const ExternalStyledLink = styled.a`
     text-decoration: none;
     text-align: right;
     margin: 1em 1em 0em 1em;
+    &:hover{
+    color: #ccae3f;
+    }
 
     @media screen and (max-width: 960px) {
     
@@ -162,6 +172,9 @@ const StyledName = styled.div `
     letter-spacing: 0em;
     color: whitesmoke;
     margin-top: 1.5em;
+    &:hover{
+    color: #ccae3f;
+    }
 
     @media screen and (max-width: 960px) {
         font-size: 32px;
@@ -185,7 +198,7 @@ const StyledName = styled.div `
 const StyledTypewriter = styled.span `
     font-family: 'Poppins';
     font-size: 16px;
-    color: #a5a326;
+    color: #ccae3f;
 
     @media screen and (max-width: 960px) {
         font-size: 14px;
