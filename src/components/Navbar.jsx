@@ -17,6 +17,7 @@ import {
 const StyledNav = styled.nav`
     /* position: sticky;
     top: 0; */
+    width: 100vw;
     grid-area: top;
     display: grid;
     grid-template-rows: auto;
@@ -44,6 +45,11 @@ const StyledNav = styled.nav`
     /* justify-items: center; */
   }
     
+  @media screen and (max-width: 400px) {
+    /* display: block; */
+    /* min-width: 100vw; */
+    /* left: 100%; */
+  }
 `;
 
 
@@ -63,12 +69,9 @@ const StyledNavul = styled.ul`
     }
 
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
-        /* justify-content: flex-end; */
-        /* justify-items: center; */
-        /* align-content: flex-end; */
         top: 70px;
         right: 0;
         height: 100vh;
@@ -81,7 +84,6 @@ const StyledNavul = styled.ul`
         margin-right: 0;
         margin-bottom: 0em;
         z-index: 100;
-        /* overflow:hidden; */
     }
 
     
@@ -111,7 +113,7 @@ const StyledLink = styled(Link)`
 `;
 
 const ExternalStyledLink = styled.a`
-   display: flex; 
+    display: flex; 
     color: white;
     text-decoration: none;
     text-align: right;

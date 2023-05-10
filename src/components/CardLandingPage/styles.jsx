@@ -82,6 +82,7 @@ export const StyledInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0.125rem;
     /* justify-self: flex-end; */
     width: 85%;
     background-color: #17171792;
@@ -90,24 +91,26 @@ export const StyledInfoContainer = styled.div`
     bottom: 1.5em;
 `;
 
-export const Styledh2 = styled.h2`
+export const Styledh3 = styled.h3`
     text-align: center;
     /* align-self: center; */
-    margin-top: 1em;
+    /* margin-top: 1em; */
     margin-bottom: 0.25em;
     white-space: pre-wrap;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 900;
     color: white;
-    position: absolute;
+    /* background-color: #17171792; */
+    border-radius: 10px;
+    /* position: absolute; */
     /* z-index: 100; */
 `;
 
 export const StyledCardp = styled.p`
     color: #ffffff;
     font-size: 14px;
-    margin-top: 2em;
-    padding: 0em 1.5em 1.5em;
+    /* margin-top: 2em; */
+    padding: 0em 0.5em 0.5em;
     text-align: center;
 `;
 

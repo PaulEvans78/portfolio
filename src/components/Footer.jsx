@@ -42,7 +42,7 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   /* align-content: center; */
   align-items: flex-end;
-  padding: 0em 2em 0em 2em;
+  /* padding: 0em 2em 0em 2em;   */
   font-family: 'Poppins';
   /* font-weight: 400; */
   font-size: 16px;
@@ -55,7 +55,7 @@ const StyledFooter = styled.footer`
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
-    padding: 0em 2em 0em 0em;
+    /* padding: 0em 2em 0em 0em; */
   }
 `;
 

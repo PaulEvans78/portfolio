@@ -45,6 +45,15 @@ export const CardContainer = styled.div`
   } */
 
 
+    
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        margin-left: 0em;
+        /* flex-shrink: 2; */
+        width: 300px;
+        height: 200px;
+  }
+
 
 `;
 
@@ -57,6 +66,10 @@ export const StyledCardImg = styled.img`
     margin-left: 1.5em;
     /* box-shadow: 4px 6px 5px #858287; */
     border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 1em;
+  }
 `;
 
 export const StyledInfoContainer = styled.div`
@@ -72,6 +85,12 @@ export const StyledInfoContainer = styled.div`
     margin-left: 2em;
     border-radius: 10px;
     bottom: 1.5em;
+
+    @media screen and (max-width: 767px) {
+        /* margin-left: 1.5em; */
+        padding: 0em;
+  }
+    
 `;
 
 export const Styledh2 = styled.h2`
@@ -81,6 +100,11 @@ export const Styledh2 = styled.h2`
     color: #060606;
     font-size: 28px;
     font-weight: 900;
+
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+        margin-bottom: 0em;
+  }
 `;
 
 export const StyledCardp = styled.p`
@@ -88,6 +112,11 @@ export const StyledCardp = styled.p`
     font-size: 14px;
     padding: 0em 1.5em 1.5em;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        font-size: 10px;
+        margin-bottom: 0em;
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -96,7 +125,7 @@ export const StyledButton = styled.button`
     color: #000000;
     padding: 0em 1.5em;
     /* margin-bottom: 2em; */
-    margin: 0em 3em 1em 3em;
+    margin: 0em 3em 1em 4em;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -106,4 +135,10 @@ export const StyledButton = styled.button`
     background: #ccae3f;
     }
 
+    @media screen and (max-width: 767px) {
+        /* justify-self: center; */
+        margin: 0em 0em 0em 1em;
+        font-size: 0.75rem;
+        padding: 0em 2.5em;
+  }
 `;

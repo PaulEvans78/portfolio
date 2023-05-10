@@ -6,7 +6,7 @@
         "headline": "Spotify",
         "description": "Using Scrum we developed new accessiblity features for Spotify.",
         "buttonText": "View More",
-        "buttonLink": "/"
+        "buttonLink": "/CaseSpotify"
     },
     {
         "id": 600431837,
@@ -21,7 +21,7 @@
         "mainPic": "cvpageImg.png",
         "headline": "CV Page",
         "description": "Directs you to an external site.",
-        "buttonText": "github repo",
+        "buttonText": "See Repo",
         "buttonLink": "/"
     },
     {
@@ -36,7 +36,7 @@
         "mainPic": "neonImg.png",
         "headline": "Neon Cinema",
         "description": "Directs you to an external site.",
-        "buttonText": "github repo",
+        "buttonText": "See Repo",
         "buttonLink": "/"
     }
     

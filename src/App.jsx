@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Design from "./pages/Design";
 import About from "./pages/About";
+import CaseSpotify from "./pages/CaseSpotify";
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 // import Background from "./assets/background.png";
 
 import {
@@ -91,11 +93,15 @@ function App() {
               <Design />
             </Route>
 
+            <Route path="/CaseSpotify">
+              <CaseSpotify />
+            </Route>
 
+            
 
           </Switch>
         </MainContainer>
-
+        <ScrollButton />
           <Footer />
       </GridContainer>
       
