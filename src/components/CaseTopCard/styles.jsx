@@ -19,6 +19,7 @@ export const CardContainer = styled.div`
     font-size: 1.2rem;
     overflow: hidden;
     border-radius: 10px;
+    border: 1px solid white;
    
     
     /* @media screen and (max-width: 767px) {

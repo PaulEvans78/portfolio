@@ -5,20 +5,21 @@ export const CardContainer = styled.div`
 /* grid-area: main; */
     position: relative; 
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: center;
-    /* justify-items: center; */
-    align-items: center;
+    justify-items: center;
+    align-content: center;
     margin-top: 2em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     margin-left: 1em;
     width: 400px;
-    height: 600px;
+    height: 400px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-size: 1.2rem;
     overflow: hidden;
     border-radius: 10px;
+    background-color: black;
    
     
     /* @media screen and (max-width: 767px) {
@@ -39,8 +40,9 @@ export const StyledCardImg = styled.img`
     align-self: center;
     /* margin-top: 0.5em; */
     /* margin-left: 1.5em; */
-    /* box-shadow: 4px 6px 5px #858287; */
+    /* box-shadow: 4px 6px 5px #818181; */
     border-radius: 10px;
+    opacity: 0.8;
 
     /* @media screen and (max-width: 767px) {
         margin-left: 1em;
@@ -74,7 +76,7 @@ export const Styledh2 = styled.h2`
     text-align: center;
     margin-bottom: 0.25em;
     white-space: pre-wrap;
-    color: #060606;
+    color: #000000;
     font-size: 28px;
     font-weight: 900;
 

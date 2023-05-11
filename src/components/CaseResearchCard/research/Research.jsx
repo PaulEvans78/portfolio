@@ -1,6 +1,6 @@
 // import React from "react";
 import React from 'react';
-import QuestionMark from '../../../assets/questionmark.png';
+import QuestionMark from '../../../assets/research.png';
 // import filmPic from '../../../assets/vikings.png'
 import Card from '../Card';
 
@@ -10,9 +10,9 @@ const Research = () => {
     const researchData = [
         {
            
-            mainPic: QuestionMark,
+            // mainPic: ,
             headline: "Research",
-            description: "Used qualitative and quantitive metods. Particiapted in interviews and aided in creating a questionnaire.  ",
+            description: "Used qualitative and quantitive metods. Particiapted in interviews and aided in creating a questionnaire. Created Personas. ",
         }
         
     ];
