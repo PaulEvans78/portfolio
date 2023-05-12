@@ -1,20 +1,16 @@
-// design process
-// h1
-// text
-// spacing
-
-// cards
-// Homepage
-// H0
-
+// Animation
+// case text
+// Homepage text
+// click to external link
 // About
-// Cookwise
 // colors
+// responsive
+
+// Cookwise
+
 
 import React from "react";
 import styled from 'styled-components';
-// import PlayerComponent from "../components/VideoPlayer/PlayerComponent";
-// import ReactPlayer from 'react-player'
 import spotifylogo from '../assets/spotifylogo.png';
 import researchImg from '../assets/research.png';
 import persona1 from '../assets/personas1.png';
@@ -22,36 +18,27 @@ import persona2 from '../assets/personas2.png';
 import krisch from '../assets/krisch.png';
 import syn from '../assets/syn.png';
 import syn2 from '../assets/syn2.png';
-// import backgroundPrototype from '../assets/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg';
-// import SpotifyPrototype from '../assets/SpotifyPrototype'
 import SpotifyPrototype from '../assets/ezgif.com-video-to-gif.gif';
 import LoHiFiImg from '../assets/hifiLofiHifi.png'
 import ABTestingImg from '../assets/ABTesting.png'
 import Skills from "../components/CaseTopCard/skills/Skills";
 import Product from "../components/CaseProductCard/product/Product";
-// import Research from "../components/CaseResearchCard/research/Research";
+import Step from "../components/DesignProcess/step";
 
 
 const StyledMyImgContainer = styled.div`
-/* grid-area: photo; */
 width: 100vw;
 display: flex;
-/* padding: 1em; */
 flex-direction: row;
 justify-content: flex-start;
 align-self: flex-start;
-/* align-items: flex-start; */
-/* font-family: 'Roboto', sans-serif;
-font-size: 1.5rem;
-font-weight: bold;
-color: whitesmoke; */
+/* margin-bottom: em; */
 `;
 
 
 const StyledMyImg = styled.img`
-/* grid-area: photo; */
 width: 50%;
-margin: 2em 0em 0em 0em;
+margin: 1em 0em 0em 0em;
 
 /* @media screen and (max-width: 767px) {
     width: 40%;
@@ -64,9 +51,10 @@ const StyledTitleContainer = styled.div`
     display: flex;
     justify-content: flex-start;
     width: 100vw;
+    margin-bottom: 4em;
 `;
 
-const Styledh2 = styled.h2`
+const Styledh5 = styled.h5`
     display: flex;
     /* text-align: left; */
     align-self: flex-start;
@@ -76,7 +64,33 @@ const Styledh2 = styled.h2`
     /* margin-bottom: 0.25em; */
     white-space: pre-wrap;
     font-family: 'Poppins';
-    font-size: 26px;
+    font-size: 28px;
+    /* font-weight: 600; */
+    color: whitesmoke;
+`;
+
+const StyledPbih5 = styled.h5`
+    display: flex;
+    align-self: flex-start;
+    justify-items: flex-start;
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: whitesmoke;
+`;
+
+const StyledTitleP = styled.p`
+display: flex;
+    /* text-align: left; */
+    align-self: flex-start;
+    justify-items: flex-start;
+    /* margin-top: 1em; */
+    margin: 1em 0em 0em 2em;
+    /* margin-bottom: 0.25em; */
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 20px;
     /* font-weight: 600; */
     color: whitesmoke;
 `;
@@ -97,10 +111,6 @@ const Styledh3 = styled.h3`
 `;
 
 const StyledMyRoleul = styled.ul`
-    
-    /* display: flex; */
-    
-    /* text-align: left; */
     align-self: flex-start;
     justify-items: flex-start;
     /* margin-top: 1em; */
@@ -141,6 +151,90 @@ const StyledProductCardsContainer = styled.div`
     width: 100vw;
     padding-left: 2em;
     padding-right: 2em;
+    margin-bottom: 4em;
+`;
+
+const StyledPbiContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 4em;
+`;
+
+
+const StyledProblemul = styled.ul`
+    align-self: flex-start;
+    justify-items: flex-start;
+    /* margin-top: 1em; */
+    margin: 1em 1.5em 3em 1.5em;
+    /* margin-bottom: 0.25em; */
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    /* font-weight: 600; */
+    color: #ffffff;
+`;
+
+
+const StyledProblemli = styled.li`
+    display: list-item;
+    align-self: flex-start;
+    justify-items: flex-start;
+    margin: 1em 0em 0em 0em;
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #ffffff;
+`;
+
+
+const StyledSolutionul = styled.ul`
+    align-self: flex-start;
+    justify-items: flex-start;
+    /* margin-top: 1em; */
+    margin: 1em 1.5em 0em 1.5em;
+    /* margin-bottom: 0.25em; */
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    /* font-weight: 600; */
+    color: #ffffff;
+`;
+
+
+const StyledSolutionli = styled.li`
+    display: list-item;
+    align-self: flex-start;
+    justify-items: flex-start;
+    margin: 1em 0em 0em 0em;
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #ffffff;
+`;
+
+
+const StyledDesignProcessContainer = styled.div`
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    /* align-self: flex-start;  */
+    padding-left: 2em;
+    padding-right: 2em;
+`;
+
+const StyledDesignProcessComponentContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    /* justify-self: space-between; */
+    justify-content: space-between;  
+    /* justify-items: space-between; */
+    /* align-self: flex-end; */
+    /* padding-left: 2em;
+    padding-right: 2em; */
 `;
 
 const StyledAboutContainer = styled.div`
@@ -150,6 +244,7 @@ const StyledAboutContainer = styled.div`
     width: 85vw;
     /* margin: 0em 2em 0em 3em; */
     margin-top: 6em;
+    /* margin-bottom: 4em; */
     padding: 2em;
     /* padding-left: 2em; */
     /* padding-right: 2em; */
@@ -179,7 +274,7 @@ const StyledResearchCardsContainer = styled.div`
     align-items: flex-start;
     width: 100vw;
     margin-top: 6em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
 `;
@@ -205,10 +300,11 @@ const StyledResearchImgContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    row-gap: 3em;
     flex-wrap: wrap;
     width: 100vw;
     margin-top: 4em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
 `;
@@ -258,7 +354,7 @@ const StyledLoHiFiContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
 `;
@@ -274,17 +370,16 @@ const StyledABContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
     padding-left: 2em;
     padding-right: 2em;
     margin-top: 4em;
+    margin-bottom: 4em;
 `;
 
 const StyledABTestingContainer = styled.div `
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    align-content: center;
+    align-self: flex-end;
     padding-left: 2em;
     padding-right: 2em;
 `;
@@ -304,7 +399,7 @@ const StyledFinalContainer = styled.div`
     align-items: flex-start;
     width: 100vw;
     margin-top: 6em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 10px;
@@ -317,7 +412,7 @@ const StyledFinalTextContainer = styled.div`
     align-self: flex-end;
     padding-left: 2em;
     padding-right: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 `;
 
 // const StyledPrototypeContainer = styled.div`
@@ -340,7 +435,7 @@ const StyledPrototypeMov = styled.img`
     height: 600px;
     /* width:1000px; */
     margin-top: 4em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     /* padding-left: 2em; */
     /* padding-right: 2em; */
     border-radius: 10px;
@@ -370,12 +465,46 @@ function CaseSpotify() {
             </StyledMyImgContainer>
 
             <StyledTitleContainer>
-                <Styledh2>Improving Spotify's accessibility features for the visually and hearing impaired. </Styledh2>
+                <StyledTitleP>Improving Spotify's accessibility features for the visually and hearing impaired. </StyledTitleP>
             </StyledTitleContainer>
 
             <StyledProductCardsContainer>
                 <Product />
             </StyledProductCardsContainer>
+
+
+            <StyledPbiContainer>
+                        
+                            <StyledProblemul>
+                            <StyledPbih5>Problem </StyledPbih5>
+                                <StyledProblemli>Increase accessibility for visually impaired users.
+We want to make our service available to all kinds of users. Creating a setting that increases the font size so that visually impaired users can more easily navigate the service.</StyledProblemli>
+                                <StyledProblemli>Enable captions in podcasts for people with hearing loss.
+People with hearing loss may also be interested in listening to information provided in podcasts. It can therefore be good to enable captions "audio texts" when a podcast is played. </StyledProblemli>
+                                <StyledProblemli>Improve Microcopy for features in the service
+There are words and concepts in Settings that may not be understood by everyone. Review the microcopy and make suggestions for improvements.</StyledProblemli>
+                            </StyledProblemul>
+
+                            
+                            <StyledSolutionul>
+                            <StyledPbih5>Solution </StyledPbih5>
+                                <StyledSolutionli>Enhance accessibility for users with visual impairments by implementing features to increase font size within the app and develop functionalities that facilitate easy navigation for visually impaired users without negatively impacting the interface.</StyledSolutionli>
+                                <StyledSolutionli>Enable captions in podcasts for people with hearing impairments.
+Initially, the audio transcripts may need to be manually inserted by the user, but there may be other solutions that can be implemented later on.</StyledSolutionli>
+                                <StyledSolutionli>Improve microcopy for features in the service.
+Review the microcopy and provide suggestions for improvements.</StyledSolutionli>
+                            </StyledSolutionul>
+
+            </StyledPbiContainer>
+
+            <StyledDesignProcessContainer>
+                <Styledh5>Design Process </Styledh5>
+
+                    <StyledDesignProcessComponentContainer>
+                        <Step />
+                    </StyledDesignProcessComponentContainer>
+
+            </StyledDesignProcessContainer>
 
             <StyledTopCardsContainer>
                 <Skills />
@@ -401,10 +530,12 @@ Below you can read ore about the process.
             <StyledResearchCardsContainer>
 
                 <StyledresearchTextContainer>
-                    <Styledh2>Research </Styledh2>
-                    <StyledP>Used qualitative and quantitive methods. I particiapted in creating questions for both interviews and questionnaires.  
-                        I then conducted user interviews with individuals with visual and hearing impairments to gain better insights into their every day hindrances.
-                        The returned data was then analysed and used to created Personas.</StyledP>
+                    <Styledh5>Research </Styledh5>
+                        <StyledP>Used qualitative and quantitive methods. I particiapted in creating questions for both interviews and questionnaires.  
+                            I then conducted user interviews with individuals with visual and hearing impairments to gain better insights into their every day hindrances.
+                            The returned data was then analysed and to better understand the user Personas were created.
+                        </StyledP>
+
                         <Styledh3>My Role </Styledh3>
                         <StyledMyRoleul>
                         <StyledMyRoleli>Compile interview questions and questionnaires</StyledMyRoleli>
@@ -442,7 +573,7 @@ Below you can read ore about the process.
             
             <StyledABContainer>
                 <StyledABTestingContainer>
-                    <Styledh2>User Testing and A/B Testing </Styledh2>
+                    <Styledh5>User Testing and A/B Testing </Styledh5>
                     <StyledP>A prototype was created and sent out for testing. Along with this certain aspects were tested with A/B testing.</StyledP>
                 </StyledABTestingContainer>
 
@@ -457,7 +588,7 @@ Below you can read ore about the process.
                 {/* </StyledPrototypeContainer> */}
 
                 <StyledFinalTextContainer>
-                    <Styledh2>Learnings </Styledh2>
+                    <Styledh5>Learnings </Styledh5>
                     <StyledP>Used qualitative and quantitive metods. Particiapted in interviews and aided in creating and sending out questionnaire. Reviewed and results and created Personas.</StyledP>
                 </StyledFinalTextContainer>
                     

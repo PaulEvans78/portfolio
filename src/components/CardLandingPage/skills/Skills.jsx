@@ -16,7 +16,7 @@ const Skills = () => {
             headline: "UX / UI & \n Frontend Design",
             description: "See my portfolio.",
             buttonText: "View More",
-            buttonLink: "/"
+            buttonLink: "/Design"
         },
         {
             mainPic: filmPic,

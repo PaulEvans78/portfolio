@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCard, StyledFrontCard, StyledFrontCardImg, StyledInfoContainer, StyledCardp, StyledButton, Styledh3, StyledBackCard, StyledBackCardImg } from './styles';
+import { StyledCard, StyledFrontCard, StyledFrontCardImg, StyledInfoContainer, StyledCardp, StyledButton, Styledh5, } from './styles';
 
 // import designPic from '../../../assets/ux.png'
 // import filmPic from '../../../assets/vikings.png'
@@ -20,16 +20,14 @@ function Card (props) {
                     {/* <Styledh2>{props.headline}</Styledh2> */}
 
                         <StyledInfoContainer>
-                            <Styledh3>{props.headline}</Styledh3>
+                            <Styledh5>{props.headline}</Styledh5>
                             <StyledCardp>{props.description}</StyledCardp>
-                            <StyledButton>{props.buttonText}</StyledButton>
+                            <a href={props.buttonLink}><StyledButton>{props.buttonText}</StyledButton></a>
                         </StyledInfoContainer>
 
             </StyledFrontCard>
 
-            <StyledBackCard>
-                <StyledBackCardImg src={props.backCard} alt="Paul Evans"/>
-            </StyledBackCard> 
+            
 
         </StyledCard>
 

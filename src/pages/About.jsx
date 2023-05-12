@@ -86,7 +86,7 @@ const Styledintro = styled.p`
     white-space: pre-wrap;
     background-color: whitesmoke;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-right: 4em;
@@ -168,7 +168,7 @@ const StyledTextOne = styled.p`
     white-space: pre-wrap;
     color: whitesmoke;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-left: 4em;
@@ -280,7 +280,7 @@ const StyledTextTwo = styled.p`
     white-space: pre-wrap;
     color: whitesmoke;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-left: 4em;

@@ -45,31 +45,54 @@ import Skills from '../components/CardLandingPage/skills';
 // border-radius: 10px;
 // `;
 
+const StyledHomeContainer = styled.div`
+  width: 100vw; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 1em;
+  margin-right: 1em;
 
-const Styledh1 = styled.h1`
+`;
+
+const StyledHomeh4 = styled.h4`
+  width: 40%;
+  align-self: flex-end;
   font-family: 'Poppins';
   color: white;
-  font-size: 8rem;
-  font-weight: 600;
+  font-size: 28px;
+  /* font-weight: 600;
   line-height: 120px;
-  flex-shrink: 2;
-  margin-bottom: 0.25em;
+  flex-shrink: 2; */
+  margin-bottom: 1em;
   margin-right: 0.5em;
   margin-left: 0.2em;
-
-@media screen and (max-width: 1115px) {
-  font-size: 6rem;
-  }
-
-  @media screen and (max-width: 1006px) {
-  font-size: 4rem;
-  }
-
-@media screen and (max-width: 960px) {
-  display: none;
-  }
-    
 `;
+
+// const Styledh1 = styled.h1`
+//   font-family: 'Poppins';
+//   color: white;
+//   font-size: 8rem;
+//   font-weight: 600;
+//   line-height: 120px;
+//   flex-shrink: 2;
+//   margin-bottom: 0.25em;
+//   margin-right: 0.5em;
+//   margin-left: 0.2em;
+
+// @media screen and (max-width: 1115px) {
+//   font-size: 6rem;
+//   }
+
+//   @media screen and (max-width: 1006px) {
+//   font-size: 4rem;
+//   }
+
+// @media screen and (max-width: 960px) {
+//   display: none;
+//   }
+    
+// `;
 
 
 
@@ -79,8 +102,8 @@ const Home = () => {
 
   return (
     
-     <>
-     <Styledh1>Paul <br/> Evans</Styledh1>
+     <StyledHomeContainer>
+     <StyledHomeh4>Passionate UX designer/front-end developer creating intuitive interfaces for enhanced user experience and accessibility. For me, good design is about aesthetics, functionality, and usability. Check out my portfolio and let's discuss potential collaborations.</StyledHomeh4>
     
      {/* <FlippableCard /> */}
      <Skills />
@@ -88,7 +111,7 @@ const Home = () => {
    
    
 
-   </>
+   </StyledHomeContainer>
   
   );
 }
