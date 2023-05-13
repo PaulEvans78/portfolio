@@ -18,7 +18,6 @@ import persona2 from '../assets/personas2.png';
 import krisch from '../assets/krisch.png';
 import syn from '../assets/syn.png';
 import syn2 from '../assets/syn2.png';
-import SpotifyPrototype from '../assets/ezgif.com-video-to-gif.gif';
 import LoHiFiImg from '../assets/hifiLofiHifi.png';
 import ABTestingImg from '../assets/ABTesting.png';
 import Skills from "../components/CaseTopCard/skills/Skills";
@@ -27,6 +26,7 @@ import Step from "../components/DesignProcess/step";
 import spotifyPrototypeImg1 from "../assets/spotifyprototype1.png";
 import spotifyPrototypeImg2 from "../assets/spotifyprototype2.png";
 import spotifyPrototypeImg3 from "../assets/spotifyprototype3.png";
+import SpotifyPrototype from '../assets/ezgif.com-video-to-gif.gif';
 
 
 // GENERAL STYLING
