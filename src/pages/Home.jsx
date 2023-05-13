@@ -55,18 +55,27 @@ const StyledHomeContainer = styled.div`
 
 `;
 
-const StyledHomeh4 = styled.h4`
+const StyledHomep = styled.p`
+  position: relative;
   width: 40%;
   align-self: flex-end;
   font-family: 'Poppins';
   color: white;
-  font-size: 28px;
+  font-size: 20px;
   /* font-weight: 600;
   line-height: 120px;
   flex-shrink: 2; */
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   margin-right: 0.5em;
   margin-left: 0.2em;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-delay: 0s;
+
+    @keyframes slidein {
+      0%   {left:-400px;}
+      100% {left:0px;}
+}
 `;
 
 // const Styledh1 = styled.h1`
@@ -103,7 +112,11 @@ const Home = () => {
   return (
     
      <StyledHomeContainer>
-     <StyledHomeh4>Passionate UX designer/front-end developer creating intuitive interfaces for enhanced user experience and accessibility. For me, good design is about aesthetics, functionality, and usability. Check out my portfolio and let's discuss potential collaborations.</StyledHomeh4>
+     <StyledHomep>Hi, my name is Paul Evans.
+                    I am a passionate creative who's professional background spans over 15 years, during which time I have worn many hats. 
+                    UX designer, frontend developer, cinematographer and photographer not to mention concept developer and script writer. 
+                    Combining my extensive experience with film and web design has been a thrilling adventure which continues to inspire and surprise me.
+    </StyledHomep>
     
      {/* <FlippableCard /> */}
      <Skills />

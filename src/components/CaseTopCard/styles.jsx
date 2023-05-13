@@ -38,7 +38,7 @@ export const StyledCardImg = styled.img`
     object-fit: cover;
     /* justify-self: flex-end; */
     align-self: center;
-    margin-top: 0.5em;
+    /* margin-top: 0.5em; */
     /* margin-left: 1.5em; */
     /* box-shadow: 4px 6px 5px #858287; */
     border-radius: 10px;

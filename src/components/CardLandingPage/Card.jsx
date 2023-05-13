@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCard, StyledFrontCard, StyledFrontCardImg, StyledInfoContainer, StyledCardp, StyledButton, Styledh5, } from './styles';
+import { StyledFrontCard, StyledFrontCardImg, StyledInfoContainer, StyledCardp, StyledButton, Styledh5, } from './styles';
 
 // import designPic from '../../../assets/ux.png'
 // import filmPic from '../../../assets/vikings.png'
@@ -13,7 +13,7 @@ function Card (props) {
     return (
         
     
-        <StyledCard>
+        // <StyledCard>
             <StyledFrontCard>
                 <StyledFrontCardImg src={props.mainPic} alt="Category Image"/>
             
@@ -29,7 +29,7 @@ function Card (props) {
 
             
 
-        </StyledCard>
+        // </StyledCard>
 
     
 

@@ -3,42 +3,54 @@ import styled from "styled-components";
 
 
 //CARD
-export const StyledCard = styled.div`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    margin-left: 0.5em;
-    width: 290px;
-    height: 490px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid white;
+// export const StyledCard = styled.div`
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 3em;
+//     margin-bottom: 2em;
+//     margin-left: 0.5em;
+//     width: 290px;
+//     height: 490px;
+//     background-color: whitesmoke;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     border: 2px solid white;
     
-`;
+// `;
 
 
 
 //FRONT CARD
 
 export const StyledFrontCard = styled.div`
+    position: relative; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 3em;  */
-    /* margin-bottom: 2em; */
-    /* margin-left: 1em; */
+    margin-top: 3em; 
+    margin-bottom: 2em;
+    margin-left: 0.5em;
     width: 290px;
-    height: 490px;
+    height: 520px;
     background-color: #ffffff;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     border-radius: 10px;
     font-family: 'Poppins';
     font-size: 1.2rem;
     overflow: hidden;
+    animation-name: slidedown;
+    animation-duration: 3s;
+    animation-delay: 0s;
+
+    @keyframes slidedown {
+  0%   {top:-1000px;}
+  /* 25%  {top:0px;}
+  50%  {top:0px;}
+  75%  {top:0px;} */
+  100% {top:0px;}
+}
 
     @media screen and (max-width: 767px) {
         justify-content: center;
@@ -112,7 +124,7 @@ export const StyledButton = styled.button`
     background-color: #ffffff;
     color: #000000;
     /* padding: 0em 1.5em; */
-    margin: 0em 0em 2.5em 4em;
+    margin: 0em 0em 3em 4em;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;

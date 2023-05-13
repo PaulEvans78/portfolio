@@ -12,6 +12,7 @@ export const CardContainer = styled.div`
     margin-top: 3em;
     margin-bottom: 2em;
     margin-left: 1em;
+    padding: 0em 0em 1em 0em;
     width: 400px;
     height: 400px;
     border-radius: 10px;
@@ -19,6 +20,9 @@ export const CardContainer = styled.div`
     font-size: 1.2rem;
     overflow: hidden;
     border-radius: 10px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+  
    
     
     /* @media screen and (max-width: 767px) {
