@@ -62,7 +62,7 @@ export const Styledh2 = styled.h2`
     margin-bottom: 0em;
     margin-top: 0em;
     white-space: pre-wrap;
-    color: black;
+    color: #272424;
     font-size: 28px;
     font-weight: 900;
 
@@ -73,7 +73,7 @@ export const Styledh2 = styled.h2`
 `;
 
 export const StyledCardp = styled.p`
-    color: black;
+    color: #272424;
     font-size: 14px;
     /* padding: 1em 1em 1em 1em; */
     text-align: center;

@@ -17,7 +17,7 @@ import {
 const StyledNav = styled.nav`
     /* position: sticky;
     top: 0; */
-    width: 100vw;
+    max-width: 100%;
     grid-area: top;
     display: grid;
     grid-template-rows: auto;
@@ -114,7 +114,7 @@ const StyledLink = styled(Link)`
 
 const ExternalStyledLink = styled.a`
     display: flex; 
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     text-align: right;
     margin: 1em 1em 0em 1em;

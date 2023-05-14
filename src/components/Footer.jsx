@@ -42,12 +42,13 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   /* align-content: center; */
   align-items: flex-end;
+  max-width: 100%;
   /* padding: 0em 2em 0em 2em;   */
   font-family: 'Poppins';
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: whitesmoke;
   /* background-color: #9e9f9f24; */
   margin-bottom: 2em;
   /* text-shadow: 6px 6px 5px #1a1a1a; */
@@ -64,7 +65,7 @@ const StyledFooterLink = styled.p`
   flex-direction: column;
   /* justify-content: space-between; */
   /* align-content: center; */
-  color: white;
+  color: whitesmoke;
   border-radius: 8px;
   margin-left: 2em;
   &:hover{
@@ -140,7 +141,7 @@ const IconDes = styled.p`
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   margin-top: 0.5em;
   /* margin-bottom: 2.5em; */

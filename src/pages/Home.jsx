@@ -46,7 +46,7 @@ import Skills from '../components/CardLandingPage/skills';
 // `;
 
 const StyledHomeContainer = styled.div`
-  width: 100vw; 
+  max-width: 100vw; 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -60,7 +60,7 @@ const StyledHomep = styled.p`
   width: 40%;
   align-self: flex-end;
   font-family: 'Poppins';
-  color: white;
+  color: whitesmoke;
   font-size: 20px;
   /* font-weight: 600;
   line-height: 120px;
@@ -80,7 +80,7 @@ const StyledHomep = styled.p`
 
 // const Styledh1 = styled.h1`
 //   font-family: 'Poppins';
-//   color: white;
+//   color: whitesmoke;
 //   font-size: 8rem;
 //   font-weight: 600;
 //   line-height: 120px;

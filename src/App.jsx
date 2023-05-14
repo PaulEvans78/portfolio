@@ -48,6 +48,7 @@ grid-template-areas:
 // MAIN CONTAINER
 const MainContainer = styled.div`
 grid-area: main;
+max-width: 100vw;
 display: flex;
 flex-direction: row;
 /* flex-shrink: 4; */

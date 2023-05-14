@@ -58,7 +58,7 @@ export const StyledInfoContainer = styled.div`
     /* justify-items: center; */
     /* justify-self: flex-end; */
     width: 60%;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     padding: 1em;
     /* margin-right: 1.5em; */
     /* margin-left: 2em; */
@@ -75,7 +75,7 @@ export const Styledh2 = styled.h2`
     text-align: center;
     margin-bottom: 0.25em;
     white-space: pre-wrap;
-    color: #060606;
+    color: #272424;
     font-size: 28px;
     font-weight: 900;
 
@@ -86,7 +86,7 @@ export const Styledh2 = styled.h2`
 `;
 
 export const StyledCardp = styled.p`
-    color: #000000;
+    color: #272424;
     font-size: 14px;
     padding: 0em 1.5em 1.5em;
     text-align: center;

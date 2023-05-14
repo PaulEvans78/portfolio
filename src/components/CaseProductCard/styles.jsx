@@ -20,7 +20,7 @@ export const CardContainer = styled.div`
     font-size: 1.2rem;
     overflow: hidden;
     border-radius: 10px;
-    background-color: black;
+    background-color: #272424;
     border: 1px solid whitesmoke;
   
    

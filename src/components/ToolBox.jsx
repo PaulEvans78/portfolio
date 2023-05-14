@@ -49,7 +49,7 @@ const StyledToolBox = styled.div`
   font-family: 'Poppins';
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: whitesmoke;
   margin-bottom: 2em;
 
   @media screen and (max-width: 767px) {

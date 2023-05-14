@@ -21,7 +21,7 @@ grid-template-areas:
 "photoTwo photoTwo"
 "textThree textThree"
 "toolBox toolBox";
-width: 100vw;
+max-width: 100%;
 
 @media screen and (max-width: 767px) {
     grid-template-rows: auto;
@@ -141,7 +141,7 @@ const Styledh2 = styled.h2`
     font-weight: 900;
     font-size: 48px;
     line-height: 72px;
-    color: white;
+    color: whitesmoke;
     margin-top: 2em;
     margin-left: 2em;
 
@@ -223,7 +223,7 @@ const Styledh3 = styled.h3`
     font-weight: 900;
     font-size: 38px;
     line-height: 72px;
-    color: white;
+    color: whitesmoke;
     margin-top: 2em;
     margin-bottom: 1.5em;
     

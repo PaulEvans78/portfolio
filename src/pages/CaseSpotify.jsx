@@ -1,12 +1,11 @@
-// click to external link
 // About
-// colors
-// check code especially p & h and fonts -case study spacing and sizing!!!!
-// responsive
+
+// responsive and rethink any weird framings
+
+// click to external link
 // clean assets folder
-
-
 // Cookwise
+//Upload
 
 
 import React from "react";
@@ -31,77 +30,100 @@ import SpotifyPrototype from '../assets/ezgif.com-video-to-gif.gif';
 
 // GENERAL STYLING
 
-const StyledSectionHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100vw;
-    padding-left: 2em;
-    padding-right: 2em;
-    /* margin-top: 6em; */
+const Styledh5 = styled.h5`
+    /* display: flex; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+    margin: 1em 0em 2em 2em;
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: whitesmoke;
 `;
 
-const StyledSectionh2 = styled.h2`
-    display: flex;
+const StyledP = styled.p`
+    /* display: flex; */
     /* text-align: left; */
-    align-self: flex-start;
-    justify-items: flex-start;
-    /* justify-self: flex-start; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
     /* margin-top: 1em; */
-    margin: 1em 0em 0em 2em;
+    margin: 1em 1.5em 0em 1.5em;
     /* margin-bottom: 0.25em; */
     white-space: pre-wrap;
     font-family: 'Poppins';
-    font-size: 26px;
+    font-size: 16px;
     /* font-weight: 600; */
     color: whitesmoke;
 `;
 
 
+// const StyledSectionHeader = styled.div`
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     width: 100%;
+//     padding-left: 2em;
+//     padding-right: 2em;
+// `;
+
+// const StyledSectionh2 = styled.h2`
+//     display: flex;
+//     align-self: flex-start;
+//     justify-items: flex-start;
+//     margin: 1em 0em 0em 2em;
+//     white-space: pre-wrap;
+//     font-family: 'Poppins';
+//     font-size: 26px;
+//     color: whitesmoke;
+// `;
+
+
+// MAIN CONTAINER
+
+const StyledCaseOneContainer = styled.div`
+    grid-area: main;
+    max-width: 100%;
+`;
 
 // SPOTIFY LOGO
 
-const StyledCaseImgContainer = styled.div`
-width: 100vw;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-self: flex-start;
+const StyledSpotifyImgContainer = styled.div`
+    max-width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* align-self: flex-start; */
 `;
 
 
-const StyledCaseImg = styled.img`
-width: 50%;
-margin: 1em 0em 0em 0em;
+const StyledSpotifyImg = styled.img`
+    width: 50%;
+    margin: 1em 0em 0em 0em;
 
-/* @media screen and (max-width: 767px) {
-    width: 40%;
-    margin: 3em 0em 0em 0em;
+    /* @media screen and (max-width: 767px) {
+        width: 40%;
+        margin: 3em 0em 0em 0em;
 
-  } */
+    } */
 `;
 
 // SPOTIFY TITLE/PROJECT DESCRIPTION
 
-const StyledTitleContainer = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    width: 100vw;
-    margin-bottom: 4em;
-`;
+// const StyledTitleContainer = styled.div`
+//     display: flex;
+//     justify-content: flex-start;
+//     width: 100%;
+//     margin-bottom: 4em;
+// `;
 
 const StyledTitleP = styled.p`
-display: flex;
-    /* text-align: left; */
-    align-self: flex-start;
-    justify-items: flex-start;
-    /* margin-top: 1em; */
-    margin: 1em 0em 0em 2em;
-    /* margin-bottom: 0.25em; */
+    /* display: flex; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+    margin: 2em 0em 0em 2em;
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-size: 20px;
-    /* font-weight: 600; */
     color: whitesmoke;
 `;
 
@@ -111,35 +133,22 @@ display: flex;
 const StyledProductCardsContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 4em;
 `;
 
-const Styledh5 = styled.h5`
-    display: flex;
-    /* text-align: left; */
-    align-self: flex-start;
-    justify-items: flex-start;
-    /* margin-top: 1em; */
-    margin: 1em 0em 2em 1em;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 28px;
-    /* font-weight: 600; */
-    color: whitesmoke;
-`;
+
 
 // PBI PROBLEMS AND SOLUTIONS
 
 const StyledPbih5 = styled.h5`
-    display: flex;
-    align-self: flex-start;
-    justify-items: flex-start;
-    margin: 0;
-    white-space: pre-wrap;
+    /* display: flex; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+    /* margin: 1em 0em 2em 1em; */
+    /* white-space: pre-wrap; */
     font-family: 'Poppins';
     font-size: 28px;
     color: whitesmoke;
@@ -148,7 +157,7 @@ const StyledPbih5 = styled.h5`
 const StyledPbiContainer = styled.div`
     display: flex;
     justify-content: flex-start;
-    width: 100vw;
+    max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 4em;
@@ -156,78 +165,73 @@ const StyledPbiContainer = styled.div`
 
 
 const StyledProblemul = styled.ul`
-    align-self: flex-start;
-    justify-items: flex-start;
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
     /* margin-top: 1em; */
-    margin: 1em 1.5em 3em 1.5em;
+    margin: 1em 0em 3em 0em;
     /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
+    /* white-space: pre-wrap; */
+    /* font-family: 'Poppins'; */
+    /* font-size: 16px; */
     /* font-weight: 600; */
-    color: #ffffff;
+    /* color: whitesmoke; */
 `;
 
 
 const StyledProblemli = styled.li`
-    display: list-item;
-    align-self: flex-start;
-    justify-items: flex-start;
+    /* display: list-item; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
     margin: 1em 0em 0em 0em;
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-size: 16px;
-    color: #ffffff;
+    color: whitesmoke;
 `;
 
 
 const StyledSolutionul = styled.ul`
-    align-self: flex-start;
-    justify-items: flex-start;
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
     /* margin-top: 1em; */
-    margin: 1em 1.5em 0em 1.5em;
+    margin: 1em 0em 0em 1.5em;
     /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
+    /* white-space: pre-wrap; */
+    /* font-family: 'Poppins'; */
+    /* font-size: 16px; */
     /* font-weight: 600; */
-    color: #ffffff;
+    /* color: whitesmoke; */
 `;
 
 
 const StyledSolutionli = styled.li`
-    display: list-item;
-    align-self: flex-start;
-    justify-items: flex-start;
+    /* display: list-item; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
     margin: 1em 0em 0em 0em;
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-size: 16px;
-    color: #ffffff;
+    color: whitesmoke;
 `;
 
 
 // DESIGN PROCESS
 
-const StyledDesignProcessContainer = styled.div`
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    /* align-self: flex-start;  */
-    padding-left: 2em;
-    padding-right: 2em;
-`;
+// const StyledDesignProcessContainer = styled.div`
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-items: flex-start;
+//     padding-left: 2em;
+//     padding-right: 2em;
+// `;
 
 const StyledDesignProcessComponentContainer = styled.div`
     display: flex;
     flex-direction: row;
-    /* justify-self: space-between; */
     justify-content: space-between;  
-    /* justify-items: space-between; */
-    /* align-self: flex-end; */
-    /* padding-left: 2em;
-    padding-right: 2em; */
+    /* max-width: 100%; */
 `;
 
 
@@ -237,10 +241,11 @@ const StyledDesignProcessComponentContainer = styled.div`
 const StyledTopCardsContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
     margin-top: 3em;
+    margin-bottom: 4em;
 `;
 
 
@@ -250,84 +255,47 @@ const StyledTopCardsContainer = styled.div`
 const StyledResearchCardsContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: flex-start;
-    width: 100vw;
-    margin-top: 6em;
+    white-space: pre-wrap;
+    max-width: 100%;
+    margin-top: 4em;
     margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
 `;
 
-const StyledMyRoleul = styled.ul`
-    align-self: flex-start;
-    justify-items: flex-start;
-    /* margin-top: 1em; */
-    margin: 1em 1.5em 0em 1.5em;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
-    /* font-weight: 600; */
-    color: #ffffff;
-`;
-
-const StyledMyRoleli = styled.li`
-    display: list-item;
-    /* display: flex; */
-    align-self: flex-start;
-    justify-items: flex-start;
-    margin: 1em 0em 0em 0em;
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
-    color: #ffffff;
-`;
-
-const Styledh3 = styled.h3`
-    display: flex;
-    /* text-align: left; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
-    margin: 2em 0em 0em 1em;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 20px;
-    /* font-weight: 600; */
-    color: whitesmoke;
-`;
-
-const StyledP = styled.p`
-    display: flex;
-    /* text-align: left; */
-    align-self: flex-start;
-    justify-items: flex-start;
-    /* margin-top: 1em; */
-    margin: 1em 1.5em 0em 1.5em;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
-    /* font-weight: 600; */
-    color: #ffffff;
-`;
-
 const StyledresearchTextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    padding-left: 2em;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    /* padding-left: 2em; */
     padding-right: 2em;
 `;
-const StyledResearchImg = styled.img`
-    align-self: flex-end;
-    width: 45%;
-    height: auto;
-    margin: 2em 0em 0em 0em;
-    border-radius: 10px;
+
+const StyledMyRoleul = styled.ul`
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+    /* margin-top: 1em; */
+    margin: em 1.5em 0em 1.5em;
+    /* margin-bottom: 0.25em; */
+    /* font-family: 'Poppins'; */
+    /* font-size: 16px; */
+    /* font-weight: 600; */
+    /* color: whitesmoke; */
+`;
+
+const StyledMyRoleli = styled.li`
+    /* display: list-item; */
+    /* display: flex; */
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+    margin: 1em 0em 0em 0em;
+    /* white-space: pre-wrap; */
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: whitesmoke;
 `;
 
 const StyledResearchImgContainer = styled.div`
@@ -337,11 +305,19 @@ const StyledResearchImgContainer = styled.div`
     align-items: flex-start;
     row-gap: 3em;
     flex-wrap: wrap;
-    width: 100vw;
+    max-width: 100%;
     margin-top: 4em;
     margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
+`;
+
+const StyledResearchImg = styled.img`
+    align-self: flex-end;
+    width: 45%;
+    height: auto;
+    margin: 2em 0em 0em 0em;
+    border-radius: 10px;
 `;
 
 const StyledResearchLogoImg  = styled.img`
@@ -365,7 +341,7 @@ const StyledLoHiFiContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    width: 100vw;
+    max-width: 100%;
     margin-bottom: 3em;
     padding-left: 2em;
     padding-right: 2em;
@@ -376,23 +352,7 @@ const StyledLoHiFiImg = styled.img`
     /* display: flex; */
     /* justify-content: space-between; */
     align-self: flex-end;
-    margin-top: 3em;
-    margin-left: 2.5em;
-`;
-
-const StyledLoHiFiP = styled.p`
-    display: flex;
-    /* text-align: left; */
-    /* align-items: flex-end; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
-    margin: 1em 1.5em 4em 1.5em;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
-    /* font-weight: 600; */
-    color: #ffffff;
+    margin: 3em 1em 0em 2.5em;
 `;
 
 
@@ -401,10 +361,10 @@ const StyledLoHiFiP = styled.p`
 const StyledPrototypeFramesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    justify-items: flex-start;
+    /* justify-content: flex-start; */
+    /* justify-items: flex-start; */
     /* align-items: flex-start; */
-    width: 100vw;
+    max-width: 100%;
     margin-bottom: 4em;
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -414,7 +374,6 @@ const StyledPrototypeFramesContainer = styled.div`
 
 const StyledPrototypeFramesImg = styled.img`
     width: 28%;
-    /* height: 100%; */
     margin: 3em 0em 0em 0em;
     border-radius: 10px;
 `;
@@ -422,29 +381,30 @@ const StyledPrototypeFramesImg = styled.img`
 
 
 
-// TESTING
+// TESTING - A/B
 
 const StyledABContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
     margin-top: 4em;
     margin-bottom: 4em;
 `;
 
-const StyledABTestingContainer = styled.div `
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    padding-left: 2em;
-    padding-right: 2em;
-`;
+// const StyledABTestingContainer = styled.div `
+//     display: flex;
+//     flex-direction: column;
+//     align-self: flex-end;
+//     padding-left: 2em;
+//     padding-right: 2em;
+// `;
 
 const StyledABImg = styled.img`
     width: 50%;
-    /* height: 550px; */
     margin: 1em 0em 0em 1.5em;
     border-radius: 10px;
 `;
@@ -457,9 +417,9 @@ const StyledFinalContainer = styled.div`
     /* background-color: black; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100vw;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    max-width: 100%;
     margin-top: 6em;
     margin-bottom: 4em;
     padding-left: 2em;
@@ -470,7 +430,7 @@ const StyledFinalContainer = styled.div`
 const StyledFinalTextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-self: flex-end;
     padding-left: 2em;
     padding-right: 2em;
@@ -479,13 +439,13 @@ const StyledFinalTextContainer = styled.div`
 
 const StyledPrototypeMov = styled.img`
 /* background-color: black; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 600px;
-    width:1000px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    height: 500px;
+    /* width:1000px; */
     margin-left: 3em;
     margin-top: 4em;
     margin-bottom: 4em;
@@ -504,17 +464,21 @@ const StyledPrototypeMov = styled.img`
 function CaseSpotify() {
 
     return (
-        <>
-            <StyledCaseImgContainer>
-             <StyledCaseImg src={spotifylogo} alt="Spotify Logo"/>
-            </StyledCaseImgContainer>
+        <StyledCaseOneContainer>
 
-            <StyledTitleContainer>
-                <StyledTitleP>Improving Spotify's accessibility features for the visually and hearing impaired. </StyledTitleP>
-            </StyledTitleContainer>
+            <StyledSpotifyImgContainer>
+
+                <StyledSpotifyImg src={spotifylogo} alt="Spotify Logo"/>
+
+            </StyledSpotifyImgContainer>
+
+            <StyledTitleP>Improving Spotify's accessibility features for the visually and hearing impaired. </StyledTitleP>
+
 
             <StyledProductCardsContainer>
+
                 <Product />
+                
             </StyledProductCardsContainer>
 
 
@@ -564,7 +528,7 @@ function CaseSpotify() {
             </StyledPbiContainer>
 
 
-            <StyledDesignProcessContainer>
+            {/* <StyledDesignProcessContainer> */}
 
                 <Styledh5>Design Process </Styledh5>
 
@@ -574,7 +538,7 @@ function CaseSpotify() {
                         
                     </StyledDesignProcessComponentContainer>
 
-            </StyledDesignProcessContainer>
+            {/* </StyledDesignProcessContainer> */}
 
 
             <StyledTopCardsContainer>
@@ -584,54 +548,53 @@ function CaseSpotify() {
             </StyledTopCardsContainer>
 
     
+            <Styledh5>Research </Styledh5>
 
-            <StyledResearchCardsContainer>
+                 <StyledResearchCardsContainer>
 
-                <StyledresearchTextContainer>
+                    <StyledresearchTextContainer>
 
-                    <Styledh5>Research </Styledh5>
+                            <StyledP>Qualitative and quantitive methods. I particiapted in creating questions for both interviews and questionnaires.  
+                                I then conducted user interviews with individuals with visual and hearing impairments to gain better insights into their every day hindrances.
+                                The returned data was then analysed and to better understand the user Personas were created.
+                            </StyledP>
 
-                        <StyledP>Qualitative and quantitive methods. I particiapted in creating questions for both interviews and questionnaires.  
-                            I then conducted user interviews with individuals with visual and hearing impairments to gain better insights into their every day hindrances.
-                            The returned data was then analysed and to better understand the user Personas were created.
-                        </StyledP>
+                            <StyledTitleP>My Role </StyledTitleP>
 
-                        <Styledh3>My Role </Styledh3>
+                            <StyledMyRoleul>
 
-                        <StyledMyRoleul>
+                                <StyledMyRoleli>Compile interview questions and questionnaires</StyledMyRoleli>
+                                <StyledMyRoleli>Contact associations and organizations that work with accessibility, primarily for the visually impaired</StyledMyRoleli>
+                                <StyledMyRoleli>Conduct interviews</StyledMyRoleli>
+                                <StyledMyRoleli>Analyse incoming data</StyledMyRoleli>
+                                <StyledMyRoleli>Build personas</StyledMyRoleli>
 
-                            <StyledMyRoleli>Compile interview questions and questionnaires</StyledMyRoleli>
-                            <StyledMyRoleli>Contact associations and organizations that work with accessibility, primarily for the visually impaired</StyledMyRoleli>
-                            <StyledMyRoleli>Conduct interviews</StyledMyRoleli>
-                            <StyledMyRoleli>Analyse incoming data</StyledMyRoleli>
-                            <StyledMyRoleli>Build personas</StyledMyRoleli>
-
-                        </StyledMyRoleul>
-
-
-                </StyledresearchTextContainer>
-
-                    <StyledResearchImg src={researchImg} alt="Personas"/>
-
-            </StyledResearchCardsContainer>
-
-                <StyledResearchImgContainer>
-
-                    <StyledResearchLogoImg src={krisch} alt="Krischel Kommunikation"/>
-                    <StyledResearchLogoImg src={syn} alt="Synskadades Riksforbund"/>
-                    <StyledResearchLogoImg  src={syn2} alt="Synskadades Stiftelse"/>
-                    <StyledPersonaImg src={persona1} alt="Persona"/>
-                    <StyledPersonaImg src={persona2} alt="Persona"/>
-                    
-                </StyledResearchImgContainer>
+                            </StyledMyRoleul>
 
 
+                    </StyledresearchTextContainer>
 
-            <StyledSectionHeader>
+                        <StyledResearchImg src={researchImg} alt="Personas"/>
 
-                <StyledSectionh2>LoFi and HiFi Sketches </StyledSectionh2>
+                </StyledResearchCardsContainer>
 
-            </StyledSectionHeader>
+                    <StyledResearchImgContainer>
+
+                        <StyledResearchLogoImg src={krisch} alt="Krischel Kommunikation"/>
+                        <StyledResearchLogoImg src={syn} alt="Synskadades Riksforbund"/>
+                        <StyledResearchLogoImg  src={syn2} alt="Synskadades Stiftelse"/>
+                        <StyledPersonaImg src={persona1} alt="Persona"/>
+                        <StyledPersonaImg src={persona2} alt="Persona"/>
+                        
+                    </StyledResearchImgContainer>
+
+
+
+            {/* <StyledSectionHeader> */}
+
+                <Styledh5>LoFi and HiFi Sketches </Styledh5>
+
+            {/* </StyledSectionHeader> */}
 
 
 
@@ -640,21 +603,15 @@ function CaseSpotify() {
 
                 <StyledLoHiFiImg src={LoHiFiImg} alt="Lofi and HiFi Frames"/>
 
-                <StyledLoHiFiP>Before building prototypes, we created lofi sketches which provided us with the basic layout and structure for our hifi designs.
-
-                </StyledLoHiFiP>
+                <StyledP>Before building prototypes, we created lofi sketches which provided us with the basic layout and structure for our hifi designs.</StyledP>
 
             </StyledLoHiFiContainer>
 
 
-            <StyledSectionHeader>
+            
+                <Styledh5>Prototype </Styledh5>
 
-                <StyledSectionh2>Prototype </StyledSectionh2>
-
-            </StyledSectionHeader>
-
-
-
+            
 
             <StyledPrototypeFramesContainer>
 
@@ -664,7 +621,7 @@ function CaseSpotify() {
                     And, finally we developed captions for podcasts, similar to the lyrics feature for music, for the hearing impaired.
                 </StyledP>
 
-                <Styledh3>My Role </Styledh3>
+                <StyledTitleP>My Role </StyledTitleP>
 
                         <StyledMyRoleul>
 
@@ -686,20 +643,16 @@ function CaseSpotify() {
             
 
 
+            <Styledh5>User Testing and A/B Testing </Styledh5>
+
             <StyledABContainer>
-
-                <StyledABTestingContainer>
-
-                    <Styledh5>User Testing and A/B Testing </Styledh5>
 
                     <StyledP>At the same time as we tested our prototype we also conducted A/B tests of certain features. 
                              For example placement of the accessibility icon and different page layouts. 
                              Final design choices were made based on the feedback we received. 
                     </StyledP>
 
-                </StyledABTestingContainer>
-
-                    <StyledABImg src={ABTestingImg} alt="AB Testing"/>
+                        <StyledABImg src={ABTestingImg} alt="AB Testing"/>
 
             </StyledABContainer>
             
@@ -715,16 +668,19 @@ function CaseSpotify() {
 
                     <Styledh5>Learnings </Styledh5>
 
-                    <StyledP>As Scrum master I learned that effective communication, respect, and patience for each other's work processes are essential 
-                             elements for any successful team project. Keeping to a clear project plan and regularly reassessing priorities can help ensure 
-                             that the project stays on track and meets its goals. Regarding accessibility, it's crucial to consider the needs of all users, 
-                             including those with disabilities, when developing software or digital products. Following WCAG guidelines is an excellent way 
-                             to ensure that the product is accessible to as many people as possible. 
+                            <StyledP>
+                                As Scrum master I learned that effective communication, respect, and patience for each other's work processes are essential 
+                                elements for any successful team project. Keeping to a clear project plan and regularly reassessing priorities can help ensure 
+                                that the project stays on track and meets its goals. Regarding accessibility, it's crucial to consider the needs of all users, 
+                                including those with disabilities, when developing software or digital products. Following WCAG guidelines is an excellent way 
+                                to ensure that the product is accessible to as many people as possible. 
+                            </StyledP>
 
-                             I also want to highlight that this page represents only a small portion of all the work that was done.
+                             <StyledP>I also want to highlight that this page represents only a small portion of all the work that was done. </StyledP>
 
-                             Thank you for reading my case study!
-                    </StyledP>
+                            <StyledP>Thank you for reading my case study!</StyledP>
+                                
+                           
 
                 </StyledFinalTextContainer>
                     
@@ -734,7 +690,7 @@ function CaseSpotify() {
                 
 
 
-        </>
+        </StyledCaseOneContainer>
     );
 }
 

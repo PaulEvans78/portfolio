@@ -11,12 +11,26 @@ export const CardContainer = styled.div`
     margin-left: 1em;
     width: 290px;
     height: 490px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     border: 1px solid white;
     border-radius: 10px;
     font-family: 'Poppins';
     font-size: 1.2rem;
     overflow: hidden;
+
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
     
 
 
@@ -64,7 +78,7 @@ export const Styledh5 = styled.h5`
     margin-top: 0.75em;
     margin-bottom: 0.25em;
     white-space: pre-wrap;
-    color: #ffffff;
+    color: whitesmoke;
     font-size: 28px;
     font-weight: 900;
 
@@ -75,7 +89,7 @@ export const Styledh5 = styled.h5`
 `;
 
 export const StyledCardp = styled.p`
-    color: #ffffff;
+    color: whitesmoke;
     font-size: 14px;
     padding: 0em 1.5em 1.5em;
     text-align: center;
@@ -88,8 +102,8 @@ export const StyledCardp = styled.p`
 
 export const StyledButton = styled.button`
     height: 40px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: whitesmoke;
+    color: #272424;
     padding: 0em 1.5em;
     margin: 0em 0em 2.5em 5em;
     border-radius: 10px;

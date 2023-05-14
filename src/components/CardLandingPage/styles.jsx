@@ -34,7 +34,7 @@ export const StyledFrontCard = styled.div`
     margin-left: 0.5em;
     width: 290px;
     height: 520px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     border: 2px solid white;
     border-radius: 10px;
     font-family: 'Poppins';
@@ -96,7 +96,7 @@ export const Styledh5 = styled.h5`
     margin-top: 0.5em;
     margin-bottom: 0.25em;
     white-space: pre-wrap;
-    color: #ffffff;
+    color: whitesmoke;
     font-size: 28px;
     font-weight: 900;
 
@@ -107,7 +107,7 @@ export const Styledh5 = styled.h5`
 `;
 
 export const StyledCardp = styled.p`
-    color: #ffffff;
+    color: whitesmoke;
     font-size: 14px;
     padding: 0em 1.5em 1.5em;
     text-align: center;
@@ -121,8 +121,8 @@ export const StyledCardp = styled.p`
 export const StyledButton = styled.button`
     height: 50px;
     width: 160px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: whitesmoke;
+    color: #272424;
     /* padding: 0em 1.5em; */
     margin: 0em 0em 3em 4em;
     border-radius: 10px;
