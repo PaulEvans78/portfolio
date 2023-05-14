@@ -1,13 +1,3 @@
-// About
-
-// responsive and rethink any weird framings
-
-// click to external link
-// clean assets folder
-// Cookwise
-//Upload
-
-
 import React from "react";
 import styled from 'styled-components';
 import spotifylogo from '../assets/spotifylogo.png';

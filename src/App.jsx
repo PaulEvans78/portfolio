@@ -1,3 +1,17 @@
+// About
+
+// responsive and rethink any weird framings
+
+// click to external link
+
+// Cookwise
+// Code clean and validate
+// Upload
+
+
+// Later Stage 
+// Resume
+
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";

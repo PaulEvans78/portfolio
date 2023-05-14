@@ -50,7 +50,8 @@ const StyledToolBox = styled.div`
   font-size: 16px;
   line-height: 24px;
   color: whitesmoke;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  margin-top: 3em;
 
   @media screen and (max-width: 767px) {
      

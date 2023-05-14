@@ -46,9 +46,6 @@ export const StyledFrontCard = styled.div`
 
     @keyframes slidedown {
   0%   {top:-1000px;}
-  /* 25%  {top:0px;}
-  50%  {top:0px;}
-  75%  {top:0px;} */
   100% {top:0px;}
 }
 

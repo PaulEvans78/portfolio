@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
 import me from '../assets/me_photo.png';
-import tuktuk from '../assets/tuktuk.jpg';
+import surf from '../assets/surf.png';
 import ToolBox from '../components/ToolBox';
 // import { Styledh2 } from '../components/CardLandingPage/CardLandingPage';
 
 
 
 //GRID CONTAINER
+
 const StyledAboutGridContainer = styled.div`
 grid-area: main;
-display: grid;
+max-width: 100%;
+/* display: grid;
 grid-template-rows: auto;
 grid-template-columns: repeat(2, 1fr);
 grid-template-areas:
@@ -35,24 +37,25 @@ max-width: 100%;
     "photoTwo"
     "textThree"
     "toolBox";
-}
+} */
 `;
 
 
 
 //IMAGE ME
+
 const StyledMyImgContainer = styled.div`
-grid-area: photo;
+/* grid-area: photo; */
 display: flex;
 /* padding: 1em; */
 flex-direction: row;
-justify-content: center;
+/* justify-content: space-evenly; */
 /* align-self: center; */
 align-items: center;
-font-family: 'Roboto', sans-serif;
-font-size: 1.5rem;
-font-weight: bold;
-color: whitesmoke;
+max-width: 100%;
+margin: 3em 0em 3em 0em; 
+padding: 0em 2em 0em 2em;
+
 
 @media screen and (max-width: 767px) {
     /* justify-content: flex-start; */
@@ -63,10 +66,11 @@ color: whitesmoke;
 
 const StyledMyImg = styled.img`
 /* grid-area: photo; */
-width: 50%;
+width: 30%;
 margin: 3em 2em 0em 0em;
-box-shadow: 8px 8px 4px #414141;
-border-radius: 8px;
+/* box-shadow: 8px 8px 4px #414141; */
+border-radius: 10px;
+border: 2px solid whitesmoke;
 
 @media screen and (max-width: 767px) {
     width: 40%;
@@ -76,27 +80,24 @@ border-radius: 8px;
 `;
 
 
-// INTRO TEXT
-const Styledintro = styled.p`
-    grid-area: intro;
+// ABOUT ME
+
+const StyledintroContainer = styled.div`
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    align-self: flex-end;
     text-align: center;
-    margin-bottom: 0.25em;
+    margin: 0em 0em 0em 0em;
     white-space: pre-wrap;
-    background-color: whitesmoke;
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-right: 4em;
-    padding: 1em;
+    /* margin-right: 4em; */
+    padding: 2em 2em 0em 2em;
     border-radius: 10px;
 
     @media screen and (max-width: 767px) {
     flex-direction: column;
-    justify-self: center;
-    justify-content: center;
+    /* justify-self: flex-start; */
+    justify-content: flex-start;
+    align-content: flex-end;
     margin-bottom: 3em;
     margin-right: 0em;
     font-size: 20px;
@@ -105,45 +106,25 @@ const Styledintro = styled.p`
   }
 `;
 
-
-
-
-//TEXT ONE
-
-const StyledTextOneContainer = styled.div`
-    grid-area: textOne;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-    /* align-items: flex-start; */
-    margin-bottom: 3em;
-
-    @media screen and (max-width: 960px) {
-        margin-bottom: 3em;
-  }
-    
-    @media screen and (max-width: 767px) {
-      /* padding-left:0.5em; */
-        /* justify-content: center; */
-  }
+const StyledP = styled.p`
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: whitesmoke;
 `;
 
-const Styledh2 = styled.h2`
-    grid-area: textOne;
-    display: flex;
-    align-self: flex-start;
+const Styledh3 = styled.h3`
+    /* display: flex;*/
     text-align: left;
-    margin-bottom: 0.25em;
+    margin: 0em 0em 0em 0em;
     white-space: pre-wrap;
     font-family: 'Poppins';
-    /* font-style: normal; */
-    font-weight: 900;
-    font-size: 48px;
+    font-weight: bold;
+    font-size: 38px;
     line-height: 72px;
     color: whitesmoke;
-    margin-top: 2em;
-    margin-left: 2em;
 
     @media screen and (max-width: 960px) {
         margin-top: 1em;
@@ -159,180 +140,85 @@ const Styledh2 = styled.h2`
 `;
 
 
-const StyledTextOne = styled.p`
-    /* grid-area: textOne; */
+
+// SECOND CONTAINER
+
+const StyledSecondContainer = styled.div`
     display: flex;
-    align-self: center;
-    /* text-align: center; */
-    margin-bottom: 0.25em;
-    white-space: pre-wrap;
-    color: whitesmoke;
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-left: 4em;
-    margin-right: 2em;
-    padding: 1em;
-
-    @media screen and (max-width: 767px) {
-        justify-self: flex-start;
-        /* text-align: left; */
-        width: 90vw;
-        margin-right: 1em;
-        margin-left: 0em;
-        margin-top: 0em;
-        padding: 0em;
-}
-`;
-
-// TOOL BOX
-
-const StyledPhotoOneContainer = styled.div`
-grid-area: photoOne;
-display: flex;
-flex-direction: column;
-justify-content: center;
-/* justify-self: center; */
-width: 100vw;
-/* height: 460px; */
-overflow: hidden;
-margin-top: 1em;
-margin-bottom: 3em;
-
-@media screen and (max-width: 960px) {
-    height: 360px;
-  }
-    
-@media screen and (max-width: 767px) {
-    justify-content: flex-start;
-    margin-bottom: 4em;
-    /* padding-left: 1em; */
-  }
-`;
-
-const Styledh3 = styled.h3`
-    grid-area: photoOne;
-    display: flex;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 0.25em;
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    /* font-style: normal; */
-    font-weight: 900;
-    font-size: 38px;
-    line-height: 72px;
-    color: whitesmoke;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-    
-    /* margin-left: 2em; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
+    /* align-items: flex-start; */
+    margin: 6em 0em 14em 0em;
+    padding: 2em 2em 0em 2em;
 
     @media screen and (max-width: 960px) {
-        /* margin-top: 1em; */
+        margin-bottom: 3em;
   }
     
     @media screen and (max-width: 767px) {
-        margin-right: 1em;
-        /* align-self: flex-start;
-        margin-top: 1em;
-        margin-left: 0.5em;
-        margin-bottom: 1em; */
+      /* padding-left:0.5em; */
+        /* justify-content: center; */
   }
-`;
-
-// const StyledPhotoOne = styled.img`
-// width: 85vw;
-// object-fit: cover;
-
-// @media screen and (max-width: 960px) {
-//     width: 80vw;
-//   }
-    
-//     @media screen and (max-width: 767px) {
-//         width: 100vw;
-//   }
-
-// `;
-
-// TEXT TWO
-
-const StyledTextTwoContainer = styled.div`
-    grid-area: textTwo;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-    margin-bottom: 3em;
-    /* align-items: flex-start; */
-
-    @media screen and (max-width: 767px) {
-        /* padding-left:0.5em; */
-
-}
-`;
-
-const StyledTextTwo = styled.p`
-    display: flex;
-    align-self: center;
-    /* margin-bottom: 0.25em; */
-    white-space: pre-wrap;
-    color: whitesmoke;
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-left: 4em;
-    margin-right: 2em;
-    padding: 1em;
-
-    @media screen and (max-width: 767px) {
-      justify-content: flex-start;
-      width: 90vw;
-        margin-left: 0em;
-        margin-right: 1em;
-        padding: 0em;
-  }
-`;
-
-
-const StyledPhotoTwoContainer = styled.div`
-grid-area: photoTwo;
-display: flex;
-justify-content: center;
-width: 100vw;
-height: 560px;
-overflow: hidden;
-/* margin-bottom: 3em; */
-/* margin-right: 2em; */
-
-@media screen and (max-width: 960px) {
-  width: 100vw;
-  height: auto;
-  }
-
-@media screen and (max-width: 767px) {
-    justify-content: center;
-    padding-left: 0em;
-  }
-
 `;
 
 const StyledPhotoTwo = styled.img`
-width: 85vw;
-object-fit: cover;
+  width: 40%;
+  margin: 0em 0em 0em 3em;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
 
-@media screen and (max-width: 960px) {
-    width: 80vw;
-  }
-    
-    @media screen and (max-width: 767px) {
-        /* height: 260px;
-        width: 90vw; */
-        width: 100vw;
-  }
+  @media screen and (max-width: 960px) {
+      width: 80vw;
+    }
+      
+      @media screen and (max-width: 767px) {
+          /* height: 260px;
+          width: 90vw; */
+          width: 100vw;
+    }
 
+`;
+
+const StyledSecondTextConatiner = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+    max-width: 100%;
+    margin: 0em 0em 0em 0em;
+    white-space: pre-wrap;
+    /* margin-right: 4em; */
+    padding: 2em 2em 0em 2em;
+    border-radius: 10px;
+`;
+
+
+
+
+// TOOL BOX
+
+const StyledToolBoxContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* justify-items: center; */
+  max-width: 100%;
+  /* height: 460px; */
+  /* overflow: hidden; */
+  margin: 6em 0em 3em 0em;
+
+  @media screen and (max-width: 960px) {
+      height: 360px;
+    }
+      
+  @media screen and (max-width: 767px) {
+      justify-content: flex-start;
+      margin-bottom: 4em;
+      /* padding-left: 1em; */
+  }
 `;
 
 
@@ -344,44 +230,62 @@ function About() {
     return (
         <StyledAboutGridContainer>
         
-        <StyledMyImgContainer>
-          <StyledMyImg src={me} alt="Paul Evans"/>
-        </StyledMyImgContainer>
+            <StyledMyImgContainer>
+
+               <StyledMyImg src={me} alt="Paul Evans"/>
+
+                      <StyledintroContainer>
+
+                            <Styledh3>About me</Styledh3>
+                              
+                            <StyledP>“Hi, I’m Paul! </StyledP>
+
+                                      <StyledP>Nice to see you here.  My professional background spans over 15 years, 
+                                      during which I worked as a cinematographer in the film and television industry. 
+                                      In 2021, I decided to study UX / UI and frontend design. Combining my extensive experience 
+                                      as a photographer with web design has so far been a thrilling adventure.</StyledP>
+
+
+                      </StyledintroContainer>
+
+            </StyledMyImgContainer>
 
     
-            <Styledintro>“Hi! I’m Paul. 
-                        Nice to see you here.  My professional background spans 
-over 15 years, during which I worked as a cinematographer in the film and television industry. In 2021, I decided
-to study UX / UI and frontend design. Combining my extensive experience as a photographer with web design has so far been a thrilling adventure.
-            </Styledintro>
             
-            <StyledTextOneContainer>
+           
+             
+            <StyledSecondContainer>
 
-                <Styledh2>About me.</Styledh2>
+                    <StyledSecondTextConatiner>
+
+                          <Styledh3>For fun</Styledh3>
+
+                            <StyledP>As a freelancer and business owner, I have honed my skills in client communication, 
+                              team leadership, and managing multiple projects under tight deadlines. Originally from the UK, 
+                              I moved to Sweden in 2001 and I am fluent in both English and Swedish.  
+                            </StyledP>
+
+                    </StyledSecondTextConatiner>
+
+                        <StyledPhotoTwo src={surf} alt="Surfing"/>
+
+                    
+
+            </StyledSecondContainer>
+
+
+
+            <StyledToolBoxContainer>
+
+                  <Styledh3>My Tool Box</Styledh3>
+
+                    <ToolBox />
+
+            </StyledToolBoxContainer>
+
+          
+
             
-                <StyledTextOne>As a freelancer and business owner, I have honed 
-my skills in client communication, team leadership, and managing multiple projects under tight deadlines. Originally 
-from the UK, I moved to Sweden in 2001 and I am fluent in both English and Swedish.  
-                </StyledTextOne>
-
-            </StyledTextOneContainer>
-
-            <StyledPhotoOneContainer>
-            <Styledh3>My Tool Box</Styledh3>
-            <ToolBox />
-            </StyledPhotoOneContainer>
-
-            <StyledTextTwoContainer>
-            
-                <StyledTextTwo>I am very much a morning person, “ not one of them I hear you say”. I am active, creative, and love to travel and surf.
-                  I have a calm and methodical approach to life, which enables me to navigate challenges with ease. 
-                </StyledTextTwo>
-
-            </StyledTextTwoContainer>
-
-            <StyledPhotoTwoContainer>
-                <StyledPhotoTwo src={tuktuk} alt="tuk tuk"/>
-            </StyledPhotoTwoContainer>
 
   
 
