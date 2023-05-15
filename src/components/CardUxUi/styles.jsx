@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,19 +17,13 @@ export const CardContainer = styled.div`
     font-family: 'Poppins';
     font-size: 1.2rem;
     overflow: hidden;
+    animation-name: slideup;
+    animation-duration: 3s;
+    animation-delay: 0s;
 
-    animation: fadeInAnimation ease 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
- 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    @keyframes slideup {
+  0%   {bottom:-600px;}
+  100% {bottom:0px;}
 }
     
 

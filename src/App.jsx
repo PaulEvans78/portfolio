@@ -1,6 +1,6 @@
 // About
 
-// responsive and rethink any weird framings
+// Row gap & responsive and rethink any weird framings
 
 // click to external link
 

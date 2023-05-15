@@ -12,6 +12,9 @@ import ToolBox from '../components/ToolBox';
 const StyledAboutGridContainer = styled.div`
 grid-area: main;
 max-width: 100%;
+display: flex;
+flex-direction: column;
+row-gap: 10em;
 /* display: grid;
 grid-template-rows: auto;
 grid-template-columns: repeat(2, 1fr);
@@ -49,12 +52,14 @@ const StyledMyImgContainer = styled.div`
 display: flex;
 /* padding: 1em; */
 flex-direction: row;
+column-gap: 3em;
 /* justify-content: space-evenly; */
 /* align-self: center; */
 align-items: center;
 max-width: 100%;
-margin: 3em 0em 3em 0em; 
+/* margin: 3em 0em 3em 0em;  */
 padding: 0em 2em 0em 2em;
+
 
 
 @media screen and (max-width: 767px) {
@@ -66,11 +71,20 @@ padding: 0em 2em 0em 2em;
 
 const StyledMyImg = styled.img`
 /* grid-area: photo; */
+position: relative;
 width: 30%;
-margin: 3em 2em 0em 0em;
+margin: 3em 0em 0em 0em;
 /* box-shadow: 8px 8px 4px #414141; */
 border-radius: 10px;
 border: 2px solid whitesmoke;
+animation-name: slideleft;
+animation-duration: 2s;
+animation-delay: 0s;
+
+    @keyframes slideleft {
+      0%   {left:-400px;}
+      100% {left:0px;}
+}
 
 @media screen and (max-width: 767px) {
     width: 40%;
@@ -83,15 +97,24 @@ border: 2px solid whitesmoke;
 // ABOUT ME
 
 const StyledintroContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     text-align: center;
-    margin: 0em 0em 0em 0em;
+    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
     /* margin-right: 4em; */
     padding: 2em 2em 0em 2em;
     border-radius: 10px;
+    animation-name: slideright;
+  animation-duration: 2s;
+  animation-delay: 0s;
+
+    @keyframes slideright {
+      0%   {right:-400px;}
+      100% {right:0px;}
+}
 
     @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -118,7 +141,7 @@ const StyledP = styled.p`
 const Styledh3 = styled.h3`
     /* display: flex;*/
     text-align: left;
-    margin: 0em 0em 0em 0em;
+    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-weight: bold;
@@ -148,10 +171,12 @@ const StyledSecondContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    column-gap: 3em;
     max-width: 100%;
     /* align-items: flex-start; */
-    margin: 6em 0em 14em 0em;
+    /* margin: 6em 0em 14em 0em; */
     padding: 2em 2em 0em 2em;
+    
 
     @media screen and (max-width: 960px) {
         margin-bottom: 3em;
@@ -164,10 +189,18 @@ const StyledSecondContainer = styled.div`
 `;
 
 const StyledPhotoTwo = styled.img`
+  position: relative;
   width: 40%;
-  margin: 0em 0em 0em 3em;
   border: 2px solid whitesmoke;
   border-radius: 10px;
+  animation-name: slideright;
+  animation-duration: 2s;
+  animation-delay: 0s;
+
+    @keyframes slideright {
+      0%   {right:-400px;}
+      100% {right:0px;}
+}
 
   @media screen and (max-width: 960px) {
       width: 80vw;
@@ -182,16 +215,25 @@ const StyledPhotoTwo = styled.img`
 `;
 
 const StyledSecondTextConatiner = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     text-align: center;
     max-width: 100%;
-    margin: 0em 0em 0em 0em;
+    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
     /* margin-right: 4em; */
     padding: 2em 2em 0em 2em;
     border-radius: 10px;
+    animation-name: slideleft;
+    animation-duration: 2s;
+    animation-delay: 0s;
+
+    @keyframes slideleft {
+      0%   {left:-400px;}
+      100% {left:0px;}
+}
 `;
 
 
@@ -208,7 +250,8 @@ const StyledToolBoxContainer = styled.div`
   max-width: 100%;
   /* height: 460px; */
   /* overflow: hidden; */
-  margin: 6em 0em 3em 0em;
+  /* margin: 6em 0em 3em 0em; */
+  margin-bottom: 4em;
 
   @media screen and (max-width: 960px) {
       height: 360px;
@@ -260,9 +303,9 @@ function About() {
 
                           <Styledh3>For fun</Styledh3>
 
-                            <StyledP>As a freelancer and business owner, I have honed my skills in client communication, 
-                              team leadership, and managing multiple projects under tight deadlines. Originally from the UK, 
-                              I moved to Sweden in 2001 and I am fluent in both English and Swedish.  
+                            <StyledP>Surfing and traveling are my two biggest passions. When I'm not paddling out into the sea I like to work out at the gym or swim in the lake. 
+                              I also cherish the time I spend with my family, cooking and watching movies and tv shows.
+  
                             </StyledP>
 
                     </StyledSecondTextConatiner>
