@@ -26,6 +26,13 @@ export const StyledFrontCard = styled.div`
   0%   {top:-1000px;}
   100% {top:0px;}
 }
+
+@media screen and (max-width: 960px) {
+    @keyframes slidedown {
+  0%   {bottom:-1000px;}
+  100% {bottom:0px;}
+  }
+}
 `;
 
 

@@ -1,6 +1,5 @@
 [
     {
-        
         "mainPic": "spotifyCardImg.png",
         "headline": "Spotify",
         "description": "Using Scrum we developed new accessiblity features for Spotify.",
@@ -28,7 +27,7 @@
         "headline": "Cooke Wise",
         "description": "An app to control you smart oven, wherever you are.",
         "buttonText": "View More",
-        "buttonLink": "/"
+        "buttonLink": "/CookWise"
     },
     {
         "id": 432487373,
@@ -40,3 +39,4 @@
     }
     
 ]
+

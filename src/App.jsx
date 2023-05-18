@@ -1,11 +1,14 @@
 // responsive?
 
+// change info in cards or use json sections
+// ninth child? remove a card
+// animation delay
+
 // Cookwise
 
 // Upload
 
 // Later Stage 
-// json sections
 // Resume
 
 import React from "react";
@@ -16,6 +19,7 @@ import Home from "./pages/Home";
 import Design from "./pages/Design";
 import About from "./pages/About";
 import CaseSpotify from "./pages/CaseSpotify";
+import CookWise from "./pages/CookWise";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 import {
@@ -99,12 +103,18 @@ function App() {
               <CaseSpotify />
             </Route>
 
-            
+            <Route path="/CookWise">
+              <CookWise />
+            </Route>
 
           </Switch>
-        </MainContainer>
-        <ScrollButton />
-          <Footer />
+
+            </MainContainer>
+
+                <ScrollButton />
+
+                    <Footer />
+
       </GridContainer>
       
     </Router>
