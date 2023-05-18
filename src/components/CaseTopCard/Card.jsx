@@ -1,10 +1,6 @@
 import React from 'react';
 import { CardContainer, StyledCardImg, StyledInfoContainer ,StyledCardp, Styledh2 } from './styles';
 
-// import designPic from '../../../assets/ux.png'
-// import filmPic from '../../../assets/vikings.png'
-
-
 
 
 
@@ -22,12 +18,7 @@ function Card (props) {
             </StyledInfoContainer> 
         </CardContainer>
 
-    
 
-    
-    
-
-     
    
     )
 }

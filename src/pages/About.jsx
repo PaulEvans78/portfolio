@@ -3,8 +3,6 @@ import styled from "styled-components";
 import me from '../assets/me_photo.png';
 import surf from '../assets/surf.png';
 import ToolBox from '../components/ToolBox';
-// import { Styledh2 } from '../components/CardLandingPage/CardLandingPage';
-
 
 
 //GRID CONTAINER
@@ -14,33 +12,8 @@ grid-area: main;
 max-width: 100%;
 display: flex;
 flex-direction: column;
-row-gap: 10em;
-/* display: grid;
-grid-template-rows: auto;
-grid-template-columns: repeat(2, 1fr);
-grid-template-areas:
-"photo intro"
-"textOne textOne"
-"photoOne photoOne"
-"textTwo textTwo"
-"photoTwo photoTwo"
-"textThree textThree"
-"toolBox toolBox";
-max-width: 100%;
+row-gap: 8em;
 
-@media screen and (max-width: 767px) {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "photo"
-    "intro"
-    "textOne"
-    "photoOne"
-    "textTwo"
-    "photoTwo"
-    "textThree"
-    "toolBox";
-} */
 `;
 
 
@@ -48,48 +21,40 @@ max-width: 100%;
 //IMAGE ME
 
 const StyledMyImgContainer = styled.div`
-/* grid-area: photo; */
-display: flex;
-/* padding: 1em; */
-flex-direction: row;
-column-gap: 3em;
-/* justify-content: space-evenly; */
-/* align-self: center; */
-align-items: center;
-max-width: 100%;
-/* margin: 3em 0em 3em 0em;  */
-padding: 0em 2em 0em 2em;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3em;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 4em; 
+  padding: 0em 2em 0em 0em;
 
 
 
-@media screen and (max-width: 767px) {
-    /* justify-content: flex-start; */
-    margin-bottom: 2em;
+@media screen and (max-width: 960px) {
+    flex-direction: column;
     }
-`;
+`; 
 
 
 const StyledMyImg = styled.img`
-/* grid-area: photo; */
-position: relative;
-width: 30%;
-margin: 3em 0em 0em 0em;
-/* box-shadow: 8px 8px 4px #414141; */
-border-radius: 10px;
-border: 2px solid whitesmoke;
-animation-name: slideleft;
-animation-duration: 2s;
-animation-delay: 0s;
+  position: relative;
+  align-self: flex-start;
+  width: 40%;
+  margin: 3em 0em 0em 0em;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  animation-name: slideleft;
+  animation-duration: 2s;
+  animation-delay: 0s;
 
     @keyframes slideleft {
       0%   {left:-400px;}
       100% {left:0px;}
 }
 
-@media screen and (max-width: 767px) {
-    width: 40%;
-    margin: 3em 0em 0em 0em;
-
+@media screen and (max-width: 960px) {
+    margin-left: 2em;
   }
 `;
 
@@ -102,31 +67,17 @@ const StyledintroContainer = styled.div`
     flex-direction: column;
     align-self: flex-end;
     text-align: center;
-    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
-    /* margin-right: 4em; */
     padding: 2em 2em 0em 2em;
     border-radius: 10px;
     animation-name: slideright;
-  animation-duration: 2s;
-  animation-delay: 0s;
+    animation-duration: 2s;
+    animation-delay: 0s;
 
     @keyframes slideright {
       0%   {right:-400px;}
       100% {right:0px;}
 }
-
-    @media screen and (max-width: 767px) {
-    flex-direction: column;
-    /* justify-self: flex-start; */
-    justify-content: flex-start;
-    align-content: flex-end;
-    margin-bottom: 3em;
-    margin-right: 0em;
-    font-size: 20px;
-    width: 80vw;
-    /* justify-items: center; */
-  }
 `;
 
 const StyledP = styled.p`
@@ -139,26 +90,17 @@ const StyledP = styled.p`
 `;
 
 const Styledh3 = styled.h3`
-    /* display: flex;*/
     text-align: left;
-    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 38px;
+    letter-spacing: 1px;
     line-height: 72px;
     color: whitesmoke;
 
-    @media screen and (max-width: 960px) {
-        margin-top: 1em;
-  }
-    
-    @media screen and (max-width: 767px) {
-        justify-content: flex-start;
-        align-self: flex-start;
-        margin-top: 1em;
-        margin-left: 0.2em;
-        margin-bottom: 1em;
+     @media screen and (max-width: 960px) {
+        margin-top: 0em;
   }
 `;
 
@@ -167,24 +109,18 @@ const Styledh3 = styled.h3`
 // SECOND CONTAINER
 
 const StyledSecondContainer = styled.div`
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     column-gap: 3em;
-    max-width: 100%;
-    /* align-items: flex-start; */
-    /* margin: 6em 0em 14em 0em; */
-    padding: 2em 2em 0em 2em;
+    padding: 2em 2em 0em 0em;
     
 
-    @media screen and (max-width: 960px) {
-        margin-bottom: 3em;
-  }
-    
-    @media screen and (max-width: 767px) {
-      /* padding-left:0.5em; */
-        /* justify-content: center; */
+     @media screen and (max-width: 960px) {
+       flex-direction: column-reverse;
+       align-items: flex-start;
   }
 `;
 
@@ -202,16 +138,10 @@ const StyledPhotoTwo = styled.img`
       100% {right:0px;}
 }
 
-  @media screen and (max-width: 960px) {
-      width: 80vw;
+   @media screen and (max-width: 960px) {
+      width: 50%;
+      margin-left: 2em;
     }
-      
-      @media screen and (max-width: 767px) {
-          /* height: 260px;
-          width: 90vw; */
-          width: 100vw;
-    }
-
 `;
 
 const StyledSecondTextConatiner = styled.div`
@@ -221,9 +151,7 @@ const StyledSecondTextConatiner = styled.div`
     align-self: flex-end;
     text-align: center;
     max-width: 100%;
-    /* margin: 0em 0em 0em 0em; */
     white-space: pre-wrap;
-    /* margin-right: 4em; */
     padding: 2em 2em 0em 2em;
     border-radius: 10px;
     animation-name: slideleft;
@@ -244,13 +172,8 @@ const StyledSecondTextConatiner = styled.div`
 const StyledToolBoxContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
-  /* justify-items: center; */
   max-width: 100%;
-  /* height: 460px; */
-  /* overflow: hidden; */
-  /* margin: 6em 0em 3em 0em; */
   margin-bottom: 4em;
 
   @media screen and (max-width: 960px) {
@@ -260,7 +183,6 @@ const StyledToolBoxContainer = styled.div`
   @media screen and (max-width: 767px) {
       justify-content: flex-start;
       margin-bottom: 4em;
-      /* padding-left: 1em; */
   }
 `;
 
@@ -283,10 +205,12 @@ function About() {
                               
                             <StyledP>“Hi, I’m Paul! </StyledP>
 
-                                      <StyledP>Nice to see you here.  My professional background spans over 15 years, 
-                                      during which I worked as a cinematographer in the film and television industry. 
-                                      In 2021, I decided to study UX / UI and frontend design. Combining my extensive experience 
-                                      as a photographer with web design has so far been a thrilling adventure.</StyledP>
+                                      <StyledP>I have worked as a creative for over 15 years, during which time I have worked as a cinematographer in the film and television industry, 
+                                        concept developer and script writer. Needing a platform to showcase my work I taught myself how to code frontend. In 2020, 
+                                        I decided to study web design to gain structure and further insight into techniques and methods. 
+                                        I have a calm and methodical approach to life, which enables me to navigate challenges with ease. 
+                                        My strong willpower and determination help me stay focused on the goals, even during difficult times. 
+                                      </StyledP>
 
 
                       </StyledintroContainer>

@@ -1,15 +1,11 @@
-// About
-
-// Row gap & responsive and rethink any weird framings
-
-// click to external link
+// responsive?
 
 // Cookwise
-// Code clean and validate
+
 // Upload
 
-
 // Later Stage 
+// json sections
 // Resume
 
 import React from "react";
@@ -21,7 +17,6 @@ import Design from "./pages/Design";
 import About from "./pages/About";
 import CaseSpotify from "./pages/CaseSpotify";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
-// import Background from "./assets/background.png";
 
 import {
   BrowserRouter as Router,
@@ -30,10 +25,6 @@ import {
 } from "react-router-dom";
 
 const GridContainer = styled.div`
-/* background-size: cover; */
-/* background-position: bottom; */
-/* background-image: url('./assets/background.png'); */
-/* background: linear-gradient(180deg, rgba(0, 0, 0) 15.1%, rgba(46, 99, 112, 0.856) 100%); */
 min-height: 100vh;
 min-width: 400px;
 display: grid;
@@ -65,20 +56,16 @@ grid-area: main;
 max-width: 100vw;
 display: flex;
 flex-direction: row;
-/* flex-shrink: 4; */
 flex-wrap: wrap;
 align-items: flex-end;
 justify-items: center;
 justify-content: space-evenly;
 margin-bottom: 1.5em;
-/* flex-shrink: 1 2; */
 padding: 0em 2em 0em 2em;
 
 @media screen and (max-width: 767px) {
 flex-direction: column;
-/* flex-wrap: nowrap; */
 align-items: center;
-/* justify-items: center; */
 padding: 0em 0em 0em 0em;
 
 }

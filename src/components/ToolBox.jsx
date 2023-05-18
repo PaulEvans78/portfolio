@@ -39,41 +39,26 @@ const ToolData = [
 ];
 
 const StyledToolBox = styled.div`
-  /* grid-area: photoOne; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  /* align-items: flex-end; */
-  /* padding: 0em 2em 0em 2em; */
   font-family: 'Poppins';
   font-size: 16px;
   line-height: 24px;
   color: whitesmoke;
   margin-bottom: 3em;
   margin-top: 3em;
-
-  @media screen and (max-width: 767px) {
-     
-    /* flex-direction: column;
-    align-items: center; */
-  }
 `;
 
 
 const ToolIconContainer = styled.div`
-  /* grid-area: footer; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* width: 100%; */
-  /* justify-content: space-evenly; */
-  /* justify-items: center; */
 
 @media screen and (max-width: 767px) {
-  /* flex-direction: column; */
   justify-content: center;
-
 }
 `;
 

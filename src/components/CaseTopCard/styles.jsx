@@ -2,12 +2,9 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 
-/* grid-area: main; */
     position: relative; 
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
-    /* justify-items: center; */
     align-items: center;
     margin-top: 3em;
     margin-bottom: 2em;
@@ -22,30 +19,22 @@ export const CardContainer = styled.div`
     border: 1px solid white;
    
     
-    /* @media screen and (max-width: 767px) {
-        justify-content: center;
-        margin-left: 0em;
-        width: 300px;
-        height: 200px;
-  } */
+    @media screen and (max-width: 960px) {
+      height: 250px;
+  }
 
-
+  @media screen and (max-width: 767px) {
+      height: 250px;
+      width: 250px;
+  }
 `;
 
 export const StyledCardImg = styled.img`
     width: 400px;
     height: 400px;
     object-fit: cover;
-    /* justify-self: flex-end; */
     align-self: center;
-    /* margin-top: 0.5em; */
-    /* margin-left: 1.5em; */
-    /* box-shadow: 4px 6px 5px #858287; */
     border-radius: 10px;
-
-    /* @media screen and (max-width: 767px) {
-        margin-left: 1em;
-  } */
 `;
 
 export const StyledInfoContainer = styled.div`
@@ -53,22 +42,11 @@ export const StyledInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* justify-self: center; */
     align-self: flex-end;
-    /* justify-items: center; */
-    /* justify-self: flex-end; */
     width: 60%;
     background-color: whitesmoke;
     padding: 1em;
-    /* margin-right: 1.5em; */
-    /* margin-left: 2em; */
     border-radius: 10px 10px 0px 0px;
-    /* bottom: 1.5em; */
-
-    /* @media screen and (max-width: 767px) {
-        padding: 0em;
-  } */
-    
 `;
 
 export const Styledh2 = styled.h2`

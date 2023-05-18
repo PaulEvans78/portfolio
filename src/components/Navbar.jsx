@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useTypewriter } from 'react-simple-typewriter';
 import PaulNavImage from '../assets/me_babyblues.png';
@@ -7,16 +7,10 @@ import {
     Link
 } from "react-router-dom";
 
-// TO DO
-
-// HAMBURGER ITEMS
-
 
 //NAVBAR
 
 const StyledNav = styled.nav`
-    /* position: sticky;
-    top: 0; */
     max-width: 100%;
     grid-area: top;
     display: grid;
@@ -28,7 +22,6 @@ const StyledNav = styled.nav`
     font-family: 'Poppins';
     font-size: 16px;
     line-height: 24px;
-    /* background-color: #0E0F0F; */
     color: whitesmoke;
     
     @media screen and (max-width: 960px) {
@@ -42,13 +35,9 @@ const StyledNav = styled.nav`
     "logo navbar "; 
 
     font-size: 20px;
-    /* justify-items: center; */
   }
     
   @media screen and (max-width: 400px) {
-    /* display: block; */
-    /* min-width: 100vw; */
-    /* left: 100%; */
   }
 `;
 
@@ -104,11 +93,7 @@ const StyledLink = styled(Link)`
   }
 
     @media screen and (max-width: 767px) {
-        /* display: none;  */
         justify-content: flex-end;
-        /* text-align: right; */
-        
-    
     }
 `;
 
@@ -127,11 +112,7 @@ const ExternalStyledLink = styled.a`
   }
 
     @media screen and (max-width: 767px) {
-        /* display: none;  */
         justify-content: flex-end;
-        /* text-align: right; */
-        
-    
     }
 `;
 
@@ -144,7 +125,6 @@ const StyledImageandName = styled.div `
     flex-direction: row;
     justify-self: flex-start;
     justify-content: flex-start;
-    /* margin-top: 1em; */
 `;
 
 const StyledImg = styled.img`
@@ -164,11 +144,9 @@ const StyledImg = styled.img`
 `;
 
 const StyledName = styled.div `
-    /* display: flex;   */
     float: right;
     font-family: 'Poppins';
     font-size: 32px;
-    /* font-style: italic; */
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0em;
@@ -187,12 +165,8 @@ const StyledName = styled.div `
     @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        /* align-content: flex-end; */
-        /* justify-content: space-between; */
-        /* align-content: flex-end; */
         font-size: 24px;
         line-height: 24px;
-        /* margin-right: 1em; */
         margin-top: 1.6em;
     }
 `;
@@ -269,7 +243,6 @@ const links = [
     },
     {
         id:2,
-        // to: "/Film",
         text: "Film",
         href: "https://www.paulevans-dop.com/",
         onClick: () => { setOpen(false); },
@@ -298,7 +271,6 @@ const links = [
                                 {text}
                             </StyledTypewriter>
 
-                                {/* <Cursor /> */}
                         </StyledName>
 
                 </Link>  

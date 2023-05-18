@@ -21,51 +21,30 @@ import SpotifyPrototype from '../assets/ezgif.com-video-to-gif.gif';
 // GENERAL STYLING
 
 const Styledh5 = styled.h5`
-    /* display: flex; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
     margin: 1em 0em 2em 2em;
     white-space: pre-wrap;
+    flex-wrap: wrap;
+    text-align: center;
     font-family: 'Poppins';
     font-size: 28px;
     color: whitesmoke;
+   
+    @media screen and (max-width: 960px) {
+        margin-left: 0em;
+        margin-bottom: 0em;
+
+    }
 `;
 
 const StyledP = styled.p`
-    /* display: flex; */
-    /* text-align: left; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
+    text-align: center;
     margin: 1em 1.5em 0em 1.5em;
-    /* margin-bottom: 0.25em; */
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-size: 16px;
-    /* font-weight: 600; */
     color: whitesmoke;
 `;
 
-
-// const StyledSectionHeader = styled.div`
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     width: 100%;
-//     padding-left: 2em;
-//     padding-right: 2em;
-// `;
-
-// const StyledSectionh2 = styled.h2`
-//     display: flex;
-//     align-self: flex-start;
-//     justify-items: flex-start;
-//     margin: 1em 0em 0em 2em;
-//     white-space: pre-wrap;
-//     font-family: 'Poppins';
-//     font-size: 26px;
-//     color: whitesmoke;
-// `;
 
 
 // MAIN CONTAINER
@@ -73,47 +52,55 @@ const StyledP = styled.p`
 const StyledCaseOneContainer = styled.div`
     grid-area: main;
     max-width: 100%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3em;
+
+    @media screen and (max-width: 960px) {
+        row-gap: 1em;
+        margin-top: 0em;
+
+    }
 `;
 
 // SPOTIFY LOGO
 
 const StyledSpotifyImgContainer = styled.div`
-    max-width: 100%;
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
-    /* align-self: flex-start; */
+    width: 100%;
+    padding: 0em 0em 0em 2em;
 `;
 
 
 const StyledSpotifyImg = styled.img`
+    align-self: flex-start;
     width: 50%;
     margin: 1em 0em 0em 0em;
-
-    /* @media screen and (max-width: 767px) {
-        width: 40%;
-        margin: 3em 0em 0em 0em;
-
-    } */
 `;
 
-// SPOTIFY TITLE/PROJECT DESCRIPTION
-
-// const StyledTitleContainer = styled.div`
-//     display: flex;
-//     justify-content: flex-start;
-//     width: 100%;
-//     margin-bottom: 4em;
-// `;
-
-const StyledTitleP = styled.p`
-    /* display: flex; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
+const StyledDesP = styled.p`
+    align-self: flex-start;
     margin: 2em 0em 0em 2em;
     white-space: pre-wrap;
     font-family: 'Poppins';
     font-size: 20px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 1em;
+
+    }
+`;
+
+const StyledTitleP = styled.p`
+    align-self: flex-start;
+    margin: 2em 0em 0em 0em;
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    font-size: 20px;
+    letter-spacing: 2px;
     color: whitesmoke;
 `;
 
@@ -127,6 +114,18 @@ const StyledProductCardsContainer = styled.div`
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 4em;
+
+    @media screen and (max-width: 960px) {
+        margin-bottom: 0em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    
 `;
 
 
@@ -134,14 +133,16 @@ const StyledProductCardsContainer = styled.div`
 // PBI PROBLEMS AND SOLUTIONS
 
 const StyledPbih5 = styled.h5`
-    /* display: flex; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin: 1em 0em 2em 1em; */
-    /* white-space: pre-wrap; */
     font-family: 'Poppins';
     font-size: 28px;
+    letter-spacing: 1px;
     color: whitesmoke;
+
+    @media screen and (max-width: 960px) {
+        margin-top: 0em;
+
+    }
+    
 `;
 
 const StyledPbiContainer = styled.div`
@@ -151,77 +152,55 @@ const StyledPbiContainer = styled.div`
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 4em;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+
+    }
 `;
 
 
-const StyledProblemul = styled.ul`
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
+const StyledLeftSideul = styled.ul`
     margin: 1em 0em 3em 0em;
-    /* margin-bottom: 0.25em; */
-    /* white-space: pre-wrap; */
-    /* font-family: 'Poppins'; */
-    /* font-size: 16px; */
-    /* font-weight: 600; */
-    /* color: whitesmoke; */
 `;
 
 
-const StyledProblemli = styled.li`
-    /* display: list-item; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
+const Styledli = styled.li`
     margin: 1em 0em 0em 0em;
     white-space: pre-wrap;
     font-family: 'Poppins';
+    letter-spacing: 2px;
     font-size: 16px;
     color: whitesmoke;
 `;
 
 
-const StyledSolutionul = styled.ul`
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
+const StyledRightSideul = styled.ul`
     margin: 1em 0em 0em 1.5em;
-    /* margin-bottom: 0.25em; */
-    /* white-space: pre-wrap; */
-    /* font-family: 'Poppins'; */
-    /* font-size: 16px; */
-    /* font-weight: 600; */
-    /* color: whitesmoke; */
+    
+    @media screen and (max-width: 767px) {
+        margin-left: 0em;
+
+    }
 `;
 
 
-const StyledSolutionli = styled.li`
-    /* display: list-item; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    margin: 1em 0em 0em 0em;
-    white-space: pre-wrap;
-    font-family: 'Poppins';
-    font-size: 16px;
-    color: whitesmoke;
-`;
+
 
 
 // DESIGN PROCESS
 
-// const StyledDesignProcessContainer = styled.div`
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-items: flex-start;
-//     padding-left: 2em;
-//     padding-right: 2em;
-// `;
 
 const StyledDesignProcessComponentContainer = styled.div`
     display: flex;
     flex-direction: row;
+    max-width: 100%;
     justify-content: space-between;  
-    /* max-width: 100%; */
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+
+    }
 `;
 
 
@@ -236,6 +215,15 @@ const StyledTopCardsContainer = styled.div`
     padding-right: 2em;
     margin-top: 3em;
     margin-bottom: 4em;
+
+    @media screen and (max-width: 960px) {
+        margin-top: 0em;
+        margin-bottom: 4em;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 
@@ -244,48 +232,29 @@ const StyledTopCardsContainer = styled.div`
 
 const StyledResearchCardsContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
+    flex-direction: column;
     align-items: flex-start;
+    row-gap: 4em;
     white-space: pre-wrap;
     max-width: 100%;
     margin-top: 4em;
     margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media screen and (max-width: 960px) {
+        row-gap: 0em;
+    }
 `;
 
 const StyledresearchTextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-content: center; */
-    /* padding-left: 2em; */
     padding-right: 2em;
-`;
 
-const StyledMyRoleul = styled.ul`
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    /* margin-top: 1em; */
-    margin: em 1.5em 0em 1.5em;
-    /* margin-bottom: 0.25em; */
-    /* font-family: 'Poppins'; */
-    /* font-size: 16px; */
-    /* font-weight: 600; */
-    /* color: whitesmoke; */
-`;
-
-const StyledMyRoleli = styled.li`
-    /* display: list-item; */
-    /* display: flex; */
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-    margin: 1em 0em 0em 0em;
-    /* white-space: pre-wrap; */
-    font-family: 'Poppins';
-    font-size: 16px;
-    color: whitesmoke;
+    @media screen and (max-width: 767px) {
+        padding-right: 0em;
+    }
 `;
 
 const StyledResearchImgContainer = styled.div`
@@ -293,18 +262,29 @@ const StyledResearchImgContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    row-gap: 3em;
+    row-gap: 4em;
     flex-wrap: wrap;
     max-width: 100%;
     margin-top: 4em;
     margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0em;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
 `;
 
 const StyledResearchImg = styled.img`
-    align-self: flex-end;
-    width: 45%;
+    align-self: center;
+    width: 75%;
     height: auto;
     margin: 2em 0em 0em 0em;
     border-radius: 10px;
@@ -312,37 +292,52 @@ const StyledResearchImg = styled.img`
 
 const StyledResearchLogoImg  = styled.img`
     width: 30%;
-    /* height: 550px; */
     margin: 1em 0em 0em 1.5em;
     border-radius: 10px;
+
+    @media screen and (max-width: 960px) {
+        width: 60%;
+        margin: 1em 0em 0em 0em;
+    }
 `;
 
 const StyledPersonaImg = styled.img`
     width: 45%;
-    /* height: 550px; */
     margin: 3em 0em 3em 1.5em;
     border-radius: 10px;
+
+    @media screen and (max-width: 960px) {
+        width: 80%;
+        margin: 1em 0em 0em 0em;
+    }
 `;
 
 // LO / HIFI
 
 const StyledLoHiFiContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: flex-end;
+    row-gap: 4em;
+    align-items: center;
     max-width: 100%;
     margin-bottom: 3em;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media screen and (max-width: 960px) {
+        row-gap: 0em;
+    }
 `;
 
 const StyledLoHiFiImg = styled.img`
     width: 50%;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    align-self: flex-end;
-    margin: 3em 1em 0em 2.5em;
+    align-self: center;
+    margin: 3em 1em 2em 1em;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 `;
 
 
@@ -351,21 +346,33 @@ const StyledLoHiFiImg = styled.img`
 const StyledPrototypeFramesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
-    /* justify-items: flex-start; */
-    /* align-items: flex-start; */
+    align-items: center;
+    row-gap: 3em;
     max-width: 100%;
     margin-bottom: 4em;
     margin-left: 1.5em;
     margin-right: 1.5em;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media screen and (max-width: 960px) {
+        row-gap: 1em;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
 `;
 
 const StyledPrototypeFramesImg = styled.img`
     width: 28%;
     margin: 3em 0em 0em 0em;
     border-radius: 10px;
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
 `;
 
 
@@ -375,28 +382,30 @@ const StyledPrototypeFramesImg = styled.img`
 
 const StyledABContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4em;
     max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
-    margin-top: 4em;
     margin-bottom: 4em;
-`;
 
-// const StyledABTestingContainer = styled.div `
-//     display: flex;
-//     flex-direction: column;
-//     align-self: flex-end;
-//     padding-left: 2em;
-//     padding-right: 2em;
-// `;
+    @media screen and (max-width: 767px) {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+`;
 
 const StyledABImg = styled.img`
     width: 50%;
     margin: 1em 0em 0em 1.5em;
     border-radius: 10px;
+
+    @media screen and (max-width: 960px) {
+        width: 90%;
+        margin: 1em 0em 0em 0em;
+    }
+
 `;
 
 
@@ -404,13 +413,10 @@ const StyledABImg = styled.img`
 // FINAL PROTOTYPE
 
 const StyledFinalContainer = styled.div`
-    /* background-color: black; */
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: flex-end;
+    flex-direction: column-reverse;
+    align-items: center;
     max-width: 100%;
-    margin-top: 6em;
     margin-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
@@ -420,28 +426,22 @@ const StyledFinalContainer = styled.div`
 const StyledFinalTextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    align-self: flex-end;
+    justify-content: center;
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 4em;
 `;
 
 const StyledPrototypeMov = styled.img`
-/* background-color: black; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    /* align-items: flex-start; */
-    /* flex-wrap: wrap; */
     height: 500px;
-    /* width:1000px; */
     margin-left: 3em;
     margin-top: 4em;
     margin-bottom: 4em;
-    /* padding-left: 2em; */
-    /* padding-right: 2em; */
     border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 1em;
+    }
 `;
 
 
@@ -462,7 +462,7 @@ function CaseSpotify() {
 
             </StyledSpotifyImgContainer>
 
-            <StyledTitleP>Improving Spotify's accessibility features for the visually and hearing impaired. </StyledTitleP>
+            <StyledDesP>Improving Spotify's accessibility features for the visually and hearing impaired. </StyledDesP>
 
 
             <StyledProductCardsContainer>
@@ -474,51 +474,49 @@ function CaseSpotify() {
 
             <StyledPbiContainer>
                         
-                            <StyledProblemul>
+                            <StyledLeftSideul>
 
                                 <StyledPbih5>Problem </StyledPbih5>
 
-                                    <StyledProblemli>Increase accessibility for visually impaired users.
+                                    <Styledli>Increase accessibility for visually impaired users.
                                                     We want to make our service available to all kinds of users. 
                                                     Creating a setting that increases the font size so that visually impaired users can more easily navigate the service.
-                                    </StyledProblemli>
+                                    </Styledli>
 
-                                    <StyledProblemli>Enable captions in podcasts for people with hearing loss.
+                                    <Styledli>Enable captions in podcasts for people with hearing loss.
                                                     People with hearing loss may also be interested in listening to information provided in podcasts. 
                                                     It can therefore be good to enable captions "audio texts" when a podcast is played. 
-                                    </StyledProblemli>
+                                    </Styledli>
 
-                                    <StyledProblemli>Improve Microcopy for features in the service
+                                    <Styledli>Improve Microcopy for features in the service
                                                     There are words and concepts in Settings that may not be understood by everyone. 
                                                     Review the microcopy and make suggestions for improvements.
-                                    </StyledProblemli>
+                                    </Styledli>
 
-                            </StyledProblemul>
+                            </StyledLeftSideul>
 
                             
-                            <StyledSolutionul>
+                            <StyledRightSideul>
 
                             <StyledPbih5>Solution </StyledPbih5>
 
-                                <StyledSolutionli>Enhance accessibility for users with visual impairments by implementing features to increase font size within the app and 
+                                <Styledli>Enhance accessibility for users with visual impairments by implementing features to increase font size within the app and 
                                                   develop functionalities that facilitate easy navigation for visually impaired users without negatively impacting the interface.
-                                </StyledSolutionli>
+                                </Styledli>
 
-                                <StyledSolutionli>Enable captions in podcasts for people with hearing impairments.
+                                <Styledli>Enable captions in podcasts for people with hearing impairments.
                                                   Initially, the audio transcripts may need to be manually inserted by the user, 
                                                   but there may be other solutions that can be implemented later on.
-                                </StyledSolutionli>
+                                </Styledli>
 
-                                <StyledSolutionli>Improve microcopy for features in the service.
+                                <Styledli>Improve microcopy for features in the service.
                                                   Review the microcopy and provide suggestions for improvements.
-                                </StyledSolutionli>
+                                </Styledli>
 
-                            </StyledSolutionul>
+                            </StyledRightSideul>
 
             </StyledPbiContainer>
 
-
-            {/* <StyledDesignProcessContainer> */}
 
                 <Styledh5>Design Process </Styledh5>
 
@@ -528,7 +526,6 @@ function CaseSpotify() {
                         
                     </StyledDesignProcessComponentContainer>
 
-            {/* </StyledDesignProcessContainer> */}
 
 
             <StyledTopCardsContainer>
@@ -544,27 +541,28 @@ function CaseSpotify() {
 
                     <StyledresearchTextContainer>
 
-                            <StyledP>Qualitative and quantitive methods. I particiapted in creating questions for both interviews and questionnaires.  
-                                I then conducted user interviews with individuals with visual and hearing impairments to gain better insights into their every day hindrances.
-                                The returned data was then analysed and to better understand the user Personas were created.
+                            <StyledP>Qualitative and quantitive methods. The importance of this process is to gain better insight into the users wants and needs.
+                                The returned data was then analysed. To better understand the user Personas were created.
                             </StyledP>
 
-                            <StyledTitleP>My Role </StyledTitleP>
+                            
 
-                            <StyledMyRoleul>
+                            <StyledLeftSideul>
 
-                                <StyledMyRoleli>Compile interview questions and questionnaires</StyledMyRoleli>
-                                <StyledMyRoleli>Contact associations and organizations that work with accessibility, primarily for the visually impaired</StyledMyRoleli>
-                                <StyledMyRoleli>Conduct interviews</StyledMyRoleli>
-                                <StyledMyRoleli>Analyse incoming data</StyledMyRoleli>
-                                <StyledMyRoleli>Build personas</StyledMyRoleli>
+                                <StyledTitleP>My Role </StyledTitleP>
 
-                            </StyledMyRoleul>
+                                    <Styledli>Compile interview questions and questionnaires</Styledli>
+                                    <Styledli>Contact associations and organizations that work with accessibility, primarily for the visually impaired</Styledli>
+                                    <Styledli>Conduct interviews</Styledli>
+                                    <Styledli>Analyse incoming data</Styledli>
+                                    <Styledli>Build personas</Styledli>
+
+                            </StyledLeftSideul>
 
 
                     </StyledresearchTextContainer>
 
-                        <StyledResearchImg src={researchImg} alt="Personas"/>
+                        <StyledResearchImg src={researchImg} alt="Research"/>
 
                 </StyledResearchCardsContainer>
 
@@ -580,14 +578,9 @@ function CaseSpotify() {
 
 
 
-            {/* <StyledSectionHeader> */}
-
                 <Styledh5>LoFi and HiFi Sketches </Styledh5>
 
-            {/* </StyledSectionHeader> */}
-
-
-
+            
 
             <StyledLoHiFiContainer>
 
@@ -611,14 +604,15 @@ function CaseSpotify() {
                     And, finally we developed captions for podcasts, similar to the lyrics feature for music, for the hearing impaired.
                 </StyledP>
 
-                <StyledTitleP>My Role </StyledTitleP>
 
-                        <StyledMyRoleul>
+                        <StyledLeftSideul>
 
-                            <StyledMyRoleli>Developing the new accessibility menu & settings. </StyledMyRoleli>
-                            <StyledMyRoleli>Implement an integrated functionality that allows for the enlargement of icons and fonts without causing any disruptions to the overall layout</StyledMyRoleli>
+                        <StyledTitleP>My Role </StyledTitleP>
 
-                        </StyledMyRoleul>
+                            <Styledli>Developing the new accessibility menu & settings. </Styledli>
+                            <Styledli>Implement an integrated functionality that allows for the enlargement of icons and fonts without causing any disruptions to the overall layout</Styledli>
+
+                        </StyledLeftSideul>
 
                                 <StyledResearchImgContainer>
 
@@ -648,7 +642,9 @@ function CaseSpotify() {
             
 
 
-
+            <Styledh5>Learnings </Styledh5>
+            
+            
             <StyledFinalContainer>
                 
                     <StyledPrototypeMov src={SpotifyPrototype} alt="Prototype"/>
@@ -656,7 +652,7 @@ function CaseSpotify() {
 
                 <StyledFinalTextContainer>
 
-                    <Styledh5>Learnings </Styledh5>
+                    
 
                             <StyledP>
                                 As Scrum master I learned that effective communication, respect, and patience for each other's work processes are essential 

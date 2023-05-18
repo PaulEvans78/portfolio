@@ -21,12 +21,10 @@ export const CardContainer = styled.div`
     border: 2px solid white;
    
     
-    /* @media screen and (max-width: 767px) {
-        justify-content: center;
-        margin-left: 0em;
-        width: 300px;
-        height: 200px;
-  } */
+    @media screen and (max-width: 960px) {
+        width: 250px;
+        height: 75px;
+  }
 
 
 `;

@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 6em;
     margin-bottom: 2em;
     margin-left: 1em;
     width: 290px;
@@ -18,27 +18,13 @@ export const CardContainer = styled.div`
     font-size: 1.2rem;
     overflow: hidden;
     animation-name: slideup;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0s;
 
     @keyframes slideup {
-  0%   {bottom:-600px;}
-  100% {bottom:0px;}
+      0%   {bottom:-600px;}
+      100% {bottom:0px;}
 }
-    
-
-
-
-
-    
-    @media screen and (max-width: 767px) {
-        justify-content: center;
-        margin-left: 0em;
-        width: 300px;
-        height: 100px;
-  }
-
-
 `;
 
 export const StyledCardImg = styled.img`
@@ -46,11 +32,6 @@ export const StyledCardImg = styled.img`
     height: 50%;
     align-self: center;
     margin-top: 1em;
-
-
-    @media screen and (max-width: 767px) {
-        margin-left: 1em;
-  }
 `;
 
 export const StyledInfoContainer = styled.div`
@@ -60,11 +41,6 @@ export const StyledInfoContainer = styled.div`
     width: 100%;
     background-color: #272424; 
     bottom: 1.5em;
-
-    @media screen and (max-width: 767px) {
-        padding: 0em;
-  }
-    
 `;
 
 export const Styledh5 = styled.h5`
@@ -75,11 +51,6 @@ export const Styledh5 = styled.h5`
     color: whitesmoke;
     font-size: 28px;
     font-weight: 900;
-
-    @media screen and (max-width: 767px) {
-        font-size: 20px;
-        margin-bottom: 0em;
-  }
 `;
 
 export const StyledCardp = styled.p`
@@ -87,11 +58,6 @@ export const StyledCardp = styled.p`
     font-size: 14px;
     padding: 0em 1.5em 1.5em;
     text-align: center;
-
-    @media screen and (max-width: 767px) {
-        font-size: 10px;
-        margin-bottom: 0em;
-  }
 `;
 
 export const StyledButton = styled.button`
@@ -106,10 +72,4 @@ export const StyledButton = styled.button`
     &:hover{
     background: #ccae3f;
     }
-
-    @media screen and (max-width: 767px) {
-        margin: 0em 0em 0em 1em;
-        font-size: 0.75rem;
-        padding: 0em 2.5em;
-  }
 `;

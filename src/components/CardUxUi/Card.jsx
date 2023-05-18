@@ -13,13 +13,13 @@ function Card (props) {
     
         <CardContainer>
             <StyledCardImg src={props.mainPic} alt="category Background" />
-            {/* <StyledReactImg src={props.middlePic} alt="React Logo" /> */}
         
             <StyledInfoContainer> 
-            <Styledh5>{props.headline}</Styledh5>
-         <StyledCardp>{props.githubdescription ? props.githubdescription : props.description}</StyledCardp>
-            <a href={props.url ? props.url : props.buttonLink}><StyledButton>{props.buttonText}</StyledButton></a>
+                    <Styledh5>{props.headline}</Styledh5>
+                        <StyledCardp>{props.githubdescription ? props.githubdescription : props.description}</StyledCardp>
+                            <a href={props.url ? props.url : props.buttonLink}><StyledButton>{props.buttonText}</StyledButton></a>
             </StyledInfoContainer> 
+            
         </CardContainer>
 
     
