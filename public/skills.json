@@ -77,13 +77,13 @@
     
     {
            
-        "mainPic": "spotify1.png"
+        "mainPic": "cookwise1.png"
     },
     {
-        "mainPic": "spotify2.png"
+        "mainPic": "cookwise2.png"
     },
     {
-        "mainPic": "spotify3.png"
+        "mainPic": "cookwise3.png"
     }
 ],
 
@@ -104,6 +104,26 @@
         "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
         "headline": "Method",
         "description": "Scrum"
+    }
+],
+
+"cookwisetopcards": [
+    
+    {
+           
+        "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
+        "headline": "Tools",
+        "description": "Miro, Figma, Photoshop, Google Forms "
+    },
+    {
+        "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
+        "headline": "Role",
+        "description": "UX Designer."
+    },
+    {
+        "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
+        "headline": "Method",
+        "description": "Agile"
     }
 ]
 

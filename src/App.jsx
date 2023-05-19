@@ -1,9 +1,5 @@
 // responsive?
 
-// change info in cards 
-
-
-
 // Upload
 
 // Later Stage 
