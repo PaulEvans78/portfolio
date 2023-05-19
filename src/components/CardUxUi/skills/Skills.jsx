@@ -11,7 +11,7 @@ const Skills = () => {
             const result = await axios(
                 'skills.json',
             );
-            setSkillsData(result.data);
+            setSkillsData(result.data.design);
         };
         fetchData();
 

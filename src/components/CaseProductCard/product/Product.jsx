@@ -1,30 +1,29 @@
-import React from 'react';
-import Spotify1 from '../../../assets/spotify1.png';
-import Spotify2 from '../../../assets/spotify2.png';
-import Spotify3 from '../../../assets/spotify3.png';
+import React, {useEffect, useState } from 'react';
+import axios from 'axios';
 import Card from '../Card';
 
 
-
 const Product = () => {
-    const ProductData = [
-        {
-           
-            mainPic: Spotify1,
-        },
-        {
-            mainPic: Spotify2,
-        },
-        {
-            mainPic: Spotify3,
-        }
-        
-    ];
+    const [productData, setProductData] = useState([])
+    
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'skills.json',
+            );
+            setProductData(result.data.casespotify);
+        };
+        fetchData();
+
+       }, []);
+
 
     return (
         <>
-        {ProductData.map(product => <Card {...product} />)}
+            {productData.map(product => <Card {...product} />)}
         </>
+
     )
 }
 

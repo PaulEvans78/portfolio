@@ -21,9 +21,34 @@ export const CardContainer = styled.div`
     border: 1px solid whitesmoke;
   
    @media screen and (max-width: 960px) {
-    width: 300px;
-    height: 300px;
+    display: none;
+
+    :nth-child(1){
+      display: flex;
+      width: 300px;
+      height: 300px;
+    }
+
+    :nth-child(2){
+      display: flex;
+      width: 300px;
+      height: 300px;
+    }
+
+    @media screen and (max-width: 767px) {
+    display: none;
+
+    :nth-child(1){
+      display: flex;
+      width: 300px;
+      height: 300px;
+    }
+
+    :nth-child(2){
+      display: none;
+    }
   }
+}
 `;
 
 export const StyledCardImg = styled.img`

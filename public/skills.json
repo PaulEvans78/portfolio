@@ -1,4 +1,5 @@
-[
+{
+    "design":[
     {
         "mainPic": "spotifyCardImg.png",
         "headline": "Spotify",
@@ -36,7 +37,74 @@
         "description": "Directs you to an external site.",
         "buttonText": "See Repo",
         "buttonLink": "/"
-    }
+    } 
+], 
+
+    "landingpage": [
     
+    {   
+        "mainPic": "ux.png",
+        "headline": "UX / UI & \n Frontend Design",
+        "description": "See my portfolio.",
+        "buttonText": "View More",
+        "buttonLink": "/Design"
+    },
+    {
+        "mainPic": "vikings.png",
+        "headline": "Film/ \n Cinematographer",
+        "description": "Directs you to an external site.",
+        "buttonText": "View More",
+        "buttonLink": "https://www.paulevans-dop.com"
+    }
+],
+
+    "casespotify": [
+    
+    {
+           
+        "mainPic": "spotify1.png"
+    },
+    {
+        "mainPic": "spotify2.png"
+    },
+    {
+        "mainPic": "spotify3.png"
+    }
+
+],
+
+    "casecookwise": [
+    
+    {
+           
+        "mainPic": "spotify1.png"
+    },
+    {
+        "mainPic": "spotify2.png"
+    },
+    {
+        "mainPic": "spotify3.png"
+    }
+],
+
+"casetopcards": [
+    
+    {
+           
+        "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
+        "headline": "Tools",
+        "description": "Figma, Photoshop, Google Forms "
+    },
+    {
+        "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
+        "headline": "Role",
+        "description": "Scrum Master & UX Designer."
+    },
+    {
+        "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
+        "headline": "Method",
+        "description": "Scrum"
+    }
 ]
 
+}

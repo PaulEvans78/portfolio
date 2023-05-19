@@ -1,10 +1,8 @@
 // responsive?
 
-// change info in cards or use json sections
-// ninth child? remove a card
-// animation delay
+// change info in cards 
 
-// Cookwise
+
 
 // Upload
 

@@ -1,34 +1,29 @@
-import React from 'react';
-import designPic from '../../../assets/ux.png'
-import filmPic from '../../../assets/vikings.png'
+import React, {useEffect, useState } from 'react';
+import axios from 'axios';
 import Card from '../Card';
 
 
-
 const Skills = () => {
-    const skillsData = [
-        {
-           
-            mainPic: designPic,
-            headline: "UX / UI & \n Frontend Design",
-            description: "See my portfolio.",
-            buttonText: "View More",
-            buttonLink: "/Design"
-        },
-        {
-            mainPic: filmPic,
-            headline: "Film/ \n Cinematographer",
-            description: "Directs you to an external site.",
-            buttonText: "View More",
-            buttonLink: "https://www.paulevans-dop.com"
-        },
-        
-    ];
+    const [skillsData, setSkillsData] = useState([])
+    
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'skills.json',
+            );
+            setSkillsData(result.data.landingpage);
+        };
+        fetchData();
+
+       }, []);
+
 
     return (
         <>
-        {skillsData.map(skill => <Card {...skill} />)}
+            {skillsData.map(skill => <Card {...skill} />)}
         </>
+
     )
 }
 
