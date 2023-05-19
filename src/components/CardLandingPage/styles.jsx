@@ -10,8 +10,8 @@ export const StyledFrontCard = styled.div`
     margin-top: 3em; 
     margin-bottom: 2em;
     margin-left: 0.5em;
-    width: 290px;
-    height: 520px;
+    width: 280px;
+    height: 450px;
     background-color: whitesmoke;
     border: 2px solid white;
     border-radius: 10px;
@@ -53,13 +53,13 @@ export const StyledInfoContainer = styled.div`
     background-color: #272424;   
 `;
 
-export const Styledh5 = styled.h5`
+export const Styledp = styled.p`
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.25em;
     white-space: pre-wrap;
     color: whitesmoke;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 900;
 `;
 
@@ -75,9 +75,9 @@ export const StyledButton = styled.button`
     width: 160px;
     background-color: whitesmoke;
     color: #272424;
-    margin: 0em 0em 3em 4em;
+    margin: 0em 0em 4em 4em;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     &:hover{
     background: #ccae3f;

@@ -139,7 +139,7 @@ const StyledPhotoTwo = styled.img`
 }
 
    @media screen and (max-width: 960px) {
-      width: 50%;
+      width: 70%;
       margin-left: 2em;
     }
 `;

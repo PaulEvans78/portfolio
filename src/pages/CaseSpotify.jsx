@@ -61,7 +61,6 @@ const StyledCaseOneContainer = styled.div`
     @media screen and (max-width: 960px) {
         row-gap: 1em;
         margin-top: 0em;
-
     }
 `;
 
