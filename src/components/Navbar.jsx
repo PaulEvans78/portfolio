@@ -279,7 +279,7 @@ const links = [
 
 
             <StyledNavul style={{transform: open ? "translateX(0px)" : ""}}>
-                 {links.map(link => link.isExternal ? <ExternalStyledLink href={link.href}>{link.text}</ExternalStyledLink> : <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
+                 {links.map(link => link.isExternal ? <ExternalStyledLink key={link.id} href={link.href}>{link.text}</ExternalStyledLink> : <StyledLink onClick={link.onClick} to={link.to} key={link.id}>{link.text}</StyledLink>)}
 
                 
 

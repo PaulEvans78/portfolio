@@ -55,6 +55,7 @@ const StyledMyImg = styled.img`
 
 @media screen and (max-width: 960px) {
     margin-left: 2em;
+    width: 60%;
   }
 `;
 
