@@ -1,0 +1,141 @@
+{
+    "design":[
+    {   "id":"",
+        "mainPic": "spotifyCardImg.png",
+        "headline": "Spotify",
+        "description": "Using Scrum we developed new accessiblity features for Spotify.",
+        "buttonText": "View Case",
+        "buttonLink": "/CaseSpotify"
+    },
+    {
+        "id": 600431837,
+        "mainPic": "paulevansfsfImg.png",
+        "headline": "Paul Evans fsf",
+        "description": "See my portfolio.",
+        "buttonText": "See Repo",
+        "buttonLink": "https://www.paulevans-dop.com"
+    },
+    {
+        "id": 549453334,
+        "mainPic": "cvpageImg.png",
+        "headline": "CV Page",
+        "description": "Directs you to an external site.",
+        "buttonText": "See Repo",
+        "buttonLink": "/"
+    },
+    {
+        "id":"",
+        "mainPic": "cookwiseImg.png",
+        "headline": "Cooke Wise",
+        "description": "An app to control you smart oven, wherever you are.",
+        "buttonText": "View Case",
+        "buttonLink": "/CookWise"
+    },
+    {
+        "id": 432487373,
+        "mainPic": "neonImg.png",
+        "headline": "Neon Cinema",
+        "description": "Directs you to an external site.",
+        "buttonText": "See Repo",
+        "buttonLink": "/"
+    } 
+], 
+
+    "landingpage": [
+    
+    {   
+        "id":"",
+        "mainPic": "ux.png",
+        "headline": "UX / UI & \n Frontend Design",
+        "description": "See my portfolio.",
+        "buttonText": "View More",
+        "buttonLink": "/Design"
+    },
+    {
+        "id":"",
+        "mainPic": "vikings.png",
+        "headline": "Film/ \n Cinematographer",
+        "description": "Directs you to an external site.",
+        "buttonText": "View More",
+        "buttonLink": "https://www.paulevans-dop.com"
+    }
+],
+
+    "casespotify": [
+    
+    {
+        "id":"",
+        "mainPic": "spotify1.png"
+    },
+    {
+        "id":"",
+        "mainPic": "spotify2.png"
+    },
+    {
+        "id":"",
+        "mainPic": "spotify3.png"
+    }
+
+],
+
+    "casecookwise": [
+    
+    {
+        "id":"",
+        "mainPic": "cookwise1.png"
+    },
+    {
+        "id":"",
+        "mainPic": "cookwise2.png"
+    },
+    {
+        "id":"",
+        "mainPic": "cookwise3.png"
+    }
+],
+
+"casetopcards": [
+    
+    {
+        "id":"",
+        "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
+        "headline": "Tools",
+        "description": "Figma, Photoshop, Google Forms "
+    },
+    {
+        "id":"",
+        "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
+        "headline": "Role",
+        "description": "Scrum Master & UX Designer."
+    },
+    {
+        "id":"",
+        "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
+        "headline": "Method",
+        "description": "Scrum"
+    }
+],
+
+"cookwisetopcards": [
+    
+    {
+        "id":"",
+        "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
+        "headline": "Tools",
+        "description": "Miro, Figma, Photoshop, Google Forms "
+    },
+    {
+        "id":"",
+        "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
+        "headline": "Role",
+        "description": "UX Designer."
+    },
+    {
+        "id":"",
+        "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
+        "headline": "Method",
+        "description": "Agile"
+    }
+]
+
+}

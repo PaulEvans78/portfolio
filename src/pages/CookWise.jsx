@@ -567,7 +567,7 @@ function CookWise() {
 
 
             
-                <Styledh5>Prototype </Styledh5>
+                <Styledh5>Design System & Prototype </Styledh5>
 
             
 
@@ -607,7 +607,7 @@ function CookWise() {
 
             <StyledABContainer>
 
-                    <StyledP>User testing was conducted by sending out a prototype to the same people we interview in our User Research.
+                    <StyledP>User testing was conducted by sending out a prototype to the same people we interviewed during User Research.
                     </StyledP>
 
                         <StyledABImg src={testResults} alt="Test Results"/>
