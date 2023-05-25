@@ -42,7 +42,7 @@ const Skills = () => {
 
     return (
         <>
-            {skillsData.map(skill => <Card {...skill} url={getURL(skill.id)} githubdescription={getGitRepoDescription(skill.id)} />)}
+            {skillsData.map(skill => <Card key={skill.id} {...skill} url={getURL(skill.id)} githubdescription={getGitRepoDescription(skill.id)} />)}
         </>
 
     )

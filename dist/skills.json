@@ -44,7 +44,7 @@
     "landingpage": [
     
     {   
-        "id":"",
+        "id":"1",
         "mainPic": "ux.png",
         "headline": "UX / UI & \n Frontend Design",
         "description": "See my portfolio.",
@@ -52,9 +52,9 @@
         "buttonLink": "/Design"
     },
     {
-        "id":"",
+        "id":"2",
         "mainPic": "vikings.png",
-        "headline": "Film/ \n Cinematographer",
+        "headline": "Film / \n Cinematographer",
         "description": "Directs you to an external site.",
         "buttonText": "View More",
         "buttonLink": "https://www.paulevans-dop.com"

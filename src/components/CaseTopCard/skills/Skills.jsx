@@ -22,7 +22,7 @@ const Skills = () => {
 
     return (
         <>
-            {skillsData.map(skill => <Card {...skill} />)}
+            {skillsData.map(skill => <Card key={skill.id} {...skill} />)}
         </>
 
     )

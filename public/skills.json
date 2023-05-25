@@ -1,6 +1,6 @@
 {
     "design":[
-    {   "id":"",
+    {   "id":"1",
         "mainPic": "spotifyCardImg.png",
         "headline": "Spotify",
         "description": "Using Scrum we developed new accessiblity features for Spotify.",
@@ -24,7 +24,7 @@
         "buttonLink": "/"
     },
     {
-        "id":"",
+        "id":"2",
         "mainPic": "cookwiseImg.png",
         "headline": "Cooke Wise",
         "description": "An app to control you smart oven, wherever you are.",
@@ -44,7 +44,7 @@
     "landingpage": [
     
     {   
-        "id":"",
+        "id":"3",
         "mainPic": "ux.png",
         "headline": "UX / UI & \n Frontend Design",
         "description": "See my portfolio.",
@@ -52,9 +52,9 @@
         "buttonLink": "/Design"
     },
     {
-        "id":"",
+        "id":"4",
         "mainPic": "vikings.png",
-        "headline": "Film/ \n Cinematographer",
+        "headline": "Film / \n Cinematographer",
         "description": "Directs you to an external site.",
         "buttonText": "View More",
         "buttonLink": "https://www.paulevans-dop.com"
@@ -64,15 +64,15 @@
     "casespotify": [
     
     {
-        "id":"",
+        "id":"5",
         "mainPic": "spotify1.png"
     },
     {
-        "id":"",
+        "id":"6",
         "mainPic": "spotify2.png"
     },
     {
-        "id":"",
+        "id":"7",
         "mainPic": "spotify3.png"
     }
 
@@ -81,57 +81,57 @@
     "casecookwise": [
     
     {
-        "id":"",
+        "id":"8",
         "mainPic": "cookwise1.png"
     },
     {
-        "id":"",
+        "id":"9",
         "mainPic": "cookwise2.png"
     },
     {
-        "id":"",
+        "id":"10",
         "mainPic": "cookwise3.png"
     }
 ],
 
-"casetopcards": [
+    "casetopcards": [
     
     {
-        "id":"",
+        "id":"11",
         "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
         "headline": "Tools",
         "description": "Figma, Photoshop, Google Forms "
     },
     {
-        "id":"",
+        "id":"12",
         "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
         "headline": "Role",
         "description": "Scrum Master & UX Designer."
     },
     {
-        "id":"",
+        "id":"13",
         "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
         "headline": "Method",
         "description": "Scrum"
     }
 ],
 
-"cookwisetopcards": [
+    "cookwisetopcards": [
     
     {
-        "id":"",
+        "id":"14",
         "mainPic": "sigmund-_dJCBtdUu74-unsplash.jpg",
         "headline": "Tools",
         "description": "Miro, Figma, Photoshop, Google Forms "
     },
     {
-        "id":"",
+        "id":"15",
         "mainPic": "margarida-afonso-F01g8NPdOdo-unsplash.jpg",
         "headline": "Role",
         "description": "UX Designer."
     },
     {
-        "id":"",
+        "id":"16",
         "mainPic": "kelly-sikkema-jr61kHaWKek-unsplash.jpg",
         "headline": "Method",
         "description": "Agile"

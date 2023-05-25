@@ -286,7 +286,7 @@ const links = [
             </StyledNavul>
 
             
-            <div onClick={() => setOpen(!open).StyledHamburger}>
+            <div onClick={() => setOpen(!open)}>
                 <Hamburger />
                 </div>
             

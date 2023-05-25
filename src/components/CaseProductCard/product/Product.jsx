@@ -21,7 +21,7 @@ const Product = () => {
 
     return (
         <>
-            {productData.map(product => <Card {...product} />)}
+            {productData.map(product => <Card key={product.id} {...product} />)}
         </>
 
     )
