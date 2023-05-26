@@ -36,6 +36,7 @@ grid-template-areas:
 "footer footer footer footer footer";
 
 @media screen and (max-width: 767px) {
+max-width: 100vw;
 grid-template-rows: 7rem repeat(2, 1fr) 7rem;
 grid-template-columns: repeat(2, 1fr);
 grid-template-areas:

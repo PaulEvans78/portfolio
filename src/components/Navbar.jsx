@@ -11,7 +11,8 @@ import {
 //NAVBAR
 
 const StyledNav = styled.nav`
-    max-width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
     grid-area: top;
     display: grid;
     grid-template-rows: auto;
