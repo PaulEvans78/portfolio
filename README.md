@@ -175,7 +175,7 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/PaulEvans78/portfolio.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [contributors-url]: https://github.com/PaulEvans78/portfolio/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/PaulEvans78/portfolio.svg?style=for-the-badge
 [forks-url]: https://github.com/PaulEvans78/portfolio/network/members
