@@ -36,7 +36,7 @@
   <p align="center">
     A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.
     <br />
-    <a href="https://github.com/PaulEvans78/portfolio/tree/master"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/PaulEvans78/portfolio/tree/master"><strong>Explore »</strong></a>
     <br />
     <br />
 </div>
