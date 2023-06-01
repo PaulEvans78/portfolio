@@ -139,11 +139,16 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Paul Evans - [@paulevanscreative/](https://www.instagram.com/paulevanscreative/) - paul.evans.creative@gmail.com
+Email - paul.evans.creative@gmail.com
 
 [LinkedIn](https://linkedin.com/in/paul-evans-3a74605/)
 
 Project Link: [https://github.com/PaulEvans78/portfolio](https://github.com/PaulEvans78/portfolio)
+
+<!-- SOCIAL -->
+## Social
+
+Instagram - [@paulevanscreative/](https://www.instagram.com/paulevanscreative/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
