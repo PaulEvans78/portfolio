@@ -31,10 +31,10 @@
     <img src="src/assets/me_babyblues.png" alt="Logo" width="100" height="120">
   </a>
 
-<h3 align="center">Portfolio</h3>
+<h3 align="center">UX / UI & Frontend Portfolio</h3>
 
   <p align="center">
-    project_description
+    A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.
     <br />
     <a href="https://github.com/PaulEvans78/portfolio/tree/master"><strong>Explore the docs »</strong></a>
     <br />
@@ -76,9 +76,9 @@
 
 [![https://paulevans.surge.sh/][product-screenshot]](https://paulevans.surge.sh/)
 
-UX / UI Designer & Frontend Developer. Check out my Portfolio an dif you like waht you see contact me at paul.evans.creative@gmail.com
+UX / UI Designer & Frontend Developer. Check out my Portfolio and if you like waht you see contact me at paul.evans.creative@gmail.com
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `PaulEvans78`, `portfolio`, `paulevanscreative/`, `paul-evans-3a74605/`, `gmail`, `paul.evans.creative`, `Portfolio`, `A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.`
+<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `PaulEvans78`, `portfolio`, `paulevanscreative/`, `paul-evans-3a74605/`, `gmail`, `paul.evans.creative`, `Portfolio`, `A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
