@@ -183,7 +183,7 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 [stars-url]: https://github.com/PaulEvans78/portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/PaulEvans78/portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/PaulEvans78/portfolio/issues
-[license-shield]: https://img.shields.io/github/license/PaulEvans78/portfolio.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://github.com/PaulEvans78/portfolio/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/paul-evans-3a74605/
