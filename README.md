@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/PaulEvans78/portfolio/tree/master">
-    <img src="src/assets/me_babyblues.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/me_babyblues.png" alt="Logo" width="100" height="120">
   </a>
 
 <h3 align="center">Portfolio</h3>
@@ -149,6 +149,13 @@ Project Link: [https://github.com/PaulEvans78/portfolio](https://github.com/Paul
 ## Social
 
 Instagram - [@paulevanscreative/](https://www.instagram.com/paulevanscreative/) 
+
+<!-- WEBSITES -->
+## Websites
+
+UX / UI and Frontend: [Portfolio](https://paulevans.surge.sh/)
+
+Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
