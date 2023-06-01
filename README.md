@@ -18,9 +18,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/PaulEvans78/portfolio/tree/master]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/paul-evans-3a74605//]
+* [![Contributors][contributors-shield]][https://github.com/PaulEvans78/portfolio/tree/master]
+* [![MIT License][license-shield]][license-url]
+* [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/paul-evans-3a74605//]
 
 
 
@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/PaulEvans78/portfolio/tree/master">
-    <img src="src/assets/me_babyblues.png" alt="Logo" width="100" height="120">
+    <img src="src/assets/me_babyblues.png" alt="Logo" width="100" height="140">
   </a>
 
 <h3 align="center">UX / UI & Frontend Portfolio</h3>
