@@ -21,9 +21,6 @@
 [![Contributors][contributors-shield]]()
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-<!-- [![Contributors][contributors-shield]][https://github.com/PaulEvans78/portfolio/tree/master]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/paul-evans-3a74605//] -->
 
 
 
@@ -144,7 +141,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Email: paul.evans.creative@gmail.com
 
-LinkedIn: [LinkedIn](https://linkedin.com/in/paul-evans-3a74605/)
+LinkedIn: [https://www.linkedin.com/in/paul-evans-3a74605/](https://linkedin.com/in/paul-evans-3a74605/)
 
 Project Link: [https://github.com/PaulEvans78/portfolio](https://github.com/PaulEvans78/portfolio)
 
@@ -190,7 +187,7 @@ Paul Evans fsf: [Showreel](https://paulevans-dop.com/)
 [license-url]: https://github.com/PaulEvans78/portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/paul-evans-3a74605/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: src/assets/landingpage.png.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
