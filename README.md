@@ -139,9 +139,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Email - paul.evans.creative@gmail.com
+Email: paul.evans.creative@gmail.com
 
-[LinkedIn](https://linkedin.com/in/paul-evans-3a74605/)
+LinkedIn: [LinkedIn](https://linkedin.com/in/paul-evans-3a74605/)
 
 Project Link: [https://github.com/PaulEvans78/portfolio](https://github.com/PaulEvans78/portfolio)
 
