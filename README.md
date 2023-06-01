@@ -72,11 +72,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## My Portfolio
 
 [![https://paulevans.surge.sh/][product-screenshot]](https://paulevans.surge.sh/)
 
-UX / UI Designer & Frontend Developer. Check out my Portfolio and if you like waht you see contact me at paul.evans.creative@gmail.com
+UX / UI Designer & Frontend Developer. Check it out and if you like what you see contact me at paul.evans.creative@gmail.com
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `PaulEvans78`, `portfolio`, `paulevanscreative/`, `paul-evans-3a74605/`, `gmail`, `paul.evans.creative`, `Portfolio`, `A website built in React to Showcase my work as a UX/UI designer, frontend Developer and Cinematographer.` -->
 
