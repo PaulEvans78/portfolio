@@ -110,18 +110,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
+1. Clone the repo to a destination folder of your choice.
+   ```
    git clone https://github.com/PaulEvans78/portfolio.git
    ```
-3. Install NPM packages
-   ```sh
+2. Install NPM packages
+   ```
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Run the app
+   ```
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
