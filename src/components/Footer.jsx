@@ -70,15 +70,21 @@ const StyledMailLink = styled.p`
   text-shadow: 2px 2px 4px black;
 
   &:hover {
-    text-decoration: underline;
+    color: #9804e2;; 
+  }
+
+  @media screen and (max-width: 960px) {
+    
+
+    &:hover {
+      color: inherit; 
+    }
   }
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
 
-    &:hover {
-      text-decoration: none;
-    }
+   
   }
 `;
 
@@ -90,15 +96,21 @@ const StyledTelLink = styled.p`
   text-shadow: 2px 2px 4px black;
 
   &:hover {
-    text-decoration: underline;
+    color: #9804e2;; 
+  }
+
+  @media screen and (max-width: 960px) {
+    
+
+    &:hover {
+      color: inherit; 
+    }
   }
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
 
-    &:hover {
-      text-decoration: none;
-    }
+   
   }
 `;
 
@@ -130,17 +142,25 @@ const StyledIcon = styled.a`
   justify-content: center;
   align-items: center;
   margin: 1em 1em 0em 2em;
+  transition: transform 0.3s ease, color 0.3s ease;
 
   &:hover {
-    text-decoration: underline;
+    transform: scale(1.1); 
+    color: #9804e2;
+    
+  }
+
+  @media screen and (max-width: 960px) {
+    
+
+    &:hover {
+      color: inherit; 
+    }
   }
 
   @media screen and (max-width: 767px) {
     margin: 0em 2em 0em 2em;
 
-    &:hover {
-      text-decoration: none;
-    }
   }
 `;
 
@@ -153,6 +173,20 @@ const IconDes = styled.p`
   color: whitesmoke;
   text-align: center;
   margin-top: 0.5em;
+
+  &:hover {
+    color: #9804e2;; 
+  }
+
+  @media screen and (max-width: 960px) {
+    
+
+    &:hover {
+      color: inherit; 
+    }
+  }
+
+ 
 `;
 
 const StyledLogoContainer = styled.div`

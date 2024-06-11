@@ -9,6 +9,7 @@ const StyledPlayContainer = styled.div`
   align-items: flex-start;
   padding-top: 30px;
   padding-bottom: 10px;
+  /* color: #e1bb3e;  */
   color: #e437e2;
 `;
 
@@ -17,7 +18,7 @@ const StyledWrapper = styled.div`
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
     transform: scale(1.1); 
-    color: #9804e2;; 
+    color: #9804e2; 
   }
 
   @media (max-width: 960px) {

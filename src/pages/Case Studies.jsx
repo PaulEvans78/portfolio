@@ -10,7 +10,7 @@ const StyledCaseStudiesContainer = styled.section`
   flex-direction: column;
   row-gap: 16px;
   align-content: center;
-  margin-top: 150px;
+  margin-top: 170px;
 `;
 
 const CaseStudies = () => {
