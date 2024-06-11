@@ -1,0 +1,233 @@
+body {
+  max-width: 100vw;
+  min-width: 100vw;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+ }
+
+
+
+a { color: inherit; text-decoration: none; } 
+
+
+
+@keyframes textGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -400% 0;
+  }
+}
+
+
+
+h1 {
+  background-image: url('./assets/smoke.gif');
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 180px;
+  margin: 0;
+
+  @media screen and (max-width: 1225px) {
+    font-size: 150px;
+    } 
+
+    @media screen and (max-width: 1025px) {
+      font-size: 120px;
+      } 
+
+      @media screen and (max-width: 960px) {
+        font-size: 110px;
+        } 
+
+        @media screen and (max-width: 767px) {
+          font-size: 120px;
+          line-height: 7rem;
+          margin-bottom: 1rem;          } 
+
+          @media screen and (max-width: 478px) {
+            font-size: 80px;
+            line-height: 5rem;
+            } 
+
+            @media screen and (max-width: 320px) {
+              font-size: 68px;
+              line-height: 4rem;
+              } 
+}
+/* styling my button */
+
+/* .white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #FFF;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+  background-color: #FFF;
+  color: #122;
+} */
+
+
+
+
+/* h1 {
+  font-size: 128px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  margin:0;
+
+  @media screen and (max-width: 478px) {
+    font-size: 40px;
+    } 
+
+    @media screen and (max-width: 360px) {
+      font-size: 32px;
+      } 
+} */
+
+
+
+h2 {
+  font-size: 54px;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.2;
+  margin:0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  @media screen and (max-width: 960px) {
+    font-size: 48px;
+    } 
+
+    @media screen and (max-width: 478px) {
+      font-size: 32px;
+      } 
+
+      @media screen and (max-width: 320px) {
+        font-size: 28px;
+        } 
+
+  /* @media screen and (max-width: 478px) {
+    font-size: 40px;
+    } 
+
+    @media screen and (max-width: 360px) {
+      font-size: 30px;
+      }  */
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.2;
+  margin:0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  @media screen and (max-width: 478px) {
+    font-size: 32px;
+    } 
+
+    @media screen and (max-width: 320px) {
+      font-size: 28px;
+      } 
+}
+
+h4 {
+  font-size:48px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+
+  @media screen and (max-width: 478px) {
+    font-size: 36px;
+    } 
+
+    @media screen and (max-width: 320px) {
+      font-size: 28px;
+      } 
+}
+
+
+
+h5 {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 360px) {
+    font-size: 18px;
+    } 
+}
+
+h6 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;
+
+  @media screen and (max-width: 478px) {
+    font-size: 18px;
+    } 
+
+    @media screen and (max-width: 320px) {
+    font-size: 16px;
+    } 
+
+  /* @media screen and (max-width: 960px) {
+    font-size: 20px;
+    }  */
+}
+
+li {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.1;
+  margin-top: 1em;
+  margin-left: 1em;
+  list-style-position: inside;
+  text-indent: -1.25em;
+  padding-left: 1em; 
+}
+
+
+a {
+  font-size: 16px;
+}
