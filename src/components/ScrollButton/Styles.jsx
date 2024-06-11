@@ -35,5 +35,20 @@ export const Button = styled.div`
   }
 `;
 
+export const StyledWrapper = styled.div`
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  &:hover {
+    transform: scale(1.1); 
+    color: #9804e2;; 
+  }
+
+  @media (max-width: 960px) {
+    &:hover {
+      transform: none; 
+      color: inherit; 
+    }
+  }
+`;
 // export const FaArrowCircleUp = styled.img`
 // border: 4px black solid;`;

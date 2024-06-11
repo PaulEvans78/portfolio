@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 const StyledPlayContainer = styled.div`
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,20 +32,30 @@ const StyledWrapper = styled.div`
 `;
 
 const Styledp = styled.p`
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
 `;
 
 const Button = ({ onClick }) => {
+  const handleClick = () => {
+    onClick();
+  };
+
   return (
     <StyledPlayContainer>
-      <StyledWrapper>
-      <FaArrowCircleRight onClick={() => setModalOpen(true)} size={80} />
+       <StyledWrapper>
+      <a
+        href="https://paulevans-dop.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+       
+        <FaArrowCircleRight onClick={onClick} size={80} />
+      </a>
       </StyledWrapper>
-      <Styledp>See Case Study</Styledp>
+      <Styledp>See Cinematography Reel</Styledp>
     </StyledPlayContainer>
   );
 };
-
 export default Button;

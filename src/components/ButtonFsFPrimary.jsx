@@ -16,6 +16,22 @@ const StyledPlayContainer = styled.div`
   }
 `;
 
+const StyledWrapper = styled.div`
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  &:hover {
+    transform: scale(1.1); 
+    color: #9804e2;; 
+  }
+
+  @media (max-width: 960px) {
+    &:hover {
+      transform: none; 
+      color: inherit; 
+    }
+  }
+`;
+
 const Styledp = styled.p`
   color: #ffffff;
   font-size: 20px;
@@ -29,13 +45,16 @@ const Button = ({ onClick }) => {
 
   return (
     <StyledPlayContainer>
+       <StyledWrapper>
       <a
         href="https://paulevans-dop.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
+       
         <FaArrowCircleRight onClick={onClick} size={80} />
       </a>
+      </StyledWrapper>
       <Styledp>See Cinematography Reel</Styledp>
     </StyledPlayContainer>
   );

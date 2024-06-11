@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
-import ButtonFsF from "./ButtonFsF";
+import ButtonFsF from "./ButtonFsFPrimary";
 
 const StyledFrontCard = styled.div`
   position: relative;

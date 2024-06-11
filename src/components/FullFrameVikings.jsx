@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Video from "../assets/vikings.mp4";
 import logoImg from "../assets/viaplayLogo.avif";
-import ButtonFsF from "./ButtonFsF";
+import ButtonFsF from "./ButtonFsFSecondary";
 import ButtonTrailer from "./ButtonPlayVikings";
 
 const slideInFromLeft = keyframes`

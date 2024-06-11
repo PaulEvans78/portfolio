@@ -144,11 +144,12 @@ const StyledLink = styled(Link)`
 
   &:hover {
     text-decoration: underline;
-    color: #9804e2;
+    color: #e437e2;
   }
 
   &.active {
     text-decoration: underline;
+    color: #e437e2;
   }
 
   @media screen and (max-width: 960px) {
@@ -159,6 +160,7 @@ const StyledLink = styled(Link)`
 
     &:hover {
       text-decoration: none;
+      color: #e437e2;
     }
   }
 `;
@@ -173,7 +175,7 @@ const ExternalStyledLink = styled.a`
 
   &:hover {
     text-decoration: underline;
-    color: #9804e2;
+    color: #e437e2;
   }
 
   &.active {
