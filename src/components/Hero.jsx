@@ -27,7 +27,7 @@ const StyledHeroContents = styled.div`
   display: flex;
   width: 90%;
   height: 100%;
-  padding-top: 200px;
+  padding-top: 160px;
   padding-left: 60px;
   padding-bottom: 200px;
   display: flex;

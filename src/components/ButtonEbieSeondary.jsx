@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const StyledPlayContainer = styled.div`
   width: 200px;
@@ -20,7 +21,7 @@ const StyledWrapper = styled.div`
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
     transform: scale(1.1); 
-    color: #989898;; 
+    color: #989898;
   }
 
   @media (max-width: 960px) {
@@ -45,7 +46,9 @@ const Button = ({ onClick }) => {
   return (
     <StyledPlayContainer>
       <StyledWrapper>
-      <FaArrowCircleRight onClick={() => setModalOpen(true)} size={80} />
+      <Link to="/ebie">
+          <FaArrowCircleRight onClick={onClick} size={80} /> 
+        </Link> 
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>
     </StyledPlayContainer>

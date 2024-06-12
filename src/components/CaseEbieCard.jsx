@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import logoImg from "../assets/ebieLogo.avif";
 import heroImg from "../assets/unsplash_gvZSZfQomPA.avif";
-import Button from "./ButtonCasePrimary";
+import Button from "./ButtonEbiePrimary";
 
 const slideInFromRight = keyframes`
   0% {

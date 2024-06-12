@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Video from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
+import { RxCross1 } from "react-icons/rx";
 
 const fadeIn = keyframes`
   from {
@@ -65,7 +66,7 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <ModalBackground>
       <ModalContent>
-        <CloseButton onClick={onClose}>&times;</CloseButton>
+        <CloseButton onClick={onClose}><RxCross1 /></CloseButton>
         <VideoContainer>
           <StyledVideo controls autoPlay>
             <source src={Video} type="video/mp4" />

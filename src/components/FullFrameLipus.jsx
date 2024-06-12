@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Video from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
-import ButtonFilm from "./ButtonPlayLipus";
-import ButtonCase from "./ButtonCaseSecondary";
+import ButtonFilm from "./ButtonPlayLipusPrimary";
+import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
 import Modal from "./ModalLipus";
 

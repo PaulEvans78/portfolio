@@ -9,7 +9,7 @@ const StyledPlayContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
-  color: #e437e2;
+  color: #d5d5d5;
 `;
 
 const StyledWrapper = styled.div`
@@ -17,7 +17,7 @@ const StyledWrapper = styled.div`
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
     transform: scale(1.1); 
-    color: #9804e2;; 
+    color: #989898; 
   }
 
   @media (max-width: 960px) {
@@ -29,7 +29,7 @@ const StyledWrapper = styled.div`
 `;
 
 const Styledp = styled.p`
-  color: #040404;
+  color: white;
   font-size: 20px;
   font-weight: 600;
 `;
