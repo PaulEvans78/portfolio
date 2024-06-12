@@ -41,10 +41,12 @@ const StyledHeroContents = styled.div`
 
   @media screen and (max-width: 1025px) {
     padding-bottom: 120px;
+    padding-top: 140px;
   }
 
   @media screen and (max-width: 767px) {
     /* padding-top: 120px; */
+    padding-top: 160px;
     padding-bottom: 80px;
   }
 
@@ -53,7 +55,7 @@ const StyledHeroContents = styled.div`
   }
 
   @media screen and (max-width: 320px) {
-    padding-top: 60px;
+    padding-top: 160px;
     padding-bottom: 60px;
     padding-left: 20px;
   }

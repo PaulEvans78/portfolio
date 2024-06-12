@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import logoImg from "../assets/lipusPlusLogo.avif";
 import heroImg from "../assets/lipusHeroImg.avif";
-import Button from "./ButtonCasePrimary";
+import Button from "./ButtonLipusPlus";
 
 const slideInFromRight = keyframes`
   0% {

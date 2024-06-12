@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
-import logoInverted from "../assets/paulEvansCreativeLogo_inverted.avif";
-import logo from "../assets/paulEvansCreativeLogo.avif";
+import logoInverted from "../assets/paulEvansCreativeLogo.avif";
+import logo from "../assets/logoInverted.avif";
 
 const StyledNav = styled.nav`
   grid-area: top;
@@ -12,7 +12,7 @@ const StyledNav = styled.nav`
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  z-index: 200;
+  z-index:150;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,6 +28,7 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 960px) {
     width: 100%;
     font-size: 16px;
+
   }
 
   @media screen and (max-width: 767px) {
@@ -35,19 +36,13 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     margin-top: 0;
     padding-top: 0.5em;
-    padding-left: 0em;
+    /* padding-left: 0em; */
   }
 `;
 
 const StyledImageandName = styled.div`
   width: 180px;
   height: 100%;
-
-  @media screen and (max-width: 960px) {
-  }
-
-  @media screen and (max-width: 355px) {
-  }
 `;
 
 const StyledImgContainer = styled.div`
@@ -63,11 +58,13 @@ const StyledImgContainer = styled.div`
 
 const StyledNavLogo = styled.img`
   text-align: center;
-  width: 100px;
-  margin-top: 2em;
+  width: 80px;
+  margin-top: 1.5em;
+  
 
-  @media screen and (max-width: 960px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    width: 60px;
+    margin-top: 1em;
   }
 `;
 
@@ -89,7 +86,7 @@ const StyledIdent = styled.div`
   text-align: left;
 
   @media screen and (max-width: 960px) {
-    padding-left: 3em;
+    /* padding-left: 3em; */
   }
 
   @media screen and (max-width: 767px) {

@@ -131,7 +131,7 @@ const Film = ({ scrollToEvent }) => {
 
       <StyledContentsContainer>
         <StyledLogoContainer>
-          <StyledLogo src={logoImg} alt="Viaplays logo" />
+          <StyledLogo src={logoImg} alt="LipusPlus logo" />
         </StyledLogoContainer>
 
         <h4>Meet the Physio of Hammarby Handball</h4>

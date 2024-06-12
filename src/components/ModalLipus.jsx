@@ -20,7 +20,7 @@ const ModalBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 200;
   animation: ${fadeIn} 0.5s ease-out;
 `;
 

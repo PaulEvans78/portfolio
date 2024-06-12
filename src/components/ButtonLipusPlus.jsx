@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const StyledPlayContainer = styled.div`
   width: 200px;
@@ -31,14 +32,15 @@ const Styledp = styled.p`
   color: #040404;
   font-size: 20px;
   font-weight: 600;
-  
 `;
 
 const Button = ({ onClick }) => {
   return (
     <StyledPlayContainer>
       <StyledWrapper>
-      {/* <FaArrowCircleRight onClick={() => setModalOpen(true)} size={80} /> */}
+        <Link to="/lipusplus">
+          <FaArrowCircleRight onClick={onClick} size={80} /> 
+        </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>
     </StyledPlayContainer>

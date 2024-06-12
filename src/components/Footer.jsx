@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaImdb, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import logo from "../assets/paulEvansCreativeLogo_inverted.avif";
+import logo from "../assets/logoInverted.avif";
 
 const footerData = [
   {
@@ -40,7 +40,7 @@ const StyledFooter = styled.footer`
   line-height: 24px;
   color: whitesmoke;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 960px) {
     background-image: none;
     
     flex-direction: column;
@@ -52,12 +52,20 @@ const StyledContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 4em;
+  padding-right: 2em;
+  text-align: right;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 2em;
+    padding-right: 0em;
+    text-align: center;
+  }
 
   @media screen and (max-width: 767px) {
     text-align: center;
 
     margin-bottom: 3em;
-    padding-top: 0em;
+    /* padding-top: 0em; */
   }
 `;
 
@@ -123,11 +131,12 @@ const IconContainer = styled.div`
   padding-top: 4em;
 
   @media screen and (max-width: 960px) {
-    padding-top: 0em;
+    padding-top: 2em;
+    margin-right: 0em;
   }
 
   @media screen and (max-width: 767px) {
-    margin-right: 1em;
+    /* margin-right: 1em; */
   }
 
   @media screen and (max-width: 320px) {
@@ -168,8 +177,8 @@ const IconDes = styled.p`
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
   color: whitesmoke;
   text-align: center;
   margin-top: 0.5em;
@@ -196,6 +205,9 @@ const StyledLogoContainer = styled.div`
   @media screen and (max-width: 960px) {
     width: 100%;
     justify-content: center;
+ 
+    margin-bottom: 2em;
+    padding-left: 0em;
   }
 
   @media screen and (max-width: 767px) {
@@ -206,7 +218,8 @@ const StyledLogoContainer = styled.div`
 
 const StyledFooterLogo = styled.img`
   text-align: center;
-  width: 180px;
+  justify-self: center;
+  width: 120px;
   margin-top: 4em;
 
   @media screen and (max-width: 960px) {
@@ -226,6 +239,8 @@ const Footer = React.forwardRef((props, ref) => (
       />
     </StyledLogoContainer>
 
+    <Icons />
+
     <StyledContactContainer>
       <p>Paul Evans. Copyright 2024.</p>
       <StyledMailLink>
@@ -236,7 +251,6 @@ const Footer = React.forwardRef((props, ref) => (
       </StyledTelLink>
     </StyledContactContainer>
 
-    <Icons />
   </StyledFooter>
 ));
 // }

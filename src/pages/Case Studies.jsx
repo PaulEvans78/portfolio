@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import styled from "styled-components";
-import CaseLipus from "../components/CaseLipus";
-import CaseEbie from "../components/CaseEbie";
+import CaseLipus from "../components/CaseLipusCard";
+import CaseEbie from "../components/CaseEbieCard";
 
 const StyledCaseStudiesContainer = styled.section`
   max-width: 100vw;

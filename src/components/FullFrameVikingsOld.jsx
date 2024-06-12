@@ -1,18 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Video from "../assets/vikings.mp4";
 import logoImg from "../assets/viaplayLogo.avif";
 import ButtonFsF from "./ButtonFsFSecondary";
 import ButtonTrailer from "./ButtonPlayVikings";
-import Modal from "./ModalVikings";
+
+const slideInFromLeft = keyframes`
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 const StyledMainContainer = styled.section`
   position: relative;
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: relative;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 `;
@@ -28,21 +35,11 @@ const StyledVideo = styled.video`
   z-index: 1;
 `;
 
-// const StyledOpacity = styled.div`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.32);
-//   z-index: 2;
-// `;
-
 const StyledContentsContainer = styled.div`
-position: relative;
+  position: relative;
   width: 60%;
   height: 500px;
-  padding-top: 280px;
+  padding-top: 200px;
   padding-left: 60px;
   padding-bottom: 180px;
   display: flex;
@@ -85,7 +82,7 @@ const StyledLogo = styled.img`
 `;
 
 const StyledButtonContainer = styled.div`
- width: 90%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -97,6 +94,59 @@ const StyledButtonContainer = styled.div`
   }
 `;
 
+const StyledAnimatedHeading = styled.div`
+  opacity: 0;
+  animation: ${slideInFromLeft} 1s ease-out 0.5s forwards;
+`;
+
+const ModalBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+`;
+
+const ModalContent = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #171717;
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+`;
+
+const VideoContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const StyledModalVideo = styled.video`
+  width: 100%;
+  height: auto;
+`;
+
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
@@ -106,9 +156,9 @@ const Film = ({ scrollToEvent }) => {
       if (videoRef.current) {
         videoRef.current.play();
       }
-    }, 1000); // 9000ms delay (9 seconds)
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -121,30 +171,39 @@ const Film = ({ scrollToEvent }) => {
         playsInline
         alt="Background video"
       />
-
-      {/* <StyledOpacity /> */}
-
       <StyledContentsContainer>
+        <StyledAnimatedHeading />
         <StyledLogoContainer>
-          <StyledLogo src={logoImg} alt="Viaplays logo" />
+          <StyledLogo src={logoImg} alt="Viaplay logo" />
         </StyledLogoContainer>
-
         <h4>The Last Journey of the Vikings</h4>
         <p>
           In collaboration with director James Valesquez, Mopar Studios and
           Viaplay, I served as the series cinematographer. The production took
           place in both Sweden and Ireland.
         </p>
-
         <StyledButtonContainer>
-        <ButtonTrailer onClick={() => setModalOpen(true)} />
-        <ButtonFsF />
+          <ButtonTrailer onClick={() => setModalOpen(true)} />
+          <ButtonFsF />
         </StyledButtonContainer>
 
-
       </StyledContentsContainer>
-      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
+      {isModalOpen && (
+        <ModalBackground>
+          <ModalContent>
+            <CloseButton onClick={() => setModalOpen(false)}>
+              &times;
+            </CloseButton>
+            <VideoContainer>
+              <StyledModalVideo controls autoPlay>
+                <source src={Video} type="video/mp4" />
+              </StyledModalVideo>
+            </VideoContainer>
+          </ModalContent>
+        </ModalBackground>
+      )}
     </StyledMainContainer>
   );
 };
+
 export default Film;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
-import heroImg from "../assets/lipusHeroImg.avif";
+import Img from "../assets/meAbout.avif";
 
 const slideInFromLeft = keyframes`
   0% {
@@ -36,6 +36,7 @@ const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
+  width: 75%;
   height: 100%;
   padding-top: 50px;
   padding-right: 50px;
@@ -125,8 +126,8 @@ const AboutMe = () => {
       <StyledImageContainer>
         <StyledImg
           ref={imgRef}
-          src={heroImg}
-          alt="A hammarby handball player in green and white stripes holds a ball."
+          src={Img}
+          alt="Paul Evans watching the ocean"
           isInView={isInView}
         />
       </StyledImageContainer>

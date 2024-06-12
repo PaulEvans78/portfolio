@@ -6,9 +6,9 @@ import ConceptCard from "../components/ConceptCard";
 import UxUiCard from "../components/UxUiCard";
 import FrontendCard from "../components/FrontendCard";
 import FullFrameBranding from "../components/FullFrameLipus";
-import CaseLipus from "../components/CaseLipus";
+import CaseLipus from "../components/CaseLipusCard";
 import FullFrameVideo from "../components/FullFrameVikings";
-import CaseEbie from "../components/CaseEbie";
+import CaseEbie from "../components/CaseEbieCard";
 import FullFramePoster from "../components/FullFramePoster";
 
 const StyledHomeContainer = styled.section`

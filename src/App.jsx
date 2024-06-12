@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CaseStudies from "./pages/Case Studies";
 import About from "./pages/About";
+import LipusPlus from "./pages/LipusPlus";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -37,6 +38,10 @@ const App = () => {
             <Route path="/casestudies" element={<CaseStudies />} />
 
             <Route path="/about" element={<About />} />
+
+            <Route path="/lipusplus" element={<LipusPlus />} />
+
+            
           </Routes>
 
           <Footer ref={footerRef} />

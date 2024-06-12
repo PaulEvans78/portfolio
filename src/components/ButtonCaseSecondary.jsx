@@ -35,6 +35,10 @@ const Styledp = styled.p`
   color: white;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 960px) {
+    font-size: 16px;
+  }
 `;
 
 const Button = ({ onClick }) => {

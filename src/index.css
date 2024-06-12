@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   color: whitesmoke;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Trispace', sans-serif; */
  }
 
 
@@ -104,6 +105,7 @@ h1 {
 
 
 h2 {
+  font-family: 'Trispace', sans-serif;
   font-size: 54px;
   font-weight: 200;
   font-style: normal;
@@ -134,6 +136,7 @@ h2 {
 }
 
 h3 {
+  /* font-family: 'Trispace', sans-serif; */
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -152,8 +155,9 @@ h3 {
 }
 
 h4 {
-  font-size:48px;
-  font-weight: 700;
+  /* font-family: 'Poppins', sans-serif; */
+  font-size: 48px;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.1;
   margin:0;
@@ -170,21 +174,22 @@ h4 {
 
 
 h5 {
-  font-size: 28px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-size: 24px;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 500;
   font-style: normal;
   line-height: 1.1;
   margin:0;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+  /* margin-top: 50px; */
+  /* margin-bottom: 20px; */
 
   @media screen and (max-width: 360px) {
     font-size: 18px;
     } 
 }
 
-h6 {
+/* h6 {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -192,11 +197,11 @@ h6 {
   line-height: 1.1;
   margin:0;
 
-}
+} */
 
 p {
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   font-weight: 500;
   font-style: normal;
   line-height: 1.4;
@@ -216,7 +221,7 @@ p {
 
 li {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   font-weight: 400;
   font-style: normal;
   line-height: 1.1;
@@ -230,4 +235,13 @@ li {
 
 a {
   font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.boldlarge {
+  font-size: 20px;
+  font-weight: 400;
 }
