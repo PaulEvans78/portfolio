@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://paulevans78.github.io/portfolio/">
-    <img src="src/assets/lipusPlusLogoWhite.avif" alt="Logo" width="100" height="100">
+    <img src="src/assets/paulEvansCreativeLogo.avif" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Portfolio - Digital Experience Designer </h3>
