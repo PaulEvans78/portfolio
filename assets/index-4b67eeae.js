@@ -2157,7 +2157,7 @@ position: relative;
       color: inherit; 
     }
   }
-`,Cy=()=>{const[e,t]=j.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>300?t(!0):i<=300&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(wy,{children:a.jsx(Sy,{children:a.jsx(Eg,{onClick:r,style:{display:e?"inline":"none",boxShadow:"10px 18px 40px #3e3e3e",borderRadius:"50%"}})})})},jy=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(kg,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevanscreative/",icon:a.jsx(jg,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(Cg,{}),des:"Imdb"}],ky=A.footer`
+`,Cy=()=>{const[e,t]=j.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>300?t(!0):i<=300&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(wy,{children:a.jsx(Sy,{children:a.jsx(Eg,{onClick:r,style:{display:e?"inline":"none",borderRadius:"50%"}})})})},jy=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(kg,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevanscreative/",icon:a.jsx(jg,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(Cg,{}),des:"Imdb"}],ky=A.footer`
   background-color: #171717;
   max-width: 100vw;
   min-width: 100vw;
