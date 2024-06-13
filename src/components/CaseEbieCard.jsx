@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import logoImg from "../assets/ebieLogo.avif";
-import heroImg from "../assets/unsplash_gvZSZfQomPA.avif";
+import heroImg from "../assets/ebieHeroImg.avif";
 import Button from "./ButtonEbiePrimary";
 
 const slideInFromRight = keyframes`
@@ -146,11 +146,11 @@ const Case = () => {
       </StyledCaseContents>
 
       <StyledImageContainer>
-        <Stylednotation>Photo Unsplash.</Stylednotation>
+        <Stylednotation>Photo from www.Ebie.se</Stylednotation>
         <StyledImg
           ref={imgRef}
           src={heroImg}
-          alt="A view of Stockholm city with NK in the distance."
+          alt="A street view on the corner of Sveavägen, Sergelstorg."
           isInView={isInView}
         />
       </StyledImageContainer>

@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import heroImg from "../assets/lipusHeroImg.avif";
+import ebieHeroImg from "../assets/ebieHeroImg.avif";
 import logoImg from "../assets/ebieLogo.avif";
-import challengesImg from "../assets/challenges.avif";
-import BriefImg from "../assets/fans.avif";
-import ResearchImg from "../assets/research.avif";
-import MappingImg from "../assets/mapping.avif";
-import LipusImg from "../assets/lipus.avif";
-import PhysioImg from "../assets/physio.avif";
-import AthleteImg from "../assets/athlete.avif";
-import InsightsImg from "../assets/insights.avif";
-import WebinarImg from "../assets/webinar.avif";
-import DesignOneImg from "../assets/designOne.avif";
-import DesignTwoImg from "../assets/designTwo.avif";
-import WebflowImg from "../assets/webflow.avif";
-import ReflectionImg from "../assets/reflection.avif";
+import challengesImg from "../assets/challengesEbie.avif";
+import BriefImg from "../assets/briefEbie.avif";
+import ResearchImg from "../assets/researchEbie.avif";
+import Persona1Img from "../assets/persona1.avif";
+import Persona2Img from "../assets/persona2.avif";
+import Application1Img from "../assets/application1.avif";
+import Application2Img from "../assets/application2.avif";
+import SortingImg from "../assets/sorting.avif";
+import Status1Img from "../assets/status1.avif";
+import Status2Img from "../assets/status2.avif";
+import OverviewImg from "../assets/overview.avif";
+import ReflectionImg from "../assets/city.avif";
+
 
 const StyledCaseContainer = styled.section`
   max-width: 100vw;
@@ -106,21 +106,25 @@ const StyledCaseFive = styled.div`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  /* grid-template-columns: 50% 50%;
   column-gap: 16px;
-  grid-template-areas: "Context Image ";
+  grid-template-areas: "Image Image "; */
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
+    flex-direction: column;
+    /* grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-template-areas:
       "Image"
-      "Context";
+      "Image"; */
   }
 `;
 
 const StyledCaseSix = styled.div`
+position: relative;
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -182,17 +186,21 @@ const StyledCaseNine = styled.div`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: Grid;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  /* display: Grid;
   grid-template-columns: 50% 50%;
   column-gap: 16px;
-  grid-template-areas: "Context Image ";
+  grid-template-areas: "Context Image "; */
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
+    flex-direction: column;
+    /* grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-template-areas:
       "Image"
-      "Context";
+      "Context"; */
   }
 `;
 
@@ -234,74 +242,20 @@ const StyledCaseEleven = styled.div`
   }
 `;
 
-const StyledCaseTwelve = styled.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Image Context ";
 
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
-`;
-
-const StyledCaseThirteen = styled.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image ";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
-`;
-
-const StyledCaseFourteen = styled.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Image Context ";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
-`;
 
 const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
   /* width: 70%; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 60px;
-  color: #2c2c2c;
+  color: #333333;
 
   /* @media screen and (max-width: 767px) {
     padding-left: 60px;
@@ -330,14 +284,39 @@ const StyledLogo = styled.img`
   height: auto;
 `;
 
+const StyledNotationContainer = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  bottom: 0;
+  /* left: 20; */
+  width: 100%;
+  height: 40px;
+  background-color: #1e1e1ee6;
+  padding-bottom: 10px;
+  /* margin-left: 60px; */
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  
+  z-index: 2;
+  color: #fefefe;
+  /* margin-top: ; */
+`;
+
 const Stylednotation = styled.p`
   position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 40px;
+  /* align-self: flex-end; */
+  /* bottom: 0; */
+  /* left: 20; */
+  /* width: 100%; */
+  /* background-color: #00000082; */
+  /* margin-left: 60px; */
+  /* padding-left: 40px; */
+  margin-right: 20px;
   font-size: 14px;
-  z-index: 2;
-  color: #cdcccc;
+  /* z-index: 2; */
+  color: #fefefe;
   /* margin-top: ; */
 `;
 
@@ -377,22 +356,22 @@ const Case = () => {
         <StyledCaseContents>
           <h4>UX Case study</h4>
           <StyledLogoContainer>
-            <StyledLogo src={logoImg} alt="The logo for LipuspLus" />
+            <StyledLogo src={logoImg} alt="The logo for Ebie" />
           </StyledLogoContainer>
 
-          <h5>My role</h5>
-
-          <ul>
-            <li><span className="boldlarge">UX / UI Designer</span></li>
-          </ul>
+          <h5>My role: <span className="boldxlarge">UX / UI Designer </span></h5>
+          {/* <p><span className="boldlarge">UX / UI Designer </span> </p> */}
+          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo by Peder Rotkirch.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Photo from www.Ebie.se</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={heroImg}
-            alt="A hammarby handball player in green and white stripes holds a ball."
+            src={ebieHeroImg}
+            alt="A street view on the corner of Sveavägen, Sergelstorg."
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -405,14 +384,16 @@ const Case = () => {
           <h5>Challenges</h5>
 
           <ul>
-            <li>Understanding Elite Athletes and Physiotherapists everyday struggles.</li>
-            <li>Minimal experience with webinars.</li>
-            <li>Working with Webflow, which was new to me.</li>
+            <li>Lack of prior knowledge of the real estate industry which prevented us from clearly understanding the specific design task.</li>
+            <li>Understanding user expectations, especially when they are already accustomed to existing solutions and industry standards.</li>
+            <li>Access to Ebies clients for user research, Ebie is a start up with a limited number of customers, and those they do have are extremely busy. </li>
           </ul>
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>From LipusPlus.com</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Image from Unsplash</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={challengesImg}
@@ -428,23 +409,22 @@ const Case = () => {
 
           <h5>Brief</h5>
 
-          <p>LipusPlus aims to attract physiotherapists and elite athletes to its webinars on the Return to Play concept. 
-            An enticing and informative landing page is needed to generate leads for these webinars.</p>
+          <p>Develop a user-friendly feature for group insurance. Increase the conversion rate of group insurance.</p>
 
             <h5>Goal</h5>
 
-          <p>Create a user-friendly landing page. Connect with the target group. Convince the user to register for the event. 
-            Provide a seamless experience for visitors from registration to processing. 
-            Strive for a high conversion rate and satisfaction for both LipusPlus and the participants before, during and after the event. 
-            Generate leads for sales processing.</p>
+          <p> Create and implement a completely new and user-friendly function within the platform that makes it easy for property owners to apply for and manage group insurance.</p>
+          <p>Increase the use of group insurance by increasing the number of property owners applying for it. This is to be achieved by simplifying and improving the entire application process.</p>
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Image from figma design system</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={BriefImg}
-            alt="Hammarby fans encourgae their team."
+            alt="A deisgn idea for an online application"
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -454,51 +434,54 @@ const Case = () => {
         <StyledCaseContents>
          
 
-          <h5>Key Questions</h5>
+          <h5>Target Group</h5>
 
 <ul>
-  <li>How can we make the message and the offer on the landing page clear and attractive to the target group?</li>
-  <li>How can we optimise the landing page to increase the conversion rate and get more visitors to sign up for webinars?</li>
-  <li>How can we stimulate people to spread the word about the webinar in their surroundings?</li>
+  <li>Lessor</li>
+  <li>Property Owner</li>
 </ul>
          
+<h5>Research</h5>
+
+<p>Carrying out research with Ebies clients proved challenging due to busy schedules, Ebie provided user backgrounds and their preferences, and based on that information, we created personas.</p>
+
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Anne Hopfgarten. Image from LipusPlus</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Data collected by Ebie.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={ResearchImg}
-            alt="Anne Hopfgarten sitting for an interview."
+            alt="Research collected by Ebie"
             // isInView={isInView}
           />
         </StyledImageContainer>
       </StyledCaseFour>
 
       <StyledCaseFive>
-        <StyledCaseContents>
-         
 
-          <h5>Qualitative Research</h5>
-
-
-
-<ul>
-  <li><span className="bold">Seminar: </span> LipusPlus</li>
-  <li><span className="bold">Observation: </span> LipusPlus Sales Member</li>
-  <li><span className="bold">Observation: </span> LipusPlus Clinician </li>
-  <li><span className="bold">Interview: </span> Physiotherapist</li>
-  <li><span className="bold">Interview: </span> Elite athlete</li>
-</ul>
-         
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          {/* <Stylednotation>Image from research.</Stylednotation> */}
+      <StyledImageContainer>
+      <StyledNotationContainer>
+          <Stylednotation>Personas created from research.</Stylednotation>
+         </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={MappingImg}
-            alt="Mapping of the users needs."
+            src={Persona1Img}
+            alt="Personas built from user research."
+            // isInView={isInView}
+          />
+        </StyledImageContainer>
+
+        <StyledImageContainer>
+        <StyledNotationContainer>
+          <Stylednotation>Personas created from research.</Stylednotation>
+          </StyledNotationContainer>
+          <StyledImg
+            // ref={imgRef}
+            src={Persona2Img}
+            alt="Personas built from user research."
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -508,22 +491,31 @@ const Case = () => {
         <StyledCaseContents>
          
 
-          <h5>Results</h5>
+          <h5>Improvement Areas</h5>
 
-          <p><span className="bold">LipusPlus</span></p>
 
-<p><span className="bold">Challenges: </span> Struggles with conversion rates due to a lack of evidence and information about the modality.</p>
+<p><span className="bold">The application process </span> posed our biggest challenge. Applying for insurance requires a significant amount of information. 
+Our goal was to consolidate this into a single form without overwhelming or confusing the user.
+</p>
+<p>Our initial design mirrored a traditional application form. While it was clearer and easier to navigate than previous versions, user testing revealed that there was still room for improvement.
 
-<p><span className="bold">Needs: </span> A convenient platform to present and discuss current and ongoing studies and results.</p>
+
+</p>
+
+
          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo by Peder Rotkirch, Lipusplus.</Stylednotation>
+         
+        <StyledNotationContainer>
+        <Stylednotation>Our initial application design from figma.</Stylednotation>
+        </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={LipusImg}
-            alt="A hammarby handball player uses the LipusPlus modality.."
+            src={Application1Img}
+            // width={90}
+            alt="A traditional application form"
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -533,22 +525,31 @@ const Case = () => {
         <StyledCaseContents>
          
 
-        <h5>Results</h5>
+        <h5>Improvement Areas</h5>
 
-<p><span className="bold">Physiotherapist</span></p>
 
-<p><span className="bold">Concerns: </span> Need evidence that LipusPlus is effective and safe. Rely on endorsements from prominent clubs and figures in their sport.</p>
+<p><span className="bold">The new design</span> received a much more positive response from Ebie and performed better during user testing.</p>
 
-<p><span className="bold">Priorities: </span> They aim to get their patients back to their sport quickly and safely. Their reputation and job are at stake. They question why they should choose LipusPlus over proven traditional methods.</p>
+<p><span className="bold">Focus areas. </span> </p>
+
+<ul>
+            <li>We organized the input fields into a column form to enhance readability.</li>
+            <li>To make the form less overwhelming, we implemented fold-out and collapsible sections.</li>
+            <li>Colours to signal when a section is complete. </li>
+            <li>A progress bar at the top keeps users informed about their position in the process. </li>
+            <li>Additionally, we included navigation on the left to allow users to view other applications or add new ones. </li>
+          </ul>
          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Our re-design from figma.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={PhysioImg}
-            alt="Anne Hopfgarten. Hammarby physio."
+            src={Application2Img}
+            alt="An online application form."
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -558,52 +559,52 @@ const Case = () => {
         <StyledCaseContents>
          
 
-        <h5>Results</h5>
+        <h5>Improvement Areas</h5>
 
-<p><span className="bold">Athlete</span></p>
+<p><span className="bold">Sort Function:  </span> Property owners and lessors often manage numerous properties with various tenants coming and going. 
+To facilitate quick sorting between different insurance statuses, we implemented a robust sorting function. Where the user can sort between different status stages. New colours wee added ot the design system to help clearly label the different statuses. </p>
 
-<p><span className="bold">Concerns: </span> Need evidence that LipusPlus is effective and safe. They often rely on endorsements from prominent figures in their sport and trusted physiotherapists.</p>
 
-<p><span className="bold">Goals: </span> Want to return to their sport as quickly as possible since their income and career goals depend on it.</p>
          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus.</Stylednotation>
+          <StyledNotationContainer>
+          <Stylednotation>Proposed sorting buttons, figma.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={AthleteImg}
-            alt="Ludvig Lindeberg celebrates winning."
+            src={SortingImg}
+            alt="Proposed sorting buttons from figma."
             // isInView={isInView}
           />
         </StyledImageContainer>
       </StyledCaseEight>
 
       <StyledCaseNine>
-        <StyledCaseContents>
+        
          
-
-          <h5>Insights</h5>
-
-<ul>
-  <li>There is skepticism towards Medtech companies.</li>
-  <li>Build trust not just through evidence but also an understanding of users everyday struggles and lifestyles.</li>
-  <li>A shift towards a sports lifestyle focus, emphasising partnerships rather than just Medtech, would be more inspirational and trustworthy.</li>
-  <li>It is essential for the user that the landing page works on all devices and is responsive. </li>
-  <li>Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly.</li>
-  <li>Clearly show the offer and benefits of Return to Play.</li>
-  <li>Clearly communicate the value and benefits of attending the 
-  webinar, emphasising credible evidence and success stories.</li>
-</ul>
-         
-        </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo unsplash.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Design proposal for insurance status, figma.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={InsightsImg}
-            alt="An athlete is lying down on the track."
+            src={Status1Img}
+            alt="Design for insurance status from figma."
+            // isInView={isInView}
+          />
+        </StyledImageContainer>
+
+        <StyledImageContainer>
+        <StyledNotationContainer>
+          <Stylednotation>Design proposal for renewing status, figma.</Stylednotation>
+          </StyledNotationContainer>
+          <StyledImg
+            // ref={imgRef}
+            src={Status2Img}
+            alt="Design for insurance status from figma."
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -613,28 +614,30 @@ const Case = () => {
         <StyledCaseContents>
          
 
-          <h5>Webinar Requirements</h5>
+          <h5>Improvement Areas</h5>
+
+          <p><span className="bold">Overview:  </span></p>
 
 <ul>
-  <li>The webinar platform should be a stable and proven streaming  service. </li>
-  <li>Data collection through the registration form is a must.</li>
-  <li>Email Automation.</li>
-  <li>Option to connect to Hubspot. </li>
-  <li>Simple and easy to understand registration forms.</li>
-  <li>Custom Registration forms.</li>
+  <li>Within the insurance overview, we added a warning icon to indicate when an action is required, such as when a report has been filed or an invoice needs payment. </li>
+  <li>We also incorporated the same status symbols from the search function for clearer status visibility.</li>
+  <li>The screening report is displayed directly, eliminating the need to search through other documents.</li>
+  <li>Additionally, we introduced a sorting function that allows users to organise all insurance entries in numeric, alphabetic, or reverse order. </li>
   </ul>
   
-  <p>With approximately 260 million users, Vimeo met all our requirements. Since LipusPlus already hosted content on Vimeo, it streamlined our video showcasing process.</p>
+  
 
          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo from Vimeo.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Design proposal for insurance overview, figma.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={WebinarImg}
-            alt="A vimeo webinar screen."
+            src={OverviewImg}
+            alt="Design proposal for insurance overview."
             // isInView={isInView}
           />
         </StyledImageContainer>
@@ -644,126 +647,31 @@ const Case = () => {
         <StyledCaseContents>
          
 
-          <h5>Design</h5>
+          <h5>Reflection</h5>
 
-          <p>Building and improving upon an existing design system. We created </p>
+          <p>The biggest challenge was understanding the intricacies of the real estate industry and the complexities of the application process. This took time and slowed us down in the beginning but it was also one of the most intresting sides of the project as we learned something new. </p>
 
-<ul>
-  <li>Through emotional content we highlighted partnerships for credibility. </li>
-  <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
-  <li>Assure the user that the webinar would discuss evidence from LipusPlus studies. </li>
-  <li>Engaging Content. </li>
-  <li>Showcase evidence and studies.</li>
-  <li>Clear and Compelling Headlines and persuasive Copywriting. </li>
-  <li>User-Friendly Registration Form with a prominent CTA button. </li>
-  <li>Social Proofing. </li>
-  <li>Follow-Up Communication. </li>
-</ul>
+<p>What I enjoyed most about this project was developing the sorting function and the logic behind it. While sorting and filters are not always considered the most visually striking aspect of design, ensuring that the sorting function is clear and intuitive is crucial. It plays a vital role in enhancing user experience by making it easier for users to organise and access information efficiently. The satisfaction came from creating a system that seamlessly integrates into the overall design, making it functional and user-friendly.</p>
+
   
 
          
         </StyledCaseContents>
 
         <StyledImageContainer>
-          {/* <Stylednotation>Frames from Lipusplus HiFi Designs.</Stylednotation> */}
+        <StyledNotationContainer>
+          <Stylednotation>Image from Unsplash.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
-            src={DesignOneImg}
-            alt="Frames from LipusPlus HiFi Designs."
+            src={ReflectionImg}
+            alt="Street view of Stockholm city with NK in the distance."
             // isInView={isInView}
           />
         </StyledImageContainer>
       </StyledCaseEleven>
 
-      <StyledCaseTwelve>
-        <StyledCaseContents>
-         
-
-          <h5>Design</h5>
-
-          <p>Building and improving upon an existing design system. We created </p>
-
-<ul>
-  <li>Through emotional content we highlighted partnerships for credibility. </li>
-  <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
-  <li>Assure the user that the webinar would discuss evidence from LipusPlus studies. </li>
-  </ul>
-  
-  
-
-         
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          {/* <Stylednotation>Frames from Lipusplus HiFi Designs.</Stylednotation> */}
-          <StyledImg
-            // ref={imgRef}
-            src={DesignTwoImg}
-            alt="Frames from LipusPlus HiFi Designs."
-            // isInView={isInView}
-          />
-        </StyledImageContainer>
-      </StyledCaseTwelve>
-
-      <StyledCaseThirteen>
-        <StyledCaseContents>
-         
-
-          <h5>Frontend</h5>
-
-          <p>The existing LipusPlus homepage was initially created and is presently hosted via Webflow. A key stipulation for this project was to continue using Webflow. </p>
-          <p>See the live page here.</p>
-          <span className="bold"><a href="https://www.lipusplus.com/casestudies/hammarby">LipusPlus.com</a></span>
-
-
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          <Stylednotation>Screen shot from Webflow.</Stylednotation>
-          <StyledImg
-            // ref={imgRef}
-            src={WebflowImg}
-            alt="Webflow. Desktop ."
-            // isInView={isInView}
-          />
-        </StyledImageContainer>
-      </StyledCaseThirteen>
-
-      <StyledCaseFourteen>
-        <StyledCaseContents>
-         
-
-          <h5>Reflection</h5>
-
-          <p>This project was incredibly exciting for me for several reasons. Firstly, 
-            I had the opportunity to leverage my previous experience as a filmmaker, 
-            from conceptualizing and planning to filming interviews and sports coverage. 
-            Secondly, this project allowed me to align user needs with brand objectives, 
-            chieving the cohesive brand feel that LipusPlus has been striving for. Finally, 
-            I had the chance to work with Webflow, exploring a new platform and expanding my skills—an experience I thoroughly enjoyed.  </p>
-          
-<p>In conclusion, this project has not only met its goals but also provided a strong template for future case studies, 
-  webinars and other promotions. However there is always room for improvement.
-One area would be creating our own registration form instead of using the embedded Vimeo form. 
-This change would give better design control and allow for a more cohesive user experience.</p>
-
-<p>This project has been a valuable learning experience. It demonstrated the importance of thorough research, 
-  user-centric design, and effective communication. The real-world application of our work and the positive feedback from 
-  LipusPlus has been immensely rewarding. 
-</p>
-
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          <Stylednotation>Photo by Peder Rotkirch, LipusPlus.</Stylednotation>
-          <StyledImg
-            // ref={imgRef}
-            src={ReflectionImg}
-            alt="The lipusPlus modality"
-            // isInView={isInView}
-          />
-        </StyledImageContainer>
-      </StyledCaseFourteen>
+     
       
     </StyledCaseContainer>
   );

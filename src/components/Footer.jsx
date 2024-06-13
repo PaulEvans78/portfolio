@@ -227,6 +227,16 @@ const StyledFooterLogo = styled.img`
   }
 `;
 
+const Styledp = styled.p`
+font-size: 16px;
+font-weight: 500;
+margin: 2px;
+
+@media screen and (max-width: 960px) {
+  margin: 8px;
+  }
+`;
+
 // const Footer = () => {
 const Footer = React.forwardRef((props, ref) => (
   // return (
@@ -242,7 +252,8 @@ const Footer = React.forwardRef((props, ref) => (
     <Icons />
 
     <StyledContactContainer>
-      <p>Paul Evans. Copyright 2024.</p>
+      <Styledp>Copyright 2024.</Styledp>
+      <Styledp>Paul Evans.</Styledp>
       <StyledMailLink>
         <a href="mailto:paul.evans.creative@gmail.com">paul.evans.creative@gmail.com</a>
       </StyledMailLink>

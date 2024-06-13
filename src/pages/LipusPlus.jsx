@@ -15,6 +15,7 @@ import DesignOneImg from "../assets/designOne.avif";
 import DesignTwoImg from "../assets/designTwo.avif";
 import WebflowImg from "../assets/webflow.avif";
 import ReflectionImg from "../assets/reflection.avif";
+import Button from "../components/ButtonExternalSiteLipusPrimary";
 
 const StyledCaseContainer = styled.section`
   max-width: 100vw;
@@ -296,13 +297,14 @@ const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
   /* width: 70%; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 60px;
-  color: #2c2c2c;
+  color: #333333;
 
   /* @media screen and (max-width: 767px) {
     padding-left: 60px;
@@ -329,6 +331,26 @@ const StyledLogoContainer = styled.div`
 const StyledLogo = styled.img`
   width: 40%;
   height: auto;
+`;
+
+const StyledNotationContainer = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  bottom: 0;
+  /* left: 20; */
+  width: 100%;
+  height: 40px;
+  background-color: #1e1e1ee6;
+  padding-bottom: 10px;
+  /* margin-left: 60px; */
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  
+  z-index: 2;
+  color: #fefefe;
+  /* margin-top: ; */
 `;
 
 const Stylednotation = styled.p`
@@ -391,7 +413,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo by Peder Rotkirch.</Stylednotation>
+          <StyledNotationContainer>
+          <Stylednotation>Photo by Peder Rotkirch, LipusPlus.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={heroImg}
@@ -415,7 +439,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>From LipusPlus.com</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Screenshot from partnership film, LipusPlus & Hammarby Handball</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={challengesImg}
@@ -443,7 +469,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Screenshot from partnership film, LipusPlus & Hammarby Handball</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={BriefImg}
@@ -468,7 +496,10 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Anne Hopfgarten. Image from LipusPlus</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball</Stylednotation>
+          </StyledNotationContainer>
+          
           <StyledImg
             // ref={imgRef}
             src={ResearchImg}
@@ -497,7 +528,10 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          {/* <Stylednotation>Image from research.</Stylednotation> */}
+        <StyledNotationContainer>
+          <Stylednotation>Image from research mapping, figma</Stylednotation>
+          </StyledNotationContainer>
+         
           <StyledImg
             // ref={imgRef}
             src={MappingImg}
@@ -522,7 +556,10 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
+        <StyledNotationContainer>
           <Stylednotation>Photo by Peder Rotkirch, Lipusplus.</Stylednotation>
+          </StyledNotationContainer>
+          
           <StyledImg
             // ref={imgRef}
             src={LipusImg}
@@ -547,7 +584,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={PhysioImg}
@@ -572,7 +611,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Image from LipusPlus.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Screenshot of Ludvig Lindeberg from partnership film, LipusPlus & Hammarby Handball</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={AthleteImg}
@@ -590,8 +631,8 @@ const Case = () => {
 
 <ul>
   <li>There is skepticism towards Medtech companies.</li>
-  <li>Build trust not just through evidence but also an understanding of users everyday struggles and lifestyles.</li>
-  <li>A shift towards a sports lifestyle focus, emphasising partnerships rather than just Medtech, would be more inspirational and trustworthy.</li>
+  <li>Build trust not just through evidence but also an understanding of the users everyday struggles and lifestyles.</li>
+  <li>A shift towards a sports lifestyle focus, emphasising partnerships rather than solely Medtech, would be more inspirational and trustworthy.</li>
   <li>It is essential for the user that the landing page works on all devices and is responsive. </li>
   <li>Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly.</li>
   <li>Clearly show the offer and benefits of Return to Play.</li>
@@ -602,7 +643,10 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo unsplash.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Image from Unsplash.</Stylednotation>
+          </StyledNotationContainer>
+          
           <StyledImg
             // ref={imgRef}
             src={InsightsImg}
@@ -633,7 +677,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo from Vimeo.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>Image from Vimeo.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={WebinarImg}
@@ -649,16 +695,16 @@ const Case = () => {
 
           <h5>Design</h5>
 
-          <p>Building and improving upon an existing design system. We created </p>
+          <p>Building and improving upon an existing design system.  </p>
 
 <ul>
   <li>Through emotional content we highlighted partnerships for credibility. </li>
   <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
   <li>Assure the user that the webinar would discuss evidence from LipusPlus studies. </li>
-  <li>Engaging Content. </li>
+  <li>Engaging Content. Through still images, videos and testimonials. </li>
   <li>Showcase evidence and studies.</li>
-  <li>Clear and Compelling Headlines and persuasive Copywriting. </li>
-  <li>User-Friendly Registration Form with a prominent CTA button. </li>
+  <li>Clear and Compelling Headlines alongside persuasive Copywriting. </li>
+  <li>A user-friendly registration form with a prominent CTA button. </li>
   <li>Social Proofing. </li>
   <li>Follow-Up Communication. </li>
 </ul>
@@ -668,7 +714,10 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          {/* <Stylednotation>Frames from Lipusplus HiFi Designs.</Stylednotation> */}
+        <StyledNotationContainer>
+          <Stylednotation>Design frames from figma.</Stylednotation>
+          </StyledNotationContainer>
+         
           <StyledImg
             // ref={imgRef}
             src={DesignOneImg}
@@ -684,12 +733,12 @@ const Case = () => {
 
           <h5>Design</h5>
 
-          <p>Building and improving upon an existing design system. We created </p>
+          
 
 <ul>
   <li>Through emotional content we highlighted partnerships for credibility. </li>
   <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
-  <li>Assure the user that the webinar would discuss evidence from LipusPlus studies. </li>
+  <li>Assured the user that the webinar would discuss evidence from LipusPlus studies. </li>
   </ul>
   
   
@@ -698,7 +747,9 @@ const Case = () => {
         </StyledCaseContents>
 
         <StyledImageContainer>
-          {/* <Stylednotation>Frames from Lipusplus HiFi Designs.</Stylednotation> */}
+        <StyledNotationContainer>
+          <Stylednotation>Design frames from figma.</Stylednotation>
+          </StyledNotationContainer>
           <StyledImg
             // ref={imgRef}
             src={DesignTwoImg}
@@ -715,14 +766,16 @@ const Case = () => {
           <h5>Frontend</h5>
 
           <p>The existing LipusPlus homepage was initially created and is presently hosted via Webflow. A key stipulation for this project was to continue using Webflow. </p>
-          <p>See the live page here.</p>
-          <span className="bold"><a href="https://www.lipusplus.com/casestudies/hammarby">LipusPlus.com</a></span>
-
+          
+<Button />
 
         </StyledCaseContents>
 
         <StyledImageContainer>
+        <StyledNotationContainer>
           <Stylednotation>Screen shot from Webflow.</Stylednotation>
+          </StyledNotationContainer>
+          
           <StyledImg
             // ref={imgRef}
             src={WebflowImg}
@@ -740,9 +793,9 @@ const Case = () => {
 
           <p>This project was incredibly exciting for me for several reasons. Firstly, 
             I had the opportunity to leverage my previous experience as a filmmaker, 
-            from conceptualizing and planning to filming interviews and sports coverage. 
+            from conceptualizing and working with the brand to planning and filming interviews and sports coverage. 
             Secondly, this project allowed me to align user needs with brand objectives, 
-            chieving the cohesive brand feel that LipusPlus has been striving for. Finally, 
+            achieving a cohesive brand feel that LipusPlus has been striving for. Finally, 
             I had the chance to work with Webflow, exploring a new platform and expanding my skills—an experience I thoroughly enjoyed.  </p>
           
 <p>In conclusion, this project has not only met its goals but also provided a strong template for future case studies, 
@@ -758,7 +811,10 @@ This change would give better design control and allow for a more cohesive user 
         </StyledCaseContents>
 
         <StyledImageContainer>
-          <Stylednotation>Photo by Peder Rotkirch, LipusPlus.</Stylednotation>
+        <StyledNotationContainer>
+          <Stylednotation>The LipusPlus modality. Photo by Peder Rotkirch, LipusPlus.</Stylednotation>
+          </StyledNotationContainer>
+          
           <StyledImg
             // ref={imgRef}
             src={ReflectionImg}
