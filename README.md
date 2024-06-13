@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://paulevans78.github.io/portfolio/">
-    <img src="src/assets/logoInverted.avif" alt="Logo" width="100" height="140">
+    <img src="src/assets/logoInverted.avif" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Portfolio - Digital Experience Designer </h3>
@@ -84,7 +84,7 @@
 
 ## My Portfolio
 
-[![https://paulevans78.github.io/portfolio/][product-screenshot]](https://paulevans78.github.io/portfolio/)
+Home Page(https://paulevans78.github.io/portfolio/)
 
 Digital Experience Designer. With over 20 years experience within film and commercials. 
 

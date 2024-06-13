@@ -380,7 +380,6 @@ const Case = () => {
       <StyledCaseTwo>
         <StyledCaseContents>
          
-
           <h5>Challenges</h5>
 
           <ul>

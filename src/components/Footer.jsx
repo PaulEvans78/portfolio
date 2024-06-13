@@ -195,7 +195,6 @@ const IconDes = styled.p`
     }
   }
 
- 
 `;
 
 const StyledLogoContainer = styled.div`
