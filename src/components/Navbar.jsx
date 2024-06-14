@@ -7,12 +7,13 @@ import logoInverted from "../assets/paulEvansCreativeLogo.avif";
 import logo from "../assets/logoInverted.avif";
 
 const StyledNav = styled.nav`
+position: fixed;
   grid-area: top;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  z-index:150;
+  z-index: 150;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,7 +21,6 @@ const StyledNav = styled.nav`
   padding-bottom: 1em;
   padding-left: 1em;
   background-color: #171717;
-  position: fixed;
   top: ${({ visible }) =>
     visible ? "0" : "-160px"}; /* Adjust according to your navbar height */
   transition: top 0.6s;

@@ -29,7 +29,6 @@ const ScrollButton = () => {
       <FaArrowCircleUp
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none",
-          boxShadow: "10px 18px 40px #3e3e3e",
           borderRadius: "50%"
          }}
       />

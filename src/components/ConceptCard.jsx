@@ -80,6 +80,7 @@ function Card(props) {
       <StyledConceptVideo
         ref={videoRef}
         src={conceptReel}
+        autoplay
         loop
         muted
         playsInline

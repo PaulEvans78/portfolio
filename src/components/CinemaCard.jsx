@@ -81,6 +81,7 @@ function Card(props) {
       <StyledConceptVideo
         ref={videoRef}
         src={dopReel}
+        autoplay
         loop
         muted
         playsInline

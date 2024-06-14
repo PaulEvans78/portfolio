@@ -116,6 +116,7 @@ const Film = ({ scrollToEvent }) => {
       <StyledVideo
         ref={videoRef}
         src={Video}
+        autoplay
         loop
         muted
         playsInline

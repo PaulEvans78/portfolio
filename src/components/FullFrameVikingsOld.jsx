@@ -5,16 +5,7 @@ import logoImg from "../assets/viaplayLogo.avif";
 import ButtonFsF from "./ButtonFsFSecondary";
 import ButtonTrailer from "./ButtonPlayVikings";
 
-const slideInFromLeft = keyframes`
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-`;
+
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -94,10 +85,10 @@ const StyledButtonContainer = styled.div`
   }
 `;
 
-const StyledAnimatedHeading = styled.div`
-  opacity: 0;
-  animation: ${slideInFromLeft} 1s ease-out 0.5s forwards;
-`;
+// const StyledAnimatedHeading = styled.div`
+//   opacity: 0;
+//   animation: ${slideInFromLeft} 1s ease-out 0.5s forwards;
+// `;
 
 const ModalBackground = styled.div`
   position: fixed;
@@ -166,13 +157,14 @@ const Film = ({ scrollToEvent }) => {
       <StyledVideo
         ref={videoRef}
         src={Video}
+        autoplay
         loop
         muted
         playsInline
         alt="Background video"
       />
       <StyledContentsContainer>
-        <StyledAnimatedHeading />
+        {/* <StyledAnimatedHeading /> */}
         <StyledLogoContainer>
           <StyledLogo src={logoImg} alt="Viaplay logo" />
         </StyledLogoContainer>
@@ -207,3 +199,4 @@ const Film = ({ scrollToEvent }) => {
 };
 
 export default Film;
+

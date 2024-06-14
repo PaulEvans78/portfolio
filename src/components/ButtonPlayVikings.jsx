@@ -60,13 +60,11 @@ const Button = ({ onClick }) => {
 <FaPlayCircle onClick={onClick} size={80}/>
 </StyledWrapper>
                     <Styledp>Play Trailer</Styledp>
-                  {/* <ButtonFilm onClick={() => setModalOpen(true)}/> */}
+                  
                   </StyledPlayContainer>
 
 
-    // <StyledButton onClick={onClick}>
-    //   <StyledButtonText>Play Trailer</StyledButtonText>
-    // </StyledButton>
   );
 };
 export default Button;
+

@@ -69,7 +69,7 @@ const Modal = ({ isOpen, onClose }) => {
       
         <CloseButton onClick={onClose}><RxCross1 /></CloseButton>
         <VideoContainer>
-          <StyledVideo controls autoPlay>
+          <StyledVideo controls autoPlay >
             <source src={Video} type="video/mp4" />
           </StyledVideo>
         </VideoContainer>

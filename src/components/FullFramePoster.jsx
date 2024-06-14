@@ -11,6 +11,7 @@ const StyledMainContainer = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 `;
 
 const StyledImg = styled.img`
