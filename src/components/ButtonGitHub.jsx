@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  /* margin-bottom: 20px; */
   /* color: #e1bb3e;  */
   color: #e437e2;
 `;
@@ -33,6 +34,11 @@ const Styledp = styled.p`
   color: #000000;
   font-size: 20px;
   font-weight: 600;
+  margin-top: 0;
+
+  @media (max-width: 478px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = ({ onClick }) => {
@@ -41,18 +47,18 @@ const Button = ({ onClick }) => {
   };
 
   return (
-    <StyledPlayContainer>
+    <StyledButtonContainer>
       <StyledWrapper>
       <a
         href="https://github.com/PaulEvans78"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaArrowCircleRight onClick={onClick} size={80} />
+        <FaArrowCircleRight onClick={onClick} size={70} />
       </a>
       </StyledWrapper>
       <Styledp>Go to GitHub</Styledp>
-    </StyledPlayContainer>
+    </StyledButtonContainer>
   );
 };
 export default Button;

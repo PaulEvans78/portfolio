@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
   color: #d5d5d5;
+
+  @media screen and (max-width: 478px) {
+    align-items: center;
+  }
 `;
 
 const StyledWrapper = styled.div`
@@ -32,18 +36,22 @@ const Styledp = styled.p`
   color: white;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 960px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = ({ onClick }) => {
   return (
-    <StyledPlayContainer>
+    <StyledButtonContainer>
       <StyledWrapper>
         <Link to="/lipusplus">
-          <FaArrowCircleRight onClick={onClick} size={80} /> 
+          <FaArrowCircleRight onClick={onClick} size={70} /> 
         </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>
-    </StyledPlayContainer>
+    </StyledButtonContainer>
   );
 };
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaPlayCircle } from "react-icons/fa";
 
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
 width: 200px;
 display: flex;
 flex-direction: column;
@@ -39,7 +39,7 @@ font-size: 20px;
   font-weight: 600;
 
   @media (max-width: 960px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -55,13 +55,13 @@ const Button = ({ onClick }) => {
   };
 
   return (
-<StyledPlayContainer>
+<StyledButtonContainer>
 <StyledWrapper>
-<FaPlayCircle onClick={onClick} size={80}/>
+<FaPlayCircle onClick={onClick} size={70}/>
 </StyledWrapper>
                     <Styledp>Play Trailer</Styledp>
                   
-                  </StyledPlayContainer>
+                  </StyledButtonContainer>
 
 
   );

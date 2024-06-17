@@ -32,6 +32,10 @@ const Styledp = styled.p`
   color: #040404;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 478px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = ({ onClick }) => {
@@ -39,7 +43,7 @@ const Button = ({ onClick }) => {
     <StyledPlayContainer>
       <StyledWrapper>
         <Link to="/lipusplus">
-          <FaArrowCircleRight onClick={onClick} size={80} /> 
+          <FaArrowCircleRight onClick={onClick} size={70} /> 
         </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>

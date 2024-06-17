@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import posterImg from "../assets/hidden.avif";
+import mobilePosterImg from "../assets/hiddenMobileImg.avif";
 import logoImg from "../assets/BESTSHORTFILMSPECIALAWARD-EasternEuropeFilmFestival-December2022.avif";
 
 const StyledMainContainer = styled.section`
@@ -16,11 +17,39 @@ const StyledMainContainer = styled.section`
 
 const StyledImg = styled.img`
   position: absolute;
+  /* display: flex; */
   width: 100%;
   height: 100%;
-  align-self: flex-start;
+  /* align-self: flex-end; */
+  /* justify-self: center; */
   object-fit: cover;
   z-index: 2;
+
+  @media (max-width: 767px) {
+display: none;
+  }
+`;
+
+const StyledMobileImg = styled.img`
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  /* align-self: flex-end; */
+  /* justify-self: center; */
+  object-fit: cover;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+    position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* align-self: flex-end; */
+  /* justify-self: center; */
+  object-fit: cover;
+  z-index: 2;
+  }
 `;
 
 const StyledContentsContainer = styled.div`
@@ -43,21 +72,29 @@ const StyledContentsContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
+    /* justify-content: center; */
+    text-align: center;
     width: 90%;
-    padding-top: 140px;
-    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 16px;
   }
 
   @media screen and (max-width: 320px) {
-    width: 90%;
+    /* width: 90%; */
     padding-top: 15px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
 `;
 
 const StyledLogoContainer = styled.div`
   display: flex;
   padding-top: 30px;
+
+  @media screen and (max-width: 478px) {
+    justify-content: center;
+    
+  }
 `;
 
 const StyledLogo = styled.img`
@@ -65,22 +102,53 @@ const StyledLogo = styled.img`
   height: auto;
 `;
 
-const Stylednotation = styled.p`
+const StyledNotationContainer = styled.div`
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   bottom: 0;
-  right: 0;
+  /* left: 20; */
+  width: 100%;
+  height: 40px;
+  /* background-color: #1e1e1ee6; */
+  padding-bottom: 10px;
+  z-index: 3;
+  color: #fefefe;
+  /* margin-top: ; */
+
+  @media screen and (max-width: 478px) {
+    justify-content: center;
+  }
+`;
+const Stylednotation = styled.p`
+  /* position: absolute; */
+  /* bottom: 0;
+  right: 0; */
   margin-right: 40px;
   font-size: 14px;
-  z-index: 3;
+  /* z-index: 3; */
+
+  @media screen and (max-width: 478px) {
+    margin-right: 0;
+  }
+  
 `;
 
 const Poster = ({ scrollToEvent }) => {
   return (
     <StyledMainContainer>
+      <StyledNotationContainer>
       <Stylednotation>Photography by Nisse Virgin.</Stylednotation>
+      </StyledNotationContainer>
 
       <StyledImg
         src={posterImg}
+        alt="A short film poster. A Man sits with his back to camera contemplating"
+      />
+
+<StyledMobileImg
+        src={mobilePosterImg}
         alt="A short film poster. A Man sits with his back to camera contemplating"
       />
 

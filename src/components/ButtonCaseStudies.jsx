@@ -2,15 +2,16 @@
 import React from "react";
 import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
   color: #e437e2;
 
   
@@ -36,7 +37,16 @@ const Styledp = styled.p`
   color: white;
   font-size: 20px;
   font-weight: 600;
+  margin-top: 0;
+
+  @media (max-width: 478px) {
+    font-size: 18px;
+  }
 `;
+
+
+
+
 
 const Button = ({ onClick }) => {
   const handleClick = () => {
@@ -44,15 +54,15 @@ const Button = ({ onClick }) => {
   };
 
   return (
-    <StyledPlayContainer>
+    <StyledButtonContainer>
       <StyledWrapper>
       <Link to="/casestudies">
-        <FaArrowCircleRight onClick={handleClick} size={80} /> 
+        <FaArrowCircleRight onClick={handleClick} size={70} /> 
       </Link>
       </StyledWrapper>
       {/* <FaArrowCircleRight onClick={handleClick} size={80} /> */}
       <Styledp>See Case Studies</Styledp>
-    </StyledPlayContainer>
+    </StyledButtonContainer>
   );
 };
 

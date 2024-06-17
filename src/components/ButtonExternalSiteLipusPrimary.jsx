@@ -11,9 +11,7 @@ const StyledPlayContainer = styled.div`
   /* padding-bottom: 10px; */
   color: #e437e2;
 
-  @media screen and (max-width: 478px) {
-    align-items: center;
-  }
+  
 `;
 
 const StyledWrapper = styled.div`
@@ -36,6 +34,10 @@ const Styledp = styled.p`
   color: #333333;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 960px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = ({ onClick }) => {
@@ -52,7 +54,7 @@ const Button = ({ onClick }) => {
         rel="noopener noreferrer"
       >
        
-        <FaArrowCircleRight onClick={onClick} size={80} />
+        <FaArrowCircleRight onClick={onClick} size={70} />
       </a>
       </StyledWrapper>
       <Styledp>See live page at LipusPlus.com</Styledp>

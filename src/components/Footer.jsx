@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaImdb, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import logo from "../assets/logoInverted.avif";
+import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const footerData = [
   {
@@ -132,7 +132,7 @@ const IconContainer = styled.div`
 
   @media screen and (max-width: 960px) {
     padding-top: 2em;
-    margin-right: 0em;
+    margin-right: 20px;
   }
 
   @media screen and (max-width: 767px) {
@@ -204,7 +204,7 @@ const StyledLogoContainer = styled.div`
   @media screen and (max-width: 960px) {
     width: 100%;
     justify-content: center;
- 
+
     margin-bottom: 2em;
     padding-left: 0em;
   }

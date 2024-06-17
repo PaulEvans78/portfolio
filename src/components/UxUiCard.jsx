@@ -20,7 +20,7 @@ const StyledFrontCard = styled.div`
   }
 
   @media screen and (max-width: 478px) {
-    height: 480px;
+    height: 500px;
   }
 
   @media screen and (max-width: 767px) {
@@ -52,7 +52,9 @@ const StyledInfoContainer = styled.div`
   text-align: left;
   width: 90%;
   height: 100%;
+  padding-top: 20px;
   padding-left: 40px;
+  
 
   @media screen and (max-width: 478px) {
     padding-left: 20px;

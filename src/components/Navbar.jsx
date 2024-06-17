@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
 import logoInverted from "../assets/paulEvansCreativeLogo.avif";
-import logo from "../assets/logoInverted.avif";
+import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const StyledNav = styled.nav`
 position: fixed;
@@ -68,13 +68,13 @@ const StyledNavLogo = styled.img`
   }
 `;
 
-const StyledHamburgerLogo = styled.img`
+const StyledHamburgerPELogo = styled.img`
   display: none;
 
   @media screen and (max-width: 960px) {
     display: flex;
     margin-top: 100px;
-    width: 250px;
+    width: 100px;
   }
 `;
 
@@ -295,7 +295,7 @@ const Navbar = ({ footerRef }) => {
         )}
 
         <StyledImgContainer>
-          <StyledHamburgerLogo
+          <StyledHamburgerPELogo
             src={logo}
             alt="the letters P and E merged together to form the logo Paul Evans Creative"
           />

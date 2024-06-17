@@ -61,8 +61,11 @@ position: relative;
   }
 
   @media screen and (max-width: 478px) {
+    justify-content: center;
+    text-align: center;
     width: 90%;
     padding-left: 20px;
+    padding-top: 100px;
     padding-bottom: 120px;
   }
 
@@ -77,6 +80,11 @@ const StyledLogoContainer = styled.div`
   display: flex;
   padding-top: 30px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 478px) {
+    justify-content: center;
+    
+  }
 `;
 
 const StyledLogo = styled.img`
@@ -96,6 +104,8 @@ const StyledButtonContainer = styled.div`
     align-items: center;
   }
 `;
+
+
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);

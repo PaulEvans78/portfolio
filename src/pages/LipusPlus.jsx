@@ -1,4 +1,3 @@
-// import { useRef } from "react";
 import styled from "styled-components";
 import heroImg from "../assets/lipusHeroImg.avif";
 import logoImg from "../assets/lipusPlusLogo.avif";
@@ -11,6 +10,7 @@ import PhysioImg from "../assets/physio.avif";
 import AthleteImg from "../assets/athlete.avif";
 import InsightsImg from "../assets/insights.avif";
 import WebinarImg from "../assets/webinar.avif";
+import mobileWebinarImg from "../assets/webinarMobile.avif";
 import DesignOneImg from "../assets/designOne.avif";
 import DesignTwoImg from "../assets/designTwo.avif";
 import WebflowImg from "../assets/webflow.avif";
@@ -25,6 +25,14 @@ const StyledCaseContainer = styled.section`
   row-gap: 16px;
   align-content: center;
   margin-top: 170px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 130px;
+  }
 `;
 
 const StyledCaseOne = styled.div`
@@ -326,11 +334,20 @@ const StyledLogoContainer = styled.div`
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
+
+  @media (max-width: 478px) {
+    padding-top: 50px;
+  padding-bottom: 50px;
+  }
 `;
 
 const StyledLogo = styled.img`
   width: 40%;
   height: auto;
+
+  @media (max-width: 320px) {
+    width: 50%;
+  }
 `;
 
 const StyledNotationContainer = styled.div`
@@ -341,7 +358,7 @@ const StyledNotationContainer = styled.div`
   bottom: 0;
   /* left: 20; */
   width: 100%;
-  height: 40px;
+  height: 50px;
   background-color: #1e1e1ee6;
   padding-bottom: 10px;
   /* margin-left: 60px; */
@@ -351,6 +368,14 @@ const StyledNotationContainer = styled.div`
   z-index: 2;
   color: #fefefe;
   /* margin-top: ; */
+
+  @media screen and (max-width: 960px) {
+    height: 40px;
+  }
+  
+  @media screen and (max-width: 478px) {
+    height: 60px;
+  }
 `;
 
 const Stylednotation = styled.p`
@@ -359,9 +384,16 @@ const Stylednotation = styled.p`
   right: 0;
   margin-right: 40px;
   font-size: 14px;
+  text-align: right;
   z-index: 2;
   color: #cdcccc;
   /* margin-top: ; */
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 6px;
+  }
 `;
 
 const StyledImageContainer = styled.div`
@@ -369,7 +401,10 @@ const StyledImageContainer = styled.div`
   grid-area: Image;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
+
+  
 `;
 
 const StyledImg = styled.img`
@@ -382,8 +417,35 @@ const StyledImg = styled.img`
     css`
       animation: ${slideInFromRight} 1s ease-out forwards;
     `}
+
+    @media screen and (max-width: 960px) {
+      height: 700px;
+      /* object-position: 0% 30%; */
+    
+  }
 `;
 
+const StyledMobileImg = styled.img`
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  /* align-self: flex-end; */
+  /* justify-self: center; */
+  object-fit: cover;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+    position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* align-self: flex-end; */
+  /* justify-self: center; */
+  object-fit: cover;
+  z-index: 2;
+  }
+`;
 
 const Case = () => {
   // const caseRef = useRef(null);
@@ -431,11 +493,11 @@ const Case = () => {
 
           <h5>Challenges</h5>
 
-          <ul>
-            <li>Understanding Elite Athletes and Physiotherapists everyday struggles.</li>
-            <li>Minimal experience with webinars.</li>
-            <li>Working with Webflow, which was new to me.</li>
-          </ul>
+          
+            <p>* Understanding Elite Athletes and Physiotherapists everyday struggles.</p>
+            <p>* Minimal experience with webinars.</p>
+            <p>* Working with Webflow, which was new to me.</p>
+          
         </StyledCaseContents>
 
         <StyledImageContainer>
@@ -487,11 +549,11 @@ const Case = () => {
 
           <h5>Key Questions</h5>
 
-<ul>
-  <li>How can we make the message and the offer on the landing page clear and attractive to the target group?</li>
-  <li>How can we optimise the landing page to increase the conversion rate and get more visitors to sign up for webinars?</li>
-  <li>How can we stimulate people to spread the word about the webinar in their surroundings?</li>
-</ul>
+
+  <p>1. How can we make the message and the offer on the landing page clear and attractive to the target group?</p>
+  <p>2. How can we optimise the landing page to increase the conversion rate and get more visitors to sign up for webinars?</p>
+  <p>3. How can we stimulate people to spread the word about the webinar in their surroundings?</p>
+
          
         </StyledCaseContents>
 
@@ -517,13 +579,13 @@ const Case = () => {
 
 
 
-<ul>
-  <li><span className="bold">Seminar: </span> LipusPlus</li>
-  <li><span className="bold">Observation: </span> LipusPlus Sales Member</li>
-  <li><span className="bold">Observation: </span> LipusPlus Clinician </li>
-  <li><span className="bold">Interview: </span> Physiotherapist</li>
-  <li><span className="bold">Interview: </span> Elite athlete</li>
-</ul>
+
+  <p><span className="bold">Seminar: </span> LipusPlus</p>
+  <p><span className="bold">Observation: </span> LipusPlus Sales Member</p>
+  <p><span className="bold">Observation: </span> LipusPlus Clinician </p>
+  <p><span className="bold">Interview: </span> Physiotherapist</p>
+  <p><span className="bold">Interview: </span> Elite athlete</p>
+
          
         </StyledCaseContents>
 
@@ -629,16 +691,16 @@ const Case = () => {
 
           <h5>Insights</h5>
 
-<ul>
-  <li>There is skepticism towards Medtech companies.</li>
-  <li>Build trust not just through evidence but also an understanding of the users everyday struggles and lifestyles.</li>
-  <li>A shift towards a sports lifestyle focus, emphasising partnerships rather than solely Medtech, would be more inspirational and trustworthy.</li>
-  <li>It is essential for the user that the landing page works on all devices and is responsive. </li>
-  <li>Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly.</li>
-  <li>Clearly show the offer and benefits of Return to Play.</li>
-  <li>Clearly communicate the value and benefits of attending the 
-  webinar, emphasising credible evidence and success stories.</li>
-</ul>
+
+  <p>* There is skepticism towards Medtech companies.</p>
+  <p>* Build trust not just through evidence but also an understanding of the users everyday struggles and lifestyles.</p>
+  <p>* A shift towards a sports lifestyle focus, emphasising partnerships rather than solely Medtech, would be more inspirational and trustworthy.</p>
+  <p>* It is essential for the user that the landing page works on all devices and is responsive. </p>
+  <p>* Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly.</p>
+  <p>* Clearly show the offer and benefits of Return to Play.</p>
+  <p>* Clearly communicate the value and benefits of attending the 
+  webinar, emphasising credible evidence and success stories.</p>
+
          
         </StyledCaseContents>
 
@@ -662,14 +724,14 @@ const Case = () => {
 
           <h5>Webinar Requirements</h5>
 
-<ul>
-  <li>The webinar platform should be a stable and proven streaming  service. </li>
-  <li>Data collection through the registration form is a must.</li>
-  <li>Email Automation.</li>
-  <li>Option to connect to Hubspot. </li>
-  <li>Simple and easy to understand registration forms.</li>
-  <li>Custom Registration forms.</li>
-  </ul>
+
+  <p>* The webinar platform should be a stable and proven streaming  service. </p>
+  <p>* Data collection through the registration form is a must.</p>
+  <p>* Email Automation.</p>
+  <p>* Option to connect to Hubspot. </p>
+  <p>* Simple and easy to understand registration forms.</p>
+  <p>* Custom Registration forms.</p>
+  
   
   <p>With approximately 260 million users, Vimeo met all our requirements. Since LipusPlus already hosted content on Vimeo, it streamlined our video showcasing process.</p>
 
@@ -686,6 +748,11 @@ const Case = () => {
             alt="A vimeo webinar screen."
             // isInView={isInView}
           />
+
+<StyledMobileImg
+        src={mobileWebinarImg}
+        alt="Promtional text from vimeo about their webinars."
+      />
         </StyledImageContainer>
       </StyledCaseTen>
 
@@ -697,17 +764,17 @@ const Case = () => {
 
           <p>Building and improving upon an existing design system.  </p>
 
-<ul>
-  <li>Through emotional content we highlighted partnerships for credibility. </li>
-  <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
-  <li>Assure the user that the webinar would discuss evidence from LipusPlus studies. </li>
-  <li>Engaging Content. Through still images, videos and testimonials. </li>
-  <li>Showcase evidence and studies.</li>
-  <li>Clear and Compelling Headlines alongside persuasive Copywriting. </li>
-  <li>A user-friendly registration form with a prominent CTA button. </li>
-  <li>Social Proofing. </li>
-  <li>Follow-Up Communication. </li>
-</ul>
+
+  <p>* Through emotional content we highlighted partnerships for credibility. </p>
+  <p>* Clearly outlined the benefits and starting price of the Return to Play program. </p>
+  <p>* Assure the user that the webinar would discuss evidence from LipusPlus studies. </p>
+  <p>* Engaging Content. Through still images, videos and testimonials. </p>
+  <p>* Showcase evidence and studies.</p>
+  <p>* Clear and Compelling Headlines alongside persuasive Copywriting. </p>
+  <p>* A user-friendly registration form with a prominent CTA button. </p>
+  <p>* Social Proofing. </p>
+  <p>* Follow-Up Communication. </p>
+
   
 
          
@@ -735,11 +802,11 @@ const Case = () => {
 
           
 
-<ul>
-  <li>Through emotional content we highlighted partnerships for credibility. </li>
-  <li>Clearly outlined the benefits and starting price of the Return to Play program. </li>
-  <li>Assured the user that the webinar would discuss evidence from LipusPlus studies. </li>
-  </ul>
+
+  <p>* Through emotional content we highlighted partnerships for credibility. </p>
+  <p>* Clearly outlined the benefits and starting price of the Return to Play program. </p>
+  <p>* Assured the user that the webinar would discuss evidence from LipusPlus studies. </p>
+
   
   
 

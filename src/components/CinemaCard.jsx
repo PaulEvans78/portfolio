@@ -19,7 +19,7 @@ const StyledFrontCard = styled.div`
   }
 
   @media screen and (max-width: 478px) {
-    height: 480px;
+    height: 500px;
   }
 `;
 
@@ -55,6 +55,7 @@ const StyledInfoContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
+    padding-top: 20px;
     padding-left: 20px;
   }
 `;

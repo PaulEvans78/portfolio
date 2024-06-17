@@ -23,6 +23,14 @@ const StyledCaseContainer = styled.section`
   row-gap: 16px;
   align-content: center;
   margin-top: 170px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 130px;
+  }
 `;
 
 const StyledCaseOne = styled.div`
@@ -338,6 +346,21 @@ const StyledImg = styled.img`
     css`
       animation: ${slideInFromRight} 1s ease-out forwards;
     `}
+
+    @media screen and (max-width: 478px) {
+      height: 700px;
+      /* transform: scale(0.9) */
+      /* object-position: 0% 30%; */
+    
+  }
+`;
+
+const StyledScaledImg = styled.img`
+  /* display: none; */
+
+    @media screen and (max-width: 478px) {
+      display: flex;
+  }
 `;
 
 
@@ -382,11 +405,11 @@ const Case = () => {
          
           <h5>Challenges</h5>
 
-          <ul>
-            <li>Lack of prior knowledge of the real estate industry which prevented us from clearly understanding the specific design task.</li>
-            <li>Understanding user expectations, especially when they are already accustomed to existing solutions and industry standards.</li>
-            <li>Access to Ebies clients for user research, Ebie is a start up with a limited number of customers, and those they do have are extremely busy. </li>
-          </ul>
+         
+            <p>* Lack of prior knowledge of the real estate industry which prevented us from clearly understanding the specific design task.</p>
+            <p>* Understanding user expectations, especially when they are already accustomed to existing solutions and industry standards.</p>
+            <p>* Access to Ebies clients for user research, Ebie is a start up with a limited number of customers, and those they do have are extremely busy. </p>
+          
         </StyledCaseContents>
 
         <StyledImageContainer>
@@ -517,6 +540,7 @@ Our goal was to consolidate this into a single form without overwhelming or conf
             alt="A traditional application form"
             // isInView={isInView}
           />
+          
         </StyledImageContainer>
       </StyledCaseSix>
 
@@ -531,13 +555,13 @@ Our goal was to consolidate this into a single form without overwhelming or conf
 
 <p><span className="bold">Focus areas. </span> </p>
 
-<ul>
-            <li>We organized the input fields into a column form to enhance readability.</li>
-            <li>To make the form less overwhelming, we implemented fold-out and collapsible sections.</li>
-            <li>Colours to signal when a section is complete. </li>
-            <li>A progress bar at the top keeps users informed about their position in the process. </li>
-            <li>Additionally, we included navigation on the left to allow users to view other applications or add new ones. </li>
-          </ul>
+
+            <p>* We organized the input fields into a column form to enhance readability.</p>
+            <p>* To make the form less overwhelming, we implemented fold-out and collapsible sections.</p>
+            <p>* Colours to signal when a section is complete. </p>
+            <p>* A progress bar at the top keeps users informed about their position in the process. </p>
+            <p>* Additionally, we included navigation on the left to allow users to view other applications or add new ones. </p>
+        
          
         </StyledCaseContents>
 
@@ -545,7 +569,12 @@ Our goal was to consolidate this into a single form without overwhelming or conf
         <StyledNotationContainer>
           <Stylednotation>Our re-design from figma.</Stylednotation>
           </StyledNotationContainer>
-          <StyledImg
+          {/* <StyledImg
+            src={Application2Img}
+            alt="An online application form."
+          /> */}
+
+  <StyledScaledImg
             // ref={imgRef}
             src={Application2Img}
             alt="An online application form."
@@ -588,7 +617,7 @@ To facilitate quick sorting between different insurance statuses, we implemented
         <StyledNotationContainer>
           <Stylednotation>Design proposal for insurance status, figma.</Stylednotation>
           </StyledNotationContainer>
-          <StyledImg
+          <StyledScaledImg
             // ref={imgRef}
             src={Status1Img}
             alt="Design for insurance status from figma."
@@ -600,7 +629,7 @@ To facilitate quick sorting between different insurance statuses, we implemented
         <StyledNotationContainer>
           <Stylednotation>Design proposal for renewing status, figma.</Stylednotation>
           </StyledNotationContainer>
-          <StyledImg
+          <StyledScaledImg
             // ref={imgRef}
             src={Status2Img}
             alt="Design for insurance status from figma."
@@ -617,12 +646,12 @@ To facilitate quick sorting between different insurance statuses, we implemented
 
           <p><span className="bold">Overview:  </span></p>
 
-<ul>
-  <li>Within the insurance overview, we added a warning icon to indicate when an action is required, such as when a report has been filed or an invoice needs payment. </li>
-  <li>We also incorporated the same status symbols from the search function for clearer status visibility.</li>
-  <li>The screening report is displayed directly, eliminating the need to search through other documents.</li>
-  <li>Additionally, we introduced a sorting function that allows users to organise all insurance entries in numeric, alphabetic, or reverse order. </li>
-  </ul>
+
+  <p>Within the insurance overview, we added a warning icon to indicate when an action is required, such as when a report has been filed or an invoice needs payment. </p>
+  <p>We also incorporated the same status symbols from the search function for clearer status visibility.</p>
+  <p>The screening report is displayed directly, eliminating the need to search through other documents.</p>
+  <p>Additionally, we introduced a sorting function that allows users to organise all insurance entries in numeric, alphabetic, or reverse order. </p>
+
   
   
 
@@ -633,7 +662,7 @@ To facilitate quick sorting between different insurance statuses, we implemented
         <StyledNotationContainer>
           <Stylednotation>Design proposal for insurance overview, figma.</Stylednotation>
           </StyledNotationContainer>
-          <StyledImg
+          <StyledScaledImg
             // ref={imgRef}
             src={OverviewImg}
             alt="Design proposal for insurance overview."

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ const Styledp = styled.p`
   font-weight: 600;
 
   @media (max-width: 960px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -47,7 +47,7 @@ const Button = ({ onClick }) => {
   };
 
   return (
-    <StyledPlayContainer>
+    <StyledButtonContainer>
        <StyledWrapper>
       <a
         href="https://paulevans-dop.com/"
@@ -55,11 +55,11 @@ const Button = ({ onClick }) => {
         rel="noopener noreferrer"
       >
        
-        <FaArrowCircleRight onClick={onClick} size={80} />
+        <FaArrowCircleRight onClick={onClick} size={70} />
       </a>
       </StyledWrapper>
       <Styledp>See Cinematography Reel</Styledp>
-    </StyledPlayContainer>
+    </StyledButtonContainer>
   );
 };
 export default Button;

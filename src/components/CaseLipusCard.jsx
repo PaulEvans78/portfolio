@@ -16,6 +16,7 @@ const slideInFromRight = keyframes`
 `;
 
 const StyledCaseMain = styled.section`
+background-color: #f9f9f9;
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -94,6 +95,10 @@ const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: 478px) {
+    height: 500px;
+  }
 
   ${({ isInView }) =>
     isInView &&

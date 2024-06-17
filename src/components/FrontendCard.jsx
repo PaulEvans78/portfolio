@@ -25,7 +25,7 @@ const StyledFrontCard = styled.div`
   }
 
   @media screen and (max-width: 478px) {
-    height: 480px;
+    height: 500px;
   }
 `;
 
@@ -55,6 +55,7 @@ const StyledInfoContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
+    /* padding-top: 20px; */
     padding-left: 20px;
     height: 500px;
   }
@@ -65,14 +66,18 @@ const StyledIconContainer = styled.div`
   row-gap: 16px;
   row-gap: 40px;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 30% 30% 30%;
-
+  grid-template-rows: 30% 30%;
   padding-left: 60px;
+
+  @media screen and (max-width: 478px) {
+    padding-left: 40px;
+  }
 `;
 
 const StyledTool = styled.img`
   width: 50%;
   height: auto;
+
   @media screen and (max-width: 478px) {
     width: 40%;
   }

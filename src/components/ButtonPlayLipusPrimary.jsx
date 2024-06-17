@@ -1,9 +1,9 @@
 import React from 'react';
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { FaPlayCircle } from "react-icons/fa";
 
 
-const StyledPlayContainer = styled.div`
+const StyledButtonContainer = styled.div`
 width: 200px;
 display: flex;
 flex-direction: column;
@@ -39,7 +39,7 @@ font-size: 20px;
   font-weight: 600;
 
   @media (max-width: 960px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -54,14 +54,14 @@ const Button = ({ onClick }) => {
 
   return (
 
-    <StyledPlayContainer>
+    <StyledButtonContainer>
       <StyledWrapper>
-      <FaPlayCircle onClick={onClick} size={80}/>
+      <FaPlayCircle onClick={onClick} size={70}/>
       </StyledWrapper>
                   {/* <FaPlayCircle onClick={() => setModalOpen(true)} size={80}/> */}
                     <Styledp>Play Film</Styledp>
                   {/* <ButtonFilm onClick={() => setModalOpen(true)}/> */}
-                  </StyledPlayContainer>
+                  </StyledButtonContainer>
   );
 };
 export default Button;

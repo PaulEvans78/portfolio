@@ -8,12 +8,12 @@ const StyledPlayContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 24px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   /* padding-bottom: 10px; */
   color: #e437e2;
 
-  @media screen and (max-width: 478px) {
-    align-items: center;
-  }
+  
 `;
 
 const StyledWrapper = styled.div`
@@ -36,6 +36,10 @@ const Styledp = styled.p`
   color: #ffffff;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 478px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = ({ onClick }) => {
@@ -52,7 +56,7 @@ const Button = ({ onClick }) => {
         rel="noopener noreferrer"
       >
        
-        <FaArrowCircleRight onClick={onClick} size={80} />
+        <FaArrowCircleRight onClick={onClick} size={70} />
       </a>
       </StyledWrapper>
       <Styledp>See Cinematography Reel</Styledp>

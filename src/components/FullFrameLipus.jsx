@@ -60,10 +60,12 @@ const StyledContentsContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
+    justify-content: center;
+    text-align: center;
     width: 90%;
     height: 650px;
     padding-left: 20px;
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -77,6 +79,11 @@ const StyledLogoContainer = styled.div`
   display: flex;
   padding-top: 30px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 478px) {
+    justify-content: center;
+    
+  }
 `;
 
 const StyledLogo = styled.img`
@@ -85,6 +92,7 @@ const StyledLogo = styled.img`
 
   @media screen and (max-width: 478px) {
     width: 50%;
+    
   }
 `;
 
