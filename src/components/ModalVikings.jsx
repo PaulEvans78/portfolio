@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Video from "../assets/vikings.mp4";
+// import Video from "../assets/vikings.mp4";
 import { RxCross1 } from "react-icons/rx";
 
 const fadeIn = keyframes`
@@ -40,26 +40,47 @@ const CloseButton = styled.button`
   right: 20px;
   background: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--main-font-color);
   cursor: pointer;
   z-index: 100;
 `;
 
-const VideoContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// const VideoContainer = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
-const StyledVideo = styled.video`
-  width: 100%;
-  height: auto;
-`;
+// const StyledVideo = styled.video`
+//   width: 100%;
+//   height: auto;
+// `;
 
-const Modal = ({ isOpen, onClose }) => {
+// const Modal = ({ isOpen, onClose }) => {
+//   if (!isOpen) return null;
+
+//   return (
+//     <ModalBackground>
+//       <ModalContent>
+//         <CloseButton onClick={onClose}>
+//           <RxCross1 />
+//         </CloseButton>
+//         <VideoContainer>
+//           <StyledVideo controls autoPlay>
+//             <source src={Video} type="video/mp4" />
+//           </StyledVideo>
+//         </VideoContainer>
+//       </ModalContent>
+//     </ModalBackground>
+//   );
+// };
+
+// export default Modal;
+
+const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
@@ -68,11 +89,7 @@ const Modal = ({ isOpen, onClose }) => {
         <CloseButton onClick={onClose}>
           <RxCross1 />
         </CloseButton>
-        <VideoContainer>
-          <StyledVideo controls autoPlay>
-            <source src={Video} type="video/mp4" />
-          </StyledVideo>
-        </VideoContainer>
+        {children}
       </ModalContent>
     </ModalBackground>
   );

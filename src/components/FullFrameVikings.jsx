@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import Video from "../assets/vikings.mp4";
+// import Video from "../assets/vikings.mp4";
+import BackgroundVideo from "../assets/vikings.mp4";
+import Showcase from "../assets/vikingsTrailer.mp4";
 import logoImg from "../assets/viaplayLogo.avif";
 import ButtonFsF from "./ButtonFsFSecondary";
 import ButtonTrailer from "./ButtonPlayVikings";
@@ -94,51 +96,184 @@ const StyledButtonContainer = styled.div`
   }
 `;
 
-const Film = () => {
+const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
+  const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [key, setKey] = useState(0); // Key to force re-render of video
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 1024);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (videoRef.current) {
         videoRef.current.play();
       }
-    }, 1000); // 9000ms delay (9 seconds)
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleButtonClick = () => {
+    if (isSmallScreen) {
+      setKey((prevKey) => prevKey + 1); // Update key to force re-render
+      setTimeout(() => {
+        if (filmRef.current) {
+          const videoElement = filmRef.current;
+          videoElement.pause();
+          videoElement.currentTime = 0;
+          const playPromise = videoElement.play();
+
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                videoElement.requestFullscreen().catch((err) => {
+                  console.log("Error attempting to enable full-screen mode:", err);
+                });
+              })
+              .catch((error) => {
+                console.log("Failed to play the video automatically:", error);
+              });
+          }
+        }
+      }, 0);
+    } else {
+      setModalOpen(true);
+    }
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
+  useEffect(() => {
+    const handleFullScreenChange = () => {
+      if (!document.fullscreenElement) {
+        if (filmRef.current) {
+          filmRef.current.pause();
+          filmRef.current.currentTime = 0;
+        }
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullScreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullScreenChange);
+    };
   }, []);
 
   return (
     <StyledMainContainer>
       <StyledVideo
         ref={videoRef}
-        src={Video}
-        autoplay
+        src={BackgroundVideo}
         loop
         muted
         playsInline
         alt="Background video"
       />
 
+     
+
       <StyledContentsContainer>
         <StyledLogoContainer>
-          <StyledLogo src={logoImg} alt="Viaplays logo" />
+          <StyledLogo src={logoImg} alt="LipusPlus logo" />
         </StyledLogoContainer>
 
-        <h4>The Last Journey of the Vikings</h4>
-        <p>
-          In collaboration with director James Valesquez, Mopar Studios and
-          Viaplay, I served as the series cinematographer. The production took
-          place in both Sweden and Ireland.
-        </p>
+        <h4>Meet the Physio of Hammarby Handball</h4>
 
+        <p>
+          Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality.
+        </p>
         <StyledButtonContainer>
-          <ButtonTrailer onClick={() => setModalOpen(true)} />
+                
+          <ButtonTrailer onClick={handleButtonClick} />
           <ButtonFsF />
         </StyledButtonContainer>
       </StyledContentsContainer>
-      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
+
+      <Modal isOpen={isModalOpen} onClose={handleModalClose}>
+        <video controls autoPlay>
+          <source src={Showcase} type="video/mp4" />
+        </video>
+      </Modal>
+
+      <video
+        key={key} // Use key to force re-render
+        ref={filmRef}
+        style={{ display: "none" }}
+        src={Showcase}
+        type="video/mp4"
+        controls
+      />
     </StyledMainContainer>
   );
 };
+
 export default Film;
+
+
+
+// const Film = () => {
+//   const videoRef = useRef(null);
+//   const [isModalOpen, setModalOpen] = useState(false);
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       if (videoRef.current) {
+//         videoRef.current.play();
+//       }
+//     }, 1000); 
+
+//     return () => clearTimeout(timer); 
+//   }, []);
+
+//   return (
+//     <StyledMainContainer>
+//       <StyledVideo
+//         ref={videoRef}
+//         src={Video}
+//         autoplay
+//         loop
+//         muted
+//         playsInline
+//         alt="Background video"
+//       />
+
+//       <StyledContentsContainer>
+//         <StyledLogoContainer>
+//           <StyledLogo src={logoImg} alt="Viaplays logo" />
+//         </StyledLogoContainer>
+
+//         <h4>The Last Journey of the Vikings</h4>
+//         <p>
+//           In collaboration with director James Valesquez, Mopar Studios and
+//           Viaplay, I served as the series cinematographer. The production took
+//           place in both Sweden and Ireland.
+//         </p>
+
+//         <StyledButtonContainer>
+//           <ButtonTrailer onClick={() => setModalOpen(true)} />
+//           <ButtonFsF />
+//         </StyledButtonContainer>
+//       </StyledContentsContainer>
+//       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
+//     </StyledMainContainer>
+//   );
+// };
+// export default Film;

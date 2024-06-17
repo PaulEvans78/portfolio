@@ -220,7 +220,7 @@ const Film = ({ scrollToEvent }) => {
 
       <Modal isOpen={isModalOpen} onClose={handleModalClose}>
         <video controls autoPlay>
-          <source src={BackgroundVideo} type="video/mp4" />
+          <source src={Showcase} type="video/mp4" />
         </video>
       </Modal>
 

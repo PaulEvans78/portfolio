@@ -40,24 +40,24 @@ const CloseButton = styled.button`
   right: 10px;
   background: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--main-font-color);
   cursor: pointer;
   z-index: 100;
 `;
 
-const VideoContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// const VideoContainer = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
-const StyledVideo = styled.video`
-  width: 100%;
-  height: auto;
-`;
+// const StyledVideo = styled.video`
+//   width: 100%;
+//   height: auto;
+// `;
 
 // const Modal = ({ isOpen, onClose }) => {
 //   if (!isOpen) return null;
