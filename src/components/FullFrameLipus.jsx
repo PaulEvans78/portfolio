@@ -408,9 +408,3 @@ export default Film;
 // };
 // export default Film;
 
-
-// help test 
-//help help ddddd
-// help
-
-// give up
