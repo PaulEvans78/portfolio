@@ -1,9 +1,9 @@
-import DifferentFilm from "../assets/lipusplus_brand_film_hammarby-2024.mp4"
+
 
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
-
+import Film from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
@@ -112,7 +112,7 @@ const StyledButtonContainer = styled.div`
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
-  const differentFilmRef = useRef(null);
+  const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -137,26 +137,58 @@ const Film = ({ scrollToEvent }) => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleVideoPause = () => {
+      setModalOpen(false);
+      if (filmRef.current) {
+        filmRef.current.pause();
+        filmRef.current.currentTime = 0;
+      }
+    };
+
+    if (filmRef.current) {
+      filmRef.current.addEventListener("pause", handleVideoPause);
+      filmRef.current.addEventListener("ended", handleVideoPause);
+    }
+
+    return () => {
+      if (filmRef.current) {
+        filmRef.current.removeEventListener("pause", handleVideoPause);
+        filmRef.current.removeEventListener("ended", handleVideoPause);
+      }
+    };
+  }, [isSmallScreen]);
+
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      if (differentFilmRef.current) {
-        const videoElement = differentFilmRef.current;
+      if (filmRef.current) {
+        const videoElement = filmRef.current;
         videoElement.pause();
         videoElement.currentTime = 0;
         const playPromise = videoElement.play();
 
         if (playPromise !== undefined) {
-          playPromise.then(() => {
-            videoElement.requestFullscreen().catch((err) => {
-              console.log("Error attempting to enable full-screen mode:", err);
+          playPromise
+            .then(() => {
+              videoElement.requestFullscreen().catch((err) => {
+                console.log("Error attempting to enable full-screen mode:", err);
+              });
+            })
+            .catch((error) => {
+              console.log("Failed to play the video automatically:", error);
             });
-          }).catch((error) => {
-            console.log("Failed to play the video automatically:", error);
-          });
         }
       }
     } else {
       setModalOpen(true);
+    }
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
 
@@ -181,27 +213,24 @@ const Film = ({ scrollToEvent }) => {
         <h4>Meet the Physio of Hammarby Handball</h4>
 
         <p>
-          Brand film highlighting LipusPlus's partnership with Hammarby
-          Handball, showcasing through testimonals the effectiveness of the
-          modality.
+          Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality.
         </p>
-
         <StyledButtonContainer>
           <ButtonFilm onClick={handleButtonClick} />
           <ButtonCase onClick={scrollToEvent} />
         </StyledButtonContainer>
       </StyledContentsContainer>
 
-      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+      <Modal isOpen={isModalOpen} onClose={handleModalClose}>
         <video controls autoPlay>
           <source src={BackgroundVideo} type="video/mp4" />
         </video>
       </Modal>
 
       <video
-        ref={differentFilmRef}
+        ref={filmRef}
         style={{ display: "none" }}
-        src={DifferentFilm}
+        src={Film}
         type="video/mp4"
         controls
       />
