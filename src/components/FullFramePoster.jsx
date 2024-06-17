@@ -62,8 +62,6 @@ const StyledContentsContainer = styled.div`
   @media screen and (max-width: 478px) {
     text-align: center;
     width: 90%;
-    padding-top: 100px;
-    padding-bottom: 120px;
     padding-left: 16px;
   }
 

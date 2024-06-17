@@ -111,16 +111,41 @@ const StyledButtonContainer = styled.div`
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 767);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (videoRef.current) {
         videoRef.current.play();
       }
-    }, 1000); // 9000ms delay (9 seconds)
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
   }, []);
+
+  const handleButtonClick = () => {
+    if (isSmallScreen) {
+      // For small screens, just play the video in fullscreen mode
+      if (videoRef.current) {
+        videoRef.current.requestFullscreen();
+        videoRef.current.play();
+      }
+    } else {
+      // For larger screens, open the modal
+      setModalOpen(true);
+    }
+  };
 
   return (
     <StyledMainContainer>
@@ -149,13 +174,68 @@ const Film = ({ scrollToEvent }) => {
         </p>
 
         <StyledButtonContainer>
-          <ButtonFilm onClick={() => setModalOpen(true)} />
-
+          <ButtonFilm onClick={handleButtonClick} />
           <ButtonCase onClick={scrollToEvent} />
         </StyledButtonContainer>
       </StyledContentsContainer>
-      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
+
+      {!isSmallScreen && (
+        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+      )}
     </StyledMainContainer>
   );
 };
 export default Film;
+
+
+// const Film = ({ scrollToEvent }) => {
+//   const videoRef = useRef(null);
+//   const [isModalOpen, setModalOpen] = useState(false);
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       if (videoRef.current) {
+//         videoRef.current.play();
+//       }
+//     }, 1000); 
+
+//     return () => clearTimeout(timer); 
+//   }, []);
+
+//   return (
+//     <StyledMainContainer>
+//       <StyledVideo
+//         ref={videoRef}
+//         src={Video}
+//         loop
+//         muted
+//         playsInline
+//         alt="Background video"
+//       />
+
+//       <StyledOpacity />
+
+//       <StyledContentsContainer>
+//         <StyledLogoContainer>
+//           <StyledLogo src={logoImg} alt="LipusPlus logo" />
+//         </StyledLogoContainer>
+
+//         <h4>Meet the Physio of Hammarby Handball</h4>
+
+//         <p>
+//           Brand film highlighting LipusPlus's partnership with Hammarby
+//           Handball, showcasing through testimonals the effectiveness of the
+//           modality.
+//         </p>
+
+//         <StyledButtonContainer>
+//           <ButtonFilm onClick={() => setModalOpen(true)} />
+
+//           <ButtonCase onClick={scrollToEvent} />
+//         </StyledButtonContainer>
+//       </StyledContentsContainer>
+//       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
+//     </StyledMainContainer>
+//   );
+// };
+// export default Film;
