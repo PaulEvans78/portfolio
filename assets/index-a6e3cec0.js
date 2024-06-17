@@ -738,14 +738,14 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,Nv=({onClick:e})=>a.jsxs(Ev,{children:[a.jsx(Iv,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Pv,{children:"See Case Study"})]}),Bv="/portfolio/assets/lipusPlusLogoWhite-b2e2b769.avif",Rv="/portfolio/assets/lipusplus_brand_film_hammarby-2024-c0930dc4.mp4";function mf(e){return Tn({tag:"svg",attr:{viewBox:"0 0 15 15",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z",fill:"currentColor"},child:[]}]})(e)}const Tv=Pn`
+`,Nv=({onClick:e})=>a.jsxs(Ev,{children:[a.jsx(Iv,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Pv,{children:"See Case Study"})]}),Bv="/portfolio/assets/lipusPlusLogoWhite-b2e2b769.avif";function mf(e){return Tn({tag:"svg",attr:{viewBox:"0 0 15 15",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z",fill:"currentColor"},child:[]}]})(e)}const Rv=Pn`
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-`,Ov=A.div`
+`,Tv=A.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -755,8 +755,8 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   z-index: 200;
-  animation: ${Tv} 0.5s ease-out;
-`,zv=A.div`
+  animation: ${Rv} 0.5s ease-out;
+`,Ov=A.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -764,7 +764,7 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   background: var(--main-modal-backgroundcolor);
-`,Lv=A.button`
+`,zv=A.button`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -774,16 +774,16 @@ Error generating stack: `+o.message+`
   color: var(--main-font-color);
   cursor: pointer;
   z-index: 100;
-`,bv=A.div`
+`;A.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-`,Fv=A.video`
+`;A.video`
   width: 100%;
   height: auto;
-`,Mv=({isOpen:e,onClose:t})=>e?a.jsx(Ov,{children:a.jsxs(zv,{children:[a.jsx(Lv,{onClick:t,children:a.jsx(mf,{})}),a.jsx(bv,{children:a.jsx(Fv,{controls:!0,autoPlay:!0,children:a.jsx("source",{src:Rv,type:"video/mp4"})})})]})}):null,Dv=A.section`
+`;const Lv=({isOpen:e,onClose:t,children:n})=>e?a.jsx(Tv,{children:a.jsxs(Ov,{children:[a.jsx(zv,{onClick:t,children:a.jsx(mf,{})}),n]})}):null,bv="/portfolio/assets/lipusplus_brand_film_hammarby-2024-c0930dc4.mp4",Fv=A.section`
   position: relative;
   max-width: 100%;
   min-width: 100%;
@@ -791,7 +791,7 @@ Error generating stack: `+o.message+`
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
-`,Wv=A.video`
+`,Mv=A.video`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -800,7 +800,7 @@ Error generating stack: `+o.message+`
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 1;
-`,Gv=A.div`
+`,Dv=A.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -808,7 +808,7 @@ Error generating stack: `+o.message+`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.32);
   z-index: 2;
-`,Vv=A.div`
+`,Wv=A.div`
   width: 60%;
   height: 500px;
   padding-top: 280px;
@@ -843,7 +843,7 @@ Error generating stack: `+o.message+`
     padding-top: 120px;
     padding-bottom: 80px;
   }
-`,Uv=A.div`
+`,Gv=A.div`
   display: flex;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -851,14 +851,14 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     justify-content: center;
   }
-`,Qv=A.img`
+`,Vv=A.img`
   width: 30%;
   height: auto;
 
   @media screen and (max-width: 478px) {
     width: 50%;
   }
-`,Yv=A.div`
+`,Uv=A.div`
   width: auto;
   display: flex;
   flex-direction: row;
@@ -870,14 +870,14 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
   }
-`,$v=({scrollToEvent:e})=>{const t=C.useRef(null),[n,r]=C.useState(!1),[i,o]=C.useState(!1);C.useEffect(()=>{const s=()=>{o(window.innerWidth<1024)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),C.useEffect(()=>{const s=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(s)},[]);const l=()=>{if(i){if(t.current){const s=t.current;s.play(),s.requestFullscreen().catch(u=>{console.log("Error attempting to enable full-screen mode:",u)})}}else r(!0)};return a.jsxs(Dv,{children:[a.jsx(Wv,{ref:t,src:wv,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Gv,{}),a.jsxs(Vv,{children:[a.jsx(Uv,{children:a.jsx(Qv,{src:Bv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Yv,{children:[a.jsx(kv,{onClick:l}),a.jsx(Nv,{onClick:e})]})]}),!i&&a.jsx(Mv,{isOpen:n,onClose:()=>r(!1)})]})},Af="/portfolio/assets/lipusPlusLogo-022851c3.avif",gf="/portfolio/assets/lipusHeroImg-44921e74.avif",Hv=A.div`
+`,Qv=({scrollToEvent:e})=>{const t=C.useRef(null),[n,r]=C.useState(!1),[i,o]=C.useState(!1);C.useEffect(()=>{const s=()=>{o(window.innerWidth<1024)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),C.useEffect(()=>{const s=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(s)},[]);const l=()=>{if(i){if(t.current){const s=t.current;s.play(),s.requestFullscreen().catch(u=>{console.log("Error attempting to enable full-screen mode:",u)})}}else r(!0)};return a.jsxs(Fv,{children:[a.jsx(Mv,{ref:t,src:wv,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Dv,{}),a.jsxs(Wv,{children:[a.jsx(Gv,{children:a.jsx(Vv,{src:Bv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Uv,{children:[a.jsx(kv,{onClick:l}),a.jsx(Nv,{onClick:e})]})]}),!i&&a.jsx(Lv,{isOpen:n,onClose:()=>r(!1),children:a.jsx("video",{controls:!0,autoPlay:!0,children:a.jsx("source",{src:bv,type:"video/mp4"})})})]})},Af="/portfolio/assets/lipusPlusLogo-022851c3.avif",gf="/portfolio/assets/lipusHeroImg-44921e74.avif",Yv=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
   color: var(--main-button-color);
-`,Xv=A.div`
+`,$v=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -891,7 +891,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,_v=A.p`
+`,Hv=A.p`
   color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -899,7 +899,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 478px) {
     font-size: 18px;
   }
-`,Kv=({onClick:e})=>a.jsxs(Hv,{children:[a.jsx(Xv,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(_v,{children:"See Case Study"})]}),Zv=Pn`
+`,Xv=({onClick:e})=>a.jsxs(Yv,{children:[a.jsx($v,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Hv,{children:"See Case Study"})]}),_v=Pn`
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -908,7 +908,7 @@ Error generating stack: `+o.message+`
     transform: translateX(0);
     opacity: 1;
   }
-`,Jv=A.section`
+`,Kv=A.section`
   background-color: var(--main-casecard-background-color);
   max-width: 100%;
   min-width: 100%;
@@ -926,7 +926,7 @@ Error generating stack: `+o.message+`
       "Image"
       "Context";
   }
-`,qv=A.div`
+`,Zv=A.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
@@ -951,27 +951,27 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,e1=A.div`
+`,Jv=A.div`
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-`,t1=A.img`
+`,qv=A.img`
   width: 40%;
   height: auto;
-`,n1=A.p`
+`,e1=A.p`
   position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 40px;
   font-size: 14px;
   z-index: 2;
-`,r1=A.div`
+`,t1=A.div`
   position: relative;
   grid-area: Image;
   display: flex;
   flex-direction: column;
   height: 100%;
-`,i1=A.img`
+`,n1=A.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -981,9 +981,9 @@ Error generating stack: `+o.message+`
   }
 
   ${({isInView:e})=>e&&pr`
-      animation: ${Zv} 1s ease-out forwards;
+      animation: ${_v} 1s ease-out forwards;
     `}
-`,vf=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(Jv,{children:[a.jsxs(qv,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(e1,{children:a.jsx(t1,{src:Af,alt:"The logo for LipuspLus"})}),a.jsx("p",{children:"LipusPlus aims to attract physiotherapists and elite athletes to its webinars on the Return to Play concept. An enticing and informative landing page is needed to generate leads for these webinars."}),a.jsx(Kv,{})]}),a.jsxs(r1,{children:[a.jsx(n1,{children:"Photo by Peder Rotkirch."}),a.jsx(i1,{ref:e,src:gf,alt:"A hammarby handball player in green and white stripes holds a ball.",isInView:t})]})]})},xf="/portfolio/assets/vikings-23b289a3.mp4",o1="/portfolio/assets/viaplayLogo-c60ae164.avif",l1=A.div`
+`,vf=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(Kv,{children:[a.jsxs(Zv,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(Jv,{children:a.jsx(qv,{src:Af,alt:"The logo for LipuspLus"})}),a.jsx("p",{children:"LipusPlus aims to attract physiotherapists and elite athletes to its webinars on the Return to Play concept. An enticing and informative landing page is needed to generate leads for these webinars."}),a.jsx(Xv,{})]}),a.jsxs(t1,{children:[a.jsx(e1,{children:"Photo by Peder Rotkirch."}),a.jsx(n1,{ref:e,src:gf,alt:"A hammarby handball player in green and white stripes holds a ball.",isInView:t})]})]})},xf="/portfolio/assets/vikings-23b289a3.mp4",r1="/portfolio/assets/viaplayLogo-c60ae164.avif",i1=A.div`
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -994,7 +994,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     align-items: center;
   }
-`,a1=A.div`
+`,o1=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -1008,7 +1008,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,s1=A.p`
+`,l1=A.p`
   color: var(--main-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -1016,7 +1016,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,u1=({onClick:e})=>a.jsxs(l1,{children:[a.jsx(a1,{children:a.jsx("a",{href:"https://paulevans-dop.com/",target:"_blank",rel:"noopener noreferrer",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(s1,{children:"See Cinematography Reel"})]}),c1=A.div`
+`,a1=({onClick:e})=>a.jsxs(i1,{children:[a.jsx(o1,{children:a.jsx("a",{href:"https://paulevans-dop.com/",target:"_blank",rel:"noopener noreferrer",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(l1,{children:"See Cinematography Reel"})]}),s1=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -1027,7 +1027,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     align-items: center;
   }
-`,d1=A.div`
+`,u1=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -1041,7 +1041,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,p1=A.p`
+`,c1=A.p`
   color: var(--main-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -1049,14 +1049,14 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,f1=({onClick:e})=>a.jsxs(c1,{children:[a.jsx(d1,{children:a.jsx(hf,{onClick:e,size:70})}),a.jsx(p1,{children:"Play Trailer"})]}),h1=Pn`
+`,d1=({onClick:e})=>a.jsxs(s1,{children:[a.jsx(u1,{children:a.jsx(hf,{onClick:e,size:70})}),a.jsx(c1,{children:"Play Trailer"})]}),p1=Pn`
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-`,m1=A.div`
+`,f1=A.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -1066,8 +1066,8 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   z-index: 200;
-  animation: ${h1} 0.5s ease-out;
-`,A1=A.div`
+  animation: ${p1} 0.5s ease-out;
+`,h1=A.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -1075,7 +1075,7 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   background: var(--main-modal-backgroundcolor);
-`,g1=A.button`
+`,m1=A.button`
   position: absolute;
   top: 30px;
   right: 20px;
@@ -1085,16 +1085,16 @@ Error generating stack: `+o.message+`
   color: var(--main-font-color);
   cursor: pointer;
   z-index: 100;
-`,v1=A.div`
+`,A1=A.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-`,x1=A.video`
+`,g1=A.video`
   width: 100%;
   height: auto;
-`,y1=({isOpen:e,onClose:t})=>e?a.jsx(m1,{children:a.jsxs(A1,{children:[a.jsx(g1,{onClick:t,children:a.jsx(mf,{})}),a.jsx(v1,{children:a.jsx(x1,{controls:!0,autoPlay:!0,children:a.jsx("source",{src:xf,type:"video/mp4"})})})]})}):null,w1=A.section`
+`,v1=({isOpen:e,onClose:t})=>e?a.jsx(f1,{children:a.jsxs(h1,{children:[a.jsx(m1,{onClick:t,children:a.jsx(mf,{})}),a.jsx(A1,{children:a.jsx(g1,{controls:!0,autoPlay:!0,children:a.jsx("source",{src:xf,type:"video/mp4"})})})]})}):null,x1=A.section`
   position: relative;
   max-width: 100%;
   min-width: 100%;
@@ -1103,7 +1103,7 @@ Error generating stack: `+o.message+`
   position: relative;
   display: flex;
   flex-direction: column;
-`,S1=A.video`
+`,y1=A.video`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1112,7 +1112,7 @@ Error generating stack: `+o.message+`
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 1;
-`,j1=A.div`
+`,w1=A.div`
   position: relative;
   width: 60%;
   height: 500px;
@@ -1148,7 +1148,7 @@ Error generating stack: `+o.message+`
     padding-top: 100px;
     padding-bottom: 80px;
   }
-`,C1=A.div`
+`,S1=A.div`
   display: flex;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -1156,10 +1156,10 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     justify-content: center;
   }
-`,k1=A.img`
+`,j1=A.img`
   width: 30%;
   height: auto;
-`,E1=A.div`
+`,C1=A.div`
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -1170,14 +1170,14 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
   }
-`,I1=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=setTimeout(()=>{e.current&&e.current.play()},1e3);return()=>clearTimeout(r)},[]),a.jsxs(w1,{children:[a.jsx(S1,{ref:e,src:xf,autoplay:!0,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsxs(j1,{children:[a.jsx(C1,{children:a.jsx(k1,{src:o1,alt:"Viaplays logo"})}),a.jsx("h4",{children:"The Last Journey of the Vikings"}),a.jsx("p",{children:"In collaboration with director James Valesquez, Mopar Studios and Viaplay, I served as the series cinematographer. The production took place in both Sweden and Ireland."}),a.jsxs(E1,{children:[a.jsx(f1,{onClick:()=>n(!0)}),a.jsx(u1,{})]})]}),a.jsx(y1,{isOpen:t,onClose:()=>n(!1)})]})},yf="data:image/avif;base64,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",wf="/portfolio/assets/ebieHeroImg-14466e14.avif",P1=A.div`
+`,k1=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=setTimeout(()=>{e.current&&e.current.play()},1e3);return()=>clearTimeout(r)},[]),a.jsxs(x1,{children:[a.jsx(y1,{ref:e,src:xf,autoplay:!0,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsxs(w1,{children:[a.jsx(S1,{children:a.jsx(j1,{src:r1,alt:"Viaplays logo"})}),a.jsx("h4",{children:"The Last Journey of the Vikings"}),a.jsx("p",{children:"In collaboration with director James Valesquez, Mopar Studios and Viaplay, I served as the series cinematographer. The production took place in both Sweden and Ireland."}),a.jsxs(C1,{children:[a.jsx(d1,{onClick:()=>n(!0)}),a.jsx(a1,{})]})]}),a.jsx(v1,{isOpen:t,onClose:()=>n(!1)})]})},yf="data:image/avif;base64,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",wf="/portfolio/assets/ebieHeroImg-14466e14.avif",E1=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
   color: var(--main-button-color);
-`,N1=A.div`
+`,I1=A.div`
   display: flex;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -1191,7 +1191,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,B1=A.p`
+`,P1=A.p`
   color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -1199,7 +1199,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,R1=({onClick:e})=>a.jsxs(P1,{children:[a.jsx(N1,{children:a.jsx(hr,{to:"/ebie",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(B1,{children:"See Case Study"})]}),T1=Pn`
+`,N1=({onClick:e})=>a.jsxs(E1,{children:[a.jsx(I1,{children:a.jsx(hr,{to:"/ebie",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(P1,{children:"See Case Study"})]}),B1=Pn`
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -1208,7 +1208,7 @@ Error generating stack: `+o.message+`
     transform: translateX(0);
     opacity: 1;
   }
-`,O1=A.section`
+`,R1=A.section`
   background-color: var(--main-casecard-background-color);
   max-width: 100%;
   min-width: 100%;
@@ -1226,7 +1226,7 @@ Error generating stack: `+o.message+`
       "Image"
       "Context";
   }
-`,z1=A.div`
+`,T1=A.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
@@ -1251,27 +1251,27 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,L1=A.div`
+`,O1=A.div`
   display: flex;
   padding-bottom: 30px;
   padding-top: 30px;
-`,b1=A.img`
+`,z1=A.img`
   width: 40%;
   height: auto;
-`,F1=A.p`
+`,L1=A.p`
   position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 40px;
   font-size: 14px;
   z-index: 2;
-`,M1=A.div`
+`,b1=A.div`
   position: relative;
   grid-area: Image;
   display: flex;
   flex-direction: column;
   height: 100%;
-`,D1=A.img`
+`,F1=A.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1281,9 +1281,9 @@ Error generating stack: `+o.message+`
   }
 
   ${({isInView:e})=>e&&pr`
-      animation: ${T1} 1s ease-out forwards;
+      animation: ${B1} 1s ease-out forwards;
     `}
-`,Sf=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(O1,{children:[a.jsxs(z1,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(L1,{children:a.jsx(b1,{src:yf,alt:"The logo for Ebie"})}),a.jsx("p",{children:"Create and implement a completely new and user-friendly function within the platform that makes it easy for property owners to apply for and manage group insurance. Simplify the application and the overview for insurance status."}),a.jsx(R1,{})]}),a.jsxs(M1,{children:[a.jsx(F1,{children:"Photo from www.Ebie.se"}),a.jsx(D1,{ref:e,src:wf,alt:"A street view on the corner of Sveavägen, Sergelstorg.",isInView:t})]})]})},W1="/portfolio/assets/hidden-7e893598.avif",G1="/portfolio/assets/hiddenMobileImg-1a91cc10.avif",V1="/portfolio/assets/BESTSHORTFILMSPECIALAWARD-EasternEuropeFilmFestival-December2022-489d2b56.avif",U1=A.section`
+`,Sf=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(R1,{children:[a.jsxs(T1,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(O1,{children:a.jsx(z1,{src:yf,alt:"The logo for Ebie"})}),a.jsx("p",{children:"Create and implement a completely new and user-friendly function within the platform that makes it easy for property owners to apply for and manage group insurance. Simplify the application and the overview for insurance status."}),a.jsx(N1,{})]}),a.jsxs(b1,{children:[a.jsx(L1,{children:"Photo from www.Ebie.se"}),a.jsx(F1,{ref:e,src:wf,alt:"A street view on the corner of Sveavägen, Sergelstorg.",isInView:t})]})]})},M1="/portfolio/assets/hidden-7e893598.avif",D1="/portfolio/assets/hiddenMobileImg-1a91cc10.avif",W1="/portfolio/assets/BESTSHORTFILMSPECIALAWARD-EasternEuropeFilmFestival-December2022-489d2b56.avif",G1=A.section`
   position: relative;
   max-width: 100%;
   min-width: 100%;
@@ -1293,7 +1293,7 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   z-index: 2;
-`,Q1=A.img`
+`,V1=A.img`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1303,7 +1303,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 767px) {
     display: none;
   }
-`,Y1=A.img`
+`,U1=A.img`
   position: absolute;
   display: none;
   width: 100%;
@@ -1314,7 +1314,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 767px) {
     display: flex;
   }
-`,$1=A.div`
+`,Q1=A.div`
   width: 50%;
   height: 500px;
   padding-top: 280px;
@@ -1342,17 +1342,17 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 320px) {
     padding-top: 15px;
   }
-`,H1=A.div`
+`,Y1=A.div`
   display: flex;
   padding-top: 30px;
 
   @media screen and (max-width: 478px) {
     justify-content: center;
   }
-`,X1=A.img`
+`,$1=A.img`
   width: 50%;
   height: auto;
-`,_1=A.div`
+`,H1=A.div`
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -1367,14 +1367,14 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     justify-content: center;
   }
-`,K1=A.p`
+`,X1=A.p`
   margin-right: 40px;
   font-size: 14px;
 
   @media screen and (max-width: 478px) {
     margin-right: 0;
   }
-`,Z1=({scrollToEvent:e})=>a.jsxs(U1,{children:[a.jsx(_1,{children:a.jsx(K1,{children:"Photography by Nisse Virgin."})}),a.jsx(Q1,{src:W1,alt:"A short film poster. A Man sits with his back to camera contemplating"}),a.jsx(Y1,{src:G1,alt:"A short film poster. A Man sits with his back to camera contemplating"}),a.jsxs($1,{children:[a.jsx("h4",{children:"Hidden"}),a.jsx("p",{children:"My passion for storytelling led me to create a short film, which I directed, produced, and wrote. This film went on to win the Special award for Best Short Film at the Eastern European Short Film Festival."}),a.jsx(H1,{children:a.jsx(X1,{src:V1,alt:"A wreath for Winner Eastern European Short Film Festival "})})]})]}),J1=A.section`
+`,_1=({scrollToEvent:e})=>a.jsxs(G1,{children:[a.jsx(H1,{children:a.jsx(X1,{children:"Photography by Nisse Virgin."})}),a.jsx(V1,{src:M1,alt:"A short film poster. A Man sits with his back to camera contemplating"}),a.jsx(U1,{src:D1,alt:"A short film poster. A Man sits with his back to camera contemplating"}),a.jsxs(Q1,{children:[a.jsx("h4",{children:"Hidden"}),a.jsx("p",{children:"My passion for storytelling led me to create a short film, which I directed, produced, and wrote. This film went on to win the Special award for Best Short Film at the Eastern European Short Film Festival."}),a.jsx(Y1,{children:a.jsx($1,{src:W1,alt:"A wreath for Winner Eastern European Short Film Festival "})})]})]}),K1=A.section`
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -1397,7 +1397,7 @@ Error generating stack: `+o.message+`
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
   }
-`,q1=()=>{const e=C.useRef(null),t=()=>{e.current&&e.current.scrollIntoView({behavior:"smooth"})};return a.jsxs(J1,{children:[a.jsx(h0,{}),a.jsxs(jc,{children:[a.jsx(nv,{}),a.jsx(yv,{})]}),a.jsx($v,{scrollToEvent:t}),a.jsxs(jc,{children:[a.jsx(b0,{}),a.jsx(Y0,{})]}),a.jsx("div",{ref:e}),a.jsx(vf,{}),a.jsx(I1,{}),a.jsx(Sf,{}),a.jsx(Z1,{})]})},ex=A.section`
+`,Z1=()=>{const e=C.useRef(null),t=()=>{e.current&&e.current.scrollIntoView({behavior:"smooth"})};return a.jsxs(K1,{children:[a.jsx(h0,{}),a.jsxs(jc,{children:[a.jsx(nv,{}),a.jsx(yv,{})]}),a.jsx(Qv,{scrollToEvent:t}),a.jsxs(jc,{children:[a.jsx(b0,{}),a.jsx(Y0,{})]}),a.jsx("div",{ref:e}),a.jsx(vf,{}),a.jsx(k1,{}),a.jsx(Sf,{}),a.jsx(_1,{})]})},J1=A.section`
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -1405,7 +1405,7 @@ Error generating stack: `+o.message+`
   row-gap: 16px;
   align-content: center;
   margin-top: 170px;
-`,tx=()=>(C.useRef(null),a.jsxs(ex,{children:[a.jsx(vf,{}),a.jsx(Sf,{})]})),nx="/portfolio/assets/meAbout-b0dd0af4.avif",rx=Pn`
+`,q1=()=>(C.useRef(null),a.jsxs(J1,{children:[a.jsx(vf,{}),a.jsx(Sf,{})]})),ex="/portfolio/assets/meAbout-b0dd0af4.avif",tx=Pn`
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -1414,7 +1414,7 @@ Error generating stack: `+o.message+`
     transform: translateX(0);
     opacity: 1;
   }
-`,ix=A.section`
+`,nx=A.section`
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -1431,7 +1431,7 @@ Error generating stack: `+o.message+`
       "Image"
       "Context";
   }
-`,ox=A.div`
+`,rx=A.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
@@ -1457,21 +1457,21 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,lx=A.div`
+`,ix=A.div`
   position: relative;
   grid-area: Image;
   display: flex;
   flex-direction: column;
   height: 100%;
-`,ax=A.img`
+`,ox=A.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
 
   ${({isInView:e})=>e&&pr`
-      animation: ${rx} 1s ease-out forwards;
+      animation: ${tx} 1s ease-out forwards;
     `}
-`,sx=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(ix,{children:[a.jsxs(ox,{children:[a.jsx("h3",{children:"About me "}),a.jsx("p",{children:"“Hi, I’m Paul! I have worked as a creative for over 20 years. In need of a platform to showcase my work, I taught myself how to code. In 2020, I decided to study web design to gain structure and further insight into the platforms and methods used. My interests extend into AI, particularly image and video generation and recently started developing tools that incorporate AI to aid in my creative work. I have a calm and methodical approach to life, which enables me to navigate challenges with ease. My strong willpower and determination help me stay focused on the goals, even during difficult times."})]}),a.jsx(lx,{children:a.jsx(ax,{ref:e,src:nx,alt:"Paul Evans watching the ocean",isInView:t})})]})},ux="/portfolio/assets/camper-588e3c53.avif",cx=Pn`
+`,lx=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(nx,{children:[a.jsxs(rx,{children:[a.jsx("h3",{children:"About me "}),a.jsx("p",{children:"“Hi, I’m Paul! I have worked as a creative for over 20 years. In need of a platform to showcase my work, I taught myself how to code. In 2020, I decided to study web design to gain structure and further insight into the platforms and methods used. My interests extend into AI, particularly image and video generation and recently started developing tools that incorporate AI to aid in my creative work. I have a calm and methodical approach to life, which enables me to navigate challenges with ease. My strong willpower and determination help me stay focused on the goals, even during difficult times."})]}),a.jsx(ix,{children:a.jsx(ox,{ref:e,src:ex,alt:"Paul Evans watching the ocean",isInView:t})})]})},ax="/portfolio/assets/camper-588e3c53.avif",sx=Pn`
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -1480,7 +1480,7 @@ Error generating stack: `+o.message+`
     transform: translateX(0);
     opacity: 1;
   }
-`,dx=A.section`
+`,ux=A.section`
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -1497,7 +1497,7 @@ Error generating stack: `+o.message+`
       "Image"
       "Context";
   }
-`,px=A.div`
+`,cx=A.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
@@ -1522,21 +1522,21 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,fx=A.div`
+`,dx=A.div`
   position: relative;
   grid-area: Image;
   display: flex;
   flex-direction: column;
   height: 100%;
-`,hx=A.img`
+`,px=A.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
 
   ${({isInView:e})=>e&&pr`
-      animation: ${cx} 1s ease-out forwards;
+      animation: ${sx} 1s ease-out forwards;
     `}
-`,mx=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(dx,{children:[a.jsxs(px,{children:[a.jsx("h3",{children:"For fun "}),a.jsx("p",{children:"Surfing and traveling are my two biggest passions. When I'm not paddling out into the sea I like to work out at the gym or swim in the lake. I also cherish the time I spend with my family, friends cooking and watching movies and tv shows."})]}),a.jsx(fx,{children:a.jsx(hx,{ref:e,src:ux,alt:"A surf board propped up against a mobilehome",isInView:t})})]})},Ax=A.section`
+`,fx=()=>{const e=C.useRef(null),[t,n]=C.useState(!1);return C.useEffect(()=>{const r=new IntersectionObserver(i=>{i[0].isIntersecting&&n(!0)},{threshold:.1});return e.current&&r.observe(e.current),()=>{e.current&&r.unobserve(e.current)}},[]),a.jsxs(ux,{children:[a.jsxs(cx,{children:[a.jsx("h3",{children:"For fun "}),a.jsx("p",{children:"Surfing and traveling are my two biggest passions. When I'm not paddling out into the sea I like to work out at the gym or swim in the lake. I also cherish the time I spend with my family, friends cooking and watching movies and tv shows."})]}),a.jsx(dx,{children:a.jsx(px,{ref:e,src:ax,alt:"A surf board propped up against a mobilehome",isInView:t})})]})},hx=A.section`
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -1544,14 +1544,14 @@ Error generating stack: `+o.message+`
   row-gap: 16px;
   align-content: center;
   margin-top: 170px;
-`,gx=()=>(C.useRef(null),a.jsxs(Ax,{children:[a.jsx(sx,{}),a.jsx(mx,{})]})),vx="/portfolio/assets/challenges-70c5b3a7.avif",xx="/portfolio/assets/fans-667fbfce.avif",yx="/portfolio/assets/research-b4a1f59e.avif",wx="/portfolio/assets/mapping-c6580bd3.avif",Sx="/portfolio/assets/lipus-00a0d7ff.avif",jx="/portfolio/assets/physio-5d7e362e.avif",Cx="/portfolio/assets/athlete-40b4363a.avif",kx="/portfolio/assets/insights-cb84265a.avif",Ex="/portfolio/assets/webinar-966c915f.avif",Ix="/portfolio/assets/webinarMobile-18a4ce2a.avif",Px="/portfolio/assets/designOne-24f39a91.avif",Nx="/portfolio/assets/designTwo-b7e3107e.avif",Bx="/portfolio/assets/webflow-baa33610.avif",Rx="/portfolio/assets/reflection-72e94f6a.avif",Tx=A.div`
+`,mx=()=>(C.useRef(null),a.jsxs(hx,{children:[a.jsx(lx,{}),a.jsx(fx,{})]})),Ax="/portfolio/assets/challenges-70c5b3a7.avif",gx="/portfolio/assets/fans-667fbfce.avif",vx="/portfolio/assets/research-b4a1f59e.avif",xx="/portfolio/assets/mapping-c6580bd3.avif",yx="/portfolio/assets/lipus-00a0d7ff.avif",wx="/portfolio/assets/physio-5d7e362e.avif",Sx="/portfolio/assets/athlete-40b4363a.avif",jx="/portfolio/assets/insights-cb84265a.avif",Cx="/portfolio/assets/webinar-966c915f.avif",kx="/portfolio/assets/webinarMobile-18a4ce2a.avif",Ex="/portfolio/assets/designOne-24f39a91.avif",Ix="/portfolio/assets/designTwo-b7e3107e.avif",Px="/portfolio/assets/webflow-baa33610.avif",Nx="/portfolio/assets/reflection-72e94f6a.avif",Bx=A.div`
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 24px;
   color: var(--main-button-color);
-`,Ox=A.div`
+`,Rx=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -1565,7 +1565,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,zx=A.p`
+`,Tx=A.p`
   color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -1573,7 +1573,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,Lx=({onClick:e})=>a.jsxs(Tx,{children:[a.jsx(Ox,{children:a.jsx("a",{href:"https://www.lipusplus.com/casestudies/hammarby",target:"_blank",rel:"noopener noreferrer",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(zx,{children:"See live page at LipusPlus.com"})]}),bx=A.section`
+`,Ox=({onClick:e})=>a.jsxs(Bx,{children:[a.jsx(Rx,{children:a.jsx("a",{href:"https://www.lipusplus.com/casestudies/hammarby",target:"_blank",rel:"noopener noreferrer",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Tx,{children:"See live page at LipusPlus.com"})]}),zx=A.section`
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -1588,6 +1588,40 @@ Error generating stack: `+o.message+`
 
   @media screen and (max-width: 767px) {
     margin-top: 130px;
+  }
+`,Lx=A.div`
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 16px;
+  grid-template-areas: "Context Image";
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Image"
+      "Context";
+  }
+`,bx=A.div`
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 16px;
+  grid-template-areas: "Image Context ";
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Image"
+      "Context";
   }
 `,Fx=A.div`
   max-width: 100%;
@@ -1631,7 +1665,7 @@ Error generating stack: `+o.message+`
   display: Grid;
   grid-template-columns: 50% 50%;
   column-gap: 16px;
-  grid-template-areas: "Context Image";
+  grid-template-areas: "Context Image ";
 
   @media screen and (max-width: 960px) {
     grid-template-columns: 100%;
@@ -1793,40 +1827,6 @@ Error generating stack: `+o.message+`
       "Image"
       "Context";
   }
-`,_x=A.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image ";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
-`,Kx=A.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Image Context ";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
 `,Ge=A.div`
   grid-area: Context;
   display: flex;
@@ -1849,7 +1849,7 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,Zx=A.div`
+`,_x=A.div`
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
@@ -1858,7 +1858,7 @@ Error generating stack: `+o.message+`
     padding-top: 50px;
     padding-bottom: 50px;
   }
-`,Jx=A.img`
+`,Kx=A.img`
   width: 40%;
   height: auto;
 
@@ -1921,7 +1921,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 960px) {
     height: 700px;
   }
-`,qx=A.img`
+`,Zx=A.img`
   position: absolute;
   display: none;
   width: 100%;
@@ -1939,7 +1939,7 @@ Error generating stack: `+o.message+`
     object-fit: cover;
     z-index: 2;
   }
-`,ey=()=>a.jsxs(bx,{children:[a.jsxs(Fx,{children:[a.jsxs(Ge,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(Zx,{children:a.jsx(Jx,{src:Af,alt:"The logo for LipuspLus"})}),a.jsx("h5",{children:"My role"}),a.jsxs("ul",{children:[a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"UX / UI Designer"})}),a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"Frontend Developer"})}),a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"Content Creator"})})]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Photo by Peder Rotkirch, LipusPlus."})}),a.jsx(Ye,{src:gf,alt:"A hammarby handball player in green and white stripes holds a ball."})]})]}),a.jsxs(Mx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Challenges"}),a.jsx("p",{children:"* Understanding Elite Athletes and Physiotherapists everyday struggles."}),a.jsx("p",{children:"* Minimal experience with webinars."}),a.jsx("p",{children:"* Working with Webflow, which was new to me."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:vx,alt:"A hammarby handball player is lead of the court by the team physio."})]})]}),a.jsxs(Dx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Brief"}),a.jsx("p",{children:"LipusPlus aims to attract physiotherapists and elite athletes to its webinars on the Return to Play concept. An enticing and informative landing page is needed to generate leads for these webinars."}),a.jsx("h5",{children:"Goal"}),a.jsx("p",{children:"Create a user-friendly landing page. Connect with the target group. Convince the user to register for the event. Provide a seamless experience for visitors from registration to processing. Strive for a high conversion rate and satisfaction for both LipusPlus and the participants before, during and after the event. Generate leads for sales processing."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:xx,alt:"Hammarby fans encourgae their team."})]})]}),a.jsxs(Wx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Key Questions"}),a.jsx("p",{children:"1. How can we make the message and the offer on the landing page clear and attractive to the target group?"}),a.jsx("p",{children:"2. How can we optimise the landing page to increase the conversion rate and get more visitors to sign up for webinars?"}),a.jsx("p",{children:"3. How can we stimulate people to spread the word about the webinar in their surroundings?"})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:yx,alt:"Anne Hopfgarten sitting for an interview."})]})]}),a.jsxs(Gx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Qualitative Research"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Seminar: "})," LipusPlus"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Observation: "})," LipusPlus Sales Member"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Observation: "})," LipusPlus Clinician"," "]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Interview: "})," Physiotherapist"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Interview: "})," Elite athlete"]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from research mapping, figma"})}),a.jsx(Ye,{src:wx,alt:"Mapping of the users needs."})]})]}),a.jsxs(Vx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"LipusPlus"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Challenges: "})," Struggles with conversion rates due to a lack of evidence and information about the modality."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Needs: "})," A convenient platform to present and discuss current and ongoing studies and results."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Photo by Peder Rotkirch, Lipusplus."})}),a.jsx(Ye,{src:Sx,alt:"A hammarby handball player uses the LipusPlus modality.."})]})]}),a.jsxs(Ux,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Physiotherapist"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Concerns: "})," Need evidence that LipusPlus is effective and safe. Rely on endorsements from prominent clubs and figures in their sport."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Priorities: "})," They aim to get their patients back to their sport quickly and safely. Their reputation and job are at stake. They question why they should choose LipusPlus over proven traditional methods."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:jx,alt:"Anne Hopfgarten. Hammarby physio."})]})]}),a.jsxs(Qx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Athlete"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Concerns: "})," Need evidence that LipusPlus is effective and safe. They often rely on endorsements from prominent figures in their sport and trusted physiotherapists."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Goals: "})," Want to return to their sport as quickly as possible since their income and career goals depend on it."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Ludvig Lindeberg from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:Cx,alt:"Ludvig Lindeberg celebrates winning."})]})]}),a.jsxs(Yx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Insights"}),a.jsx("p",{children:"* There is skepticism towards Medtech companies."}),a.jsx("p",{children:"* Build trust not just through evidence but also an understanding of the users everyday struggles and lifestyles."}),a.jsx("p",{children:"* A shift towards a sports lifestyle focus, emphasising partnerships rather than solely Medtech, would be more inspirational and trustworthy."}),a.jsxs("p",{children:["* It is essential for the user that the landing page works on all devices and is responsive."," "]}),a.jsx("p",{children:"* Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly."}),a.jsx("p",{children:"* Clearly show the offer and benefits of Return to Play."}),a.jsx("p",{children:"* Clearly communicate the value and benefits of attending the webinar, emphasising credible evidence and success stories."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from Unsplash."})}),a.jsx(Ye,{src:kx,alt:"An athlete is lying down on the track."})]})]}),a.jsxs($x,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Webinar Requirements"}),a.jsxs("p",{children:["* The webinar platform should be a stable and proven streaming service."," "]}),a.jsx("p",{children:"* Data collection through the registration form is a must."}),a.jsx("p",{children:"* Email Automation."}),a.jsx("p",{children:"* Option to connect to Hubspot. "}),a.jsx("p",{children:"* Simple and easy to understand registration forms."}),a.jsx("p",{children:"* Custom Registration forms."}),a.jsx("p",{children:"With approximately 260 million users, Vimeo met all our requirements. Since LipusPlus already hosted content on Vimeo, it streamlined our video showcasing process."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from Vimeo."})}),a.jsx(Ye,{src:Ex,alt:"A vimeo webinar screen."}),a.jsx(qx,{src:Ix,alt:"Promtional text from vimeo about their webinars."})]})]}),a.jsxs(Hx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Design"}),a.jsx("p",{children:"Building and improving upon an existing design system. "}),a.jsxs("p",{children:["* Through emotional content we highlighted partnerships for credibility."," "]}),a.jsxs("p",{children:["* Clearly outlined the benefits and starting price of the Return to Play program."," "]}),a.jsxs("p",{children:["* Assure the user that the webinar would discuss evidence from LipusPlus studies."," "]}),a.jsxs("p",{children:["* Engaging Content. Through still images, videos and testimonials."," "]}),a.jsx("p",{children:"* Showcase evidence and studies."}),a.jsxs("p",{children:["* Clear and Compelling Headlines alongside persuasive Copywriting."," "]}),a.jsxs("p",{children:["* A user-friendly registration form with a prominent CTA button."," "]}),a.jsx("p",{children:"* Social Proofing. "}),a.jsx("p",{children:"* Follow-Up Communication. "})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Design frames from figma."})}),a.jsx(Ye,{src:Px,alt:"Frames from LipusPlus HiFi Designs."})]})]}),a.jsxs(Xx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Design"}),a.jsxs("p",{children:["* Through emotional content we highlighted partnerships for credibility."," "]}),a.jsxs("p",{children:["* Clearly outlined the benefits and starting price of the Return to Play program."," "]}),a.jsxs("p",{children:["* Assured the user that the webinar would discuss evidence from LipusPlus studies."," "]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Design frames from figma."})}),a.jsx(Ye,{src:Nx,alt:"Frames from LipusPlus HiFi Designs."})]})]}),a.jsxs(_x,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Frontend"}),a.jsxs("p",{children:["The existing LipusPlus homepage was initially created and is presently hosted via Webflow. A key stipulation for this project was to continue using Webflow."," "]}),a.jsx(Lx,{})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screen shot from Webflow."})}),a.jsx(Ye,{src:Bx,alt:"Webflow. Desktop ."})]})]}),a.jsxs(Kx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Reflection"}),a.jsxs("p",{children:["This project was incredibly exciting for me for several reasons. Firstly, I had the opportunity to leverage my previous experience as a filmmaker, from conceptualizing and working with the brand to planning and filming interviews and sports coverage. Secondly, this project allowed me to align user needs with brand objectives, achieving a cohesive brand feel that LipusPlus has been striving for. Finally, I had the chance to work with Webflow, exploring a new platform and expanding my skills—an experience I thoroughly enjoyed."," "]}),a.jsx("p",{children:"In conclusion, this project has not only met its goals but also provided a strong template for future case studies, webinars and other promotions. However there is always room for improvement. One area would be creating our own registration form instead of using the embedded Vimeo form. This change would give better design control and allow for a more cohesive user experience."}),a.jsx("p",{children:"This project has been a valuable learning experience. It demonstrated the importance of thorough research, user-centric design, and effective communication. The real-world application of our work and the positive feedback from LipusPlus has been immensely rewarding."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"The LipusPlus modality. Photo by Peder Rotkirch, LipusPlus."})}),a.jsx(Ye,{src:Rx,alt:"The lipusPlus modality"})]})]})]}),ty="/portfolio/assets/challengesEbie-948c84b9.avif",ny="/portfolio/assets/briefEbie-dee42c26.avif",ry="/portfolio/assets/researchEbie-fc14e246.avif",iy="/portfolio/assets/persona1-01eeebdf.avif",oy="/portfolio/assets/persona2-e628457a.avif",ly="/portfolio/assets/application1-e9abd0d8.avif",ay="/portfolio/assets/application2-9a1504ec.avif",sy="/portfolio/assets/sorting-ef8a0128.avif",uy="data:image/avif;base64,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",cy="/portfolio/assets/status2-b7b87c98.avif",dy="/portfolio/assets/overview-8b6281de.avif",py="/portfolio/assets/city-25b0252b.avif",fy=A.section`
+`,Jx=()=>a.jsxs(zx,{children:[a.jsxs(Lx,{children:[a.jsxs(Ge,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(_x,{children:a.jsx(Kx,{src:Af,alt:"The logo for LipuspLus"})}),a.jsx("h5",{children:"My role"}),a.jsxs("ul",{children:[a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"UX / UI Designer"})}),a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"Frontend Developer"})}),a.jsx("li",{children:a.jsx("span",{className:"boldlarge",children:"Content Creator"})})]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Photo by Peder Rotkirch, LipusPlus."})}),a.jsx(Ye,{src:gf,alt:"A hammarby handball player in green and white stripes holds a ball."})]})]}),a.jsxs(bx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Challenges"}),a.jsx("p",{children:"* Understanding Elite Athletes and Physiotherapists everyday struggles."}),a.jsx("p",{children:"* Minimal experience with webinars."}),a.jsx("p",{children:"* Working with Webflow, which was new to me."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:Ax,alt:"A hammarby handball player is lead of the court by the team physio."})]})]}),a.jsxs(Fx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Brief"}),a.jsx("p",{children:"LipusPlus aims to attract physiotherapists and elite athletes to its webinars on the Return to Play concept. An enticing and informative landing page is needed to generate leads for these webinars."}),a.jsx("h5",{children:"Goal"}),a.jsx("p",{children:"Create a user-friendly landing page. Connect with the target group. Convince the user to register for the event. Provide a seamless experience for visitors from registration to processing. Strive for a high conversion rate and satisfaction for both LipusPlus and the participants before, during and after the event. Generate leads for sales processing."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:gx,alt:"Hammarby fans encourgae their team."})]})]}),a.jsxs(Mx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Key Questions"}),a.jsx("p",{children:"1. How can we make the message and the offer on the landing page clear and attractive to the target group?"}),a.jsx("p",{children:"2. How can we optimise the landing page to increase the conversion rate and get more visitors to sign up for webinars?"}),a.jsx("p",{children:"3. How can we stimulate people to spread the word about the webinar in their surroundings?"})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:vx,alt:"Anne Hopfgarten sitting for an interview."})]})]}),a.jsxs(Dx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Qualitative Research"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Seminar: "})," LipusPlus"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Observation: "})," LipusPlus Sales Member"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Observation: "})," LipusPlus Clinician"," "]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Interview: "})," Physiotherapist"]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Interview: "})," Elite athlete"]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from research mapping, figma"})}),a.jsx(Ye,{src:xx,alt:"Mapping of the users needs."})]})]}),a.jsxs(Wx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"LipusPlus"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Challenges: "})," Struggles with conversion rates due to a lack of evidence and information about the modality."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Needs: "})," A convenient platform to present and discuss current and ongoing studies and results."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Photo by Peder Rotkirch, Lipusplus."})}),a.jsx(Ye,{src:yx,alt:"A hammarby handball player uses the LipusPlus modality.."})]})]}),a.jsxs(Gx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Physiotherapist"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Concerns: "})," Need evidence that LipusPlus is effective and safe. Rely on endorsements from prominent clubs and figures in their sport."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Priorities: "})," They aim to get their patients back to their sport quickly and safely. Their reputation and job are at stake. They question why they should choose LipusPlus over proven traditional methods."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Anne Hopfgarten from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:wx,alt:"Anne Hopfgarten. Hammarby physio."})]})]}),a.jsxs(Vx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Results"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Athlete"})}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Concerns: "})," Need evidence that LipusPlus is effective and safe. They often rely on endorsements from prominent figures in their sport and trusted physiotherapists."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Goals: "})," Want to return to their sport as quickly as possible since their income and career goals depend on it."]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screenshot of Ludvig Lindeberg from partnership film, LipusPlus & Hammarby Handball"})}),a.jsx(Ye,{src:Sx,alt:"Ludvig Lindeberg celebrates winning."})]})]}),a.jsxs(Ux,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Insights"}),a.jsx("p",{children:"* There is skepticism towards Medtech companies."}),a.jsx("p",{children:"* Build trust not just through evidence but also an understanding of the users everyday struggles and lifestyles."}),a.jsx("p",{children:"* A shift towards a sports lifestyle focus, emphasising partnerships rather than solely Medtech, would be more inspirational and trustworthy."}),a.jsxs("p",{children:["* It is essential for the user that the landing page works on all devices and is responsive."," "]}),a.jsx("p",{children:"* Our users lead busy lives, on the go. Headlines, clear and captivating. Copy, persuasive and engaging. We need to get their attention directly."}),a.jsx("p",{children:"* Clearly show the offer and benefits of Return to Play."}),a.jsx("p",{children:"* Clearly communicate the value and benefits of attending the webinar, emphasising credible evidence and success stories."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from Unsplash."})}),a.jsx(Ye,{src:jx,alt:"An athlete is lying down on the track."})]})]}),a.jsxs(Qx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Webinar Requirements"}),a.jsxs("p",{children:["* The webinar platform should be a stable and proven streaming service."," "]}),a.jsx("p",{children:"* Data collection through the registration form is a must."}),a.jsx("p",{children:"* Email Automation."}),a.jsx("p",{children:"* Option to connect to Hubspot. "}),a.jsx("p",{children:"* Simple and easy to understand registration forms."}),a.jsx("p",{children:"* Custom Registration forms."}),a.jsx("p",{children:"With approximately 260 million users, Vimeo met all our requirements. Since LipusPlus already hosted content on Vimeo, it streamlined our video showcasing process."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Image from Vimeo."})}),a.jsx(Ye,{src:Cx,alt:"A vimeo webinar screen."}),a.jsx(Zx,{src:kx,alt:"Promtional text from vimeo about their webinars."})]})]}),a.jsxs(Yx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Design"}),a.jsx("p",{children:"Building and improving upon an existing design system. "}),a.jsxs("p",{children:["* Through emotional content we highlighted partnerships for credibility."," "]}),a.jsxs("p",{children:["* Clearly outlined the benefits and starting price of the Return to Play program."," "]}),a.jsxs("p",{children:["* Assure the user that the webinar would discuss evidence from LipusPlus studies."," "]}),a.jsxs("p",{children:["* Engaging Content. Through still images, videos and testimonials."," "]}),a.jsx("p",{children:"* Showcase evidence and studies."}),a.jsxs("p",{children:["* Clear and Compelling Headlines alongside persuasive Copywriting."," "]}),a.jsxs("p",{children:["* A user-friendly registration form with a prominent CTA button."," "]}),a.jsx("p",{children:"* Social Proofing. "}),a.jsx("p",{children:"* Follow-Up Communication. "})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Design frames from figma."})}),a.jsx(Ye,{src:Ex,alt:"Frames from LipusPlus HiFi Designs."})]})]}),a.jsxs($x,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Design"}),a.jsxs("p",{children:["* Through emotional content we highlighted partnerships for credibility."," "]}),a.jsxs("p",{children:["* Clearly outlined the benefits and starting price of the Return to Play program."," "]}),a.jsxs("p",{children:["* Assured the user that the webinar would discuss evidence from LipusPlus studies."," "]})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Design frames from figma."})}),a.jsx(Ye,{src:Ix,alt:"Frames from LipusPlus HiFi Designs."})]})]}),a.jsxs(Hx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Frontend"}),a.jsxs("p",{children:["The existing LipusPlus homepage was initially created and is presently hosted via Webflow. A key stipulation for this project was to continue using Webflow."," "]}),a.jsx(Ox,{})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"Screen shot from Webflow."})}),a.jsx(Ye,{src:Px,alt:"Webflow. Desktop ."})]})]}),a.jsxs(Xx,{children:[a.jsxs(Ge,{children:[a.jsx("h5",{children:"Reflection"}),a.jsxs("p",{children:["This project was incredibly exciting for me for several reasons. Firstly, I had the opportunity to leverage my previous experience as a filmmaker, from conceptualizing and working with the brand to planning and filming interviews and sports coverage. Secondly, this project allowed me to align user needs with brand objectives, achieving a cohesive brand feel that LipusPlus has been striving for. Finally, I had the chance to work with Webflow, exploring a new platform and expanding my skills—an experience I thoroughly enjoyed."," "]}),a.jsx("p",{children:"In conclusion, this project has not only met its goals but also provided a strong template for future case studies, webinars and other promotions. However there is always room for improvement. One area would be creating our own registration form instead of using the embedded Vimeo form. This change would give better design control and allow for a more cohesive user experience."}),a.jsx("p",{children:"This project has been a valuable learning experience. It demonstrated the importance of thorough research, user-centric design, and effective communication. The real-world application of our work and the positive feedback from LipusPlus has been immensely rewarding."})]}),a.jsxs(Qe,{children:[a.jsx(Ve,{children:a.jsx(Ue,{children:"The LipusPlus modality. Photo by Peder Rotkirch, LipusPlus."})}),a.jsx(Ye,{src:Nx,alt:"The lipusPlus modality"})]})]})]}),qx="/portfolio/assets/challengesEbie-948c84b9.avif",ey="/portfolio/assets/briefEbie-dee42c26.avif",ty="/portfolio/assets/researchEbie-fc14e246.avif",ny="/portfolio/assets/persona1-01eeebdf.avif",ry="/portfolio/assets/persona2-e628457a.avif",iy="/portfolio/assets/application1-e9abd0d8.avif",oy="/portfolio/assets/application2-9a1504ec.avif",ly="/portfolio/assets/sorting-ef8a0128.avif",ay="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAAC1AAADC8AAgAAAAEAAAG1AAABHwAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAAvQAAAPWAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQUMAAAAABNjb2xybmNseAACAAIABoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQUcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAANVm1kYXQSAAoHGWZvP1eFQDKRAhIACihQ9M4R2OvAmgwnQkIxj9lcaP5yMyr+w+/g36SDKzU4+xQSdmCSLF5MBE2TBbYOSkeKvv209tiz4fRfRhN2EQZwY0cTNhf+3SviePvH+yauaidyx1hdHlgvvaYkcOnRU4SEIitgvnTE1i0M7yGUxbYRaBv3IaIsyXoVeSYwmAVDrGdyvYE0VRShYX0eJUMvR7+SVhXC8lQFT9GjWnQAKZxrkoTj6zFH9Rx9KifcMIWzWjY4UCVDwrgi2MbXmTzfhRX5sUyYuEQMGm4uedl3iMrrPk4/04hO3coBvfpwTfer/vLdd4ZrARUxp85rynhRB99wQQEeO+AtTt48GgdKPhraYbn6AJudFFk90XY1bBIACgoZZm8/V4IEBA0IMp4YTIAC9L5/uL1Nhv9JcME3nLweG9TzX9Wj/jvQufiaToOhnqVGDkmJ+LoKOfkLIGA6dzoRN7ng3OWQGKTTSbk4gxC2Ynoo0yUdCXWPb3Df8IbI4mKfMrS/QkOYHj2blVdvIvf+nlzXOl5WQfpB5M8Xf8mrBNB/d/dBy/mK4OlXQAGEru5jDz4kS2hkL4n6HdaC6qApFDb22u1I4kivNQvz1nDjq8vQDxhODOW9pFWMEu8DtCDQnWHQv/xmBCyhzQ976yHOaFDM91Kdyh+9uP7S4rxoNwTLvB5IQqhshOW0BXSKxQF+wL/JC3+v+ZErk7smyyX7PzJaAI08e3nu7YmrHHVmP8nO+fLhVDWTTJ4kopBKcw05cWJgtlE8RnBwFwX8/TcJv1OL6u6MuyRCeT1sB/79zLHYFA1OhT3WOUDXqXR36xGDeJfZGvbFdzE3tR9W2NWo8fVrvkfu8t8Jb6JJfXWbVsfrQERKY4r7/ktQGVXNpNkh98qYEsz1xkoWwIA/IZtzArFUj6pwHnoeizGt4uOb7uVnBxlixzOh6bFOmJU4PoFV/YxaVIhn+QWdWYg6wM6OSV7WfVX+CrX/WHKTTiruVfQDlVNqvuvIVdRPk3ktpmXh4f9jj67ra7NH0+U9TDkb4xYqSpheuEKT6D/AssZbnaoRv8PfLc7AzfbULeEU+qIpNlJtS77gyMhMRvB1HVCc6cs5juIEAheUntW2xy//EHAF00zMmDnLcEhmmyZSsinA2kxupaFlWX2P8vK7fO/h3X5EwoiFSHQC/shP6f/PjjBmXfRTLSku9ETmNYUg79A3m44mKJ6Kccfmxjn3Ocd6mgjfll02tK7zT/W1VFwS88yk2hNCs1pNZtL6HfsvYWfVinVMyslRxkvI3JBD6Fs+gbMrOf0v1hgNw9I5vQFRwynaMxd0OYOKkMHkUY3cwb3SHdER+bEfvCAbWJwvL/k71OeagrwQIVpRJN+z0kgH1R+mrfkhQU2Ng2ftQbF2naSCka6uVV5SeDrxsRs2s5cGYSFU7NqxYIMG9O8vkV24Sf1eywFBTvrlL5TQWOUX0ZVwx8CMMN8mh3BkCOBe5TwxIpkKjh64OH2E6U9Eu4A1KjIvfrbGF3gc0+Iawi68E7gAYaAS1I0Jt6irhrBuUubCoWtUZsU8yqqvtmlLXxkFGoU42nD+26f/D5kqq48LSCLTMU+MiMQh8DRWrcq6VbJ4ZREPZp7IYv8AY4dcsC1v9ewigkSxd25pKdq4ldTaDpvy9EcEB/xIQ0GrJS702Vqqn1ZGNnCKFwNqj0NDmuW0lNExfT5F9T2m5oLdxHwR3atbBK1EiKfg6DvbO1iX1dFAcDpXEDPQJyZD163UsWWw4XLNNcFDUeOMLL5MFrsd4j0hiIio+w5c/QtRkkJWwsWHD+csPgBCUz/VxcB9GGz+EQ5Ybf6GYb3gzgi3nyDlIgorNpNCtb2YwLIrZkbUHY0Y44z+37nA4aiOsYqwcYr2obmHsCrbDZsTBbT2eOJQxky3nL8yLee2vlWKIL3jYkB+jgsY3tlH165dnGQk7+g+xLdv6Tm5c5yQ/VUY1Lw+6feAsN8vxFwa9dkDf7FrcHwPduw/RXvqE/AgqyQYY/ZkraT0JXJTCMkSHiHsDuLi5tjmtsJ+yoX3I/EbJRrIPQkO6X/UQoogPHn/ZGMYCWKBtXBKjOGKO/lf4MkpBKKeojunE+KkB62wnlBrmqCA+Tm7C3ekFhjqhVGB7w/gGdgKC0uGrjFqqM++nBuuoiEIZLXMD1hIIq0s9aqM1KAI+hQ57DZIqZQfMIW+7wmRz8lo10FeB+/AneUJoy+o7THGgh5crOilR51Sy8now4mWz0xQHBHaI8Q8Q1xSKpbXLipZYAhiM8s+hhz3q3G4FXykPb12ln9J/MD5nhripUP7vzWhqQk2bDPNgF9cR8MzaVWuTBTmIypr2yUtCVrwwxONZdBsBl+bn85HVnPKKgZr8ki8OM6/Px0rm4igfyZGTMZJZ7C0kcBTPz40aWvOpD+Ej7EJZC62ucfzVUEcXAHVyyBa8MzLTvXYnFWq8mlIwkpJVLt3sYx+EgG/qMZv1XSJcO8nzvGLQZrIYWuhOuerMSkmMBRkRk9Hd0gw2mmSbZ0JGyUqkIkI8ud9Sh+BoqGcKVcFnF1n2+VgcSKAsFBYFdiCyWJcoINKpzs27blmz6EH3u81gHPk+5LlwQBtgDDq+oercNc/TzYj6ZmTubxNh2guH8/f+vP3QdNYfY8AMYVCCWRvw3xVlKpiprZqNRi6nlYAZ/QSKP5zGZKYjPXTlYmtvRTDs+dzx+A5p/O1ARySLoFa4vu9SptnkM/NA/9lMK6LSEERrRng5k1SVS/wLavROf+kF43IfoJ58bKd9SC8bPciMmYBXiAssKWJkqsqGZj5XljltKVA3Htj6e17wqD2sBDlkm5QLhYmRTwbiL1PMvbDmEaPLdhFlGzZNui/Kp9TM7QDtiWv1F6yt84TgOQh2iV6yPBYvTmKPJQB7+oNb2UipQYil/krCx6ohi8BYQOl8whuymxA3v5JjhciqIb1tgEPQhkKCB2kVlWX0SOLPH/bHfTLOS8XgzrE7I0/1cwweiaMcS90WbXG4FUXM9gbEVyGPNGJuyEPFnxKsJnkod1QN2EPdppQ19wpQQeXU91xetRBqXO7GTvlvnyotF8s6VGw5MYo0erDl4DciAIYNc5wVCHT2TUPQi4VIRfVW5mYbpd/ALtXIqiVQoF3b7ZEmoNw9T8bPsKzB3C9QPsdN2gpC4SdnYcvg4h3pdCPMmxgLQC8lDMrSr/P7xft/y9Re4QIr22Rz3KrbxgMat7M7EQRV+XqqHIv7sQNnBBrFFjMlBIbLbVmEwQuXV2ISl3z4FKuRsccFMm2c1ISHKKULWxnOr5ZBEto57rcnb1g72FR3NsF/rP1hV+aOBoYJSulGSK2Wj5KSsrEWXDCVzUKkLQwrn/Jd34n/ZRG7Lw04jE+xy/QZsspvKm020qxvhQp2BCb5BhZrE0ILn/QcAA1aEW08FueG6iMrBpTdNQ+GZLryLngPxEwH04dcDn3KGr0JvFYjjgAC5QXUbFoOqYMbblWAioxIMDwSz77TPPv6vtLTnrPOC8n39jIKoKW3wcH62OMXL+o9hquQ8l8S/srkCHd/FHHT6lZORf9tnYb/T+mgER1pWJDkw4g74d8+qZ6Ox6kTIdxdeWoV8haTUeWWx+Rov2ZwWoijdw5IoJ1Cn+HhY2rb9NBAmNIHBvuTByd34rTpTGxFIBnrJ0MxlHYJTUoZuc8kW2IPIzs7zjWt3gIegqcIfk0A+EKmBjPqxMGzC9w1rA0mooAkB5Er1qbGU4sepmwGzRUwL7Z9QL0vu+QfruaBAc88hjDTOWYUkgTLgxlrO5dENu8FvDdivwyYjPsbHA8knkCtg6WrMTc/9BlQjcNltSV+oz3550QCQRGbWjLlcckfcZDV13rh7j4r+m/LckScdjhoOwtYGVfwBFXW9sDMMr2jyKULkGMuaMXN1JrwaiqzXOiFbVBHBTP6IOhshRooQEl6WghiFEsz9E3cSnlGtRPJofxA0qlc08XnY8z8/4u5zDPOUm3X4rn/uRcoE1a2P6VtrgTL+ARzTQK2SNH/hGRbkEgeIGSKk4SVGp8hiPYwsEccucyRkQ9kyu0zlEe1rQG65Mr0+ITkOBkvPM7hiegBF5aKgkG27GerLFggFafL2b0ISeTwTQMfpwu7bGSgcdIFJ5+2KFgbNQiuVqwq6PYq5ZButEevW5JYwX3430aftSBj///b0amm3kivyWEXUeL3RDWKRZI6cO2ors9rbwkWR72T4sRGn/tVxmkFYwXT+AOlAatYCG0jtbOvtbkKw6DIFppQ5BU+rnoLVWAUqUiDcWXQF8kudsKT8MIR3ZhxS1J3tvMD6vRHlnBZTY7V2/4d5vdisYlHiVUhHKPMAFlPlfbx1uYy+6YHIW0QsSUKHWw/s7csmdv0YpDBGKqpYKCUDgLkKHzi6f241pfJ1Wr9H8SvO2uwuKrjznNocVGW0bTs5hqpvQA3r27abLLyKr0kbnRM6x9oqYesh7LXi5gvIlXH7Cn/KnZ6jQ271OwuhrICBbam3x3v39Ud2zI5tbCcAB+",sy="/portfolio/assets/status2-b7b87c98.avif",uy="/portfolio/assets/overview-8b6281de.avif",cy="/portfolio/assets/city-25b0252b.avif",dy=A.section`
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -1954,6 +1954,40 @@ Error generating stack: `+o.message+`
 
   @media screen and (max-width: 767px) {
     margin-top: 130px;
+  }
+`,py=A.div`
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 16px;
+  grid-template-areas: "Context Image";
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Image"
+      "Context";
+  }
+`,fy=A.div`
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 16px;
+  grid-template-areas: "Image Context ";
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Image"
+      "Context";
   }
 `,hy=A.div`
   max-width: 100%;
@@ -1994,19 +2028,15 @@ Error generating stack: `+o.message+`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image";
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
+    flex-direction: column;
   }
 `,gy=A.div`
+  position: relative;
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -2028,15 +2058,19 @@ Error generating stack: `+o.message+`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 16px;
+  grid-template-areas: "Context Image ";
 
   @media screen and (max-width: 960px) {
-    flex-direction: column;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "Image"
+      "Context";
   }
 `,xy=A.div`
-  position: relative;
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -2058,17 +2092,12 @@ Error generating stack: `+o.message+`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image ";
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
+    flex-direction: column;
   }
 `,wy=A.div`
   max-width: 100%;
@@ -2088,35 +2117,6 @@ Error generating stack: `+o.message+`
       "Context";
   }
 `,Sy=A.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-  }
-`,jy=A.div`
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Image Context ";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
-`,Cy=A.div`
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -2155,11 +2155,11 @@ Error generating stack: `+o.message+`
     padding-top: 15px;
     padding-left: 20px;
   }
-`,ky=A.div`
+`,jy=A.div`
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
-`,Ey=A.img`
+`,Cy=A.img`
   width: 40%;
   height: auto;
 `,Ze=A.div`
@@ -2205,10 +2205,10 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     display: flex;
   }
-`,Iy=()=>a.jsxs(fy,{children:[a.jsxs(hy,{children:[a.jsxs(Pt,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(ky,{children:a.jsx(Ey,{src:yf,alt:"The logo for Ebie"})}),a.jsxs("h5",{children:["My role: ",a.jsx("span",{className:"boldxlarge",children:"UX / UI Designer "})]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Photo from www.Ebie.se"})}),a.jsx(Nt,{src:wf,alt:"A street view on the corner of Sveavägen, Sergelstorg."})]})]}),a.jsxs(my,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Challenges"}),a.jsx("p",{children:"* Lack of prior knowledge of the real estate industry which prevented us from clearly understanding the specific design task."}),a.jsx("p",{children:"* Understanding user expectations, especially when they are already accustomed to existing solutions and industry standards."}),a.jsxs("p",{children:["* Access to Ebies clients for user research, Ebie is a start up with a limited number of customers, and those they do have are extremely busy."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from Unsplash"})}),a.jsx(Nt,{src:ty,alt:"A hammarby handball player is lead of the court by the team physio."})]})]}),a.jsxs(Ay,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Brief"}),a.jsx("p",{children:"Develop a user-friendly feature for group insurance. Increase the conversion rate of group insurance."}),a.jsx("h5",{children:"Goal"}),a.jsxs("p",{children:[" ","Create and implement a completely new and user-friendly function within the platform that makes it easy for property owners to apply for and manage group insurance."]}),a.jsx("p",{children:"Increase the use of group insurance by increasing the number of property owners applying for it. This is to be achieved by simplifying and improving the entire application process."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from figma design system"})}),a.jsx(Nt,{src:ny,alt:"A deisgn idea for an online application"})]})]}),a.jsxs(gy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Target Group"}),a.jsxs("ul",{children:[a.jsx("li",{children:"Lessor"}),a.jsx("li",{children:"Property Owner"})]}),a.jsx("h5",{children:"Research"}),a.jsx("p",{children:"Carrying out research with Ebies clients proved challenging due to busy schedules, Ebie provided user backgrounds and their preferences, and based on that information, we created personas."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Data collected by Ebie."})}),a.jsx(Nt,{src:ry,alt:"Research collected by Ebie"})]})]}),a.jsxs(vy,{children:[a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Personas created from research."})}),a.jsx(Nt,{src:iy,alt:"Personas built from user research."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Personas created from research."})}),a.jsx(Nt,{src:oy,alt:"Personas built from user research."})]})]}),a.jsxs(xy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"The application process "})," posed our biggest challenge. Applying for insurance requires a significant amount of information. Our goal was to consolidate this into a single form without overwhelming or confusing the user."]}),a.jsx("p",{children:"Our initial design mirrored a traditional application form. While it was clearer and easier to navigate than previous versions, user testing revealed that there was still room for improvement."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Our initial application design from figma."})}),a.jsx(Nt,{src:ly,alt:"A traditional application form"})]})]}),a.jsxs(yy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"The new design"})," received a much more positive response from Ebie and performed better during user testing."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Focus areas. "})," "]}),a.jsx("p",{children:"* We organized the input fields into a column form to enhance readability."}),a.jsx("p",{children:"* To make the form less overwhelming, we implemented fold-out and collapsible sections."}),a.jsx("p",{children:"* Colours to signal when a section is complete. "}),a.jsxs("p",{children:["* A progress bar at the top keeps users informed about their position in the process."," "]}),a.jsxs("p",{children:["* Additionally, we included navigation on the left to allow users to view other applications or add new ones."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Our re-design from figma."})}),a.jsx(Oi,{src:ay,alt:"An online application form."})]})]}),a.jsxs(wy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Sort Function: "})," Property owners and lessors often manage numerous properties with various tenants coming and going. To facilitate quick sorting between different insurance statuses, we implemented a robust sorting function. Where the user can sort between different status stages. New colours wee added ot the design system to help clearly label the different statuses."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Proposed sorting buttons, figma."})}),a.jsx(Nt,{src:sy,alt:"Proposed sorting buttons from figma."})]})]}),a.jsxs(Sy,{children:[a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for insurance status, figma."})}),a.jsx(Oi,{src:uy,alt:"Design for insurance status from figma."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for renewing status, figma."})}),a.jsx(Oi,{src:cy,alt:"Design for insurance status from figma."})]})]}),a.jsxs(jy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Overview: "})}),a.jsxs("p",{children:["Within the insurance overview, we added a warning icon to indicate when an action is required, such as when a report has been filed or an invoice needs payment."," "]}),a.jsx("p",{children:"We also incorporated the same status symbols from the search function for clearer status visibility."}),a.jsx("p",{children:"The screening report is displayed directly, eliminating the need to search through other documents."}),a.jsxs("p",{children:["Additionally, we introduced a sorting function that allows users to organise all insurance entries in numeric, alphabetic, or reverse order."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for insurance overview, figma."})}),a.jsx(Oi,{src:dy,alt:"Design proposal for insurance overview."})]})]}),a.jsxs(Cy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Reflection"}),a.jsxs("p",{children:["The biggest challenge was understanding the intricacies of the real estate industry and the complexities of the application process. This took time and slowed us down in the beginning but it was also one of the most intresting sides of the project as we learned something new."," "]}),a.jsx("p",{children:"What I enjoyed most about this project was developing the sorting function and the logic behind it. While sorting and filters are not always considered the most visually striking aspect of design, ensuring that the sorting function is clear and intuitive is crucial. It plays a vital role in enhancing user experience by making it easier for users to organise and access information efficiently. The satisfaction came from creating a system that seamlessly integrates into the overall design, making it functional and user-friendly."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from Unsplash."})}),a.jsx(Nt,{src:py,alt:"Street view of Stockholm city with NK in the distance."})]})]})]});A.div`
+`,ky=()=>a.jsxs(dy,{children:[a.jsxs(py,{children:[a.jsxs(Pt,{children:[a.jsx("h4",{children:"UX Case study"}),a.jsx(jy,{children:a.jsx(Cy,{src:yf,alt:"The logo for Ebie"})}),a.jsxs("h5",{children:["My role: ",a.jsx("span",{className:"boldxlarge",children:"UX / UI Designer "})]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Photo from www.Ebie.se"})}),a.jsx(Nt,{src:wf,alt:"A street view on the corner of Sveavägen, Sergelstorg."})]})]}),a.jsxs(fy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Challenges"}),a.jsx("p",{children:"* Lack of prior knowledge of the real estate industry which prevented us from clearly understanding the specific design task."}),a.jsx("p",{children:"* Understanding user expectations, especially when they are already accustomed to existing solutions and industry standards."}),a.jsxs("p",{children:["* Access to Ebies clients for user research, Ebie is a start up with a limited number of customers, and those they do have are extremely busy."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from Unsplash"})}),a.jsx(Nt,{src:qx,alt:"A hammarby handball player is lead of the court by the team physio."})]})]}),a.jsxs(hy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Brief"}),a.jsx("p",{children:"Develop a user-friendly feature for group insurance. Increase the conversion rate of group insurance."}),a.jsx("h5",{children:"Goal"}),a.jsxs("p",{children:[" ","Create and implement a completely new and user-friendly function within the platform that makes it easy for property owners to apply for and manage group insurance."]}),a.jsx("p",{children:"Increase the use of group insurance by increasing the number of property owners applying for it. This is to be achieved by simplifying and improving the entire application process."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from figma design system"})}),a.jsx(Nt,{src:ey,alt:"A deisgn idea for an online application"})]})]}),a.jsxs(my,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Target Group"}),a.jsxs("ul",{children:[a.jsx("li",{children:"Lessor"}),a.jsx("li",{children:"Property Owner"})]}),a.jsx("h5",{children:"Research"}),a.jsx("p",{children:"Carrying out research with Ebies clients proved challenging due to busy schedules, Ebie provided user backgrounds and their preferences, and based on that information, we created personas."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Data collected by Ebie."})}),a.jsx(Nt,{src:ty,alt:"Research collected by Ebie"})]})]}),a.jsxs(Ay,{children:[a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Personas created from research."})}),a.jsx(Nt,{src:ny,alt:"Personas built from user research."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Personas created from research."})}),a.jsx(Nt,{src:ry,alt:"Personas built from user research."})]})]}),a.jsxs(gy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"The application process "})," posed our biggest challenge. Applying for insurance requires a significant amount of information. Our goal was to consolidate this into a single form without overwhelming or confusing the user."]}),a.jsx("p",{children:"Our initial design mirrored a traditional application form. While it was clearer and easier to navigate than previous versions, user testing revealed that there was still room for improvement."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Our initial application design from figma."})}),a.jsx(Nt,{src:iy,alt:"A traditional application form"})]})]}),a.jsxs(vy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"The new design"})," received a much more positive response from Ebie and performed better during user testing."]}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Focus areas. "})," "]}),a.jsx("p",{children:"* We organized the input fields into a column form to enhance readability."}),a.jsx("p",{children:"* To make the form less overwhelming, we implemented fold-out and collapsible sections."}),a.jsx("p",{children:"* Colours to signal when a section is complete. "}),a.jsxs("p",{children:["* A progress bar at the top keeps users informed about their position in the process."," "]}),a.jsxs("p",{children:["* Additionally, we included navigation on the left to allow users to view other applications or add new ones."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Our re-design from figma."})}),a.jsx(Oi,{src:oy,alt:"An online application form."})]})]}),a.jsxs(xy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsxs("p",{children:[a.jsx("span",{className:"bold",children:"Sort Function: "})," Property owners and lessors often manage numerous properties with various tenants coming and going. To facilitate quick sorting between different insurance statuses, we implemented a robust sorting function. Where the user can sort between different status stages. New colours wee added ot the design system to help clearly label the different statuses."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Proposed sorting buttons, figma."})}),a.jsx(Nt,{src:ly,alt:"Proposed sorting buttons from figma."})]})]}),a.jsxs(yy,{children:[a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for insurance status, figma."})}),a.jsx(Oi,{src:ay,alt:"Design for insurance status from figma."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for renewing status, figma."})}),a.jsx(Oi,{src:sy,alt:"Design for insurance status from figma."})]})]}),a.jsxs(wy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Improvement Areas"}),a.jsx("p",{children:a.jsx("span",{className:"bold",children:"Overview: "})}),a.jsxs("p",{children:["Within the insurance overview, we added a warning icon to indicate when an action is required, such as when a report has been filed or an invoice needs payment."," "]}),a.jsx("p",{children:"We also incorporated the same status symbols from the search function for clearer status visibility."}),a.jsx("p",{children:"The screening report is displayed directly, eliminating the need to search through other documents."}),a.jsxs("p",{children:["Additionally, we introduced a sorting function that allows users to organise all insurance entries in numeric, alphabetic, or reverse order."," "]})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Design proposal for insurance overview, figma."})}),a.jsx(Oi,{src:uy,alt:"Design proposal for insurance overview."})]})]}),a.jsxs(Sy,{children:[a.jsxs(Pt,{children:[a.jsx("h5",{children:"Reflection"}),a.jsxs("p",{children:["The biggest challenge was understanding the intricacies of the real estate industry and the complexities of the application process. This took time and slowed us down in the beginning but it was also one of the most intresting sides of the project as we learned something new."," "]}),a.jsx("p",{children:"What I enjoyed most about this project was developing the sorting function and the logic behind it. While sorting and filters are not always considered the most visually striking aspect of design, ensuring that the sorting function is clear and intuitive is crucial. It plays a vital role in enhancing user experience by making it easier for users to organise and access information efficiently. The satisfaction came from creating a system that seamlessly integrates into the overall design, making it functional and user-friendly."})]}),a.jsxs(qe,{children:[a.jsx(Ze,{children:a.jsx(Je,{children:"Image from Unsplash."})}),a.jsx(Nt,{src:cy,alt:"Street view of Stockholm city with NK in the distance."})]})]})]});A.div`
   overflowy: scroll;
   height: 2500px;
-`;const Py=A.div`
+`;const Ey=A.div`
   position: fixed;
   width: 100%;
   left: 94%;
@@ -2236,7 +2236,7 @@ Error generating stack: `+o.message+`
     font-size: 3rem;
     left: 80%;
   }
-`,Ny=A.div`
+`,Iy=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -2250,7 +2250,7 @@ Error generating stack: `+o.message+`
       color: inherit; 
     }
   }
-`,By=()=>{const[e,t]=C.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>300?t(!0):i<=300&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(Py,{children:a.jsx(Ny,{children:a.jsx(E0,{onClick:r,style:{display:e?"inline":"none",borderRadius:"50%"}})})})},Ry=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(k0,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevanscreative/",icon:a.jsx(C0,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(j0,{}),des:"Imdb"}],Ty=A.footer`
+`,Py=()=>{const[e,t]=C.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>300?t(!0):i<=300&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(Ey,{children:a.jsx(Iy,{children:a.jsx(E0,{onClick:r,style:{display:e?"inline":"none",borderRadius:"50%"}})})})},Ny=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(k0,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevanscreative/",icon:a.jsx(C0,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(j0,{}),des:"Imdb"}],By=A.footer`
   background-color: var(--main-hero-backgroundcolor);
   max-width: 100vw;
   min-width: 100vw;
@@ -2271,7 +2271,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
   }
-`,Oy=A.div`
+`,Ry=A.div`
   display: flex;
   flex-direction: column;
   padding-top: 4em;
@@ -2288,7 +2288,7 @@ Error generating stack: `+o.message+`
     text-align: center;
     margin-bottom: 3em;
   }
-`,zy=A.p`
+`,Ty=A.p`
   display: flex;
   flex-direction: column;
   color: var(--main-font-color);
@@ -2309,7 +2309,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 767px) {
     margin-left: 0em;
   }
-`,Ly=A.p`
+`,Oy=A.p`
   display: flex;
   flex-direction: column;
   color: var(--main-font-color);
@@ -2329,7 +2329,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 767px) {
     margin-left: 0em;
   }
-`,by=A.div`
+`,zy=A.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -2346,7 +2346,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     margin-right: 0em;
   }
-`,Fy=A.a`
+`,Ly=A.a`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2368,7 +2368,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 767px) {
     margin: 0em 2em 0em 2em;
   }
-`,My=A.p`
+`,by=A.p`
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -2387,7 +2387,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,Dy=A.div`
+`,Fy=A.div`
   display: flex;
   padding-left: 2em;
 
@@ -2403,7 +2403,7 @@ Error generating stack: `+o.message+`
     padding-left: 0;
     margin-bottom: 20px;
   }
-`,Wy=A.img`
+`,My=A.img`
   text-align: center;
   justify-self: center;
   width: 120px;
@@ -2420,14 +2420,14 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 960px) {
     margin: 8px;
   }
-`,Gy=ge.forwardRef((e,t)=>a.jsxs(Ty,{ref:t,children:[a.jsx(Dy,{children:a.jsx(Wy,{src:Wa,alt:"the letters P and E merged together to form the logo Paul Evans Creative"})}),a.jsx(Vy,{}),a.jsxs(Oy,{children:[a.jsx(Cc,{children:"Copyright 2024."}),a.jsx(Cc,{children:"Paul Evans."}),a.jsx(zy,{children:a.jsx("a",{href:"mailto:paul.evans.creative@gmail.com",children:"paul.evans.creative@gmail.com"})}),a.jsx(Ly,{children:a.jsx("a",{href:"tel:+46739908858",children:"+46739908858"})})]})]})),Vy=()=>a.jsx(by,{children:a.jsx(Ga.Provider,{value:{size:"2em"},children:Ry.map(e=>a.jsxs(Fy,{href:e.href,children:[e.icon,a.jsx(My,{children:e.des})]},e.id))})}),Uy=()=>{const{pathname:e}=fr();return C.useEffect(()=>{window.scrollTo(0,0)},[e]),null},Qy=A.div`
+`,Dy=ge.forwardRef((e,t)=>a.jsxs(By,{ref:t,children:[a.jsx(Fy,{children:a.jsx(My,{src:Wa,alt:"the letters P and E merged together to form the logo Paul Evans Creative"})}),a.jsx(Wy,{}),a.jsxs(Ry,{children:[a.jsx(Cc,{children:"Copyright 2024."}),a.jsx(Cc,{children:"Paul Evans."}),a.jsx(Ty,{children:a.jsx("a",{href:"mailto:paul.evans.creative@gmail.com",children:"paul.evans.creative@gmail.com"})}),a.jsx(Oy,{children:a.jsx("a",{href:"tel:+46739908858",children:"+46739908858"})})]})]})),Wy=()=>a.jsx(zy,{children:a.jsx(Ga.Provider,{value:{size:"2em"},children:Ny.map(e=>a.jsxs(Ly,{href:e.href,children:[e.icon,a.jsx(by,{children:e.des})]},e.id))})}),Gy=()=>{const{pathname:e}=fr();return C.useEffect(()=>{window.scrollTo(0,0)},[e]),null},Vy=A.div`
   min-height: 100%;
   max-width: 100vw;
-`,Yy=A.div`
+`,Uy=A.div`
   max-width: 100vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-items: center;
   justify-content: space-evenly;
-`,$y=()=>{const e=C.useRef(null);return a.jsxs(Xg,{children:[a.jsx(Uy,{}),a.jsxs(Qy,{children:[a.jsx(s0,{footerRef:e}),a.jsxs(Yy,{children:[a.jsxs(Gg,{children:[a.jsx(zn,{path:"/",element:a.jsx(q1,{})}),a.jsx(zn,{path:"/casestudies",element:a.jsx(tx,{})}),a.jsx(zn,{path:"/about",element:a.jsx(gx,{})}),a.jsx(zn,{path:"/lipusplus",element:a.jsx(ey,{})}),a.jsx(zn,{path:"/ebie",element:a.jsx(Iy,{})})]}),a.jsx(Gy,{ref:e})]}),a.jsx(By,{})]})]})};Ml.createRoot(document.getElementById("root")).render(a.jsx(ge.StrictMode,{children:a.jsx($y,{})}));
+`,Qy=()=>{const e=C.useRef(null);return a.jsxs(Xg,{children:[a.jsx(Gy,{}),a.jsxs(Vy,{children:[a.jsx(s0,{footerRef:e}),a.jsxs(Uy,{children:[a.jsxs(Gg,{children:[a.jsx(zn,{path:"/",element:a.jsx(Z1,{})}),a.jsx(zn,{path:"/casestudies",element:a.jsx(q1,{})}),a.jsx(zn,{path:"/about",element:a.jsx(mx,{})}),a.jsx(zn,{path:"/lipusplus",element:a.jsx(Jx,{})}),a.jsx(zn,{path:"/ebie",element:a.jsx(ky,{})})]}),a.jsx(Dy,{ref:e})]}),a.jsx(Py,{})]})]})};Ml.createRoot(document.getElementById("root")).render(a.jsx(ge.StrictMode,{children:a.jsx(Qy,{})}));
