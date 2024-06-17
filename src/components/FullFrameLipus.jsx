@@ -1,11 +1,13 @@
+import DifferentFilm from "../assets/lipusplus_brand_film_hammarby-2024.mp4"
+
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
+
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
 import Modal from "./ModalLipus";
-import DifferentFilm from "../assets/lipusplus_brand_film_hammarby-2024.mp4"
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -139,8 +141,10 @@ const Film = ({ scrollToEvent }) => {
     if (isSmallScreen) {
       if (differentFilmRef.current) {
         const videoElement = differentFilmRef.current;
+        videoElement.pause();
+        videoElement.currentTime = 0;
         const playPromise = videoElement.play();
-        
+
         if (playPromise !== undefined) {
           playPromise.then(() => {
             videoElement.requestFullscreen().catch((err) => {
