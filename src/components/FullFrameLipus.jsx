@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
-import Film from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
+import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
@@ -230,7 +230,7 @@ const Film = ({ scrollToEvent }) => {
       <video
         ref={filmRef}
         style={{ display: "none" }}
-        src={Film}
+        src={Showcase}
         type="video/mp4"
         controls
       />
