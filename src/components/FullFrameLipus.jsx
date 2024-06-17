@@ -135,6 +135,28 @@ const Film = ({ scrollToEvent }) => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleVideoPause = () => {
+      setModalOpen(false);
+      if (filmRef.current) {
+        filmRef.current.pause();
+        filmRef.current.currentTime = 0;
+      }
+    };
+
+    if (filmRef.current) {
+      filmRef.current.addEventListener("pause", handleVideoPause);
+      filmRef.current.addEventListener("ended", handleVideoPause);
+    }
+
+    return () => {
+      if (filmRef.current) {
+        filmRef.current.removeEventListener("pause", handleVideoPause);
+        filmRef.current.removeEventListener("ended", handleVideoPause);
+      }
+    };
+  }, [isSmallScreen]);
+
   const handleButtonClick = () => {
     if (isSmallScreen) {
       if (filmRef.current) {
@@ -167,6 +189,23 @@ const Film = ({ scrollToEvent }) => {
       videoRef.current.currentTime = 0;
     }
   };
+
+  useEffect(() => {
+    const handleFullScreenChange = () => {
+      if (!document.fullscreenElement) {
+        if (filmRef.current) {
+          filmRef.current.pause();
+          filmRef.current.currentTime = 0;
+        }
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullScreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullScreenChange);
+    };
+  }, []);
 
   return (
     <StyledMainContainer>
@@ -215,6 +254,7 @@ const Film = ({ scrollToEvent }) => {
 };
 
 export default Film;
+
 
 
 
