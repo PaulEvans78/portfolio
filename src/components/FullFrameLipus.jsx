@@ -12,7 +12,6 @@ const StyledMainContainer = styled.section`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  position: relative;
   display: flex;
   flex-direction: column;
 `;
@@ -115,7 +114,7 @@ const Film = ({ scrollToEvent }) => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 767);
+      setIsSmallScreen(window.innerWidth < 1024);
     };
 
     checkScreenSize();
@@ -136,13 +135,14 @@ const Film = ({ scrollToEvent }) => {
 
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      // For small screens, just play the video in fullscreen mode
       if (videoRef.current) {
-        videoRef.current.requestFullscreen();
-        videoRef.current.play();
+        const videoElement = videoRef.current;
+        videoElement.play();
+        videoElement.requestFullscreen().catch((err) => {
+          console.log("Error attempting to enable full-screen mode:", err);
+        });
       }
     } else {
-      // For larger screens, open the modal
       setModalOpen(true);
     }
   };
@@ -186,6 +186,7 @@ const Film = ({ scrollToEvent }) => {
   );
 };
 export default Film;
+
 
 
 // const Film = ({ scrollToEvent }) => {
