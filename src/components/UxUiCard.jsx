@@ -54,7 +54,6 @@ const StyledInfoContainer = styled.div`
   height: 100%;
   padding-top: 20px;
   padding-left: 40px;
-  
 
   @media screen and (max-width: 478px) {
     padding-left: 20px;

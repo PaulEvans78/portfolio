@@ -8,30 +8,27 @@ const StyledButtonContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
-  /* padding-bottom: 10px; */
-  /* margin-bottom: 20px; */
-  /* color: #e1bb3e;  */
-  color: #e437e2;
+  color: var(--main-button-color);
 `;
 
 const StyledWrapper = styled.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
-    transform: scale(1.1); 
-    color: #9804e2; 
+    transform: scale(1.1);
+    color: var(--main-button-hover-color);
   }
 
   @media (max-width: 960px) {
     &:hover {
-      transform: none; 
-      color: inherit; 
+      transform: none;
+      color: inherit;
     }
   }
 `;
 
 const Styledp = styled.p`
-  color: #000000;
+  color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
   margin-top: 0;
@@ -49,13 +46,13 @@ const Button = ({ onClick }) => {
   return (
     <StyledButtonContainer>
       <StyledWrapper>
-      <a
-        href="https://github.com/PaulEvans78"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaArrowCircleRight onClick={onClick} size={70} />
-      </a>
+        <a
+          href="https://github.com/PaulEvans78"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaArrowCircleRight onClick={onClick} size={70} />
+        </a>
       </StyledWrapper>
       <Styledp>Go to GitHub</Styledp>
     </StyledButtonContainer>

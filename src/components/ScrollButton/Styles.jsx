@@ -14,7 +14,7 @@ export const Button = styled.div`
   font-size: 4rem;
   z-index: 99;
   cursor: pointer;
-  color: #e437e2;
+  color: var(--main-button-color);
 
   @media screen and (max-width: 1225px) {
     left: 92%;
@@ -40,7 +40,7 @@ export const StyledWrapper = styled.div`
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
     transform: scale(1.1); 
-    color: #9804e2;; 
+    color: var(--main-button-hover-color); 
   }
 
   @media (max-width: 960px) {

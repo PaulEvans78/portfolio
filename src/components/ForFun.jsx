@@ -41,7 +41,7 @@ const StyledCaseContents = styled.div`
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 80px;
-  color: #2c2c2c;
+  color: var(--secondary-font-color);
 
   @media screen and (max-width: 767px) {
     padding-left: 60px;

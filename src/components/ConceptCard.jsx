@@ -64,33 +64,27 @@ const StyledBottomParagraph = styled.div`
   padding-bottom: 20px;
 `;
 
-
 const Styledp = styled.p`
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   line-height: 1.4;
-  margin:0;
-  
+  margin: 0;
 
   @media screen and (max-width: 478px) {
     font-size: 18px;
-    } 
+  }
 
-    @media screen and (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     font-size: 16px;
-    } 
-
-`;
-
-const Styleda = styled.a`
-  /* margin-bottom: 20px; */
-
-  &:hover {
-    color: #9804e2;; 
   }
 `;
 
+const Styleda = styled.a`
+  &:hover {
+    color: #9804e2;
+  }
+`;
 
 function Card(props) {
   const videoRef = useRef(null);
@@ -118,18 +112,17 @@ function Card(props) {
       />
       <StyledOpacity>
         <StyledInfoContainer>
-          <h3>Writer. </h3>
+          <h3>Writer </h3>
           <p>
-            As a writer and concept developer, I have been commissioned to write concepts based on briefs provided
-            by TV channels and streaming services and had concepts optioned.
-            
+            As a writer and concept developer, I have been commissioned to write
+            concepts based on briefs provided by TV channels and streaming
+            services and had concepts optioned.
           </p>
           <StyledBottomParagraph>
-            <Styledp>
-             Want to know more send me a mail. 
-            </Styledp>
-            <Styleda href="mailto:paul.evans.creative@gmail.com">paul.evans.creative@gmail.com</Styleda>
-            
+            <Styledp>Want to know more send me a mail.</Styledp>
+            <Styleda href="mailto:paul.evans.creative@gmail.com">
+              paul.evans.creative@gmail.com
+            </Styleda>
           </StyledBottomParagraph>
         </StyledInfoContainer>
       </StyledOpacity>

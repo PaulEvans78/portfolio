@@ -17,7 +17,6 @@ const ModalBackground = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,7 @@ const ModalContent = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background: #171717;
+  background: var(--main-modal-backgroundcolor);
 `;
 
 const CloseButton = styled.button`
@@ -42,22 +41,22 @@ const CloseButton = styled.button`
   background: transparent;
   border: none;
   font-size: 3rem;
-  color: #ffffff;
+  color: var(--main-font-color);
   cursor: pointer;
   z-index: 100;
 `;
 
 const VideoContainer = styled.div`
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const StyledVideo = styled.video`
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
 `;
 
 const Modal = ({ isOpen, onClose }) => {
@@ -66,7 +65,9 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <ModalBackground>
       <ModalContent>
-        <CloseButton onClick={onClose}><RxCross1 /></CloseButton>
+        <CloseButton onClick={onClose}>
+          <RxCross1 />
+        </CloseButton>
         <VideoContainer>
           <StyledVideo controls autoPlay>
             <source src={Video} type="video/mp4" />

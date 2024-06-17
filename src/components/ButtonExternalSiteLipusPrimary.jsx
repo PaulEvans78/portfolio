@@ -8,30 +8,27 @@ const StyledPlayContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 24px;
-  /* padding-bottom: 10px; */
-  color: #e437e2;
-
-  
+  color: var(--main-button-color);
 `;
 
 const StyledWrapper = styled.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
-    transform: scale(1.1); 
-    color: #9804e2;; 
+    transform: scale(1.1);
+    color: var(--main-button-hover-color);
   }
 
   @media (max-width: 960px) {
     &:hover {
-      transform: none; 
-      color: inherit; 
+      transform: none;
+      color: inherit;
     }
   }
 `;
 
 const Styledp = styled.p`
-  color: #333333;
+  color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
 
@@ -47,15 +44,14 @@ const Button = ({ onClick }) => {
 
   return (
     <StyledPlayContainer>
-       <StyledWrapper>
-      <a
-        href="https://www.lipusplus.com/casestudies/hammarby"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-       
-        <FaArrowCircleRight onClick={onClick} size={70} />
-      </a>
+      <StyledWrapper>
+        <a
+          href="https://www.lipusplus.com/casestudies/hammarby"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaArrowCircleRight onClick={onClick} size={70} />
+        </a>
       </StyledWrapper>
       <Styledp>See live page at LipusPlus.com</Styledp>
     </StyledPlayContainer>

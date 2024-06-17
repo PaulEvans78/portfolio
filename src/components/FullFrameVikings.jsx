@@ -28,18 +28,8 @@ const StyledVideo = styled.video`
   z-index: 1;
 `;
 
-// const StyledOpacity = styled.div`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.32);
-//   z-index: 2;
-// `;
-
 const StyledContentsContainer = styled.div`
-position: relative;
+  position: relative;
   width: 60%;
   height: 500px;
   padding-top: 280px;
@@ -83,7 +73,6 @@ const StyledLogoContainer = styled.div`
 
   @media screen and (max-width: 478px) {
     justify-content: center;
-    
   }
 `;
 
@@ -93,7 +82,7 @@ const StyledLogo = styled.img`
 `;
 
 const StyledButtonContainer = styled.div`
- width: 90%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -105,9 +94,7 @@ const StyledButtonContainer = styled.div`
   }
 `;
 
-
-
-const Film = ({ scrollToEvent }) => {
+const Film = () => {
   const videoRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -133,8 +120,6 @@ const Film = ({ scrollToEvent }) => {
         alt="Background video"
       />
 
-      {/* <StyledOpacity /> */}
-
       <StyledContentsContainer>
         <StyledLogoContainer>
           <StyledLogo src={logoImg} alt="Viaplays logo" />
@@ -148,11 +133,9 @@ const Film = ({ scrollToEvent }) => {
         </p>
 
         <StyledButtonContainer>
-        <ButtonTrailer onClick={() => setModalOpen(true)} />
-        <ButtonFsF />
+          <ButtonTrailer onClick={() => setModalOpen(true)} />
+          <ButtonFsF />
         </StyledButtonContainer>
-
-
       </StyledContentsContainer>
       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
     </StyledMainContainer>

@@ -48,14 +48,13 @@ const StyledInfoContainer = styled.div`
   width: 85%;
   height: 100%;
   padding-left: 40px;
-  color: black;
+  color: var(--secondary-font-color);
 
   @media screen and (max-width: 960px) {
     width: 90%;
   }
 
   @media screen and (max-width: 478px) {
-    /* padding-top: 20px; */
     padding-left: 20px;
     height: 500px;
   }

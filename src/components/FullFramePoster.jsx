@@ -17,16 +17,13 @@ const StyledMainContainer = styled.section`
 
 const StyledImg = styled.img`
   position: absolute;
-  /* display: flex; */
   width: 100%;
   height: 100%;
-  /* align-self: flex-end; */
-  /* justify-self: center; */
   object-fit: cover;
   z-index: 2;
 
   @media (max-width: 767px) {
-display: none;
+    display: none;
   }
 `;
 
@@ -35,20 +32,11 @@ const StyledMobileImg = styled.img`
   display: none;
   width: 100%;
   height: 100%;
-  /* align-self: flex-end; */
-  /* justify-self: center; */
   object-fit: cover;
   z-index: 2;
 
   @media (max-width: 767px) {
-    position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  /* align-self: flex-end; */
-  /* justify-self: center; */
-  object-fit: cover;
-  z-index: 2;
+    display: flex;
   }
 `;
 
@@ -72,7 +60,6 @@ const StyledContentsContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
-    /* justify-content: center; */
     text-align: center;
     width: 90%;
     padding-top: 100px;
@@ -81,9 +68,7 @@ const StyledContentsContainer = styled.div`
   }
 
   @media screen and (max-width: 320px) {
-    /* width: 90%; */
     padding-top: 15px;
-    /* padding-left: 20px; */
   }
 `;
 
@@ -93,7 +78,6 @@ const StyledLogoContainer = styled.div`
 
   @media screen and (max-width: 478px) {
     justify-content: center;
-    
   }
 `;
 
@@ -108,38 +92,30 @@ const StyledNotationContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   bottom: 0;
-  /* left: 20; */
   width: 100%;
   height: 40px;
-  /* background-color: #1e1e1ee6; */
   padding-bottom: 10px;
   z-index: 3;
-  color: #fefefe;
-  /* margin-top: ; */
+  color: var(--main-notation-font-color);
 
   @media screen and (max-width: 478px) {
     justify-content: center;
   }
 `;
 const Stylednotation = styled.p`
-  /* position: absolute; */
-  /* bottom: 0;
-  right: 0; */
   margin-right: 40px;
   font-size: 14px;
-  /* z-index: 3; */
 
   @media screen and (max-width: 478px) {
     margin-right: 0;
   }
-  
 `;
 
 const Poster = ({ scrollToEvent }) => {
   return (
     <StyledMainContainer>
       <StyledNotationContainer>
-      <Stylednotation>Photography by Nisse Virgin.</Stylednotation>
+        <Stylednotation>Photography by Nisse Virgin.</Stylednotation>
       </StyledNotationContainer>
 
       <StyledImg
@@ -147,7 +123,7 @@ const Poster = ({ scrollToEvent }) => {
         alt="A short film poster. A Man sits with his back to camera contemplating"
       />
 
-<StyledMobileImg
+      <StyledMobileImg
         src={mobilePosterImg}
         alt="A short film poster. A Man sits with his back to camera contemplating"
       />

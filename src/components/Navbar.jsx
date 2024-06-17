@@ -7,7 +7,7 @@ import logoInverted from "../assets/paulEvansCreativeLogo.avif";
 import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const StyledNav = styled.nav`
-position: fixed;
+  position: fixed;
   grid-area: top;
   width: 100%;
   max-width: 100%;
@@ -20,15 +20,13 @@ position: fixed;
   align-items: center;
   padding-bottom: 1em;
   padding-left: 1em;
-  background-color: #171717;
-  top: ${({ visible }) =>
-    visible ? "0" : "-160px"}; /* Adjust according to your navbar height */
+  background-color: var(--main-hero-backgroundcolor);
+  top: ${({ visible }) => (visible ? "0" : "-160px")};
   transition: top 0.6s;
 
   @media screen and (max-width: 960px) {
     width: 100%;
     font-size: 16px;
-
   }
 
   @media screen and (max-width: 767px) {
@@ -36,7 +34,6 @@ position: fixed;
     justify-content: space-between;
     margin-top: 0;
     padding-top: 0.5em;
-    /* padding-left: 0em; */
   }
 `;
 
@@ -60,7 +57,6 @@ const StyledNavLogo = styled.img`
   text-align: center;
   width: 80px;
   margin-top: 1.5em;
-  
 
   @media screen and (max-width: 767px) {
     width: 60px;
@@ -85,10 +81,6 @@ const StyledIdent = styled.div`
   padding-left: 0.5em;
   text-align: left;
 
-  @media screen and (max-width: 960px) {
-    /* padding-left: 3em; */
-  }
-
   @media screen and (max-width: 767px) {
     padding-left: 0em;
   }
@@ -109,7 +101,7 @@ const StyledNavul = styled.ul`
     right: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #171717;
+    background-color: var(--main-hero-backgroundcolor);
     opacity: ${({ open }) => (open ? "1" : "0")};
     visibility: ${({ open }) => (open ? "visible" : "hidden")};
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
@@ -134,19 +126,19 @@ const StyledLink = styled(Link)`
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;
-  color: #ffffff;
+  color: var(--main-font-color);
   text-decoration: none;
   text-align: right;
   margin: 1em 2em 0em 0em;
 
   &:hover {
     text-decoration: underline;
-    color: #e437e2;
+    color: var(--main-navbar-hover-color);
   }
 
   &.active {
     text-decoration: underline;
-    color: #e437e2;
+    color: var(--main-navbar-hover-color);
   }
 
   @media screen and (max-width: 960px) {
@@ -157,7 +149,7 @@ const StyledLink = styled(Link)`
 
     &:hover {
       text-decoration: none;
-      color: #e437e2;
+      color: var(--main-navbar-hover-color);
     }
   }
 `;
@@ -165,14 +157,14 @@ const StyledLink = styled(Link)`
 const ExternalStyledLink = styled.a`
   display: flex;
   align-self: flex-end;
-  color: #ffffff;
+  color: var(--main-font-color);
   text-decoration: none;
   text-align: right;
   margin: 0em 2em 0em 0em;
 
   &:hover {
     text-decoration: underline;
-    color: #e437e2;
+    color: var(--main-navbar-hover-color);
   }
 
   &.active {

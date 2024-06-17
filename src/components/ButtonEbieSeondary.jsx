@@ -9,7 +9,7 @@ const StyledPlayContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
-  color: #d5d5d5;
+  color: var(--secondary-button-color);
 
   @media screen and (max-width: 478px) {
     align-items: center;
@@ -20,20 +20,20 @@ const StyledWrapper = styled.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
-    transform: scale(1.1); 
-    color: #989898;
+    transform: scale(1.1);
+    color: var(--secondary-button-hover-color);
   }
 
   @media (max-width: 960px) {
     &:hover {
-      transform: none; 
-      color: inherit; 
+      transform: none;
+      color: inherit;
     }
   }
 `;
 
 const Styledp = styled.p`
-  color: white;
+  color: var(--main-font-color);
   font-size: 20px;
   font-weight: 600;
 
@@ -46,9 +46,9 @@ const Button = ({ onClick }) => {
   return (
     <StyledPlayContainer>
       <StyledWrapper>
-      <Link to="/ebie">
-          <FaArrowCircleRight onClick={onClick} size={80} /> 
-        </Link> 
+        <Link to="/ebie">
+          <FaArrowCircleRight onClick={onClick} size={80} />
+        </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>
     </StyledPlayContainer>

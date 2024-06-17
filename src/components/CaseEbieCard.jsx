@@ -16,7 +16,7 @@ const slideInFromRight = keyframes`
 `;
 
 const StyledCaseMain = styled.section`
-background-color: #f9f9f9;
+  background-color: var(--main-casecard-background-color);
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
@@ -44,7 +44,7 @@ const StyledCaseContents = styled.div`
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 80px;
-  color: #2c2c2c;
+  color: var(--secondary-font-color);
 
   @media screen and (max-width: 767px) {
     padding-left: 60px;

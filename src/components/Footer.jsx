@@ -26,7 +26,7 @@ const footerData = [
 ];
 
 const StyledFooter = styled.footer`
-  background-color: #171717;
+  background-color: var(--main-hero-backgroundcolor);
   max-width: 100vw;
   min-width: 100vw;
   z-index: 98;
@@ -38,11 +38,11 @@ const StyledFooter = styled.footer`
   padding-bottom: 6em;
 
   line-height: 24px;
-  color: whitesmoke;
+  color: var(--main-font-color);
 
   @media screen and (max-width: 960px) {
     background-image: none;
-    
+
     flex-direction: column;
     align-items: center;
   }
@@ -63,62 +63,52 @@ const StyledContactContainer = styled.div`
 
   @media screen and (max-width: 767px) {
     text-align: center;
-
     margin-bottom: 3em;
-    /* padding-top: 0em; */
   }
 `;
 
 const StyledMailLink = styled.p`
   display: flex;
   flex-direction: column;
-  color: whitesmoke;
+  color: var(--main-font-color);
 
   margin-bottom: -0.5em;
   text-shadow: 2px 2px 4px black;
 
   &:hover {
-    color: #9804e2;; 
+    color: var(--main-button-hover-color);
   }
 
   @media screen and (max-width: 960px) {
-    
-
     &:hover {
-      color: inherit; 
+      color: inherit;
     }
   }
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
-
-   
   }
 `;
 
 const StyledTelLink = styled.p`
   display: flex;
   flex-direction: column;
-  color: whitesmoke;
+  color: var(--main-font-color);
 
   text-shadow: 2px 2px 4px black;
 
   &:hover {
-    color: #9804e2;; 
+    color: var(--main-button-hover-color);
   }
 
   @media screen and (max-width: 960px) {
-    
-
     &:hover {
-      color: inherit; 
+      color: inherit;
     }
   }
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
-
-   
   }
 `;
 
@@ -133,10 +123,6 @@ const IconContainer = styled.div`
   @media screen and (max-width: 960px) {
     padding-top: 2em;
     margin-right: 20px;
-  }
-
-  @media screen and (max-width: 767px) {
-    /* margin-right: 1em; */
   }
 
   @media screen and (max-width: 320px) {
@@ -154,22 +140,18 @@ const StyledIcon = styled.a`
   transition: transform 0.3s ease, color 0.3s ease;
 
   &:hover {
-    transform: scale(1.1); 
-    color: #9804e2;
-    
+    transform: scale(1.1);
+    color: var(--main-button-hover-color);
   }
 
   @media screen and (max-width: 960px) {
-    
-
     &:hover {
-      color: inherit; 
+      color: inherit;
     }
   }
 
   @media screen and (max-width: 767px) {
     margin: 0em 2em 0em 2em;
-
   }
 `;
 
@@ -179,22 +161,19 @@ const IconDes = styled.p`
   align-content: center;
   font-size: 12px;
   line-height: 18px;
-  color: whitesmoke;
+  color: var(--main-font-color);
   text-align: center;
   margin-top: 0.5em;
 
   &:hover {
-    color: #9804e2;; 
+    color: var(--main-button-hover-color);
   }
 
   @media screen and (max-width: 960px) {
-    
-
     &:hover {
-      color: inherit; 
+      color: inherit;
     }
   }
-
 `;
 
 const StyledLogoContainer = styled.div`
@@ -227,19 +206,16 @@ const StyledFooterLogo = styled.img`
 `;
 
 const Styledp = styled.p`
-font-size: 16px;
-font-weight: 500;
-margin: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2px;
 
-@media screen and (max-width: 960px) {
-  margin: 8px;
+  @media screen and (max-width: 960px) {
+    margin: 8px;
   }
 `;
 
-// const Footer = () => {
 const Footer = React.forwardRef((props, ref) => (
-  // return (
-
   <StyledFooter ref={ref}>
     <StyledLogoContainer>
       <StyledFooterLogo
@@ -254,16 +230,16 @@ const Footer = React.forwardRef((props, ref) => (
       <Styledp>Copyright 2024.</Styledp>
       <Styledp>Paul Evans.</Styledp>
       <StyledMailLink>
-        <a href="mailto:paul.evans.creative@gmail.com">paul.evans.creative@gmail.com</a>
+        <a href="mailto:paul.evans.creative@gmail.com">
+          paul.evans.creative@gmail.com
+        </a>
       </StyledMailLink>
       <StyledTelLink>
         <a href="tel:+46739908858">+46739908858</a>
       </StyledTelLink>
     </StyledContactContainer>
-
   </StyledFooter>
 ));
-// }
 
 const Icons = () => {
   return (

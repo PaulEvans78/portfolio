@@ -1,3 +1,20 @@
+:root {
+  --main-font-color: whitesmoke;
+  --secondary-font-color: #2c2c2c;
+  --main-notation-font-color: #cdcccc;
+  --main-notation-background-color: #1e1e1ee6;
+  --main-casecard-background-color: #f9f9f9;
+  --main-button-color: #e437e2;
+  --main-button-hover-color: #9804e2;
+  --secondary-button-color: #d5d5d5;
+  --secondary-button-hover-color: #989898;
+  --main-navbar-hover-color: #e437e2;
+  --main-hero-backgroundcolor: #171717;
+  --main-modal-backgroundcolor: #171717;
+
+
+}
+
 body {
   max-width: 100vw;
   min-width: 100vw;
@@ -6,7 +23,6 @@ body {
   overflow-x: hidden;
   color: whitesmoke;
   font-family: 'Poppins', sans-serif;
-  /* font-family: 'Trispace', sans-serif; */
  }
 
 
@@ -63,45 +79,6 @@ h1 {
               line-height: 4rem;
               } 
 }
-/* styling my button */
-
-/* .white-mode {
-  text-decoration: none;
-  padding: 7px 10px;
-  background-color: #122;
-  border-radius: 3px;
-  color: #FFF;
-  transition: .35s ease-in-out;
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  font-family: "Montserrat";
-}
-
-.white-mode:hover {
-  background-color: #FFF;
-  color: #122;
-} */
-
-
-
-
-/* h1 {
-  font-size: 128px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.2;
-  margin:0;
-
-  @media screen and (max-width: 478px) {
-    font-size: 40px;
-    } 
-
-    @media screen and (max-width: 360px) {
-      font-size: 32px;
-      } 
-} */
-
 
 
 h2 {
@@ -126,24 +103,21 @@ h2 {
         font-size: 28px;
         } 
 
-  /* @media screen and (max-width: 478px) {
-    font-size: 40px;
-    } 
-
-    @media screen and (max-width: 360px) {
-      font-size: 30px;
-      }  */
+  
 }
 
 h3 {
-  /* font-family: 'Trispace', sans-serif; */
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.2;
   margin:0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+
+  @media screen and (max-width: 960px) {
+    font-size: 40px;
+    } 
 
   @media screen and (max-width: 478px) {
     font-size: 32px;
@@ -155,7 +129,6 @@ h3 {
 }
 
 h4 {
-  /* font-family: 'Poppins', sans-serif; */
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -175,33 +148,21 @@ h4 {
 
 h5 {
   font-size: 24px;
-  /* font-family: 'Poppins', sans-serif; */
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
   margin:0;
   margin-bottom: 1em;
-  /* margin-top: 50px; */
-  /* margin-bottom: 20px; */
 
   @media screen and (max-width: 360px) {
     font-size: 18px;
     } 
 }
 
-/* h6 {
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.1;
-  margin:0;
 
-} */
 
 p {
   font-size: 18px;
-  /* font-family: 'Poppins', sans-serif; */
   font-weight: 500;
   font-style: normal;
   line-height: 1.4;
@@ -215,9 +176,6 @@ p {
     font-size: 16px;
     } 
 
-  /* @media screen and (max-width: 960px) {
-    font-size: 20px;
-    }  */
 }
 
 ul {
@@ -231,7 +189,6 @@ ul {
 
 li {
   font-size: 18px;
-  /* font-family: 'Poppins', sans-serif; */
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
@@ -240,7 +197,6 @@ li {
   list-style-type: none;
   list-style-position: inside;
   text-indent: -1.25em;
-  /* padding-left: 0.5em;  */
   
 }
 

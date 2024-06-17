@@ -82,7 +82,6 @@ const StyledLogoContainer = styled.div`
 
   @media screen and (max-width: 478px) {
     justify-content: center;
-    
   }
 `;
 
@@ -92,7 +91,6 @@ const StyledLogo = styled.img`
 
   @media screen and (max-width: 478px) {
     width: 50%;
-    
   }
 `;
 
@@ -155,8 +153,6 @@ const Film = ({ scrollToEvent }) => {
 
           <ButtonCase onClick={scrollToEvent} />
         </StyledButtonContainer>
-
-
       </StyledContentsContainer>
       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
     </StyledMainContainer>

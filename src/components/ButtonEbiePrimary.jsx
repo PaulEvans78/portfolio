@@ -9,31 +9,27 @@ const StyledButtonContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 30px;
-  color: #e437e2;
+  color: var(--main-button-color);
 `;
 
 const StyledWrapper = styled.div`
   display: flex;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
-    transform: scale(1.1); 
-    color: #9804e2;
+    transform: scale(1.1);
+    color: var(--main-button-hover-color);
   }
 
   @media (max-width: 960px) {
     &:hover {
-      transform: none; 
-      color: inherit; 
+      transform: none;
+      color: inherit;
     }
-
-    /* @media (max-width: 478px) {
-    width: 100%;
-    } */
   }
 `;
 
 const Styledp = styled.p`
-  color: #040404;
+  color: var(--secondary-font-color);
   font-size: 20px;
   font-weight: 600;
 
@@ -46,9 +42,9 @@ const Button = ({ onClick }) => {
   return (
     <StyledButtonContainer>
       <StyledWrapper>
-      <Link to="/ebie">
-          <FaArrowCircleRight onClick={onClick} size={70} /> 
-        </Link> 
+        <Link to="/ebie">
+          <FaArrowCircleRight onClick={onClick} size={70} />
+        </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>
     </StyledButtonContainer>

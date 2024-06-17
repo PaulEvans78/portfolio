@@ -20,7 +20,7 @@ const StyledHeroMain = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #171717;
+  background-color: var(--main-hero-backgroundcolor);
 `;
 
 const StyledHeroContents = styled.div`
@@ -45,7 +45,6 @@ const StyledHeroContents = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    /* padding-top: 120px; */
     padding-top: 160px;
     padding-bottom: 80px;
   }
