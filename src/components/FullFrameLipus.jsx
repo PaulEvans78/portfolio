@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
@@ -115,6 +113,7 @@ const Film = ({ scrollToEvent }) => {
   const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [showFilmVideo, setShowFilmVideo] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -162,6 +161,7 @@ const Film = ({ scrollToEvent }) => {
   const handleButtonClick = () => {
     if (isSmallScreen) {
       if (filmRef.current) {
+        setShowFilmVideo(true);
         const videoElement = filmRef.current;
         videoElement.pause();
         videoElement.currentTime = 0;
@@ -227,18 +227,21 @@ const Film = ({ scrollToEvent }) => {
         </video>
       </Modal>
 
-      <video
-        ref={filmRef}
-        style={{ display: "none" }}
-        src={Showcase}
-        type="video/mp4"
-        controls
-      />
+      {showFilmVideo && (
+        <video
+          ref={filmRef}
+          style={{ display: "none" }}
+          src={Showcase}
+          type="video/mp4"
+          controls
+        />
+      )}
     </StyledMainContainer>
   );
 };
 
 export default Film;
+
 
 
 
