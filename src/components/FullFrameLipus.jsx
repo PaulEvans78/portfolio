@@ -113,6 +113,7 @@ const Film = ({ scrollToEvent }) => {
   const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [key, setKey] = useState(0); // Key to force re-render of video
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -135,48 +136,29 @@ const Film = ({ scrollToEvent }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const handleVideoPause = () => {
-      setModalOpen(false);
-      if (filmRef.current) {
-        filmRef.current.pause();
-        filmRef.current.currentTime = 0;
-      }
-    };
-
-    if (filmRef.current) {
-      filmRef.current.addEventListener("pause", handleVideoPause);
-      filmRef.current.addEventListener("ended", handleVideoPause);
-    }
-
-    return () => {
-      if (filmRef.current) {
-        filmRef.current.removeEventListener("pause", handleVideoPause);
-        filmRef.current.removeEventListener("ended", handleVideoPause);
-      }
-    };
-  }, [isSmallScreen]);
-
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      if (filmRef.current) {
-        const videoElement = filmRef.current;
-        videoElement.pause();
-        videoElement.currentTime = 0;
-        const playPromise = videoElement.play();
+      setKey((prevKey) => prevKey + 1); // Update key to force re-render
+      setTimeout(() => {
+        if (filmRef.current) {
+          const videoElement = filmRef.current;
+          videoElement.pause();
+          videoElement.currentTime = 0;
+          const playPromise = videoElement.play();
 
-        if (playPromise !== undefined) {
-          playPromise
-            .then(() => {
-              videoElement.requestFullscreen().catch((err) => {
-                console.log("Error attempting to enable full-screen mode:", err);
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                videoElement.requestFullscreen().catch((err) => {
+                  console.log("Error attempting to enable full-screen mode:", err);
+                });
+              })
+              .catch((error) => {
+                console.log("Failed to play the video automatically:", error);
               });
-            })
-            .catch((error) => {
-              console.log("Failed to play the video automatically:", error);
-            });
+          }
         }
-      }
+      }, 0);
     } else {
       setModalOpen(true);
     }
@@ -243,6 +225,7 @@ const Film = ({ scrollToEvent }) => {
       </Modal>
 
       <video
+        key={key} // Use key to force re-render
         ref={filmRef}
         style={{ display: "none" }}
         src={Showcase}
@@ -254,6 +237,7 @@ const Film = ({ scrollToEvent }) => {
 };
 
 export default Film;
+
 
 
 
