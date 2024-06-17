@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Video from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
+// import Video from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import { RxCross1 } from "react-icons/rx";
 
 const fadeIn = keyframes`
@@ -59,7 +59,28 @@ const StyledVideo = styled.video`
   height: auto;
 `;
 
-const Modal = ({ isOpen, onClose }) => {
+// const Modal = ({ isOpen, onClose }) => {
+//   if (!isOpen) return null;
+
+//   return (
+//     <ModalBackground>
+//       <ModalContent>
+//         <CloseButton onClick={onClose}>
+//           <RxCross1 />
+//         </CloseButton>
+//         <VideoContainer>
+//           <StyledVideo controls autoPlay>
+//             <source src={Video} type="video/mp4" />
+//           </StyledVideo>
+//         </VideoContainer>
+//       </ModalContent>
+//     </ModalBackground>
+//   );
+// };
+
+// export default Modal;
+
+const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
@@ -68,11 +89,7 @@ const Modal = ({ isOpen, onClose }) => {
         <CloseButton onClick={onClose}>
           <RxCross1 />
         </CloseButton>
-        <VideoContainer>
-          <StyledVideo controls autoPlay>
-            <source src={Video} type="video/mp4" />
-          </StyledVideo>
-        </VideoContainer>
+        {children}
       </ModalContent>
     </ModalBackground>
   );

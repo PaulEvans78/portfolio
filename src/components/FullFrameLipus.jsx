@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import Video from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
+import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
 import Modal from "./ModalLipus";
+import DifferentFilm from "../assets/lipusplus_brand_film_hammarby-2024.mp4"
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -118,9 +119,9 @@ const Film = ({ scrollToEvent }) => {
     };
 
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   useEffect(() => {
@@ -151,7 +152,7 @@ const Film = ({ scrollToEvent }) => {
     <StyledMainContainer>
       <StyledVideo
         ref={videoRef}
-        src={Video}
+        src={BackgroundVideo}
         loop
         muted
         playsInline
@@ -180,14 +181,129 @@ const Film = ({ scrollToEvent }) => {
       </StyledContentsContainer>
 
       {!isSmallScreen && (
-        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+          <video controls autoPlay>
+            <source src={DifferentFilm} type="video/mp4" />
+          </video>
+        </Modal>
       )}
     </StyledMainContainer>
   );
 };
+
 export default Film;
 
 
+
+// import React, { useEffect, useRef, useState } from "react";
+// import styled from "styled-components";
+// import Video from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
+// import ButtonFilm from "./ButtonPlayLipusPrimary";
+// import ButtonCase from "./ButtonLipusPlusSecondary";
+// import logoImg from "../assets/lipusPlusLogoWhite.avif";
+// import Modal from "./ModalLipus";
+
+// const StyledMainContainer = styled.section`
+//   position: relative;
+//   max-width: 100%;
+//   min-width: 100%;
+//   overflow-x: hidden;
+//   overflow-y: hidden;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+// `;
+
+// const StyledVideo = styled.video`
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   transform: translate(-50%, -50%);
+//   z-index: 1;
+// `;
+
+// const StyledOpacity = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.32);
+//   z-index: 2;
+// `;
+
+// const StyledContentsContainer = styled.div`
+//   width: 60%;
+//   height: 500px;
+//   padding-top: 280px;
+//   padding-left: 60px;
+//   padding-bottom: 180px;
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 3;
+
+//   @media screen and (max-width: 960px) {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     width: 80%;
+//     padding-top: 240px;
+//     padding-bottom: 240px;
+//   }
+
+//   @media screen and (max-width: 478px) {
+//     justify-content: center;
+//     text-align: center;
+//     width: 90%;
+//     height: 650px;
+//     padding-left: 20px;
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+//   }
+
+//   @media screen and (max-width: 320px) {
+//     padding-top: 120px;
+//     padding-bottom: 80px;
+//   }
+// `;
+
+// const StyledLogoContainer = styled.div`
+//   display: flex;
+//   padding-top: 30px;
+//   margin-bottom: 30px;
+
+//   @media screen and (max-width: 478px) {
+//     justify-content: center;
+//   }
+// `;
+
+// const StyledLogo = styled.img`
+//   width: 30%;
+//   height: auto;
+
+//   @media screen and (max-width: 478px) {
+//     width: 50%;
+//   }
+// `;
+
+// const StyledButtonContainer = styled.div`
+//   width: auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   padding-top: 20px;
+
+//   @media screen and (max-width: 478px) {
+//     width: 100%;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// `;
 
 // const Film = ({ scrollToEvent }) => {
 //   const videoRef = useRef(null);
