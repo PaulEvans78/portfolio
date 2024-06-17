@@ -672,7 +672,7 @@ Error generating stack: `+o.message+`
   }
 `,yv=A.div`
   margin-top: auto;
-`;function wv(){return a.jsxs(Av,{children:[a.jsx(gv,{children:a.jsxs(xv,{children:[a.jsx(Ut,{src:sv,alt:"React Logo."}),a.jsx(Ut,{src:uv,alt:"Webflow Logo."}),a.jsx(Ut,{src:cv,alt:"Figma Logo."}),a.jsx(Ut,{src:dv,alt:"GitHub Logo."}),a.jsx(Ut,{src:pv,alt:"HTML Logo."}),a.jsx(Ut,{src:fv,alt:"CSS Logo."}),a.jsx(Ut,{src:hv,alt:"Javascript Logo."}),a.jsx(Ut,{src:mv,alt:"Photoshop Logo."})]})}),a.jsxs(vv,{children:[a.jsx("h3",{children:"Frontend Dev"}),a.jsx("p",{children:"With a solid understanding of HTML, CSS, JavaScript, and React, I have created visually appealing and user-friendly interfaces for various clients."}),a.jsx(yv,{children:a.jsx(av,{})})]})]})}const jc="/portfolio/assets/lipusplus_brand_film_hammarby-2024_short-0c3de834.mp4",Sv=A.div`
+`;function wv(){return a.jsxs(Av,{children:[a.jsx(gv,{children:a.jsxs(xv,{children:[a.jsx(Ut,{src:sv,alt:"React Logo."}),a.jsx(Ut,{src:uv,alt:"Webflow Logo."}),a.jsx(Ut,{src:cv,alt:"Figma Logo."}),a.jsx(Ut,{src:dv,alt:"GitHub Logo."}),a.jsx(Ut,{src:pv,alt:"HTML Logo."}),a.jsx(Ut,{src:fv,alt:"CSS Logo."}),a.jsx(Ut,{src:hv,alt:"Javascript Logo."}),a.jsx(Ut,{src:mv,alt:"Photoshop Logo."})]})}),a.jsxs(vv,{children:[a.jsx("h3",{children:"Frontend Dev"}),a.jsx("p",{children:"With a solid understanding of HTML, CSS, JavaScript, and React, I have created visually appealing and user-friendly interfaces for various clients."}),a.jsx(yv,{children:a.jsx(av,{})})]})]})}const Sv="/portfolio/assets/lipusplus_brand_film_hammarby-2024-c0930dc4.mp4",jc="/portfolio/assets/lipusplus_brand_film_hammarby-2024_short-0c3de834.mp4",jv=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -683,7 +683,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     align-items: center;
   }
-`,jv=A.div`
+`,Cv=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -697,7 +697,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,Cv=A.p`
+`,kv=A.p`
   color: var(--main-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -705,7 +705,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,kv=({onClick:e})=>a.jsxs(Sv,{children:[a.jsx(jv,{children:a.jsx(mf,{onClick:e,size:70})}),a.jsx(Cv,{children:"Play Film"})]}),Ev=A.div`
+`,Ev=({onClick:e})=>a.jsxs(jv,{children:[a.jsx(Cv,{children:a.jsx(mf,{onClick:e,size:70})}),a.jsx(kv,{children:"Play Film"})]}),Iv=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -716,7 +716,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 478px) {
     align-items: center;
   }
-`,Iv=A.div`
+`,Pv=A.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
@@ -730,7 +730,7 @@ Error generating stack: `+o.message+`
       color: inherit;
     }
   }
-`,Pv=A.p`
+`,Nv=A.p`
   color: var(--main-font-color);
   font-size: 20px;
   font-weight: 600;
@@ -738,14 +738,14 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 18px;
   }
-`,Nv=({onClick:e})=>a.jsxs(Ev,{children:[a.jsx(Iv,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Pv,{children:"See Case Study"})]}),Bv="/portfolio/assets/lipusPlusLogoWhite-b2e2b769.avif";function Af(e){return Tn({tag:"svg",attr:{viewBox:"0 0 15 15",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z",fill:"currentColor"},child:[]}]})(e)}const Rv=Pn`
+`,Bv=({onClick:e})=>a.jsxs(Iv,{children:[a.jsx(Pv,{children:a.jsx(hr,{to:"/lipusplus",children:a.jsx(fn,{onClick:e,size:70})})}),a.jsx(Nv,{children:"See Case Study"})]}),Rv="/portfolio/assets/lipusPlusLogoWhite-b2e2b769.avif";function Af(e){return Tn({tag:"svg",attr:{viewBox:"0 0 15 15",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z",fill:"currentColor"},child:[]}]})(e)}const Tv=Pn`
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-`,Tv=A.div`
+`,Ov=A.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -755,8 +755,8 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   z-index: 200;
-  animation: ${Rv} 0.5s ease-out;
-`,Ov=A.div`
+  animation: ${Tv} 0.5s ease-out;
+`,zv=A.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -764,7 +764,7 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   background: var(--main-modal-backgroundcolor);
-`,zv=A.button`
+`,Lv=A.button`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -783,7 +783,7 @@ Error generating stack: `+o.message+`
 `;A.video`
   width: 100%;
   height: auto;
-`;const Lv=({isOpen:e,onClose:t,children:n})=>e?a.jsx(Tv,{children:a.jsxs(Ov,{children:[a.jsx(zv,{onClick:t,children:a.jsx(Af,{})}),n]})}):null,bv="/portfolio/assets/lipusplus_brand_film_hammarby-2024-c0930dc4.mp4",Fv=A.section`
+`;const bv=({isOpen:e,onClose:t,children:n})=>e?a.jsx(Ov,{children:a.jsxs(zv,{children:[a.jsx(Lv,{onClick:t,children:a.jsx(Af,{})}),n]})}):null,Fv=A.section`
   position: relative;
   max-width: 100%;
   min-width: 100%;
@@ -870,7 +870,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
   }
-`,Qv=({scrollToEvent:e})=>{const t=C.useRef(null),n=C.useRef(null),[r,i]=C.useState(!1),[o,l]=C.useState(!1);C.useEffect(()=>{const u=()=>{l(window.innerWidth<1024)};return u(),window.addEventListener("resize",u),()=>window.removeEventListener("resize",u)},[]),C.useEffect(()=>{const u=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(u)},[]);const s=()=>{if(o){if(n.current){const u=n.current,c=u.play();c!==void 0&&c.then(()=>{u.requestFullscreen().catch(m=>{console.log("Error attempting to enable full-screen mode:",m)})}).catch(m=>{console.log("Failed to play the video automatically:",m)})}}else i(!0)};return a.jsxs(Fv,{children:[a.jsx(Mv,{ref:t,src:jc,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Dv,{}),a.jsxs(Wv,{children:[a.jsx(Gv,{children:a.jsx(Vv,{src:Bv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Uv,{children:[a.jsx(kv,{onClick:s}),a.jsx(Nv,{onClick:e})]})]}),a.jsx(Lv,{isOpen:r,onClose:()=>i(!1),children:a.jsx("video",{controls:!0,autoPlay:!0,children:a.jsx("source",{src:jc,type:"video/mp4"})})}),a.jsx("video",{ref:n,style:{display:"none"},src:bv,type:"video/mp4",controls:!0})]})},gf="/portfolio/assets/lipusPlusLogo-022851c3.avif",vf="/portfolio/assets/lipusHeroImg-44921e74.avif",Yv=A.div`
+`,Qv=({scrollToEvent:e})=>{const t=C.useRef(null),n=C.useRef(null),[r,i]=C.useState(!1),[o,l]=C.useState(!1);C.useEffect(()=>{const u=()=>{l(window.innerWidth<1024)};return u(),window.addEventListener("resize",u),()=>window.removeEventListener("resize",u)},[]),C.useEffect(()=>{const u=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(u)},[]);const s=()=>{if(o){if(n.current){const u=n.current;u.pause(),u.currentTime=0;const c=u.play();c!==void 0&&c.then(()=>{u.requestFullscreen().catch(m=>{console.log("Error attempting to enable full-screen mode:",m)})}).catch(m=>{console.log("Failed to play the video automatically:",m)})}}else i(!0)};return a.jsxs(Fv,{children:[a.jsx(Mv,{ref:t,src:jc,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Dv,{}),a.jsxs(Wv,{children:[a.jsx(Gv,{children:a.jsx(Vv,{src:Rv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Uv,{children:[a.jsx(Ev,{onClick:s}),a.jsx(Bv,{onClick:e})]})]}),a.jsx(bv,{isOpen:r,onClose:()=>i(!1),children:a.jsx("video",{controls:!0,autoPlay:!0,children:a.jsx("source",{src:jc,type:"video/mp4"})})}),a.jsx("video",{ref:n,style:{display:"none"},src:Sv,type:"video/mp4",controls:!0})]})},gf="/portfolio/assets/lipusPlusLogo-022851c3.avif",vf="/portfolio/assets/lipusHeroImg-44921e74.avif",Yv=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
