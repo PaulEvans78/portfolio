@@ -110,9 +110,9 @@ const StyledButtonContainer = styled.div`
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
+  const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [showFilmVideo, setShowFilmVideo] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -137,18 +137,14 @@ const Film = ({ scrollToEvent }) => {
 
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      setShowFilmVideo(false); // Hide the video element
-      setTimeout(() => {
-        setShowFilmVideo(true); // Show the video element again
-        const videoElement = document.createElement('video');
-        videoElement.src = Showcase;
-        videoElement.controls = true;
-        videoElement.style.display = 'none';
-        document.body.appendChild(videoElement);
+      if (filmRef.current) {
+        const videoElement = filmRef.current;
+        videoElement.pause();
+        videoElement.currentTime = 0;
+        const playPromise = videoElement.play();
 
-        videoElement.onloadeddata = () => {
-          videoElement.style.display = 'block';
-          videoElement.play()
+        if (playPromise !== undefined) {
+          playPromise
             .then(() => {
               videoElement.requestFullscreen().catch((err) => {
                 console.log("Error attempting to enable full-screen mode:", err);
@@ -157,12 +153,8 @@ const Film = ({ scrollToEvent }) => {
             .catch((error) => {
               console.log("Failed to play the video automatically:", error);
             });
-        };
-
-        videoElement.onpause = videoElement.onended = () => {
-          document.body.removeChild(videoElement);
-        };
-      }, 100); // Delay to allow the state to update
+        }
+      }
     } else {
       setModalOpen(true);
     }
@@ -211,20 +203,19 @@ const Film = ({ scrollToEvent }) => {
         </video>
       </Modal>
 
-      {showFilmVideo && (
-        <video
-          ref={videoRef}
-          style={{ display: "none" }}
-          src={Showcase}
-          type="video/mp4"
-          controls
-        />
-      )}
+      <video
+        ref={filmRef}
+        style={{ display: "none" }}
+        src={Showcase}
+        type="video/mp4"
+        controls
+      />
     </StyledMainContainer>
   );
 };
 
 export default Film;
+
 
 
 
