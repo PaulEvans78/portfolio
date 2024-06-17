@@ -789,7 +789,6 @@ Error generating stack: `+o.message+`
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  position: relative;
   display: flex;
   flex-direction: column;
 `,Wv=A.video`
@@ -871,7 +870,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
   }
-`,$v=({scrollToEvent:e})=>{const t=C.useRef(null),[n,r]=C.useState(!1),[i,o]=C.useState(!1);C.useEffect(()=>{const s=()=>{o(window.innerWidth<=767)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),C.useEffect(()=>{const s=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(s)},[]);const l=()=>{i?t.current&&(t.current.requestFullscreen(),t.current.play()):r(!0)};return a.jsxs(Dv,{children:[a.jsx(Wv,{ref:t,src:wv,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Gv,{}),a.jsxs(Vv,{children:[a.jsx(Uv,{children:a.jsx(Qv,{src:Bv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Yv,{children:[a.jsx(kv,{onClick:l}),a.jsx(Nv,{onClick:e})]})]}),!i&&a.jsx(Mv,{isOpen:n,onClose:()=>r(!1)})]})},Af="/portfolio/assets/lipusPlusLogo-022851c3.avif",gf="/portfolio/assets/lipusHeroImg-44921e74.avif",Hv=A.div`
+`,$v=({scrollToEvent:e})=>{const t=C.useRef(null),[n,r]=C.useState(!1),[i,o]=C.useState(!1);C.useEffect(()=>{const s=()=>{o(window.innerWidth<1024)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),C.useEffect(()=>{const s=setTimeout(()=>{t.current&&t.current.play()},1e3);return()=>clearTimeout(s)},[]);const l=()=>{if(i){if(t.current){const s=t.current;s.play(),s.requestFullscreen().catch(u=>{console.log("Error attempting to enable full-screen mode:",u)})}}else r(!0)};return a.jsxs(Dv,{children:[a.jsx(Wv,{ref:t,src:wv,loop:!0,muted:!0,playsInline:!0,alt:"Background video"}),a.jsx(Gv,{}),a.jsxs(Vv,{children:[a.jsx(Uv,{children:a.jsx(Qv,{src:Bv,alt:"LipusPlus logo"})}),a.jsx("h4",{children:"Meet the Physio of Hammarby Handball"}),a.jsx("p",{children:"Brand film highlighting LipusPlus's partnership with Hammarby Handball, showcasing through testimonals the effectiveness of the modality."}),a.jsxs(Yv,{children:[a.jsx(kv,{onClick:l}),a.jsx(Nv,{onClick:e})]})]}),!i&&a.jsx(Mv,{isOpen:n,onClose:()=>r(!1)})]})},Af="/portfolio/assets/lipusPlusLogo-022851c3.avif",gf="/portfolio/assets/lipusHeroImg-44921e74.avif",Hv=A.div`
   width: 200px;
   display: flex;
   flex-direction: column;
