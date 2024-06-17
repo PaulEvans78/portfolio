@@ -110,7 +110,6 @@ const StyledButtonContainer = styled.div`
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
-  const filmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [showFilmVideo, setShowFilmVideo] = useState(false);
@@ -136,39 +135,20 @@ const Film = ({ scrollToEvent }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const handleVideoPause = () => {
-      setModalOpen(false);
-      if (filmRef.current) {
-        filmRef.current.pause();
-        filmRef.current.currentTime = 0;
-      }
-    };
-
-    if (filmRef.current) {
-      filmRef.current.addEventListener("pause", handleVideoPause);
-      filmRef.current.addEventListener("ended", handleVideoPause);
-    }
-
-    return () => {
-      if (filmRef.current) {
-        filmRef.current.removeEventListener("pause", handleVideoPause);
-        filmRef.current.removeEventListener("ended", handleVideoPause);
-      }
-    };
-  }, [isSmallScreen]);
-
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      if (filmRef.current) {
-        setShowFilmVideo(true);
-        const videoElement = filmRef.current;
-        videoElement.pause();
-        videoElement.currentTime = 0;
-        const playPromise = videoElement.play();
+      setShowFilmVideo(false); // Hide the video element
+      setTimeout(() => {
+        setShowFilmVideo(true); // Show the video element again
+        const videoElement = document.createElement('video');
+        videoElement.src = Showcase;
+        videoElement.controls = true;
+        videoElement.style.display = 'none';
+        document.body.appendChild(videoElement);
 
-        if (playPromise !== undefined) {
-          playPromise
+        videoElement.onloadeddata = () => {
+          videoElement.style.display = 'block';
+          videoElement.play()
             .then(() => {
               videoElement.requestFullscreen().catch((err) => {
                 console.log("Error attempting to enable full-screen mode:", err);
@@ -177,8 +157,12 @@ const Film = ({ scrollToEvent }) => {
             .catch((error) => {
               console.log("Failed to play the video automatically:", error);
             });
-        }
-      }
+        };
+
+        videoElement.onpause = videoElement.onended = () => {
+          document.body.removeChild(videoElement);
+        };
+      }, 100); // Delay to allow the state to update
     } else {
       setModalOpen(true);
     }
@@ -229,7 +213,7 @@ const Film = ({ scrollToEvent }) => {
 
       {showFilmVideo && (
         <video
-          ref={filmRef}
+          ref={videoRef}
           style={{ display: "none" }}
           src={Showcase}
           type="video/mp4"
@@ -241,6 +225,7 @@ const Film = ({ scrollToEvent }) => {
 };
 
 export default Film;
+
 
 
 
