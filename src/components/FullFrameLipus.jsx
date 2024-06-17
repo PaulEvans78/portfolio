@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
+import DifferentFilm from "../assets/different_film.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
 import logoImg from "../assets/lipusPlusLogoWhite.avif";
 import Modal from "./ModalLipus";
-import DifferentFilm from "../assets/lipusplus_brand_film_hammarby-2024.mp4"
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -110,6 +110,7 @@ const StyledButtonContainer = styled.div`
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
+  const differentFilmRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -136,12 +137,19 @@ const Film = ({ scrollToEvent }) => {
 
   const handleButtonClick = () => {
     if (isSmallScreen) {
-      if (videoRef.current) {
-        const videoElement = videoRef.current;
-        videoElement.play();
-        videoElement.requestFullscreen().catch((err) => {
-          console.log("Error attempting to enable full-screen mode:", err);
-        });
+      if (differentFilmRef.current) {
+        const videoElement = differentFilmRef.current;
+        const playPromise = videoElement.play();
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            videoElement.requestFullscreen().catch((err) => {
+              console.log("Error attempting to enable full-screen mode:", err);
+            });
+          }).catch((error) => {
+            console.log("Failed to play the video automatically:", error);
+          });
+        }
       }
     } else {
       setModalOpen(true);
@@ -180,18 +188,25 @@ const Film = ({ scrollToEvent }) => {
         </StyledButtonContainer>
       </StyledContentsContainer>
 
-      {!isSmallScreen && (
-        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-          <video controls autoPlay>
-            <source src={DifferentFilm} type="video/mp4" />
-          </video>
-        </Modal>
-      )}
+      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+        <video controls autoPlay>
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
+      </Modal>
+
+      <video
+        ref={differentFilmRef}
+        style={{ display: "none" }}
+        src={DifferentFilm}
+        type="video/mp4"
+        controls
+      />
     </StyledMainContainer>
   );
 };
 
 export default Film;
+
 
 
 
