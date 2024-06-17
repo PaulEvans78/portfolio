@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-// import Video from "../assets/vikings.mp4";
 import BackgroundVideo from "../assets/vikings.mp4";
 import Showcase from "../assets/vikingsTrailer.mp4";
 import logoImg from "../assets/viaplayLogo.avif";
@@ -227,53 +226,3 @@ const Film = ({ scrollToEvent }) => {
 
 export default Film;
 
-
-
-// const Film = () => {
-//   const videoRef = useRef(null);
-//   const [isModalOpen, setModalOpen] = useState(false);
-
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       if (videoRef.current) {
-//         videoRef.current.play();
-//       }
-//     }, 1000); 
-
-//     return () => clearTimeout(timer); 
-//   }, []);
-
-//   return (
-//     <StyledMainContainer>
-//       <StyledVideo
-//         ref={videoRef}
-//         src={Video}
-//         autoplay
-//         loop
-//         muted
-//         playsInline
-//         alt="Background video"
-//       />
-
-//       <StyledContentsContainer>
-//         <StyledLogoContainer>
-//           <StyledLogo src={logoImg} alt="Viaplays logo" />
-//         </StyledLogoContainer>
-
-//         <h4>The Last Journey of the Vikings</h4>
-//         <p>
-//           In collaboration with director James Valesquez, Mopar Studios and
-//           Viaplay, I served as the series cinematographer. The production took
-//           place in both Sweden and Ireland.
-//         </p>
-
-//         <StyledButtonContainer>
-//           <ButtonTrailer onClick={() => setModalOpen(true)} />
-//           <ButtonFsF />
-//         </StyledButtonContainer>
-//       </StyledContentsContainer>
-//       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}></Modal>
-//     </StyledMainContainer>
-//   );
-// };
-// export default Film;
