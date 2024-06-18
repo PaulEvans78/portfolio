@@ -18,10 +18,29 @@ const StyledButtonContainer = styled.div`
 const StyledWrapper = styled.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
+
   &:hover {
     transform: scale(1.1);
     color: var(--main-button-hover-color);
   }
+
+  &:active {
+    border-radius: 50%;
+    border: solid 3px white;
+    /* animation: pulse 2.0s ease; */
+  }
+
+  /* @keyframes pulse {
+    0% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+} */
 
   @media (max-width: 960px) {
     &:hover {

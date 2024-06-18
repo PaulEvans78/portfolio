@@ -29,11 +29,11 @@ const StyledWrapper = styled.div`
 
   &:active {
     border-radius: 50%;
-    border: solid 2px white;
-    animation: pulse 0.5s ease;
+    border: solid 3px white;
+    /* animation: pulse 2.0s ease; */
   }
 
-  @keyframes pulse {
+  /* @keyframes pulse {
     0% {
     border-color: rgba(255, 255, 255, 0.3);
   }
@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
   100% {
     border-color: rgba(255, 255, 255, 0.3);
   }
-}
+} */
 
   @media (max-width: 960px) {
     &:hover {
