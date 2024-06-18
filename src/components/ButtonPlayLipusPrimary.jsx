@@ -17,11 +17,7 @@ const StyledButtonContainer = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding-left: 6px;
+  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 
   &:hover {
