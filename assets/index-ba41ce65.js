@@ -442,7 +442,6 @@ Error generating stack: `+o.message+`
   color: #ffffff;
   z-index: 3;
 `,V0=A.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
