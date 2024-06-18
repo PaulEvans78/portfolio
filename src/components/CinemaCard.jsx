@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import posterImage from "../assets/posterImg.avif";
 import styled from "styled-components";
@@ -25,13 +25,11 @@ const StyledFrontCard = styled.div`
     cursor: default;
   }
 
-  @media screen and (min-width: 960px) {
-    &:hover .poster-image {
-      opacity: 0;
-    }
-    &:hover .cinema-video {
-      visibility: visible;
-    }
+  &:hover .poster-image {
+    opacity: 0;
+  }
+  &:hover .cinema-video {
+    visibility: visible;
   }
 `;
 
@@ -45,10 +43,6 @@ const StyledCinemaVideo = styled.video`
   z-index: 1;
   visibility: hidden;
   background-color: transparent;
-
-  @media screen and (max-width: 960px) {
-    visibility: visible;
-  }
 `;
 
 const StyledPosterImage = styled.img`
@@ -60,10 +54,6 @@ const StyledPosterImage = styled.img`
   object-fit: cover;
   z-index: 2;
   transition: opacity 0.5s ease-in-out;
-
-  @media screen and (max-width: 960px) {
-    opacity: 0;
-  }
 `;
 
 const StyledOpacity = styled.div`
@@ -159,4 +149,3 @@ function CinemaCard(props) {
 }
 
 export default CinemaCard;
-

@@ -24,13 +24,11 @@ const StyledFrontCard = styled.div`
     cursor: default;
   }
 
-  @media screen and (min-width: 960px) {
-    &:hover .poster-image {
-      opacity: 0;
-    }
-    &:hover .concept-video {
-      visibility: visible;
-    }
+  &:hover .poster-image {
+    opacity: 0;
+  }
+  &:hover .concept-video {
+    visibility: visible;
   }
 `;
 
@@ -44,10 +42,6 @@ const StyledConceptVideo = styled.video`
   z-index: 1;
   visibility: hidden;
   background-color: transparent;
-
-  @media screen and (max-width: 960px) {
-    visibility: visible;
-  }
 `;
 
 const StyledPosterImage = styled.img`
@@ -59,10 +53,6 @@ const StyledPosterImage = styled.img`
   object-fit: cover;
   z-index: 2;
   transition: opacity 0.5s ease-in-out;
-
-  @media screen and (max-width: 960px) {
-    opacity: 0;
-  }
 `;
 
 const StyledOpacity = styled.div`
@@ -124,26 +114,6 @@ const Styleda = styled.a`
 
 function Card(props) {
   const videoRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth > 960 && videoRef.current) {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-        videoRef.current.style.visibility = "hidden";
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Initial check
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
