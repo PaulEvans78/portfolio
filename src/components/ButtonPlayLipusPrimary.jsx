@@ -7,6 +7,7 @@ const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
   padding-top: 30px;
   color: var(--main-button-color);
 
@@ -16,7 +17,11 @@ const StyledButtonContainer = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-  display: inline-block;
+width: 80px;
+height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
   transition: transform 0.3s ease, color 0.3s ease;
 
   &:hover {
@@ -24,23 +29,7 @@ const StyledWrapper = styled.div`
     color: var(--main-button-hover-color);
   }
 
-  &:active {
-    border-radius: 50%;
-    border: solid 3px white;
-    /* animation: pulse 2.0s ease; */
-  }
 
-  /* @keyframes pulse {
-    0% {
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  50% {
-    border-color: rgba(255, 255, 255, 0.7);
-  }
-  100% {
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-} */
 
   @media (max-width: 960px) {
     &:hover {

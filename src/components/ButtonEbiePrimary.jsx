@@ -20,10 +20,6 @@ const StyledWrapper = styled.div`
     color: var(--main-button-hover-color);
   }
 
-  &:active {
-    border-radius: 50%;
-    border: solid 3px white;
-  }
   
   @media (max-width: 960px) {
     &:hover {
