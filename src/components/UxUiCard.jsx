@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import UxUiReel from "../assets/uxuiReel.mp4";
 import styled from "styled-components";
 import ButtonCaseStudies from "./ButtonCaseStudies";
+
+const preloadVideo = (url) => {
+  const video = document.createElement('video');
+  video.src = url;
+  video.preload = 'auto';
+  video.load();
+};
 
 const StyledFrontCard = styled.div`
   position: relative;
@@ -11,7 +18,6 @@ const StyledFrontCard = styled.div`
   width: 100%;
   min-width: 100%;
   aspect-ratio: 5 / 4;
-
   font-size: 1.2rem;
   overflow: hidden;
 
@@ -65,6 +71,10 @@ const BottomParagraph = styled.div`
 `;
 
 function Card(props) {
+  useEffect(() => {
+    preloadVideo(UxUiReel);
+  }, []);
+
   return (
     <StyledFrontCard>
       <StyledConceptVideo
@@ -73,7 +83,7 @@ function Card(props) {
         loop
         muted
         playsInline
-        alt="Design frames changing randomly "
+        alt="Design frames changing randomly"
       />
       <StyledOpacity>
         <StyledInfoContainer>

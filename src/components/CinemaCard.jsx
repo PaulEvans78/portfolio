@@ -1,5 +1,7 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import dopReel from "../assets/showcase1.mp4";
+import posterImage from "../assets/posterImg.avif";
+
 import styled from "styled-components";
 import ButtonFsF from "./ButtonFsFPrimary";
 
@@ -13,31 +15,70 @@ const StyledFrontCard = styled.div`
   aspect-ratio: 5 / 4;
   font-size: 1.2rem;
   overflow: hidden;
+  cursor: pointer;
 
   @media screen and (max-width: 1225px) {
     height: 600px;
   }
 
-  @media screen and (max-width: 478px) {
+  @media screen and (max-width: 960px) {
     height: 500px;
+    cursor: default;
+  }
+
+  @media screen and (min-width: 960px) {
+    &:hover .poster-image {
+      opacity: 0;
+    }
+    &:hover .cinema-video {
+      visibility: visible;
+    }
   }
 `;
 
-const StyledConceptVideo = styled.video`
+const StyledCinemaVideo = styled.video`
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: relative;
-  align-self: center;
   object-fit: cover;
+  z-index: 1;
+  visibility: hidden;
+  background-color: transparent;
+
+  @media screen and (max-width: 960px) {
+    visibility: visible;
+  }
+`;
+
+const StyledPosterImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  transition: opacity 0.5s ease-in-out;
+
+  @media screen and (max-width: 960px) {
+    opacity: 0;
+  }
 `;
 
 const StyledOpacity = styled.div`
   position: absolute;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
-  background-color: #00000052;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  z-index: 3;
 `;
 
 const StyledInfoContainer = styled.div`
@@ -59,35 +100,80 @@ const StyledInfoContainer = styled.div`
     padding-left: 20px;
   }
 `;
+// const StyledInfoContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   text-align: left;
+//   width: 100%;
+// `;
 
 const BottomParagraph = styled.div`
   margin-top: auto;
 `;
 
-function Card(props) {
+function CinemaCard(props) {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.play();
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 960) {
+        if (videoRef.current) {
+          videoRef.current.play();
+        }
+      } else {
+        if (videoRef.current) {
+          videoRef.current.pause();
+          videoRef.current.currentTime = 0;
+          videoRef.current.style.visibility = 'hidden';
+        }
       }
-    }, 4000); // 6000ms delay (6 seconds)
+    };
 
-    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+    window.addEventListener('resize', handleResize);
+
+    // Initial check
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
+  const handleMouseEnter = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 960 && videoRef.current) {
+      videoRef.current.play();
+      videoRef.current.style.visibility = 'visible';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 960 && videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+      videoRef.current.style.visibility = 'hidden';
+    }
+  };
+
   return (
-    <StyledFrontCard>
-      <StyledConceptVideo
+    <StyledFrontCard
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <StyledCinemaVideo
+        className="cinema-video"
         ref={videoRef}
         src={dopReel}
-        autoplay
         loop
         muted
         playsInline
+        preload="auto"
         alt="A showreel showing clips from different productions."
       />
+      <StyledPosterImage className="poster-image" src={posterImage} alt="Poster Image" />
       <StyledOpacity>
         <StyledInfoContainer>
           <h3>Cinematographer</h3>
@@ -105,4 +191,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default CinemaCard;

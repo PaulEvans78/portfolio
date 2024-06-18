@@ -71,10 +71,12 @@ const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  visibility: hidden;
 
   ${({ isInView }) =>
     isInView &&
     css`
+      visibility: visible;
       animation: ${slideInFromRight} 1s ease-out forwards;
     `}
 `;
@@ -107,13 +109,12 @@ const ForFun = () => {
   return (
     <StyledCaseMain>
       <StyledCaseContents>
-        <h3>For fun </h3>
-
+        <h3>For fun</h3>
         <p>
           Surfing and traveling are my two biggest passions. When I'm not
           paddling out into the sea I like to work out at the gym or swim in the
           lake. I also cherish the time I spend with my family, friends cooking
-          and watching movies and tv shows.
+          and watching movies and TV shows.
         </p>
       </StyledCaseContents>
 
@@ -121,11 +122,13 @@ const ForFun = () => {
         <StyledImg
           ref={imgRef}
           src={Img}
-          alt="A surf board propped up against a mobilehome"
+          alt="A surfboard propped up against a mobile home"
           isInView={isInView}
         />
       </StyledImageContainer>
     </StyledCaseMain>
   );
 };
+
 export default ForFun;
+

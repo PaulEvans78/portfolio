@@ -50,5 +50,3 @@ export const StyledWrapper = styled.div`
     }
   }
 `;
-// export const FaArrowCircleUp = styled.img`
-// border: 4px black solid;`;

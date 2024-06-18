@@ -10,6 +10,8 @@ import CaseLipus from "../components/CaseLipusCard";
 import FullFrameVideo from "../components/FullFrameVikings";
 import CaseEbie from "../components/CaseEbieCard";
 import FullFramePoster from "../components/FullFramePoster";
+import { StyledSquaresContainer, FadeInComponent } from '../components/FadesStyled';
+import useIntersectionObserver from '../components/useIntersectionObserver';
 
 const StyledHomeContainer = styled.section`
   max-width: 100vw;
@@ -20,25 +22,11 @@ const StyledHomeContainer = styled.section`
   align-content: center;
 `;
 
-const StyledSquaresContainer = styled.section`
-  max-width: 100%;
-  min-width: 100%;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  row-gap: 16px;
-  column-gap: 16px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-  }
-`;
-
 const Home = () => {
+  const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
+  const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
+  const [posterRef, isPosterVisible] = useIntersectionObserver();
+
   const caseRef = useRef(null);
 
   const scrollToEvent = () => {
@@ -50,12 +38,12 @@ const Home = () => {
   return (
     <StyledHomeContainer>
       <Hero />
-      <StyledSquaresContainer>
+      <StyledSquaresContainer ref={squaresRef1} isVisible={isSquaresVisible1}>
         <UxUiCard />
         <FrontendCard />
       </StyledSquaresContainer>
       <FullFrameBranding scrollToEvent={scrollToEvent} />
-      <StyledSquaresContainer>
+      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
         <CinemaCard />
         <ConceptCard />
       </StyledSquaresContainer>
@@ -63,9 +51,12 @@ const Home = () => {
       <CaseLipus />
       <FullFrameVideo />
       <CaseEbie />
-      <FullFramePoster />
+      <FadeInComponent ref={posterRef} isVisible={isPosterVisible}>
+        <FullFramePoster />
+      </FadeInComponent>
     </StyledHomeContainer>
   );
 };
 
 export default Home;
+

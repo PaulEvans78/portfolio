@@ -1,4 +1,11 @@
+import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+import smokeGif from "../assets/smoke.gif"; 
+
+const preloadImage = (url) => {
+  const img = new Image();
+  img.src = url;
+};
 
 const slideInFromLeft = keyframes`
   0% {
@@ -95,15 +102,17 @@ const Styledp = styled.p`
 `;
 
 const Hero = () => {
+  useEffect(() => {
+    preloadImage(smokeGif);
+  }, []);
+
   return (
     <StyledHeroMain>
       <StyledHeroContents>
         <h1>Paul Evans</h1>
-
         <StyledAnimatedHeading>
           <h2>Digital Experience Designer</h2>
         </StyledAnimatedHeading>
-
         <Styledp>
           I am a passionate creative who's professional background spans over 20
           years, during which time I have worn many hats. Cinematographer, UX /
@@ -116,4 +125,5 @@ const Hero = () => {
     </StyledHeroMain>
   );
 };
+
 export default Hero;

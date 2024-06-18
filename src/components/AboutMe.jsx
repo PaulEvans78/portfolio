@@ -73,36 +73,33 @@ const StyledImg = styled.img`
   height: 100%;
   object-fit: cover;
 
-  ${({ isInView }) =>
-    isInView &&
+  ${({ isLoaded }) =>
+    isLoaded &&
     css`
       animation: ${slideInFromLeft} 1s ease-out forwards;
     `}
 `;
 
 const AboutMe = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef(null);
-  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (imgRef.current) {
-      observer.observe(imgRef.current);
-    }
-
-    return () => {
-      if (imgRef.current) {
-        observer.unobserve(imgRef.current);
-      }
+    const handleLoad = () => {
+      setIsLoaded(true);
     };
+
+    const imgElement = imgRef.current;
+    if (imgElement) {
+      if (imgElement.complete) {
+        handleLoad();
+      } else {
+        imgElement.addEventListener('load', handleLoad);
+        return () => {
+          imgElement.removeEventListener('load', handleLoad);
+        };
+      }
+    }
   }, []);
 
   return (
@@ -128,10 +125,12 @@ const AboutMe = () => {
           ref={imgRef}
           src={Img}
           alt="Paul Evans watching the ocean"
-          isInView={isInView}
+          isLoaded={isLoaded}
         />
       </StyledImageContainer>
     </StyledCaseMain>
   );
 };
+
 export default AboutMe;
+

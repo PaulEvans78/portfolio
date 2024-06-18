@@ -88,6 +88,11 @@ const StyledImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  @media screen and (max-width: 960px) {
+    height: 600px;
+  }
+
 `;
 
 const StyledImg = styled.img`
@@ -95,15 +100,17 @@ const StyledImg = styled.img`
   height: 100%;
   object-fit: cover;
 
-  @media (max-width: 478px) {
-    height: 500px;
-  }
-
   ${({ isInView }) =>
     isInView &&
     css`
       animation: ${slideInFromRight} 1s ease-out forwards;
     `}
+
+  @media (max-width: 478px) {
+    height: 500px;
+  }
+
+  
 `;
 
 const Case = () => {
