@@ -87,7 +87,7 @@ const StyledImageContainer = styled.div`
   grid-area: Image;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 620px;
 
   @media screen and (max-width: 960px) {
     height: 600px;
