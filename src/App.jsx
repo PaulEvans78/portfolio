@@ -43,8 +43,6 @@ const App = () => {
             <Route path="/lipusplus" element={<LipusPlus />} />
 
             <Route path="/ebie" element={<Ebie />} />
-
-            
           </Routes>
 
           <Footer ref={footerRef} />

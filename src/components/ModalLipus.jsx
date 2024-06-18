@@ -45,7 +45,6 @@ const CloseButton = styled.button`
   z-index: 100;
 `;
 
-
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 

@@ -19,8 +19,6 @@ const StyledWrapper = styled.div`
     color: var(--main-button-hover-color);
   }
 
-
-
   @media (max-width: 960px) {
     &:hover {
       transform: none;

@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { FaPlayCircle } from "react-icons/fa";
 
-
-
-
 const StyledButtonContainer = styled.div`
   width: 200px;
   display: flex;
@@ -21,13 +18,11 @@ const StyledButtonContainer = styled.div`
 const StyledWrapper = styled.div`
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.1);
     color: var(--main-button-hover-color);
   }
-
-
 
   @media (max-width: 960px) {
     &:hover {
@@ -62,4 +57,3 @@ const Button = ({ onClick }) => {
   );
 };
 export default Button;
-

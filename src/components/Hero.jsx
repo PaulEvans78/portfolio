@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import smokeGif from "../assets/smoke.gif"; 
+import smokeGif from "../assets/smoke.gif";
 
 const preloadImage = (url) => {
   const img = new Image();

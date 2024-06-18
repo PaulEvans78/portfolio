@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import conceptReel from "../assets/conceptReel.mp4";
 import styled from "styled-components";
-import posterImage from "../assets/conceptPosterImg.avif"
+import posterImage from "../assets/conceptPosterImg.avif";
 
 const StyledFrontCard = styled.div`
   position: relative;
@@ -32,19 +32,7 @@ const StyledFrontCard = styled.div`
       visibility: visible;
     }
   }
-  /* @media screen and (max-width: 478px) {
-    height: 500px;
-  } */
 `;
-
-// const StyledConceptVideo = styled.video`
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-//   align-self: left;
-//   object-fit: cover;
-// `;
 
 const StyledConceptVideo = styled.video`
   position: absolute;
@@ -148,48 +136,46 @@ function Card(props) {
         if (videoRef.current) {
           videoRef.current.pause();
           videoRef.current.currentTime = 0;
-          videoRef.current.style.visibility = 'hidden';
+          videoRef.current.style.visibility = "hidden";
         }
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
-// Initial check
-handleResize();
+    // Initial check
+    handleResize();
 
-return () => {
-  window.removeEventListener('resize', handleResize);
-};
-}, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-const handleMouseEnter = () => {
-  const screenWidth = window.innerWidth;
-  if (screenWidth > 960 && videoRef.current) {
-    videoRef.current.play();
-    videoRef.current.style.visibility = 'visible';
-  }
-};
+  const handleMouseEnter = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 960 && videoRef.current) {
+      videoRef.current.play();
+      videoRef.current.style.visibility = "visible";
+    }
+  };
 
-const handleMouseLeave = () => {
-  const screenWidth = window.innerWidth;
-  if (screenWidth > 960 && videoRef.current) {
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
-    videoRef.current.style.visibility = 'hidden';
-  }
-};
-
-
+  const handleMouseLeave = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 960 && videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+      videoRef.current.style.visibility = "hidden";
+    }
+  };
 
   return (
     <StyledFrontCard
-    onMouseEnter={handleMouseEnter}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      >
+    >
       <StyledConceptVideo
-         className="concept-video"
-         ref={videoRef}
+        className="concept-video"
+        ref={videoRef}
         src={conceptReel}
         loop
         muted
@@ -197,7 +183,11 @@ const handleMouseLeave = () => {
         preload="auto"
         alt="A video showing animated AI images made for TV concepts."
       />
-      <StyledPosterImage className="poster-image" src={posterImage} alt="Poster Image" />
+      <StyledPosterImage
+        className="poster-image"
+        src={posterImage}
+        alt="Poster Image"
+      />
       <StyledOpacity>
         <StyledInfoContainer>
           <h3>Writer</h3>
@@ -219,48 +209,3 @@ const handleMouseLeave = () => {
 }
 
 export default Card;
-
-
-// function Card(props) {
-//   const videoRef = useRef(null);
-
-//   useEffect(() => {
-//     if (videoRef.current) {
-//       videoRef.current.play();
-//     }
-//   }, []);
-
-//   return (
-//     <StyledFrontCard>
-//       <StyledConceptVideo
-//         ref={videoRef}
-//         src={conceptReel}
-//         autoPlay
-//         loop
-//         muted
-//         playsInline
-//         preload="auto"
-//         alt="A video showing animated AI images made for TV concepts."
-//       />
-//       <StyledOpacity>
-//         <StyledInfoContainer>
-//           <h3>Writer</h3>
-//           <p>
-//             As a writer and concept developer, I have been commissioned to write
-//             concepts based on briefs provided by TV channels and streaming
-//             services and had concepts optioned.
-//           </p>
-//           <StyledBottomParagraph>
-//             <Styledp>Want to know more? Send me an email.</Styledp>
-//             <Styleda href="mailto:paul.evans.creative@gmail.com">
-//               paul.evans.creative@gmail.com
-//             </Styleda>
-//           </StyledBottomParagraph>
-//         </StyledInfoContainer>
-//       </StyledOpacity>
-//     </StyledFrontCard>
-//   );
-// }
-
-// export default Card;
-

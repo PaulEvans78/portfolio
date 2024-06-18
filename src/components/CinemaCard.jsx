@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import posterImage from "../assets/posterImg.avif";
-
 import styled from "styled-components";
 import ButtonFsF from "./ButtonFsFPrimary";
 
@@ -100,13 +99,6 @@ const StyledInfoContainer = styled.div`
     padding-left: 20px;
   }
 `;
-// const StyledInfoContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   text-align: left;
-//   width: 100%;
-// `;
 
 const BottomParagraph = styled.div`
   margin-top: auto;
@@ -126,18 +118,18 @@ function CinemaCard(props) {
         if (videoRef.current) {
           videoRef.current.pause();
           videoRef.current.currentTime = 0;
-          videoRef.current.style.visibility = 'hidden';
+          videoRef.current.style.visibility = "hidden";
         }
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Initial check
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -145,7 +137,7 @@ function CinemaCard(props) {
     const screenWidth = window.innerWidth;
     if (screenWidth > 960 && videoRef.current) {
       videoRef.current.play();
-      videoRef.current.style.visibility = 'visible';
+      videoRef.current.style.visibility = "visible";
     }
   };
 
@@ -154,7 +146,7 @@ function CinemaCard(props) {
     if (screenWidth > 960 && videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
-      videoRef.current.style.visibility = 'hidden';
+      videoRef.current.style.visibility = "hidden";
     }
   };
 
@@ -173,7 +165,11 @@ function CinemaCard(props) {
         preload="auto"
         alt="A showreel showing clips from different productions."
       />
-      <StyledPosterImage className="poster-image" src={posterImage} alt="Poster Image" />
+      <StyledPosterImage
+        className="poster-image"
+        src={posterImage}
+        alt="Poster Image"
+      />
       <StyledOpacity>
         <StyledInfoContainer>
           <h3>Cinematographer</h3>

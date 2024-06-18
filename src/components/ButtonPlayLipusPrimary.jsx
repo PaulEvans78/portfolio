@@ -7,7 +7,7 @@ const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   padding-top: 30px;
   color: var(--main-button-color);
 
@@ -17,8 +17,8 @@ const StyledButtonContainer = styled.div`
 `;
 
 const StyledWrapper = styled.div`
-width: 80px;
-height: 80px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   padding-left: 6px;
@@ -28,8 +28,6 @@ height: 80px;
     transform: scale(1.1);
     color: var(--main-button-hover-color);
   }
-
-
 
   @media (max-width: 960px) {
     &:hover {

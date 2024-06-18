@@ -92,7 +92,6 @@ const StyledImageContainer = styled.div`
   @media screen and (max-width: 960px) {
     height: 600px;
   }
-
 `;
 
 const StyledImg = styled.img`
@@ -109,8 +108,6 @@ const StyledImg = styled.img`
   @media (max-width: 478px) {
     height: 500px;
   }
-
-  
 `;
 
 const Case = () => {

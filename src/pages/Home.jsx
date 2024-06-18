@@ -10,8 +10,11 @@ import CaseLipus from "../components/CaseLipusCard";
 import FullFrameVideo from "../components/FullFrameVikings";
 import CaseEbie from "../components/CaseEbieCard";
 import FullFramePoster from "../components/FullFramePoster";
-import { StyledSquaresContainer, FadeInComponent } from '../components/FadesStyled';
-import useIntersectionObserver from '../components/useIntersectionObserver';
+import {
+  StyledSquaresContainer,
+  FadeInComponent,
+} from "../components/FadesStyled";
+import useIntersectionObserver from "../components/useIntersectionObserver";
 
 const StyledHomeContainer = styled.section`
   max-width: 100vw;
@@ -59,4 +62,3 @@ const Home = () => {
 };
 
 export default Home;
-
