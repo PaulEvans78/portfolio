@@ -81,7 +81,6 @@ const StyledOpacity = styled.div`
 `;
 
 const StyledInfoContainer = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
