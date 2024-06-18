@@ -28,7 +28,7 @@ const StyledFrontCard = styled.div`
     &:hover .poster-image {
       opacity: 0;
     }
-    &:hover .cinema-video {
+    &:hover .concept-video {
       visibility: visible;
     }
   }
@@ -128,16 +128,10 @@ function Card(props) {
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth <= 960) {
-        if (videoRef.current) {
-          videoRef.current.play();
-        }
-      } else {
-        if (videoRef.current) {
-          videoRef.current.pause();
-          videoRef.current.currentTime = 0;
-          videoRef.current.style.visibility = "hidden";
-        }
+      if (screenWidth > 960 && videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+        videoRef.current.style.visibility = "hidden";
       }
     };
 
@@ -152,16 +146,14 @@ function Card(props) {
   }, []);
 
   const handleMouseEnter = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 960 && videoRef.current) {
+    if (videoRef.current) {
       videoRef.current.play();
       videoRef.current.style.visibility = "visible";
     }
   };
 
   const handleMouseLeave = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 960 && videoRef.current) {
+    if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
       videoRef.current.style.visibility = "hidden";

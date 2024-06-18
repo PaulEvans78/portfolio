@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import posterImage from "../assets/posterImg.avif";
 import styled from "styled-components";
@@ -106,43 +106,15 @@ const BottomParagraph = styled.div`
 function CinemaCard(props) {
   const videoRef = useRef(null);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth <= 960) {
-        if (videoRef.current) {
-          videoRef.current.play();
-        }
-      } else {
-        if (videoRef.current) {
-          videoRef.current.pause();
-          videoRef.current.currentTime = 0;
-          videoRef.current.style.visibility = "hidden";
-        }
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Initial check
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const handleMouseEnter = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 960 && videoRef.current) {
+    if (videoRef.current) {
       videoRef.current.play();
       videoRef.current.style.visibility = "visible";
     }
   };
 
   const handleMouseLeave = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 960 && videoRef.current) {
+    if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
       videoRef.current.style.visibility = "hidden";
@@ -187,3 +159,4 @@ function CinemaCard(props) {
 }
 
 export default CinemaCard;
+
