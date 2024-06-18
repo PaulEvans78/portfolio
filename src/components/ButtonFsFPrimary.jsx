@@ -55,7 +55,7 @@ const Button = ({ onClick }) => {
           <FaArrowCircleRight onClick={onClick} size={70} />
         </a>
       </StyledWrapper>
-      <Styledp>See Cinematography Reel</Styledp>
+      <Styledp>Go to Cinematography Site</Styledp>
     </StyledPlayContainer>
   );
 };
