@@ -2280,7 +2280,7 @@ Error generating stack: `+o.message+`
   bottom: 40px;
   height: 50px;
   font-size: 4rem;
-  z-index: 99;
+  z-index: 200;
   cursor: pointer;
   color: var(--main-button-color);
 
