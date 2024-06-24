@@ -119,7 +119,7 @@ const Hero = () => {
           UI designer, frontend developer and not to mention concept developer
           and writer. This experience brings a unique perspective to Visual
           Design. Combining these skills to create the ultimate Brand and
-          Customer Experience is something that excites and drives me.
+          Customer Experience excites and drives me.
         </Styledp>
       </StyledHeroContents>
     </StyledHeroMain>
