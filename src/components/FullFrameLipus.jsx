@@ -211,9 +211,9 @@ const Film = ({ scrollToEvent }) => {
         <h4>Meet the Physio of Hammarby Handball</h4>
 
         <p>
-          Brand film highlighting LipusPlus's partnership with Hammarby
-          Handball, showcasing through testimonials the effectiveness of the
-          modality.
+          Brand film highlighting LipusPlus's partnership with Hammarby Handball. 
+          Together with LipusPlus we created a landing page using captivating content and testimonials to showcase the partnership 
+          and to invite users to a webinar providing evidence of the effectiveness of the modality.
         </p>
         <StyledButtonContainer>
           <ButtonFilm onClick={handleButtonClick} />
