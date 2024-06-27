@@ -109,7 +109,7 @@ const Hero = () => {
   return (
     <StyledHeroMain>
       <StyledHeroContents>
-        <h1>Paul Evans</h1>
+        <h1 style={{ backgroundImage: `url(${smokeGif})` }}>Paul Evans</h1>
         <StyledAnimatedHeading>
           <h2>Experience Designer</h2>
         </StyledAnimatedHeading>
