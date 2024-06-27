@@ -195,12 +195,11 @@ const Film = ({ scrollToEvent }) => {
           <StyledLogo src={logoImg} alt="LipusPlus logo" />
         </StyledLogoContainer>
 
-        <h4>Meet the Physio of Hammarby Handball</h4>
+        <h4>The Last Journey of the Vikings</h4>
 
         <p>
-          Brand film highlighting LipusPlus's partnership with Hammarby
-          Handball, showcasing through testimonials the effectiveness of the
-          modality.
+        Worked as a cinematographer for the Viaplay series "The Last Journey of the Vikings" 
+        with Mopar Studios and director James Valesquez. Shot on location in Ireland, in collaboration with Subotica Entertainment.
         </p>
         <StyledButtonContainer>
           <ButtonTrailer onClick={handleButtonClick} />
