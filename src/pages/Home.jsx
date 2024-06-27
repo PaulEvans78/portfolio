@@ -25,6 +25,7 @@ const StyledHomeContainer = styled.section`
   align-content: center;
 `;
 
+
 const Home = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
