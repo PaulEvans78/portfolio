@@ -111,7 +111,7 @@ const Hero = () => {
       <StyledHeroContents>
         <h1 style={{ backgroundImage: `url(${smokeGif})` }}>Paul Evans</h1>
         <StyledAnimatedHeading>
-          <h2>Experience Designer</h2>
+          <h2>Creative Lead</h2>
         </StyledAnimatedHeading>
         <Styledp>
           I am a passionate creative who's professional background spans over 20
