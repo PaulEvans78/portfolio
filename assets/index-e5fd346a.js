@@ -2315,7 +2315,7 @@ Error generating stack: `+o.message+`
       color: inherit; 
     }
   }
-`,Fy=()=>{const[e,t]=j.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>1200?t(!0):i<=1200&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(Ly,{children:a.jsx(My,{children:a.jsx(z0,{onClick:r,style:{display:e?"inline":"none",borderRadius:"50%"}})})})},Dy=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(T0,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevanscreative/",icon:a.jsx(B0,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(R0,{}),des:"Imdb"}],Wy=A.footer`
+`,Fy=()=>{const[e,t]=j.useState(!1),n=()=>{const i=document.documentElement.scrollTop;i>1200?t(!0):i<=1200&&t(!1)},r=()=>{window.scrollTo({top:0,behavior:"smooth"})};return window.addEventListener("scroll",n),a.jsx(Ly,{children:a.jsx(My,{children:a.jsx(z0,{onClick:r,style:{display:e?"inline":"none",borderRadius:"50%"}})})})},Dy=[{id:1,href:"https://www.linkedin.com/in/paul-evans-3a74605/",icon:a.jsx(T0,{}),des:"LinkedIn"},{id:2,href:"https://www.instagram.com/paulevans_official/",icon:a.jsx(B0,{}),des:"Instagram"},{id:3,href:"https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",icon:a.jsx(R0,{}),des:"Imdb"}],Wy=A.footer`
   background-color: var(--main-hero-backgroundcolor);
   max-width: 100vw;
   min-width: 100vw;
