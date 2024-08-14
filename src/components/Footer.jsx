@@ -13,7 +13,7 @@ const footerData = [
   },
   {
     id: 2,
-    href: "https://www.instagram.com/paulevanscreative/",
+    href: "https://www.instagram.com/paulevans_official/",
     icon: <FaInstagram />,
     des: "Instagram",
   },
