@@ -26,12 +26,13 @@ const StyledFrontCard = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   min-width: 100%;
-  aspect-ratio: 5 / 4;
+  height: 620px;
   font-size: 1.2rem;
   overflow: hidden;
+  background-color: var(--main-casecard-background-color);
 
   @media screen and (max-width: 1225px) {
     height: 600px;
@@ -56,11 +57,10 @@ const StyledInfoContainer = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   width: 85%;
   height: 100%;
-  padding-left: 40px;
   color: var(--secondary-font-color);
 
   @media screen and (max-width: 960px) {
@@ -79,6 +79,7 @@ const StyledIconContainer = styled.div`
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
   padding-left: 60px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 478px) {
     padding-left: 40px;
@@ -117,12 +118,12 @@ const Card = () => {
         </StyledIconContainer>
       </StyledBtsContainer>
       <StyledInfoContainer>
-        <h3>Frontend Dev</h3>
+        <h3>Frontend</h3>
         <p>
-          With a solid understanding of HTML, CSS, JavaScript, and React, I have
-          created visually appealing and user-friendly interfaces for various
-          clients.
+          On top of all this I ma a qualified Frontend developer with a solid
+          understanding of HTML, CSS, JavaScript, and React.
         </p>
+
         <BottomParagraph>
           <ButtonGitHub />
         </BottomParagraph>

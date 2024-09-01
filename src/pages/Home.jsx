@@ -2,14 +2,15 @@ import { useRef } from "react";
 import styled from "styled-components";
 import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
-import ConceptCard from "../components/ConceptCard";
+import AICaseStudyTides from "../components/AICaseStudyTides";
+// import ConceptCard from "../components/ConceptCard";
 import UxUiCard from "../components/UxUiCard";
 import FrontendCard from "../components/FrontendCard";
 import FullFrameBranding from "../components/FullFrameLipus";
 import CaseLipus from "../components/CaseLipusCard";
 import FullFrameVideo from "../components/FullFrameVikings";
 import CaseEbie from "../components/CaseEbieCard";
-import FullFramePoster from "../components/FullFramePoster";
+import FullFramePoster from "../components/FullFrameStoryTelling";
 import {
   StyledSquaresContainer,
   FadeInComponent,
@@ -44,20 +45,27 @@ const Home = () => {
       <Hero />
       <StyledSquaresContainer ref={squaresRef1} isVisible={isSquaresVisible1}>
         <UxUiCard />
-        <FrontendCard />
+        <CinemaCard />
       </StyledSquaresContainer>
       <FullFrameBranding scrollToEvent={scrollToEvent} />
-      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        <CinemaCard />
+      {/* <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
         <ConceptCard />
-      </StyledSquaresContainer>
+        <FrontendCard />
+      </StyledSquaresContainer> */}
+       
       <div ref={caseRef}></div>
       <CaseLipus />
       <FullFrameVideo />
       <CaseEbie />
+
+      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
+        <AICaseStudyTides />
+      </StyledSquaresContainer>
+
       <FadeInComponent ref={posterRef} isVisible={isPosterVisible}>
         <FullFramePoster />
       </FadeInComponent>
+      <FrontendCard />
     </StyledHomeContainer>
   );
 };

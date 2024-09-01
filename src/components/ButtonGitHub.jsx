@@ -6,9 +6,9 @@ const StyledButtonContainer = styled.div`
   width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 30px;
+  align-items: center;
   color: var(--main-button-color);
+  padding-bottom: 20px;
 `;
 
 const StyledWrapper = styled.div`
