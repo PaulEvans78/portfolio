@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AiCase from "../assets/NaomiBreakdancing.mp4";
+import AiCase from "../assets/NaomiBreakin.mp4";
 import styled from "styled-components";
 import ButtonCaseBreak from "./ButtonCaseBreak";
 
