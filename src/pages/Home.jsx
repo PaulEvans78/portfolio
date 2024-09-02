@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
 import AICaseStudyTides from "../components/AICaseStudyTides";
-// import ConceptCard from "../components/ConceptCard";
+import FullFrameAI from "../components/FullFrameAI";
 import UxUiCard from "../components/UxUiCard";
 import FrontendCard from "../components/FrontendCard";
 import FullFrameBranding from "../components/FullFrameLipus";
@@ -47,6 +47,10 @@ const Home = () => {
         <UxUiCard />
         <CinemaCard />
       </StyledSquaresContainer>
+      <FullFrameAI />
+      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
+        <AICaseStudyTides />
+      </StyledSquaresContainer>
       <FullFrameBranding scrollToEvent={scrollToEvent} />
       {/* <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
         <ConceptCard />
@@ -58,9 +62,7 @@ const Home = () => {
       <FullFrameVideo />
       <CaseEbie />
 
-      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        <AICaseStudyTides />
-      </StyledSquaresContainer>
+      
 
       <FadeInComponent ref={posterRef} isVisible={isPosterVisible}>
         <FullFramePoster />

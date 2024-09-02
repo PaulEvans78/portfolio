@@ -134,7 +134,7 @@ const Storytelling = ({ scrollToEvent }) => {
 
         <p>
         Storytelling is at the heart of everything I do because it’s how I connect with people and make experiences meaningful.
-          I’ve applied my narrative skills to develop concepts for content, films, and TV shows, while also shaping engaging user journeys and creating immersive experiences. 
+          I’ve applied my narrative skills to develop commercials, content, films, and TV shows, while also shaping engaging user journeys and creating immersive experiences. 
           I’ve been commissioned to write concepts for B2C clients, TV channels, and streaming services, with several of these concepts being optioned.
         </p>
 

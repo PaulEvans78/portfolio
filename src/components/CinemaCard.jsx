@@ -77,6 +77,7 @@ const StyledInfoContainer = styled.div`
   text-align: left;
   width: 90%;
   height: 100%;
+  padding-top: 20px;
   padding-left: 40px;
 
   @media screen and (max-width: 960px) {

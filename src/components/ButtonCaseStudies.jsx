@@ -16,6 +16,7 @@ const StyledButtonContainer = styled.div`
 
 const StyledWrapper = styled.div`
   display: inline-block;
+  margin-bottom: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
     transform: scale(1.1);

@@ -67,6 +67,7 @@ const StyledInfoContainer = styled.div`
 `;
 
 const BottomParagraph = styled.div`
+padding-bottom: 20px;
   margin-top: auto;
 `;
 
