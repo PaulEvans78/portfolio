@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
 import AICaseStudyTides from "../components/AICaseStudyTides";
+import AICaseStudyBreaking from "../components/AICaseStudyBreaking";
 import FullFrameAI from "../components/FullFrameAI";
 import UxUiCard from "../components/UxUiCard";
 import FrontendCard from "../components/FrontendCard";
@@ -25,7 +26,6 @@ const StyledHomeContainer = styled.section`
   row-gap: 16px;
   align-content: center;
 `;
-
 
 const Home = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
@@ -50,19 +50,14 @@ const Home = () => {
       <FullFrameAI />
       <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
         <AICaseStudyTides />
+        <AICaseStudyBreaking />
       </StyledSquaresContainer>
       <FullFrameBranding scrollToEvent={scrollToEvent} />
-      {/* <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        <ConceptCard />
-        <FrontendCard />
-      </StyledSquaresContainer> */}
-       
+
       <div ref={caseRef}></div>
       <CaseLipus />
       <FullFrameVideo />
       <CaseEbie />
-
-      
 
       <FadeInComponent ref={posterRef} isVisible={isPosterVisible}>
         <FullFramePoster />

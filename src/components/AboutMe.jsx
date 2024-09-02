@@ -108,9 +108,9 @@ const AboutMe = () => {
         <h3>About me </h3>
 
         <p>
-          “Hi, I’m Paul! I have worked as a creative for over 20 years. In need
-          of a platform to showcase my work, I taught myself how to code. In
-          2020, I decided to study web design to gain structure and further
+          “Hi, I’m Paul! As a creative I needed
+          a platform to showcase my work, so I taught myself how to code. In
+          2020, I decided to study UX/UI and Frontend to gain structure and further
           insight into the platforms and methods used. My interests extend into
           AI, particularly image and video generation and recently started
           developing tools that incorporate AI to aid in my creative work. I
