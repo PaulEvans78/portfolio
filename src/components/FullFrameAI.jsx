@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { FaAngleDown } from "react-icons/fa6";
-import BackgroundVideo from "../assets/conceptReel.mp4";
+import BackgroundVideo from "../assets/AIReel.mp4";
 import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import Modal from "./ModalLipus";
 
