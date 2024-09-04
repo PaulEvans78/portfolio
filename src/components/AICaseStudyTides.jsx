@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AiCase from "../assets/tides-spec-prototype.mp4";
+import AiCase from "../assets/tides-black-spec-prototype.mp4";
 import styled from "styled-components";
 import ButtonCaseTides from "./ButtonCaseTides";
 
@@ -18,14 +18,10 @@ const StyledFrontCard = styled.div`
   justify-content: flex-end;
   width: 100%;
   min-width: 100%;
-  aspect-ratio: 5 / 4;
+  height: 600px;
   font-size: 1.2rem;
-  color: var(--secondary-font-color);
   overflow: hidden;
-
-  @media screen and (max-width: 1225px) {
-    height: 600px;
-  }
+  background-color: black;
 
   @media screen and (max-width: 478px) {
     height: 500px;
@@ -38,11 +34,35 @@ const StyledFrontCard = styled.div`
 const StyledConceptVideo = styled.video`
   position: absolute;
   width: 100%;
-  height: 60%;
+  height: 90%;
   position: relative;
   object-fit: cover;
-  padding-bottom: 50px;
-  padding-left: 100px;
+  padding-bottom: 30px;
+  padding-left: 160px;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 120px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding-left: 90px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-left: 160px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding-left: 100px;
+  }
+
+  @media screen and (max-width: 476px) {
+    padding-left: 90px;
+  }
+
+  @media screen and (max-width: 476px) {
+    padding-left: 50px;
+  }
 `;
 
 const StyledOpacity = styled.div`
@@ -50,6 +70,7 @@ const StyledOpacity = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  background-color: #000000a0;
 `;
 
 const StyledInfoContainer = styled.div`
@@ -92,7 +113,7 @@ function AICaseStudyTides(props) {
         <StyledInfoContainer>
           <h3>AI & Prototypes</h3>
           <p>
-            Why using AI generated images and videos can enhance the user
+            Why using AI generated content can enhance the user
             experience in prototypes.
           </p>
 

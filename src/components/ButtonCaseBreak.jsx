@@ -51,7 +51,7 @@ const Button = ({ onClick }) => {
     <StyledButtonContainer>
       <StyledWrapper>
       <a
-          href="https://www.linkedin.com/posts/paul-evans-3a74605_ai-userexperience-webdevelopment-activity-7234084840894021632-LNks?utm_source=share&utm_medium=member_desktop"
+          href="https://www.linkedin.com/posts/paul-evans-3a74605_aiart-generativeai-runwayai-activity-7232706903896690689-JL51?utm_source=share&utm_medium=member_desktop"
           target="_blank"
           rel="noopener noreferrer"
         >

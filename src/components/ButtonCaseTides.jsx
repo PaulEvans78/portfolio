@@ -35,7 +35,6 @@ const Styledp = styled.p`
   font-size: 20px;
   font-weight: 600;
   margin-top: 0;
-  color: var(--secondary-font-color);
 
   @media (max-width: 478px) {
     font-size: 18px;

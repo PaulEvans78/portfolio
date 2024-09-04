@@ -18,13 +18,9 @@ const StyledFrontCard = styled.div`
   justify-content: flex-end;
   width: 100%;
   min-width: 100%;
-  aspect-ratio: 5 / 4;
+  height: 600px;
   font-size: 1.2rem;
   overflow: hidden;
-
-  @media screen and (max-width: 1225px) {
-    height: 600px;
-  }
 
   @media screen and (max-width: 478px) {
     height: 500px;
