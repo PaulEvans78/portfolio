@@ -118,7 +118,7 @@ const Card = () => {
         </StyledIconContainer>
       </StyledBtsContainer>
       <StyledInfoContainer>
-        <h3>Frontend</h3>
+        <h3>Frontend Tools</h3>
         <p>
           On top of all this I ma a qualified Frontend developer with a solid
           understanding of HTML, CSS, JavaScript, and React.
