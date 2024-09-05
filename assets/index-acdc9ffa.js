@@ -539,7 +539,7 @@ Error generating stack: `+o.message+`
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #000000a0;
+  background-color: #0000007e;
 `,nv=m.div`
   position: absolute;
   display: flex;
@@ -931,7 +931,7 @@ padding-bottom: 20px;
   }
 `,nx=m.div`
   margin-top: auto;
-`,rx=()=>a.jsxs(qv,{children:[a.jsx(Jv,{children:a.jsxs(tx,{children:[a.jsx(Yt,{src:Uv,alt:"React Logo."}),a.jsx(Yt,{src:Qv,alt:"Webflow Logo."}),a.jsx(Yt,{src:Yv,alt:"Figma Logo."}),a.jsx(Yt,{src:$v,alt:"GitHub Logo."}),a.jsx(Yt,{src:Hv,alt:"HTML Logo."}),a.jsx(Yt,{src:_v,alt:"CSS Logo."}),a.jsx(Yt,{src:Xv,alt:"Javascript Logo."}),a.jsx(Yt,{src:Kv,alt:"Photoshop Logo."})]})}),a.jsxs(ex,{children:[a.jsx("h3",{children:"Frontend"}),a.jsx("p",{children:"On top of all this I ma a qualified Frontend developer with a solid understanding of HTML, CSS, JavaScript, and React."}),a.jsx(nx,{children:a.jsx(Vv,{})})]})]}),ix="/portfolio/assets/lipusplus_brand_film_hammarby-2024_short-0c3de834.mp4",ox=m.div`
+`,rx=()=>a.jsxs(qv,{children:[a.jsx(Jv,{children:a.jsxs(tx,{children:[a.jsx(Yt,{src:Uv,alt:"React Logo."}),a.jsx(Yt,{src:Qv,alt:"Webflow Logo."}),a.jsx(Yt,{src:Yv,alt:"Figma Logo."}),a.jsx(Yt,{src:$v,alt:"GitHub Logo."}),a.jsx(Yt,{src:Hv,alt:"HTML Logo."}),a.jsx(Yt,{src:_v,alt:"CSS Logo."}),a.jsx(Yt,{src:Xv,alt:"Javascript Logo."}),a.jsx(Yt,{src:Kv,alt:"Photoshop Logo."})]})}),a.jsxs(ex,{children:[a.jsx("h3",{children:"Frontend Tools"}),a.jsx("p",{children:"On top of all this I ma a qualified Frontend developer with a solid understanding of HTML, CSS, JavaScript, and React."}),a.jsx(nx,{children:a.jsx(Vv,{})})]})]}),ix="/portfolio/assets/lipusplus_brand_film_hammarby-2024_short-0c3de834.mp4",ox=m.div`
   width: 200px;
   display: flex;
   flex-direction: column;
