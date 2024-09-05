@@ -114,12 +114,9 @@ const Hero = () => {
           <h2>Creative Lead | Experience Designer</h2>
         </StyledAnimatedHeading>
         <Styledp>
-          I am a passionate creative who's professional background spans over 20
-          years, during which time I have worn many hats. Cinematographer, UX /
-          UI designer, frontend developer and not to mention concept developer
-          and writer. This experience brings a unique perspective to Visual
-          Design. Combining these skills to create the ultimate Brand and
-          Customer Experience excites and drives me.
+        Creative professional with over 20 years of experience in branding, storytelling, and content creation, 
+        now specializing in Experience Design. I bring a unique combination of creative and technical expertise, 
+        allowing me to design visually engaging and user-centric digital experiences.
         </Styledp>
       </StyledHeroContents>
     </StyledHeroMain>
