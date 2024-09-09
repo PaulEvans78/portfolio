@@ -68,7 +68,6 @@ const StyledInfoContainer = styled.div`
   }
 
   @media screen and (max-width: 478px) {
-    padding-left: 20px;
     height: 500px;
   }
 `;
@@ -82,8 +81,11 @@ const StyledIconContainer = styled.div`
   padding-bottom: 60px;
 
   @media screen and (max-width: 478px) {
-    padding-left: 40px;
     row-gap: 16px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-left: 40px;
   }
 `;
 

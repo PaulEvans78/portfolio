@@ -49,6 +49,7 @@ const StyledContentsContainer = styled.div`
   z-index: 3;
 
   @media screen and (max-width: 960px) {
+    width: 80%;
     padding-top: 100px;
     padding-bottom: 80px;
   }

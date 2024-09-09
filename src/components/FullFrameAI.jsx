@@ -83,6 +83,7 @@ const StyledLogoContainer = styled.div`
   @media screen and (max-width: 478px) {
     justify-content: space-around;
     justify-items: center;
+    column-gap: 1;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -93,8 +94,12 @@ const StyledLogo = styled.img`
   height: auto;
   margin-right: 20px;
 
+  @media screen and (max-width: 767px) {
+    width: 15%;
+  }
+
   @media screen and (max-width: 478px) {
-    width: 12%;
+    width: 20%;
     margin-right: 0px;
   }
 `;

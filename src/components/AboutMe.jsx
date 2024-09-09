@@ -108,7 +108,7 @@ const AboutMe = () => {
         <h3>About me </h3>
 
         <p>
-          “Hi, I’m Paul! As a creative I need
+          Hi, I’m Paul! As a creative I need
           a platform to showcase my work, so I taught myself how to code. I then 
           decided to study UX/UI and Frontend design to gain structure and further
           insight into the platforms and methods used. My interests extend into
