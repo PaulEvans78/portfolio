@@ -664,6 +664,7 @@ position: absolute;
   @media screen and (max-width: 478px) {
     justify-content: space-around;
     justify-items: center;
+    column-gap: 1;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -672,8 +673,12 @@ position: absolute;
   height: auto;
   margin-right: 20px;
 
+  @media screen and (max-width: 767px) {
+    width: 15%;
+  }
+
   @media screen and (max-width: 478px) {
-    width: 12%;
+    width: 20%;
     margin-right: 0px;
   }
 `,Pv=m.div`
@@ -850,7 +855,6 @@ position: absolute;
   }
 
   @media screen and (max-width: 478px) {
-    padding-left: 20px;
     height: 500px;
   }
 `,ix=m.div`
@@ -862,8 +866,11 @@ position: absolute;
   padding-bottom: 60px;
 
   @media screen and (max-width: 478px) {
-    padding-left: 40px;
     row-gap: 16px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-left: 40px;
   }
 `,Ut=m.img`
   width: 50%;
@@ -1015,6 +1022,7 @@ position: absolute;
   z-index: 3;
 
   @media screen and (max-width: 960px) {
+    width: 80%;
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -1689,7 +1697,7 @@ position: absolute;
   ${({isLoaded:e})=>e&&mn`
       animation: ${D1} 1s ease-out forwards;
     `}
-`,U1=()=>{const[e,t]=j.useState(!1),n=j.useRef(null);return j.useEffect(()=>{const r=()=>{t(!0)},i=n.current;if(i)if(i.complete)r();else return i.addEventListener("load",r),()=>{i.removeEventListener("load",r)}},[]),a.jsxs(G1,{children:[a.jsxs(V1,{children:[a.jsx("h3",{children:"About me "}),a.jsx("p",{children:"“Hi, I’m Paul! As a creative I need a platform to showcase my work, so I taught myself how to code. I then decided to study UX/UI and Frontend design to gain structure and further insight into the platforms and methods used. My interests extend into AI, particularly image and video generation. I have a calm and methodical approach to life, which enables me to navigate challenges with ease. My strong willpower and determination help me stay focused on the goals, even during difficult times."})]}),a.jsx(Q1,{children:a.jsx(Y1,{ref:n,src:W1,alt:"Paul Evans watching the ocean",isLoaded:e})})]})},H1="/portfolio/assets/camper-588e3c53.avif",$1=Vt`
+`,U1=()=>{const[e,t]=j.useState(!1),n=j.useRef(null);return j.useEffect(()=>{const r=()=>{t(!0)},i=n.current;if(i)if(i.complete)r();else return i.addEventListener("load",r),()=>{i.removeEventListener("load",r)}},[]),a.jsxs(G1,{children:[a.jsxs(V1,{children:[a.jsx("h3",{children:"About me "}),a.jsx("p",{children:"Hi, I’m Paul! As a creative I need a platform to showcase my work, so I taught myself how to code. I then decided to study UX/UI and Frontend design to gain structure and further insight into the platforms and methods used. My interests extend into AI, particularly image and video generation. I have a calm and methodical approach to life, which enables me to navigate challenges with ease. My strong willpower and determination help me stay focused on the goals, even during difficult times."})]}),a.jsx(Q1,{children:a.jsx(Y1,{ref:n,src:W1,alt:"Paul Evans watching the ocean",isLoaded:e})})]})},H1="/portfolio/assets/camper-588e3c53.avif",$1=Vt`
   0% {
     transform: translateX(100%);
     opacity: 0;
