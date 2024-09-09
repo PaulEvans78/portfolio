@@ -81,17 +81,21 @@ const StyledLogoContainer = styled.div`
   margin-bottom: 30px;
 
   @media screen and (max-width: 478px) {
-    justify-content: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 `;
 
 const StyledLogo = styled.img`
-  width: 10%;
+  width: 8%;
   height: auto;
   margin-right: 20px;
 
   @media screen and (max-width: 478px) {
-    width: 50%;
+    width: 12%;
+    margin-right: 0px;
   }
 `;
 
