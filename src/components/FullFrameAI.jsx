@@ -1,12 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { FaAngleDown } from "react-icons/fa6";
 import BackgroundVideo from "../assets/AIReel.mp4";
-import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import logoImg1 from "../assets/Midjourney-logo.avif";
 import logoImg2 from "../assets/Runway-logo.avif";
 import logoImg3 from "../assets/Photoshop-logo.avif";
-import Modal from "./ModalLipus";
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -107,103 +105,21 @@ const IconContainer = styled.div`
   padding-left: 2em;
 `;
 
-const Film = ({ scrollToEvent }) => {
-  const videoRef = useRef(null);
-  const filmRef = useRef(null);
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 1024);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.play();
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const handleButtonClick = () => {
-    if (isSmallScreen) {
-      setTimeout(() => {
-        if (filmRef.current) {
-          const videoElement = filmRef.current;
-          videoElement.pause();
-          videoElement.currentTime = 0;
-          const playPromise = videoElement.play();
-
-          if (playPromise !== undefined) {
-            playPromise
-              .then(() => {
-                videoElement.requestFullscreen().catch((err) => {
-                  console.log(
-                    "Error attempting to enable full-screen mode:",
-                    err
-                  );
-                });
-              })
-              .catch((error) => {
-                console.log("Failed to play the video automatically:", error);
-              });
-          }
-        }
-      }, 0);
-    } else {
-      setModalOpen(true);
-    }
-  };
-
-  const handleModalClose = () => {
-    setModalOpen(false);
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  useEffect(() => {
-    const handleFullScreenChange = () => {
-      if (!document.fullscreenElement) {
-        if (filmRef.current) {
-          filmRef.current.pause();
-          filmRef.current.currentTime = 0;
-        }
-      }
-    };
-
-    document.addEventListener("fullscreenchange", handleFullScreenChange);
-
-    return () => {
-      document.removeEventListener("fullscreenchange", handleFullScreenChange);
-    };
-  }, []);
-
+const Film = () => {
   return (
     <StyledMainContainer>
       <StyledVideo
-        ref={videoRef}
         src={BackgroundVideo}
+        autoPlay
         loop
         muted
         playsInline
-        preload="auto"
-        alt="Background video"
+        alt="A background vide showing various moving images created with ai."
       />
 
       <StyledOpacity />
 
       <StyledContentsContainer>
-
         <StyledLogoContainer>
           <StyledLogo src={logoImg1} alt="Midjourney AI logo" />
           <StyledLogo src={logoImg2} alt="Runway AI logo" />
@@ -212,30 +128,17 @@ const Film = ({ scrollToEvent }) => {
         <h4>AI</h4>
 
         <p>
-        We need to understand what AI can do and how it can benefit us. 
-        As a storyteller, I see AI not as a threat but as an opportunity. 
-        Generative AI has been a game-changer, helping me convey ideas and visualize scenes that were previously limited by budget or time. 
-        Though still evolving, AI is rapidly becoming a key tool for creating final content for both B2B and B2C brands.
+          We need to understand what AI can do and how it can benefit us. As a
+          storyteller, I see AI not as a threat but as an opportunity.
+          Generative AI has been a game-changer, helping me convey ideas and
+          visualize scenes that were previously limited by budget or time.
+          Though still evolving, AI is rapidly becoming a key tool for creating
+          final content for both B2B and B2C brands.
         </p>
         <IconContainer>
-          <FaAngleDown font-size="30px" />
+          <FaAngleDown fontSize="30px" />
         </IconContainer>
       </StyledContentsContainer>
-
-      <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-        <video controls autoPlay preload="auto">
-          <source src={Showcase} type="video/mp4" />
-        </video>
-      </Modal>
-
-      <video
-        ref={filmRef}
-        style={{ display: "none" }}
-        src={Showcase}
-        type="video/mp4"
-        controls
-        preload="auto"
-      />
     </StyledMainContainer>
   );
 };

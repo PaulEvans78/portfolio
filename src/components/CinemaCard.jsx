@@ -20,7 +20,6 @@ const StyledFrontCard = styled.div`
   aspect-ratio: 5 / 4;
   font-size: 1.2rem;
   overflow: hidden;
-  cursor: pointer;
 
   @media screen and (max-width: 1225px) {
     height: 600px;
@@ -28,7 +27,6 @@ const StyledFrontCard = styled.div`
 
   @media screen and (max-width: 960px) {
     height: 500px;
-    cursor: default;
   }
 `;
 
@@ -46,7 +44,7 @@ position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #000000a0;
+  background-color: #00000056;
 `;
 
 const StyledInfoContainer = styled.div`

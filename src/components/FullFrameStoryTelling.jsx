@@ -76,14 +76,23 @@ const StyledLogoContainer = styled.div`
   display: flex;
   padding-top: 30px;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+
   @media screen and (max-width: 478px) {
     justify-content: center;
+    padding-top: 10px;
   }
 `;
 
 const StyledLogo = styled.img`
   width: 20%;
   height: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 40%;
+  }
 `;
 
 const StyledNotationContainer = styled.div`

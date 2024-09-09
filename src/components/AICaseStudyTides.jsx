@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AiCase from "../assets/tides-black-spec-prototype.mp4";
+import AiCase from "../assets/tides.mp4";
 import styled from "styled-components";
 import ButtonCaseTides from "./ButtonCaseTides";
 
@@ -21,7 +21,7 @@ const StyledFrontCard = styled.div`
   height: 600px;
   font-size: 1.2rem;
   overflow: hidden;
-  background-color: black;
+  background-color: #171717;
 
   @media screen and (max-width: 478px) {
     height: 500px;
@@ -33,37 +33,19 @@ const StyledFrontCard = styled.div`
 
 const StyledConceptVideo = styled.video`
   position: absolute;
-  /* right: 0; */
-  width: 200%;
-  /* height: 90%; */
+  width: 95%;
+  height: 100%;
   position: relative;
   object-fit: cover;
-  padding-bottom: 30px;
-  /* padding-left: 160px; */
- /* margin-right: 160px; */
-
-  @media screen and (max-width: 1200px) {
-    padding-left: 120px;
-  }
-
-  @media screen and (max-width: 1000px) {
-    padding-left: 90px;
-  }
+  padding-left: 30px;
 
   @media screen and (max-width: 960px) {
-    padding-left: 160px;
-  }
-
-  @media screen and (max-width: 600px) {
-    padding-left: 100px;
+    width: 90%;
+    padding-left: 150px;
   }
 
   @media screen and (max-width: 476px) {
-    padding-left: 90px;
-  }
-
-  @media screen and (max-width: 476px) {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 `;
 
@@ -72,7 +54,7 @@ const StyledOpacity = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #0000007e;
+  background-color: #00000027;
 `;
 
 const StyledInfoContainer = styled.div`
