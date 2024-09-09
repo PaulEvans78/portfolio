@@ -4,9 +4,9 @@ import styled from "styled-components";
 import ButtonCaseStudies from "./ButtonCaseStudies";
 
 const preloadVideo = (url) => {
-  const video = document.createElement('video');
+  const video = document.createElement("video");
   video.src = url;
-  video.preload = 'auto';
+  video.preload = "auto";
   video.load();
 };
 
@@ -59,15 +59,17 @@ const StyledInfoContainer = styled.div`
   width: 90%;
   height: 100%;
   padding-top: 20px;
-  padding-left: 40px;
+`;
 
-  @media screen and (max-width: 478px) {
-    padding-left: 20px;
-  }
+const StyledInfoBackgroundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0em 1.5em 0.5em 1em;
+  background-color: var(--main-infoBackground-backgroundcolor);
 `;
 
 const BottomParagraph = styled.div`
-padding-bottom: 20px;
+  padding-left: 20px;
   margin-top: auto;
 `;
 
@@ -88,11 +90,15 @@ function Card(props) {
       />
       <StyledOpacity>
         <StyledInfoContainer>
-          <h3>UX / UI Designer</h3>
-          <p>
-            My unique experience enhances visual storytelling and user
-            engagement, creating seamless and captivating interactions.
-          </p>
+          <StyledInfoBackgroundContainer>
+            <h3>UX / UI Designer</h3>
+
+            <p>
+              As a UX/UI designer with storytelling expertise, I create
+              engaging, user-focused experiences that enhance usability and
+              elevate brand impact.
+            </p>
+          </StyledInfoBackgroundContainer>
 
           <BottomParagraph>
             <ButtonCaseStudies />

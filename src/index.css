@@ -1,6 +1,7 @@
 :root {
   --main-font-color: whitesmoke;
   --secondary-font-color: #2c2c2c;
+  --h3-font-color: #e437e2;
   --main-notation-font-color: #cdcccc;
   --main-notation-background-color: #1e1e1ee6;
   --main-casecard-background-color: #f9f9f9;
@@ -11,6 +12,7 @@
   --main-navbar-hover-color: #e437e2;
   --main-hero-backgroundcolor: #171717;
   --main-modal-backgroundcolor: #171717;
+  --main-infoBackground-backgroundcolor: #171717ac;
 
 
 }
@@ -118,6 +120,7 @@ h3 {
   margin:0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  color: var(--h3-font-color);
 
   @media screen and (max-width: 960px) {
     font-size: 40px;
@@ -170,6 +173,7 @@ p {
   font-weight: 500;
   font-style: normal;
   line-height: 1.4;
+
   
 
   @media screen and (max-width: 478px) {

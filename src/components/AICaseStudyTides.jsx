@@ -33,12 +33,14 @@ const StyledFrontCard = styled.div`
 
 const StyledConceptVideo = styled.video`
   position: absolute;
-  width: 100%;
-  height: 90%;
+  /* right: 0; */
+  width: 200%;
+  /* height: 90%; */
   position: relative;
   object-fit: cover;
   padding-bottom: 30px;
-  padding-left: 160px;
+  /* padding-left: 160px; */
+ /* margin-right: 160px; */
 
   @media screen and (max-width: 1200px) {
     padding-left: 120px;
@@ -82,15 +84,18 @@ const StyledInfoContainer = styled.div`
   width: 90%;
   height: 100%;
   padding-top: 20px;
-  padding-left: 40px;
+`;
 
-  @media screen and (max-width: 478px) {
-    padding-left: 20px;
-  }
+const StyledInfoBackgroundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0em 1.5em 0.5em 1em;
+  background-color: var(--main-infoBackground-backgroundcolor);
 `;
 
 const BottomParagraph = styled.div`
   margin-top: auto;
+  padding-left: 20px;
 `;
 
 function AICaseStudyTides(props) {
@@ -111,12 +116,13 @@ function AICaseStudyTides(props) {
 
       <StyledOpacity>
         <StyledInfoContainer>
-          <h3>AI & Prototypes</h3>
-          <p>
-            Why using AI generated content can enhance the user
-            experience in prototypes.
-          </p>
-
+          <StyledInfoBackgroundContainer>
+            <h3>AI & Prototypes</h3>
+            <p>
+              Why using AI generated content can enhance the user experience in
+              prototypes.
+            </p>
+          </StyledInfoBackgroundContainer>
           <BottomParagraph>
             <ButtonCaseTides />
           </BottomParagraph>

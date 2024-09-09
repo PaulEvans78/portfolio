@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { FaAngleDown } from "react-icons/fa6";
 import BackgroundVideo from "../assets/AIReel.mp4";
 import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
+import logoImg1 from "../assets/Midjourney-logo.avif";
+import logoImg2 from "../assets/Runway-logo.avif";
+import logoImg3 from "../assets/Photoshop-logo.avif";
 import Modal from "./ModalLipus";
 
 const StyledMainContainer = styled.section`
@@ -70,6 +73,27 @@ const StyledContentsContainer = styled.div`
   @media screen and (max-width: 320px) {
     padding-top: 120px;
     padding-bottom: 80px;
+  }
+`;
+
+const StyledLogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 478px) {
+    justify-content: center;
+  }
+`;
+
+const StyledLogo = styled.img`
+  width: 10%;
+  height: auto;
+  margin-right: 20px;
+
+  @media screen and (max-width: 478px) {
+    width: 50%;
   }
 `;
 
@@ -179,17 +203,19 @@ const Film = ({ scrollToEvent }) => {
       <StyledOpacity />
 
       <StyledContentsContainer>
-        <h3>AI</h3>
+
+        <StyledLogoContainer>
+          <StyledLogo src={logoImg1} alt="Midjourney AI logo" />
+          <StyledLogo src={logoImg2} alt="Runway AI logo" />
+          <StyledLogo src={logoImg3} alt="Adobe Photoshop logo" />
+        </StyledLogoContainer>
+        <h4>AI</h4>
 
         <p>
-          It's clear we need to understand what AI can do and how it might help
-          us in our lives. As a storyteller, I know some might see AI as a
-          threat to creativity, but I see the potential. Generative AI has been
-          a game-changer for me, helping to convey ideas and visualize scenes
-          that would’ve been impossible before due to budget or time
-          constraints. While AI is still in its early stages, it's quickly
-          becoming a go-to tool for creating final content, whether for B2B or
-          B2C brands.
+        We need to understand what AI can do and how it can benefit us. 
+        As a storyteller, I see AI not as a threat but as an opportunity. 
+        Generative AI has been a game-changer, helping me convey ideas and visualize scenes that were previously limited by budget or time. 
+        Though still evolving, AI is rapidly becoming a key tool for creating final content for both B2B and B2C brands.
         </p>
         <IconContainer>
           <FaAngleDown font-size="30px" />

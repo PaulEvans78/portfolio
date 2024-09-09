@@ -4,9 +4,9 @@ import styled from "styled-components";
 import ButtonCaseBreak from "./ButtonCaseBreak";
 
 const preloadVideo = (url) => {
-  const video = document.createElement('video');
+  const video = document.createElement("video");
   video.src = url;
-  video.preload = 'auto';
+  video.preload = "auto";
   video.load();
 };
 
@@ -56,15 +56,18 @@ const StyledInfoContainer = styled.div`
   width: 90%;
   height: 100%;
   padding-top: 20px;
-  padding-left: 40px;
+`;
 
-  @media screen and (max-width: 478px) {
-    padding-left: 20px;
-  }
+const StyledInfoBackgroundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0em 1.5em 0.5em 1em;
+  background-color: var(--main-infoBackground-backgroundcolor);
 `;
 
 const BottomParagraph = styled.div`
   margin-top: auto;
+  padding-left: 20px;
 `;
 
 function AICaseStudyTides(props) {
@@ -74,7 +77,7 @@ function AICaseStudyTides(props) {
 
   return (
     <StyledFrontCard>
- <StyledConceptVideo
+      <StyledConceptVideo
         src={AiCase}
         autoPlay
         loop
@@ -82,13 +85,13 @@ function AICaseStudyTides(props) {
         playsInline
         alt="Design frames changing randomly"
       />
-    
+
       <StyledOpacity>
         <StyledInfoContainer>
-          <h3>Consistency in AI</h3>
-          <p>How I am achieving consistency in video generation.
-          </p>
-
+          <StyledInfoBackgroundContainer>
+            <h3>Consistency in AI</h3>
+            <p>How I am achieving consistency in video generation.</p>
+          </StyledInfoBackgroundContainer>
           <BottomParagraph>
             <ButtonCaseBreak />
           </BottomParagraph>

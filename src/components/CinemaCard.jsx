@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import dopReel from "../assets/showcase1.mp4";
-import posterImage from "../assets/posterImg.avif";
 import styled from "styled-components";
 import ButtonFsF from "./ButtonFsFPrimary";
+
+const preloadVideo = (url) => {
+  const video = document.createElement("video");
+  video.src = url;
+  video.preload = "auto";
+  video.load();
+};
 
 const StyledFrontCard = styled.div`
   position: relative;
@@ -24,50 +30,23 @@ const StyledFrontCard = styled.div`
     height: 500px;
     cursor: default;
   }
-
-  &:hover .poster-image {
-    opacity: 0;
-  }
-  &:hover .cinema-video {
-    visibility: visible;
-  }
 `;
 
 const StyledCinemaVideo = styled.video`
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  position: relative;
+  align-self: center;
   object-fit: cover;
-  z-index: 1;
-  visibility: hidden;
-  background-color: transparent;
-`;
-
-const StyledPosterImage = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 2;
-  transition: opacity 0.5s ease-in-out;
 `;
 
 const StyledOpacity = styled.div`
-  position: absolute;
+position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #ffffff;
-  z-index: 3;
+  background-color: #000000a0;
 `;
 
 const StyledInfoContainer = styled.div`
@@ -78,68 +57,50 @@ const StyledInfoContainer = styled.div`
   width: 90%;
   height: 100%;
   padding-top: 20px;
-  padding-left: 40px;
-
-  @media screen and (max-width: 960px) {
-    width: 90%;
-  }
 
   @media screen and (max-width: 478px) {
     padding-top: 20px;
-    padding-left: 20px;
   }
+`;
+
+const StyledInfoBackgroundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0em 2em 0.5em 1em;
+  background-color: var(--main-infoBackground-backgroundcolor);
 `;
 
 const BottomParagraph = styled.div`
   margin-top: auto;
+  padding-left: 20px;
 `;
 
 function CinemaCard(props) {
-  const videoRef = useRef(null);
-
-  const handleMouseEnter = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      videoRef.current.style.visibility = "visible";
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-      videoRef.current.style.visibility = "hidden";
-    }
-  };
+    useEffect(() => {
+      preloadVideo(dopReel);
+    }, []);
 
   return (
-    <StyledFrontCard
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <StyledFrontCard >
       <StyledCinemaVideo
-        className="cinema-video"
-        ref={videoRef}
         src={dopReel}
+        autoPlay
         loop
         muted
         playsInline
-        preload="auto"
         alt="A showreel showing clips from different productions."
       />
-      <StyledPosterImage
-        className="poster-image"
-        src={posterImage}
-        alt="Poster Image"
-      />
+    
       <StyledOpacity>
         <StyledInfoContainer>
-          <h3>Cinematographer</h3>
-          <p>
-            Member of fsf Föreningen Severiges Filmfotografer (The Association
-            of Swedish Film Cinematographers). Working in Narrative,
-            Commercials, Music Videos and Still Photography.
-          </p>
+          <StyledInfoBackgroundContainer>
+            <h3>Cinematographer</h3>
+            <p>
+              Member of fsf Föreningen Severiges Filmfotografer (The Association
+              of Swedish Film Cinematographers). Working in Narrative,
+              Commercials, Music Videos and Still Photography.
+            </p>
+          </StyledInfoBackgroundContainer>
           <BottomParagraph>
             <ButtonFsF />
           </BottomParagraph>
