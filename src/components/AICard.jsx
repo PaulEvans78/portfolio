@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import uxImg from "../assets/uxUiImg.avif";
+import AIVideo from "../assets/AIReel.mp4";
 import { Link } from "react-router-dom";
 
+const preloadVideo = (url) => {
+  const video = document.createElement("video");
+  video.src = url;
+  video.preload = "auto";
+  video.load();
+};
+
 const StyledWrapper = styled.div`
-  grid-area: ux;
-  display: inline-block;
+  grid-area: ai;
+  display: flex;
+  align-self: flex-end;
   width: 100%;
 `;
 
@@ -19,7 +27,7 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(62%); /* Initially positioned off the bottom */
+  transform: translateY(64%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 1200px) {
@@ -53,7 +61,7 @@ const StyledCaseMain = styled.section`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   font-size: 1.2rem;
   overflow: hidden;
 
@@ -71,14 +79,13 @@ const StyledCaseMain = styled.section`
   }
 `;
 
-const StyledImg = styled.img`
+const StyledVideo = styled.video`
+  position: absolute;
   width: 100%;
   height: 100%;
+  position: relative;
+  align-self: center;
   object-fit: cover;
-
-  @media (max-width: 478px) {
-    height: 500px;
-  }
 `;
 
 const StyledOpacity = styled.div`
@@ -90,34 +97,45 @@ const StyledOpacity = styled.div`
 `;
 
 const Styledp = styled.p`
-  font-size: 16px;
+font-size: 16px;
 `;
 
-const UxCard = () => {
+function AiCard(props) {
+  useEffect(() => {
+    preloadVideo(AIVideo);
+  }, []);
+
   return (
     <StyledWrapper>
       <Link to="/casestudies">
         <StyledCaseMain>
-          <StyledImg src={uxImg} alt="Mobile prototype frames." />
-          <StyledOpacity>
-            <StyledCaseContents>
-              <h5>UX Case Studies</h5>
+        <StyledVideo
+        src={AIVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        alt="A background video showing various moving images created with ai."
+      />
+      <StyledOpacity>
+      <StyledCaseContents>
+            <h5>AI Case Studies</h5>
 
-              <Styledp>
-                As a UX/UI designer with storytelling expertise, I create
-                engaging, user-focused experiences that enhance usability and
-                elevate brand impact.
-              </Styledp>
+            <Styledp>
+            I see AI not as a threat but as an opportunity.
+          Though still evolving, AI is rapidly becoming a key tool for creating
+          final content for brands.
+            </Styledp>
 
-              <Styledp>
-                See case studies ..
-              </Styledp>
+            <Styledp>
+           See LinkedIn case studies ..
+            </Styledp>
             </StyledCaseContents>
-          </StyledOpacity>
-        </StyledCaseMain>
+      </StyledOpacity>
+      </StyledCaseMain>
       </Link>
     </StyledWrapper>
   );
-};
+}
 
-export default UxCard;
+export default AiCard;

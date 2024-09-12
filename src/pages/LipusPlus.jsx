@@ -357,7 +357,6 @@ const StyledNotationContainer = styled.div`
   padding-bottom: 10px;
 
   z-index: 2;
-  /* color: var(#cdcccc); */
 
   @media screen and (max-width: 960px) {
     height: 40px;
@@ -377,7 +376,6 @@ const Stylednotation = styled.p`
   text-align: right;
   z-index: 2;
   color: var(--main-notation-font-color);
-  /* margin-top: ; */
 
   @media screen and (max-width: 960px) {
     margin: 0;

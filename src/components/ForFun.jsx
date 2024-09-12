@@ -15,12 +15,11 @@ const slideInFromRight = keyframes`
 
 const StyledCaseMain = styled.section`
   max-width: 100%;
-  min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   display: Grid;
   grid-template-columns: 50% 50%;
-  column-gap: 16px;
+  column-gap: 2%;
   grid-template-areas: "Context Image";
 
   @media screen and (max-width: 960px) {
@@ -32,30 +31,33 @@ const StyledCaseMain = styled.section`
   }
 `;
 
+const StyledContentsContainer = styled.div`
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: var(--main-hero-backgroundcolor);
+`;
+
 const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
+  width: 84%;
   height: 100%;
   padding-top: 50px;
-  padding-right: 50px;
   padding-bottom: 50px;
-  padding-left: 80px;
-  color: var(--secondary-font-color);
 
   @media screen and (max-width: 767px) {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 
   @media screen and (max-width: 478px) {
-    padding-top: 30px;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   @media screen and (max-width: 360px) {
-    width: 90%;
+    width: 80%;
     padding-top: 15px;
-    padding-left: 20px;
   }
 `;
 
@@ -108,16 +110,17 @@ const ForFun = () => {
 
   return (
     <StyledCaseMain>
-      <StyledCaseContents>
-        <h3>For fun</h3>
-        <p>
-          Surfing and traveling are my two biggest passions. When I'm not
-          paddling out into the sea I like to work out at the gym or swim in the
-          lake. I also cherish the time I spend with my family, friends cooking
-          and watching movies and TV shows.
-        </p>
-      </StyledCaseContents>
-
+      <StyledContentsContainer>
+        <StyledCaseContents>
+          <h3>For fun</h3>
+          <p>
+            Surfing and traveling are my two biggest passions. When I'm not
+            paddling out into the sea I like to work out at the gym or swim in
+            the lake. I also cherish the time I spend with my family, friends
+            cooking and watching movies and TV shows.
+          </p>
+        </StyledCaseContents>
+      </StyledContentsContainer>
       <StyledImageContainer>
         <StyledImg
           ref={imgRef}

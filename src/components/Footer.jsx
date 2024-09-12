@@ -117,12 +117,13 @@ const IconContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   justify-items: center;
-  margin-right: 2em;
+  margin-left: 6em;
   padding-top: 4em;
 
   @media screen and (max-width: 960px) {
     padding-top: 2em;
-    margin-right: 20px;
+    margin-left: 0em;
+    margin-right: 24px;
   }
 
   @media screen and (max-width: 320px) {

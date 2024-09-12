@@ -5,12 +5,14 @@ import ForFun from "../components/ForFun";
 
 const StyledHomeContainer = styled.section`
   max-width: 100vw;
-  min-width: 100vw;
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
   align-content: center;
-  margin-top: 170px;
+  margin-top: 180px;
+  margin-bottom: 30px;
 `;
 
 const About = () => {

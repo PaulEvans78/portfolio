@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AiCase from "../assets/NaomiBreakin.mp4";
 import styled from "styled-components";
-import ButtonCaseBreak from "./ButtonCaseBreak";
 
 const preloadVideo = (url) => {
   const video = document.createElement("video");
@@ -10,27 +9,73 @@ const preloadVideo = (url) => {
   video.load();
 };
 
-const StyledFrontCard = styled.div`
+const StyledWrapper = styled.div`
+  display: inline-block;
+`;
+
+const StyledCaseContents = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  padding: 0em 2em 0.5em 2em;
+
+  transform: translateY(52%); /* Initially positioned off the bottom */
+  transition: transform 0.5s ease-in-out;
+
+  @media (max-width: 1200px) {
+    transform: translateY(60%);
+  }
+
+  @media (max-width: 1000px) {
+    transform: translateY(64%);
+  }
+
+  @media (max-width: 767px) {
+    transform: translateY(58%);
+  }
+
+  @media (max-width: 600px) {
+    transform: translateY(66%);
+  }
+
+  @media (max-width: 478px) {
+    transform: translateY(78%);
+  }
+
+  @media (max-width: 360px) {
+    transform: translateY(94%);
+  }
+`;
+
+const StyledCaseMain = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
   width: 100%;
-  min-width: 100%;
-  height: 600px;
+  aspect-ratio: 5 / 4;
   font-size: 1.2rem;
   overflow: hidden;
 
-  @media screen and (max-width: 478px) {
-    height: 500px;
+  &:hover ${StyledCaseContents} {
+    transform: translateY(0%); /* Slide up into view */
+    background-color: #060606ac;
+    justify-content: center;
   }
 
-  @media screen and (max-width: 767px) {
+  @media (max-width: 960px) {
+    &:hover {
+      transform: none;
+      color: inherit;
+    }
   }
 `;
 
-const StyledConceptVideo = styled.video`
+const StyledVideo = styled.video`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -44,30 +89,7 @@ const StyledOpacity = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #00000048;
-`;
-
-const StyledInfoContainer = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  width: 90%;
-  height: 100%;
-  padding-top: 20px;
-`;
-
-const StyledInfoBackgroundContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0em 1.5em 0.5em 1em;
-  background-color: var(--main-infoBackground-backgroundcolor);
-`;
-
-const BottomParagraph = styled.div`
-  margin-top: auto;
-  padding-left: 20px;
+  background-color: #00000056;
 `;
 
 function AICaseStudyTides(props) {
@@ -76,28 +98,34 @@ function AICaseStudyTides(props) {
   }, []);
 
   return (
-    <StyledFrontCard>
-      <StyledConceptVideo
-        src={AiCase}
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="Design frames changing randomly"
-      />
+    <StyledWrapper>
+      <a
+        href="https://www.linkedin.com/posts/paul-evans-3a74605_aiart-generativeai-runwayai-activity-7232706903896690689-JL51?utm_source=share&utm_medium=member_desktop"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StyledCaseMain>
+          <StyledVideo
+            src={AiCase}
+            autoPlay
+            loop
+            muted
+            playsInline
+            alt="Design frames changing randomly"
+          />
 
-      <StyledOpacity>
-        <StyledInfoContainer>
-          <StyledInfoBackgroundContainer>
-            <h3>Consistency in AI</h3>
-            <p>How I am achieving consistency in video generation.</p>
-          </StyledInfoBackgroundContainer>
-          <BottomParagraph>
-            <ButtonCaseBreak />
-          </BottomParagraph>
-        </StyledInfoContainer>
-      </StyledOpacity>
-    </StyledFrontCard>
+          <StyledOpacity>
+            <StyledCaseContents>
+              <h5>CONSISTENCY IN AI</h5>
+              <p>
+                How I am achieving consistency in AI video generation. See case
+                on linkedIn..
+              </p>
+            </StyledCaseContents>
+          </StyledOpacity>
+        </StyledCaseMain>
+      </a>
+    </StyledWrapper>
   );
 }
 

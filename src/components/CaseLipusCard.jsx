@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
-import logoImg from "../assets/lipusPlusLogo.avif";
-import heroImg from "../assets/lipusHeroImg.avif";
-import Button from "./ButtonLipusPlusPrimary";
+import heroImg from "../assets/lipus.avif";
+import { Link } from "react-router-dom";
 
 const slideInFromRight = keyframes`
   0% {
@@ -15,79 +14,70 @@ const slideInFromRight = keyframes`
   }
 `;
 
-const StyledCaseMain = styled.section`
-  background-color: var(--main-casecard-background-color);
-  max-width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
+const StyledWrapper = styled.div`
+  display: inline-block;
 `;
 
 const StyledCaseContents = styled.div`
-  grid-area: Context;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
   height: 100%;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-  color: var(--secondary-font-color);
+  padding: 0em 2em 0.5em 2em;
 
-  @media screen and (max-width: 767px) {
-    padding-left: 60px;
+  transform: translateY(54%); /* Initially positioned off the bottom */
+  transition: transform 0.5s ease-in-out;
+
+  @media (max-width: 1200px) {
+    transform: translateY(60%);
   }
 
-  @media screen and (max-width: 478px) {
-    padding-top: 30px;
-    padding-left: 40px;
+  @media (max-width: 1000px) {
+    transform: translateY(64%);
   }
 
-  @media screen and (max-width: 360px) {
-    width: 90%;
-    padding-top: 15px;
-    padding-left: 20px;
+  @media (max-width: 767px) {
+    transform: translateY(58%);
+  }
+
+  @media (max-width: 600px) {
+    transform: translateY(66%);
+  }
+
+  @media (max-width: 478px) {
+    transform: translateY(78%);
+  }
+
+  @media (max-width: 360px) {
+    transform: translateY(94%);
   }
 `;
 
-const StyledLogoContainer = styled.div`
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-`;
-
-const StyledLogo = styled.img`
-  width: 40%;
-  height: auto;
-`;
-
-const Stylednotation = styled.p`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 40px;
-  font-size: 14px;
-  z-index: 2;
-`;
-
-const StyledImageContainer = styled.div`
+const StyledCaseMain = styled.section`
   position: relative;
-  grid-area: Image;
   display: flex;
   flex-direction: column;
-  height: 620px;
+  align-items: flex-start;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  font-size: 1.2rem;
+  overflow: hidden;
+
+  &:hover ${StyledCaseContents} {
+    transform: translateY(0%); /* Slide up into view */
+    background-color: #060606ac;
+    justify-content: center;
+  }
+
+  @media (max-width: 960px) {
+    &:hover {
+      transform: none;
+      color: inherit;
+    }
+  }
 `;
 
 const StyledImg = styled.img`
@@ -104,6 +94,14 @@ const StyledImg = styled.img`
     css`
       animation: ${slideInFromRight} 1s ease-out forwards;
     `}
+`;
+
+const StyledOpacity = styled.div`
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #00000056;
 `;
 
 const LipusPlus = () => {
@@ -132,37 +130,34 @@ const LipusPlus = () => {
   }, []);
 
   return (
-    <StyledCaseMain>
-      <StyledCaseContents>
-        <h4>UX Case study</h4>
+    <StyledWrapper>
+      <Link to="/lipusplus">
+        <StyledCaseMain>
+          <StyledImg
+            ref={imgRef}
+            src={heroImg}
+            alt="A hammarby handball player in green and white stripes holds a ball."
+            isInView={isInView}
+          />
+          <StyledOpacity>
+            <StyledCaseContents>
+              <h5>LIPUSPLUS | A UX CASE STUDY</h5>
 
-        <StyledLogoContainer>
-          <StyledLogo src={logoImg} alt="The logo for LipuspLus" />
-        </StyledLogoContainer>
+              <p>
+                LipusPlus aims to attract physiotherapists and elite athletes to
+                its webinars on the Return to Play concept. An enticing and
+                informative landing page is needed to generate leads for these
+                webinars.
+              </p>
 
-        <p>
-          LipusPlus aims to attract physiotherapists and elite athletes to its
-          webinars on the Return to Play concept. An enticing and informative
-          landing page is needed to generate leads for these webinars.
-        </p>
-
-        <Button />
-
-        {/* <Stylednotation>
+              {/* <Stylednotation>
         Photo by Peder Rotkirch.
         </Stylednotation> */}
-      </StyledCaseContents>
-
-      <StyledImageContainer>
-        <Stylednotation>Photo by Peder Rotkirch.</Stylednotation>
-        <StyledImg
-          ref={imgRef}
-          src={heroImg}
-          alt="A hammarby handball player in green and white stripes holds a ball."
-          isInView={isInView}
-        />
-      </StyledImageContainer>
-    </StyledCaseMain>
+            </StyledCaseContents>
+          </StyledOpacity>
+        </StyledCaseMain>
+      </Link>
+    </StyledWrapper>
   );
 };
 export default LipusPlus;

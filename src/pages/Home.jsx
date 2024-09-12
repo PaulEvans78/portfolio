@@ -2,18 +2,15 @@ import { useRef } from "react";
 import styled from "styled-components";
 import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
-import AICaseStudyTides from "../components/AICaseStudyTides";
-import AICaseStudyBreaking from "../components/AICaseStudyBreaking";
-import FullFrameAI from "../components/FullFrameAI";
 import UxUiCard from "../components/UxUiCard";
+import AICard from "../components/AICard";
+import DesignCard from "../components/DesignCard";
 import FrontendCard from "../components/FrontendCard";
 import FullFrameBranding from "../components/FullFrameLipus";
-import CaseLipus from "../components/CaseLipusCard";
-import FullFrameVideo from "../components/FullFrameVikings";
-import CaseEbie from "../components/CaseEbieCard";
-import FullFramePoster from "../components/FullFrameStoryTelling";
+import Storytelling from "../components/StoryTelling";
 import {
-  StyledSquaresContainer,
+  StyledThreeSquaresContainer,
+  StyledThreeSquaresReverseContainer,
   FadeInComponent,
 } from "../components/FadesStyled";
 import useIntersectionObserver from "../components/useIntersectionObserver";
@@ -23,7 +20,7 @@ const StyledHomeContainer = styled.section`
   min-width: 100vw;
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 28px;
   align-content: center;
 `;
 
@@ -43,26 +40,39 @@ const Home = () => {
   return (
     <StyledHomeContainer>
       <Hero />
-      <StyledSquaresContainer ref={squaresRef1} isVisible={isSquaresVisible1}>
-        <UxUiCard />
+      <StyledThreeSquaresContainer
+        ref={squaresRef1}
+        isVisible={isSquaresVisible1}
+      >
         <CinemaCard />
-      </StyledSquaresContainer>
-      <FullFrameAI />
-      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
+        <UxUiCard />
+        <AICard />
+      </StyledThreeSquaresContainer>
+    
+      {/* <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
         <AICaseStudyTides />
         <AICaseStudyBreaking />
-      </StyledSquaresContainer>
+      </StyledSquaresContainer> */}
       <FullFrameBranding scrollToEvent={scrollToEvent} />
 
-      <div ref={caseRef}></div>
-      <CaseLipus />
-      <FullFrameVideo />
-      <CaseEbie />
+      {/* <div ref={caseRef}></div> */}
+      {/* <CaseLipus /> */}
+      {/* <FullFrameVideo /> */}
+      {/* <CaseEbie /> */}
 
-      <FadeInComponent ref={posterRef} isVisible={isPosterVisible}>
-        <FullFramePoster />
-      </FadeInComponent>
-      <FrontendCard />
+      <StyledThreeSquaresReverseContainer
+        ref={squaresRef2}
+        isVisible={isSquaresVisible2}
+      >
+        <Storytelling />
+        <DesignCard/>
+        <FrontendCard />
+      </StyledThreeSquaresReverseContainer>
+
+      {/* <FadeInComponent ref={posterRef} isVisible={isPosterVisible}> */}
+        {/* <FullFramePoster /> */}
+      {/* </FadeInComponent> */}
+      {/* <FrontendCard /> */}
     </StyledHomeContainer>
   );
 };

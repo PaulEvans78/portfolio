@@ -9,11 +9,14 @@ import Modal from "./ModalLipus";
 
 const StyledMainContainer = styled.section`
   position: relative;
-  max-width: 100%;
-  min-width: 100%;
+  max-width: 95%;
+  aspect-ratio: 16 / 9;
+  margin-left: 2%;
+  margin-right: 2%;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
+  align-self: left;
   flex-direction: column;
 `;
 
@@ -41,7 +44,7 @@ const StyledOpacity = styled.div`
 const StyledContentsContainer = styled.div`
   width: 60%;
   height: 500px;
-  padding-top: 280px;
+  padding-top: 190px;
   padding-left: 60px;
   padding-bottom: 180px;
   display: flex;

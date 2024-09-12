@@ -15,12 +15,11 @@ const slideInFromLeft = keyframes`
 
 const StyledCaseMain = styled.section`
   max-width: 100%;
-  min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   display: Grid;
   grid-template-columns: 50% 50%;
-  column-gap: 16px;
+  column-gap: 2%;
   grid-template-areas: "Image Context";
 
   @media screen and (max-width: 960px) {
@@ -31,32 +30,34 @@ const StyledCaseMain = styled.section`
       "Context";
   }
 `;
+const StyledContentsContainer = styled.div`
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: var(--main-hero-backgroundcolor);
+`;
 
 const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 84%;
   height: 100%;
   padding-top: 50px;
-  padding-right: 50px;
   padding-bottom: 50px;
-  padding-left: 80px;
-  color: var(--secondary-font-color);
 
   @media screen and (max-width: 767px) {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 
   @media screen and (max-width: 478px) {
     padding-top: 30px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   @media screen and (max-width: 360px) {
-    width: 90%;
+    width: 80%;
     padding-top: 15px;
-    padding-left: 20px;
   }
 `;
 
@@ -94,9 +95,9 @@ const AboutMe = () => {
       if (imgElement.complete) {
         handleLoad();
       } else {
-        imgElement.addEventListener('load', handleLoad);
+        imgElement.addEventListener("load", handleLoad);
         return () => {
-          imgElement.removeEventListener('load', handleLoad);
+          imgElement.removeEventListener("load", handleLoad);
         };
       }
     }
@@ -104,21 +105,21 @@ const AboutMe = () => {
 
   return (
     <StyledCaseMain>
-      <StyledCaseContents>
-        <h3>About me </h3>
+      <StyledContentsContainer>
+        <StyledCaseContents>
+          <h3>About me </h3>
 
-        <p>
-          Hi, I’m Paul! As a creative I need
-          a platform to showcase my work, so I taught myself how to code. I then 
-          decided to study UX/UI and Frontend design to gain structure and further
-          insight into the platforms and methods used. My interests extend into
-          AI, particularly image and video generation. I
-          have a calm and methodical approach to life, which enables me to
-          navigate challenges with ease. My strong willpower and determination
-          help me stay focused on the goals, even during difficult times.
-        </p>
-      </StyledCaseContents>
-
+          <p>
+            Hi, I’m Paul! A creative with over 20 years of experience in branding, 
+            storytelling, and commercial and narrative production, now specializing in Experience Design. 
+            I bring a unique combination of creative and technical expertise, 
+            allowing me to design visually engaging and user-centric experiences. My interests extend into AI,
+            particularly image and video generation. Merging traditional filmmaking techniques with the latest technologies.
+            I have a calm and methodical approach to life, which enables me to navigate challenges
+            with ease. My strong willpower and determination help me stay focused on the goals, even during difficult times.
+          </p>
+        </StyledCaseContents>
+      </StyledContentsContainer>
       <StyledImageContainer>
         <StyledImg
           ref={imgRef}
@@ -132,4 +133,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
