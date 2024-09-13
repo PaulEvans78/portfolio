@@ -38,8 +38,12 @@ const StyledNav = styled.nav`
 `;
 
 const StyledImageandName = styled.div`
-  width: 180px;
+  width: 300px;
   height: 100%;
+
+  @media screen and (max-width: 478px) {
+    width: 100px;
+  }
 `;
 
 const StyledImgContainer = styled.div`
@@ -55,11 +59,14 @@ const StyledImgContainer = styled.div`
 
 const StyledNavLogo = styled.img`
   text-align: center;
-  width: 80px;
-  margin-top: 1.5em;
+  width: 70px;
+  margin-top: 0em;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 1.5em;
+  }
 
   @media screen and (max-width: 767px) {
-    width: 60px;
     margin-top: 1em;
   }
 `;
@@ -75,14 +82,47 @@ const StyledHamburgerPELogo = styled.img`
 `;
 
 const StyledIdent = styled.div`
-  float: left;
-  width: 200px;
+  display: flex;
+  width: 600px;
   height: 100%;
   padding-left: 0.5em;
   text-align: left;
 
   @media screen and (max-width: 767px) {
     padding-left: 0em;
+  }
+`;
+
+const StyledTitle = styled.div`
+  /* width: 100%; */
+  padding-left: 1em;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 1em;
+  }
+
+  @media screen and (max-width: 478px) {
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: var(--main-button-hover-color);
+  }
+`;
+
+const Styledp = styled.p`
+  font-family: "Trispace", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+
+  @media screen and (max-width: 1080px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 24px;
   }
 `;
 
@@ -138,7 +178,7 @@ const StyledLink = styled(Link)`
 
   &.active {
     text-decoration: underline;
-    color: var(--main-navbar-hover-color);
+    color: var(--main-navbar-active-color);
   }
 
   @media screen and (max-width: 960px) {
@@ -259,6 +299,10 @@ const Navbar = ({ footerRef }) => {
               src={logoInverted}
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
             />
+            <StyledTitle>
+              <Styledp>Paul Evans</Styledp>
+              <Styledp>Experience Designer</Styledp>
+            </StyledTitle>
           </StyledIdent>
         </Link>
       </StyledImageandName>

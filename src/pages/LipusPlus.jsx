@@ -8,23 +8,23 @@ import MappingImg from "../assets/mapping.avif";
 import LipusImg from "../assets/lipus.avif";
 import PhysioImg from "../assets/physio.avif";
 import AthleteImg from "../assets/athlete.avif";
-import InsightsImg from "../assets/insights.avif";
-import WebinarImg from "../assets/webinar.avif";
-import mobileWebinarImg from "../assets/webinarMobile.avif";
 import DesignOneImg from "../assets/designOne.avif";
 import DesignTwoImg from "../assets/designTwo.avif";
 import WebflowImg from "../assets/webflow.avif";
-import ReflectionImg from "../assets/reflection.avif";
 import Button from "../components/ButtonExternalSiteLipusPrimary";
 
 const StyledCaseContainer = styled.section`
-  max-width: 100vw;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
+  max-width: 93.5%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: auto;
+  row-gap: 28px;
+  column-gap: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   align-content: center;
   margin-top: 170px;
+  margin-bottom: 28px;
 
   @media screen and (max-width: 960px) {
     margin-top: 150px;
@@ -35,24 +35,26 @@ const StyledCaseContainer = styled.section`
   }
 `;
 
-const StyledCaseOne = styled.div`
+
+const StyledBox = styled.div`
   max-width: 100%;
   min-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  display: Grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 16px;
-  grid-template-areas: "Context Image";
-
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "Image"
-      "Context";
-  }
+  aspect-ratio: 4 / 3;
+  text-align: center;
+  background-color: #4b8a74;
 `;
+
+const StyledBoxImg = styled.div`
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  aspect-ratio: 4 / 3;
+  text-align: center;
+`;
+
 
 const StyledCaseTwo = styled.div`
   max-width: 100%;
@@ -302,7 +304,7 @@ const StyledCaseFourteen = styled.div`
 `;
 
 const StyledCaseContents = styled.div`
-  grid-area: Context;
+  /* grid-area: Context; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,7 +328,7 @@ const StyledCaseContents = styled.div`
 `;
 
 const StyledLogoContainer = styled.div`
-  padding-top: 80px;
+  padding-top: 0px;
   padding-bottom: 80px;
   display: flex;
 
@@ -337,7 +339,7 @@ const StyledLogoContainer = styled.div`
 `;
 
 const StyledLogo = styled.img`
-  width: 40%;
+  width: 100%;
   height: auto;
 
   @media (max-width: 320px) {
@@ -432,40 +434,38 @@ const StyledMobileImg = styled.img`
 const Case = () => {
   return (
     <StyledCaseContainer>
-      <StyledCaseOne>
-        <StyledCaseContents>
-          <h4>UX Case study</h4>
+
+      <StyledBox>
+      <StyledCaseContents>
+<h5>My role</h5>
+
+<ul>
+  <li>
+    <span className="boldlarge">UX / UI Designer</span>
+  </li>
+  <li>
+    <span className="boldlarge">Frontend Developer</span>
+  </li>
+  <li>
+    <span className="boldlarge">Content Creator</span>
+  </li>
+</ul>
+</StyledCaseContents>
+      </StyledBox>
+
+
+      
+      <StyledBoxImg>
+      <StyledCaseContents>
           <StyledLogoContainer>
             <StyledLogo src={logoImg} alt="The logo for LipuspLus" />
           </StyledLogoContainer>
-
-          <h5>My role</h5>
-
-          <ul>
-            <li>
-              <span className="boldlarge">UX / UI Designer</span>
-            </li>
-            <li>
-              <span className="boldlarge">Frontend Developer</span>
-            </li>
-            <li>
-              <span className="boldlarge">Content Creator</span>
-            </li>
-          </ul>
         </StyledCaseContents>
+      </StyledBoxImg>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Photo by Peder Rotkirch, LipusPlus.</Stylednotation>
-          </StyledNotationContainer>
-          <StyledImg
-            src={heroImg}
-            alt="A hammarby handball player in green and white stripes holds a ball."
-          />
-        </StyledImageContainer>
-      </StyledCaseOne>
 
-      <StyledCaseTwo>
+
+      <StyledBox> 
         <StyledCaseContents>
           <h5>Challenges</h5>
 
@@ -477,29 +477,54 @@ const Case = () => {
           <p>* Working with Webflow, which was new to me.</p>
         </StyledCaseContents>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              Screenshot from partnership film, LipusPlus & Hammarby Handball
-            </Stylednotation>
-          </StyledNotationContainer>
+        {/* <StyledImageContainer>
+          
+          <StyledImg
+            src={challengesImg}
+            alt="A hammarby handball player is lead of the court by the team physio."
+          />
+        </StyledImageContainer> */}
+      
+      </StyledBox>
+
+
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg
             src={challengesImg}
             alt="A hammarby handball player is lead of the court by the team physio."
           />
         </StyledImageContainer>
-      </StyledCaseTwo>
+      </StyledBoxImg>
 
-      <StyledCaseThree>
-        <StyledCaseContents>
-          <h5>Brief</h5>
 
-          <p>
-            LipusPlus aims to attract physiotherapists and elite athletes to its
-            webinars on the Return to Play concept. An enticing and informative
-            landing page is needed to generate leads for these webinars.
-          </p>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Brief</h5>
 
+<p>
+  LipusPlus aims to attract physiotherapists and elite athletes to its
+  webinars on the Return to Play concept. An enticing and informative
+  landing page is needed to generate leads for these webinars.
+</p>
+</StyledCaseContents>
+      </StyledBox>
+
+
+
+      <StyledBoxImg>
+      
+      <StyledImageContainer>
+          <StyledImg
+            src={heroImg}
+            alt="A hammarby handball player is lead of the court by the team physio."
+          />
+        </StyledImageContainer>
+        
+      </StyledBoxImg>
+
+      <StyledBox>
+      <StyledCaseContents>
           <h5>Goal</h5>
 
           <p>
@@ -511,53 +536,50 @@ const Case = () => {
             sales processing.
           </p>
         </StyledCaseContents>
+      
+      </StyledBox>
+      
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              Screenshot from partnership film, LipusPlus & Hammarby Handball
-            </Stylednotation>
-          </StyledNotationContainer>
+
+      <StyledBoxImg>
+      <StyledImageContainer>
+          
           <StyledImg src={BriefImg} alt="Hammarby fans encourgae their team." />
         </StyledImageContainer>
-      </StyledCaseThree>
+      </StyledBoxImg>
 
-      <StyledCaseFour>
-        <StyledCaseContents>
-          <h5>Key Questions</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Key Questions</h5>
 
-          <p>
-            1. How can we make the message and the offer on the landing page
-            clear and attractive to the target group?
-          </p>
-          <p>
-            2. How can we optimise the landing page to increase the conversion
-            rate and get more visitors to sign up for webinars?
-          </p>
-          <p>
-            3. How can we stimulate people to spread the word about the webinar
-            in their surroundings?
-          </p>
+<p>
+  1. How can we make the message and the offer on the landing page
+  clear and attractive to the target group?
+</p>
+<p>
+  2. How can we optimise the landing page to increase the conversion
+  rate and get more visitors to sign up for webinars?
+</p>
+<p>
+  3. How can we stimulate people to spread the word about the webinar
+  in their surroundings?
+</p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              Screenshot of Anne Hopfgarten from partnership film, LipusPlus &
-              Hammarby Handball
-            </Stylednotation>
-          </StyledNotationContainer>
-
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg
             src={ResearchImg}
             alt="Anne Hopfgarten sitting for an interview."
           />
         </StyledImageContainer>
-      </StyledCaseFour>
+      </StyledBoxImg>
 
-      <StyledCaseFive>
-        <StyledCaseContents>
-          <h5>Qualitative Research</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Qualitative Research</h5>
 
           <p>
             <span className="bold">Seminar: </span> LipusPlus
@@ -575,50 +597,43 @@ const Case = () => {
             <span className="bold">Interview: </span> Elite athlete
           </p>
         </StyledCaseContents>
+      
+      </StyledBox>
+      
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Image from research mapping, figma</Stylednotation>
-          </StyledNotationContainer>
-
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg src={MappingImg} alt="Mapping of the users needs." />
         </StyledImageContainer>
-      </StyledCaseFive>
+      </StyledBoxImg>
 
-      <StyledCaseSix>
-        <StyledCaseContents>
-          <h5>Results</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Results</h5>
 
-          <p>
-            <span className="bold">LipusPlus</span>
-          </p>
+<p>
+  <span className="bold">LipusPlus</span>
+</p>
 
-          <p>
-            <span className="bold">Challenges: </span> Struggles with conversion
-            rates due to a lack of evidence and information about the modality.
-          </p>
+<p>
+  <span className="bold">Challenges: </span> Struggles with conversion
+  rates due to a lack of evidence and information about the modality.
+</p>
 
-          <p>
-            <span className="bold">Needs: </span> A convenient platform to
-            present and discuss current and ongoing studies and results.
-          </p>
+<p>
+  <span className="bold">Needs: </span> A convenient platform to
+  present and discuss current and ongoing studies and results.
+</p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Photo by Peder Rotkirch, Lipusplus.</Stylednotation>
-          </StyledNotationContainer>
 
-          <StyledImg
-            src={LipusImg}
-            alt="A hammarby handball player uses the LipusPlus modality.."
-          />
-        </StyledImageContainer>
-      </StyledCaseSix>
+      
 
-      <StyledCaseSeven>
-        <StyledCaseContents>
-          <h5>Results</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Results</h5>
 
           <p>
             <span className="bold">Physiotherapist</span>
@@ -637,176 +652,159 @@ const Case = () => {
             over proven traditional methods.
           </p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              Screenshot of Anne Hopfgarten from partnership film, LipusPlus &
-              Hammarby Handball
-            </Stylednotation>
-          </StyledNotationContainer>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Results</h5>
+
+<p>
+  <span className="bold">Athlete</span>
+</p>
+
+<p>
+  <span className="bold">Concerns: </span> Need evidence that
+  LipusPlus is effective and safe. They often rely on endorsements
+  from prominent figures in their sport and trusted physiotherapists.
+</p>
+
+<p>
+  <span className="bold">Goals: </span> Want to return to their sport
+  as quickly as possible since their income and career goals depend on
+  it.
+</p>
+        </StyledCaseContents>
+      
+      </StyledBox>
+
+
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg src={PhysioImg} alt="Anne Hopfgarten. Hammarby physio." />
         </StyledImageContainer>
-      </StyledCaseSeven>
+      </StyledBoxImg>
 
-      <StyledCaseEight>
-        <StyledCaseContents>
-          <h5>Results</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Insights</h5>
 
-          <p>
-            <span className="bold">Athlete</span>
-          </p>
-
-          <p>
-            <span className="bold">Concerns: </span> Need evidence that
-            LipusPlus is effective and safe. They often rely on endorsements
-            from prominent figures in their sport and trusted physiotherapists.
-          </p>
-
-          <p>
-            <span className="bold">Goals: </span> Want to return to their sport
-            as quickly as possible since their income and career goals depend on
-            it.
-          </p>
+<p>* There is skepticism towards Medtech companies.</p>
+<p>
+  * Build trust not just through evidence but also an understanding of
+  the users everyday struggles and lifestyles.
+</p>
+<p>
+  * A shift towards a sports lifestyle focus, emphasising partnerships
+  rather than solely Medtech, would be more inspirational and
+  trustworthy.
+</p>
+<p>
+  * It is essential for the user that the landing page works on all
+  devices and is responsive.{" "}
+</p>
+<p>
+  * Our users lead busy lives, on the go. Headlines, clear and
+  captivating. Copy, persuasive and engaging. We need to get their
+  attention directly.
+</p>
+<p>* Clearly show the offer and benefits of Return to Play.</p>
+<p>
+  * Clearly communicate the value and benefits of attending the
+  webinar, emphasising credible evidence and success stories.
+</p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              Screenshot of Ludvig Lindeberg from partnership film, LipusPlus &
-              Hammarby Handball
-            </Stylednotation>
-          </StyledNotationContainer>
+      <StyledBoxImg>
+      <StyledImageContainer>
+          <StyledImg
+            src={LipusImg}
+            alt="A hammarby handball player uses the LipusPlus modality.."
+          />
+        </StyledImageContainer>
+      </StyledBoxImg>
+
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Webinar Requirements</h5>
+
+<p>
+  * The webinar platform should be a stable and proven streaming
+  service.{" "}
+</p>
+<p>* Data collection through the registration form is a must.</p>
+<p>* Email Automation.</p>
+<p>* Option to connect to Hubspot. </p>
+<p>* Simple and easy to understand registration forms.</p>
+<p>* Custom Registration forms.</p>
+
+<p>
+  With approximately 260 million users, Vimeo met all our
+  requirements. Since LipusPlus already hosted content on Vimeo, it
+  streamlined our video showcasing process.
+</p>
+        </StyledCaseContents>
+      
+      </StyledBox>
+
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg
             src={AthleteImg}
             alt="Ludvig Lindeberg celebrates winning."
           />
         </StyledImageContainer>
-      </StyledCaseEight>
+      </StyledBoxImg>
 
-      <StyledCaseNine>
-        <StyledCaseContents>
-          <h5>Insights</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Design</h5>
 
-          <p>* There is skepticism towards Medtech companies.</p>
-          <p>
-            * Build trust not just through evidence but also an understanding of
-            the users everyday struggles and lifestyles.
-          </p>
-          <p>
-            * A shift towards a sports lifestyle focus, emphasising partnerships
-            rather than solely Medtech, would be more inspirational and
-            trustworthy.
-          </p>
-          <p>
-            * It is essential for the user that the landing page works on all
-            devices and is responsive.{" "}
-          </p>
-          <p>
-            * Our users lead busy lives, on the go. Headlines, clear and
-            captivating. Copy, persuasive and engaging. We need to get their
-            attention directly.
-          </p>
-          <p>* Clearly show the offer and benefits of Return to Play.</p>
-          <p>
-            * Clearly communicate the value and benefits of attending the
-            webinar, emphasising credible evidence and success stories.
-          </p>
+<p>Building and improving upon an existing design system. </p>
+
+<p>
+  * Through emotional content we highlighted partnerships for
+  credibility.{" "}
+</p>
+<p>
+  * Clearly outlined the benefits and starting price of the Return to
+  Play program.{" "}
+</p>
+<p>
+  * Assure the user that the webinar would discuss evidence from
+  LipusPlus studies.{" "}
+</p>
+<p>
+  * Engaging Content. Through still images, videos and testimonials.{" "}
+</p>
+<p>* Showcase evidence and studies.</p>
+<p>
+  * Clear and Compelling Headlines alongside persuasive Copywriting.{" "}
+</p>
+<p>
+  * A user-friendly registration form with a prominent CTA button.{" "}
+</p>
+<p>* Social Proofing. </p>
+<p>* Follow-Up Communication. </p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Image from Unsplash.</Stylednotation>
-          </StyledNotationContainer>
 
-          <StyledImg
-            src={InsightsImg}
-            alt="An athlete is lying down on the track."
-          />
-        </StyledImageContainer>
-      </StyledCaseNine>
-
-      <StyledCaseTen>
-        <StyledCaseContents>
-          <h5>Webinar Requirements</h5>
-
-          <p>
-            * The webinar platform should be a stable and proven streaming
-            service.{" "}
-          </p>
-          <p>* Data collection through the registration form is a must.</p>
-          <p>* Email Automation.</p>
-          <p>* Option to connect to Hubspot. </p>
-          <p>* Simple and easy to understand registration forms.</p>
-          <p>* Custom Registration forms.</p>
-
-          <p>
-            With approximately 260 million users, Vimeo met all our
-            requirements. Since LipusPlus already hosted content on Vimeo, it
-            streamlined our video showcasing process.
-          </p>
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Image from Vimeo.</Stylednotation>
-          </StyledNotationContainer>
-          <StyledImg src={WebinarImg} alt="A vimeo webinar screen." />
-
-          <StyledMobileImg
-            src={mobileWebinarImg}
-            alt="Promtional text from vimeo about their webinars."
-          />
-        </StyledImageContainer>
-      </StyledCaseTen>
-
-      <StyledCaseEleven>
-        <StyledCaseContents>
-          <h5>Design</h5>
-
-          <p>Building and improving upon an existing design system. </p>
-
-          <p>
-            * Through emotional content we highlighted partnerships for
-            credibility.{" "}
-          </p>
-          <p>
-            * Clearly outlined the benefits and starting price of the Return to
-            Play program.{" "}
-          </p>
-          <p>
-            * Assure the user that the webinar would discuss evidence from
-            LipusPlus studies.{" "}
-          </p>
-          <p>
-            * Engaging Content. Through still images, videos and testimonials.{" "}
-          </p>
-          <p>* Showcase evidence and studies.</p>
-          <p>
-            * Clear and Compelling Headlines alongside persuasive Copywriting.{" "}
-          </p>
-          <p>
-            * A user-friendly registration form with a prominent CTA button.{" "}
-          </p>
-          <p>* Social Proofing. </p>
-          <p>* Follow-Up Communication. </p>
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Design frames from figma.</Stylednotation>
-          </StyledNotationContainer>
-
-          <StyledImg
-            src={DesignOneImg}
+      <StyledBoxImg>
+      <StyledImageContainer>
+      <StyledImg
+            src={DesignTwoImg}
             alt="Frames from LipusPlus HiFi Designs."
           />
         </StyledImageContainer>
-      </StyledCaseEleven>
+      </StyledBoxImg>
 
-      <StyledCaseTwelve>
-        <StyledCaseContents>
-          <h5>Design</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Design</h5>
 
           <p>
             * Through emotional content we highlighted partnerships for
@@ -821,84 +819,100 @@ const Case = () => {
             LipusPlus studies.{" "}
           </p>
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Design frames from figma.</Stylednotation>
-          </StyledNotationContainer>
+
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg
-            src={DesignTwoImg}
+            src={DesignOneImg}
             alt="Frames from LipusPlus HiFi Designs."
           />
         </StyledImageContainer>
-      </StyledCaseTwelve>
+      </StyledBoxImg>
 
-      <StyledCaseThirteen>
-        <StyledCaseContents>
-          <h5>Frontend</h5>
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Frontend</h5>
 
-          <p>
-            The existing LipusPlus homepage was initially created and is
-            presently hosted via Webflow. A key stipulation for this project was
-            to continue using Webflow.{" "}
-          </p>
+<p>
+  The existing LipusPlus homepage was initially created and is
+  presently hosted via Webflow. A key stipulation for this project was
+  to continue using Webflow.{" "}
+</p>
 
-          <Button />
+<Button />
         </StyledCaseContents>
+      
+      </StyledBox>
 
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>Screen shot from Webflow.</Stylednotation>
-          </StyledNotationContainer>
-
+      <StyledBoxImg>
+      <StyledImageContainer>
           <StyledImg src={WebflowImg} alt="Webflow. Desktop ." />
         </StyledImageContainer>
-      </StyledCaseThirteen>
+      </StyledBoxImg>
 
-      <StyledCaseFourteen>
-        <StyledCaseContents>
-          <h5>Reflection</h5>
-
-          <p>
-            This project was incredibly exciting for me for several reasons.
-            Firstly, I had the opportunity to leverage my previous experience as
-            a filmmaker, from conceptualizing and working with the brand to
-            planning and filming interviews and sports coverage. Secondly, this
-            project allowed me to align user needs with brand objectives,
-            achieving a cohesive brand feel that LipusPlus has been striving
-            for. Finally, I had the chance to work with Webflow, exploring a new
-            platform and expanding my skills—an experience I thoroughly enjoyed.{" "}
-          </p>
-
-          <p>
-            In conclusion, this project has not only met its goals but also
-            provided a strong template for future case studies, webinars and
-            other promotions. However there is always room for improvement. One
-            area would be creating our own registration form instead of using
-            the embedded Vimeo form. This change would give better design
-            control and allow for a more cohesive user experience.
-          </p>
-
-          <p>
-            This project has been a valuable learning experience. It
-            demonstrated the importance of thorough research, user-centric
-            design, and effective communication. The real-world application of
-            our work and the positive feedback from LipusPlus has been immensely
-            rewarding.
-          </p>
-        </StyledCaseContents>
-
-        <StyledImageContainer>
-          <StyledNotationContainer>
-            <Stylednotation>
-              The LipusPlus modality. Photo by Peder Rotkirch, LipusPlus.
-            </Stylednotation>
-          </StyledNotationContainer>
-
-          <StyledImg src={ReflectionImg} alt="The lipusPlus modality" />
+      
+      <StyledBoxImg>
+      <StyledImageContainer>
+          
         </StyledImageContainer>
-      </StyledCaseFourteen>
-    </StyledCaseContainer>
+      </StyledBoxImg>
+
+
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Reflection</h5>
+
+<p>
+  This project was incredibly exciting for me for several reasons.
+  Firstly, I had the opportunity to leverage my previous experience as
+  a filmmaker, from conceptualizing and working with the brand to
+  planning and filming interviews and sports coverage. Secondly, this
+  project allowed me to align user needs with brand objectives,
+  achieving a cohesive brand feel that LipusPlus has been striving
+  for. Finally, I had the chance to work with Webflow, exploring a new
+  platform and expanding my skills—an experience I thoroughly enjoyed.{" "}
+</p>
+        </StyledCaseContents>
+      
+
+      </StyledBox>
+
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Reflection</h5>
+
+<p>
+  In conclusion, this project has not only met its goals but also
+  provided a strong template for future case studies, webinars and
+  other promotions. However there is always room for improvement. One
+  area would be creating our own registration form instead of using
+  the embedded Vimeo form. This change would give better design
+  control and allow for a more cohesive user experience.
+</p>
+        </StyledCaseContents>
+      
+      </StyledBox>
+
+      <StyledBox>
+      <StyledCaseContents>
+      <h5>Reflection</h5>
+
+<p>
+  This project has been a valuable learning experience. It
+  demonstrated the importance of thorough research, user-centric
+  design, and effective communication. The real-world application of
+  our work and the positive feedback from LipusPlus has been immensely
+  rewarding.
+</p>
+        </StyledCaseContents>
+      
+      </StyledBox>
+
+       
+    </StyledCaseContainer> 
   );
 };
 

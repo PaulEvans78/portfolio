@@ -23,11 +23,15 @@ const StyledCaseContents = styled.div`
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 1200px) {
-    transform: translateY(60%);
+    transform: translateY(94%);
   }
 
   @media (max-width: 1000px) {
-    transform: translateY(64%);
+    transform: translateY(94%);
+  }
+
+  @media (max-width: 960px) {
+    transform: translateY(54%);
   }
 
   @media (max-width: 767px) {
@@ -93,6 +97,12 @@ const Styledp = styled.p`
   font-size: 16px;
 `;
 
+const StyledHover = styled.div`
+&:hover {
+    color: var(--main-button-hover-color);
+    }
+`;
+
 const UxCard = () => {
   return (
     <StyledWrapper>
@@ -108,10 +118,11 @@ const UxCard = () => {
                 engaging, user-focused experiences that enhance usability and
                 elevate brand impact.
               </Styledp>
-
+              <StyledHover>
               <Styledp>
                 See case studies ..
               </Styledp>
+              </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>

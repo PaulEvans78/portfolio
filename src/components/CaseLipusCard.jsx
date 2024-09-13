@@ -28,15 +28,19 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(54%); /* Initially positioned off the bottom */
+  transform: translateY(60%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 1200px) {
     transform: translateY(60%);
   }
 
-  @media (max-width: 1000px) {
-    transform: translateY(64%);
+  @media (max-width: 1160px) {
+    transform: translateY(68%);
+  }
+
+  @media (max-width: 960px) {
+    transform: translateY(55%);
   }
 
   @media (max-width: 767px) {
@@ -104,6 +108,16 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+`;
+
+const StyledHover = styled.div`
+  &:hover {
+    color: var(--main-button-hover-color);
+  }
+`;
+
 const LipusPlus = () => {
   const imgRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
@@ -150,9 +164,9 @@ const LipusPlus = () => {
                 webinars.
               </p>
 
-              {/* <Stylednotation>
-        Photo by Peder Rotkirch.
-        </Stylednotation> */}
+              <StyledHover>
+                <Styledp>Go to case study ..</Styledp>
+              </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>

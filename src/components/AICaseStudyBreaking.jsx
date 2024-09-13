@@ -92,6 +92,16 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+`;
+
+const StyledHover = styled.div`
+  &:hover {
+    color: var(--main-button-hover-color);
+  }
+`;
+
 function AICaseStudyTides(props) {
   useEffect(() => {
     preloadVideo(AiCase);
@@ -121,6 +131,9 @@ function AICaseStudyTides(props) {
                 How I am achieving consistency in AI video generation. See case
                 on linkedIn..
               </p>
+              <StyledHover>
+                <Styledp>Go to case study ..</Styledp>
+              </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>

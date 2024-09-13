@@ -7,7 +7,6 @@ import HtmlImg from "../assets/htmlImg.avif";
 import CssImg from "../assets/cssImg.avif";
 import JavascriptImg from "../assets/javascriptImg.avif";
 
-
 const growShrinkAnimation = keyframes`
   0% {
     transform: scale(1);
@@ -28,42 +27,15 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledCaseContents = styled.div`
-position: absolute;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: left;
   width: 90%;
   min-height: 100%;
   padding: 0em 2em 0.5em 2em;
-
-  transform: translateY(62%); /* Initially positioned off the bottom */
-  transition: transform 0.5s ease-in-out;
-
-  /* @media (max-width: 1200px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1000px) {
-    transform: translateY(64%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(66%);
-  }
-
-  @media (max-width: 478px) {
-    transform: translateY(78%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(94%);
-  } */
 `;
 
 const StyledCaseMain = styled.section`
@@ -76,19 +48,6 @@ const StyledCaseMain = styled.section`
   font-size: 1.2rem;
   overflow: hidden;
   background-color: var(--main-hero-backgroundcolor);
-
-  &:hover ${StyledCaseContents} {
-    transform: translateY(0%); /* Slide up into view */
-    background-color: #060606ac;
-    justify-content: center;
-  }
-
-  @media (max-width: 960px) {
-    &:hover {
-      transform: none;
-      color: inherit;
-    }
-  }
 `;
 
 const StyledIconContainer = styled.div`
@@ -121,20 +80,10 @@ const StyledTool = styled.img`
   }
 `;
 
-const Styledp = styled.p`
-  font-size: 16px;
-`;
-
 const Card = () => {
   return (
     <StyledWrapper>
-     <a
-        href="https://github.com/PaulEvans78"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <StyledCaseMain>
-
+      <StyledCaseMain>
         <StyledIconContainer>
           <StyledTool src={ReactImg} alt="React Logo." />
           <StyledTool src={WebflowImg} alt="Webflow Logo." />
@@ -144,22 +93,11 @@ const Card = () => {
           <StyledTool src={CssImg} alt="CSS Logo." />
           <StyledTool src={JavascriptImg} alt="Javascript Logo." />
         </StyledIconContainer>
-        
+
         <StyledCaseContents>
-        <h5>Frontend Tools</h5>
-        <Styledp>
-          On top of all this I am a qualified Frontend developer with a solid
-          understanding of HTML, CSS, JavaScript, and React. 
-        </Styledp>
-
-        <Styledp>
-          Go to my GitHub page ..
-        </Styledp>
-
-  </StyledCaseContents>
-          
-        </StyledCaseMain>
-      </a>
+          <h5>Frontend Tools</h5>
+        </StyledCaseContents>
+      </StyledCaseMain>
     </StyledWrapper>
   );
 };

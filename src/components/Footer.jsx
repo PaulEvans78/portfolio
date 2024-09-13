@@ -1,27 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import { FaImdb, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaImdb, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import logo from "../assets/paulEvansCreativeLogo.avif";
+import { Link } from "react-router-dom";
 
 const footerData = [
   {
     id: 1,
-    href: "https://www.linkedin.com/in/paul-evans-3a74605/",
-    icon: <FaLinkedin />,
-    des: "LinkedIn",
+    href: "https://github.com/PaulEvans78",
+    icon: <FaGithub />,
+    des: "Github",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     id: 2,
-    href: "https://www.instagram.com/paulevans_official/",
-    icon: <FaInstagram />,
-    des: "Instagram",
+    href: "https://www.linkedin.com/in/paul-evans-3a74605/",
+    icon: <FaLinkedin />,
+    des: "LinkedIn",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     id: 3,
+    href: "https://www.instagram.com/paulevans_official/",
+    icon: <FaInstagram />,
+    des: "Instagram",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  {
+    id: 4,
     href: "https://www.imdb.com/name/nm3171341/?ref_=ttfc_fc_cr",
     icon: <FaImdb />,
     des: "Imdb",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
 ];
 
@@ -126,7 +141,7 @@ const IconContainer = styled.div`
     margin-right: 24px;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 478px) {
     flex-direction: column;
     margin-right: 0em;
   }
@@ -219,12 +234,13 @@ const Styledp = styled.p`
 const Footer = React.forwardRef((props, ref) => (
   <StyledFooter ref={ref}>
     <StyledLogoContainer>
-      <StyledFooterLogo
-        src={logo}
-        alt="the letters P and E merged together to form the logo Paul Evans Creative"
-      />
+      <Link to="/">
+        <StyledFooterLogo
+          src={logo}
+          alt="the letters P and E merged together to form the logo Paul Evans Creative"
+        />
+      </Link>
     </StyledLogoContainer>
-
     <Icons />
 
     <StyledContactContainer>
@@ -247,7 +263,12 @@ const Icons = () => {
     <IconContainer>
       <IconContext.Provider value={{ size: "2em" }}>
         {footerData.map((Link) => (
-          <StyledIcon href={Link.href} key={Link.id}>
+          <StyledIcon
+            href={Link.href}
+            key={Link.id}
+            target={Link.target}
+            rel={Link.rel}
+          >
             {Link.icon}
 
             <IconDes>{Link.des}</IconDes>

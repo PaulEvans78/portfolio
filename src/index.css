@@ -1,15 +1,15 @@
 :root {
   --main-font-color: whitesmoke;
   --secondary-font-color: #2c2c2c;
-  --h3-font-color: #e437e2;
   --main-notation-font-color: #cdcccc;
   --main-notation-background-color: #1e1e1ee6;
   --main-casecard-background-color: #f9f9f9;
-  --main-button-color: #e437e2;
-  --main-button-hover-color: #9804e2;
+  --main-button-color: #f3c51e;
+  --main-button-hover-color: #f3a11e;
   --secondary-button-color: #d5d5d5;
-  --secondary-button-hover-color: #989898;
-  --main-navbar-hover-color: #e437e2;
+  --secondary-button-hover-color: #f3a11e;
+  --main-navbar-hover-color: #f3a11e;
+  --main-navbar-active-color: rgb(122, 122, 122);
   --main-hero-backgroundcolor: #171717;
   --main-modal-backgroundcolor: #171717;
   --main-infoBackground-backgroundcolor: #171717ac;

@@ -23,16 +23,22 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(52%); /* Initially positioned off the bottom */
+  transform: translateY(58%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 1200px) {
-    transform: translateY(60%);
+    transform: translateY(54%);
+  }
+
+  @media (max-width: 1160px) {
+    transform: translateY(65%);
   }
 
   @media (max-width: 1000px) {
     transform: translateY(64%);
   }
+
+  
 
   @media (max-width: 767px) {
     transform: translateY(58%);
@@ -92,6 +98,16 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+`;
+
+const StyledHover = styled.div`
+&:hover {
+    color: var(--main-button-hover-color);
+    }
+`;
+
 function AICaseStudyTides(props) {
   useEffect(() => {
     preloadVideo(AiCase);
@@ -121,6 +137,9 @@ function AICaseStudyTides(props) {
                 Why using AI generated content can enhance the user experience
                 in prototypes. See case on linkedIn..
               </p>
+              <StyledHover>
+                <Styledp>Go to case study ..</Styledp>
+              </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>

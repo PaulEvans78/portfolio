@@ -28,28 +28,36 @@ const StyledCaseContents = styled.div`
   transform: translateY(56%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
+  @media (max-width: 1500px) {
+    transform: translateY(60%);
+  }
+
   @media (max-width: 1200px) {
     transform: translateY(60%);
   }
 
   @media (max-width: 1000px) {
-    transform: translateY(64%);
+    transform: translateY(70%);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     transform: translateY(58%);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     transform: translateY(66%);
   }
 
+  @media (max-width: 600px) {
+    transform: translateY(76%);
+  }
+
   @media (max-width: 478px) {
-    transform: translateY(78%);
+    transform: translateY(82%);
   }
 
   @media (max-width: 360px) {
-    transform: translateY(94%);
+    transform: translateY(108%);
   }
 `;
 
@@ -94,6 +102,12 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
+const StyledHover = styled.div`
+  &:hover {
+    color: var(--main-button-hover-color);
+  }
+`;
+
 function CinemaCard(props) {
   useEffect(() => {
     preloadVideo(dopReel);
@@ -120,11 +134,13 @@ function CinemaCard(props) {
             <StyledCaseContents>
               <h5>Cinematography</h5>
               <p>
-              Member of fsf, Föreningen Severiges Filmfotografer (The Association of Swedish Film Cinematographers). 
-              Working in Narrative, Commercials, Music Videos and Still Photography. 
+                Member of fsf, Föreningen Severiges Filmfotografer (The
+                Association of Swedish Film Cinematographers). Working in
+                Narrative, Commercials, Music Videos and Still Photography.
               </p>
-
-              <p>See work ..</p>
+              <StyledHover>
+                <p>See work ..</p>
+              </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>

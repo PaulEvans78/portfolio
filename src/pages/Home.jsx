@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import styled from "styled-components";
-import Hero from "../components/Hero";
+// import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
 import UxUiCard from "../components/UxUiCard";
 import AICard from "../components/AICard";
@@ -11,7 +11,6 @@ import Storytelling from "../components/StoryTelling";
 import {
   StyledThreeSquaresContainer,
   StyledThreeSquaresReverseContainer,
-  FadeInComponent,
 } from "../components/FadesStyled";
 import useIntersectionObserver from "../components/useIntersectionObserver";
 
@@ -27,7 +26,7 @@ const StyledHomeContainer = styled.section`
 const Home = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
-  const [posterRef, isPosterVisible] = useIntersectionObserver();
+  
 
   const caseRef = useRef(null);
 
@@ -39,7 +38,7 @@ const Home = () => {
 
   return (
     <StyledHomeContainer>
-      <Hero />
+      {/* <Hero /> */}
       <StyledThreeSquaresContainer
         ref={squaresRef1}
         isVisible={isSquaresVisible1}
@@ -49,16 +48,10 @@ const Home = () => {
         <AICard />
       </StyledThreeSquaresContainer>
     
-      {/* <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        <AICaseStudyTides />
-        <AICaseStudyBreaking />
-      </StyledSquaresContainer> */}
+  
       <FullFrameBranding scrollToEvent={scrollToEvent} />
 
-      {/* <div ref={caseRef}></div> */}
-      {/* <CaseLipus /> */}
-      {/* <FullFrameVideo /> */}
-      {/* <CaseEbie /> */}
+     
 
       <StyledThreeSquaresReverseContainer
         ref={squaresRef2}
@@ -69,10 +62,7 @@ const Home = () => {
         <FrontendCard />
       </StyledThreeSquaresReverseContainer>
 
-      {/* <FadeInComponent ref={posterRef} isVisible={isPosterVisible}> */}
-        {/* <FullFramePoster /> */}
-      {/* </FadeInComponent> */}
-      {/* <FrontendCard /> */}
+   
     </StyledHomeContainer>
   );
 };

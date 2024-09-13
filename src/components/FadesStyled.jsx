@@ -45,6 +45,7 @@ export const StyledThreeSquaresContainer = styled.section`
     "cinema cinema ai";
   row-gap: 20px;
   column-gap: 2%;
+  padding-top: 180px;
   padding-left: 2%;
   padding-right: 2%;
   opacity: 0;
@@ -55,8 +56,11 @@ export const StyledThreeSquaresContainer = styled.section`
     `}
 
   @media screen and (max-width: 960px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
+    padding-top: 130px;
+    grid-template-areas:
+    "cinema "
+    "ux"
+    "ai";
   }
 `;
 
@@ -85,7 +89,10 @@ export const StyledThreeSquaresReverseContainer = styled.section`
 
   @media screen and (max-width: 960px) {
     grid-template-columns: 100%;
-    grid-template-rows: auto auto;
+    grid-template-areas:
+    "storytelling"
+    "design"
+    "frontend";
   }
 `;
 

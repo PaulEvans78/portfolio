@@ -4,8 +4,37 @@ import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.
 import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
 import ButtonCase from "./ButtonLipusPlusSecondary";
-import logoImg from "../assets/lipusPlusLogoWhite.avif";
 import Modal from "./ModalLipus";
+
+const StyledWrapper = styled.div`
+  display: inline-block;
+  width: 100%;
+`;
+
+const StyledContentsContainer = styled.div`
+  width: 100%;
+  height: 500px;
+  padding-top: 180px;
+  padding-left: 40px;
+  padding-right: 160px;
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+
+  transform: translateY(111%); /* Initially positioned off the bottom */
+  transition: transform 0.5s ease-in-out;
+
+  
+`;
+
+const StyledContents = styled.div`
+  width: 60%;
+
+  @media screen and (max-width: 960px) {
+    width: 90%;
+  }
+`;
 
 const StyledMainContainer = styled.section`
   position: relative;
@@ -18,6 +47,19 @@ const StyledMainContainer = styled.section`
   display: flex;
   align-self: left;
   flex-direction: column;
+
+  &:hover ${StyledContentsContainer} {
+    transform: translateY(0%); /* Slide up into view */
+    background-color: #060606ac;
+    justify-content: center;
+  }
+
+  @media (max-width: 960px) {
+    &:hover {
+      transform: none;
+      color: inherit;
+    }
+  }
 `;
 
 const StyledVideo = styled.video`
@@ -41,62 +83,6 @@ const StyledOpacity = styled.div`
   z-index: 2;
 `;
 
-const StyledContentsContainer = styled.div`
-  width: 60%;
-  height: 500px;
-  padding-top: 190px;
-  padding-left: 60px;
-  padding-bottom: 180px;
-  display: flex;
-  flex-direction: column;
-  z-index: 3;
-
-  @media screen and (max-width: 960px) {
-    width: 80%;
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 80%;
-    padding-top: 240px;
-    padding-bottom: 240px;
-  }
-
-  @media screen and (max-width: 478px) {
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    height: 650px;
-    padding-left: 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @media screen and (max-width: 320px) {
-    padding-top: 120px;
-    padding-bottom: 80px;
-  }
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  padding-top: 30px;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: 478px) {
-    justify-content: center;
-  }
-`;
-
-const StyledLogo = styled.img`
-  width: 30%;
-  height: auto;
-
-  @media screen and (max-width: 478px) {
-    width: 50%;
-  }
-`;
 
 const StyledButtonContainer = styled.div`
   width: auto;
@@ -194,52 +180,51 @@ const Film = ({ scrollToEvent }) => {
   }, []);
 
   return (
-    <StyledMainContainer>
-      <StyledVideo
-        ref={videoRef}
-        src={BackgroundVideo}
-        loop
-        muted
-        playsInline
-        preload="auto"
-        alt="Background video"
-      />
+    <StyledWrapper>
+      <StyledMainContainer>
+        <StyledVideo
+          ref={videoRef}
+          src={BackgroundVideo}
+          loop
+          muted
+          playsInline
+          preload="auto"
+          alt="Background video"
+        />
 
-      <StyledOpacity />
+        <StyledOpacity />
 
-      <StyledContentsContainer>
-        <StyledLogoContainer>
-          <StyledLogo src={logoImg} alt="LipusPlus logo" />
-        </StyledLogoContainer>
+        <StyledContentsContainer>
+          <StyledContents>
+            <h5>LIPUSPLUS</h5>
 
-        <h4>Meet the Physio of Hammarby Handball</h4>
+            <p>
+              Brand film highlighting LipusPlus's partnership with Hammarby
+              Handball. 
+            </p>
+            <StyledButtonContainer>
+              <ButtonFilm onClick={handleButtonClick} />
+              <ButtonCase onClick={scrollToEvent} />
+            </StyledButtonContainer>
+          </StyledContents>
+        </StyledContentsContainer>
 
-        <p>
-          Brand film highlighting LipusPlus's partnership with Hammarby Handball. 
-          Together with LipusPlus we created a landing page using captivating content and testimonials to showcase the partnership 
-          and to invite users to a webinar providing evidence of the effectiveness of the modality.
-        </p>
-        <StyledButtonContainer>
-          <ButtonFilm onClick={handleButtonClick} />
-          <ButtonCase onClick={scrollToEvent} />
-        </StyledButtonContainer>
-      </StyledContentsContainer>
+        <Modal isOpen={isModalOpen} onClose={handleModalClose}>
+          <video controls autoPlay preload="auto">
+            <source src={Showcase} type="video/mp4" />
+          </video>
+        </Modal>
 
-      <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-        <video controls autoPlay preload="auto">
-          <source src={Showcase} type="video/mp4" />
-        </video>
-      </Modal>
-
-      <video
-        ref={filmRef}
-        style={{ display: "none" }}
-        src={Showcase}
-        type="video/mp4"
-        controls
-        preload="auto"
-      />
-    </StyledMainContainer>
+        <video
+          ref={filmRef}
+          style={{ display: "none" }}
+          src={Showcase}
+          type="video/mp4"
+          controls
+          preload="auto"
+        />
+      </StyledMainContainer>
+    </StyledWrapper>
   );
 };
 
