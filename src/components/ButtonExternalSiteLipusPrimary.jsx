@@ -28,13 +28,9 @@ const StyledWrapper = styled.div`
 `;
 
 const Styledp = styled.p`
-  color: var(--secondary-font-color);
-  font-size: 20px;
-  font-weight: 600;
-
-  @media (max-width: 960px) {
-    font-size: 18px;
-  }
+  color: var(--main-font-color);
+  font-size: 16px;
+  font-weight: 500;
 `;
 
 const Button = ({ onClick }) => {
@@ -53,7 +49,7 @@ const Button = ({ onClick }) => {
           <FaArrowCircleRight onClick={onClick} size={70} />
         </a>
       </StyledWrapper>
-      <Styledp>See live page at LipusPlus.com</Styledp>
+      <Styledp>LipusPlus.com</Styledp>
     </StyledPlayContainer>
   );
 };

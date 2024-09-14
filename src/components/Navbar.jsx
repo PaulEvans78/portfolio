@@ -170,6 +170,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   text-align: right;
   margin: 1em 2em 0em 0em;
+  color: var(--main-button-color);
 
   &:hover {
     text-decoration: underline;
@@ -201,6 +202,7 @@ const ExternalStyledLink = styled.a`
   text-decoration: none;
   text-align: right;
   margin: 0em 2em 0em 0em;
+  color: var(--main-button-color);
 
   &:hover {
     text-decoration: underline;

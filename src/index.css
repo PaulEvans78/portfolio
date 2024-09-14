@@ -9,7 +9,7 @@
   --secondary-button-color: #d5d5d5;
   --secondary-button-hover-color: #f3a11e;
   --main-navbar-hover-color: #f3a11e;
-  --main-navbar-active-color: rgb(122, 122, 122);
+  --main-navbar-active-color: whitesmoke;
   --main-hero-backgroundcolor: #171717;
   --main-modal-backgroundcolor: #171717;
   --main-infoBackground-backgroundcolor: #171717ac;
@@ -188,6 +188,7 @@ p {
 
 ul {
   padding-bottom: 4em;
+  /* margin-top: 0em; */
 
   @media (max-width: 960px) {
     margin-top: 0em;
