@@ -71,36 +71,6 @@ const StyledAnimatedHeading = styled.div`
   animation: ${slideInFromLeft} 1s ease-out 0.5s forwards;
 `;
 
-// const Styledp = styled.p`
-//   width: 70%;
-//   font-size: 24px;
-//   font-family: "Poppins", sans-serif;
-//   font-weight: 300;
-//   font-style: normal;
-//   line-height: 1.4;
-
-//   @media screen and (max-width: 1225px) {
-//     width: 80%;
-//   }
-
-//   @media screen and (max-width: 1025px) {
-//     width: 85%;
-//   }
-
-//   @media screen and (max-width: 960px) {
-//     width: 90%;
-//     font-size: 20px;
-//   }
-
-//   @media screen and (max-width: 478px) {
-//     font-size: 18px;
-//   }
-
-//   @media screen and (max-width: 320px) {
-//     font-size: 16px;
-//   }
-// `;
-
 const Hero = () => {
   useEffect(() => {
     preloadImage(smokeGif);
@@ -113,11 +83,6 @@ const Hero = () => {
         <StyledAnimatedHeading>
           <h2>Creative Lead | Experience Designer</h2>
         </StyledAnimatedHeading>
-        {/* <Styledp>
-        Creative professional with over 20 years of experience in branding, storytelling, and commercial and narrative production, 
-        now specializing in Experience Design. I bring a unique combination of creative and technical expertise, 
-        allowing me to design visually engaging and user-centric experiences.
-        </Styledp> */}
       </StyledHeroContents>
     </StyledHeroMain>
   );

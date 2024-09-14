@@ -9,6 +9,11 @@ const StyledWrapper = styled.div`
   width: 100%;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledCaseContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,35 +24,11 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(62%); /* Initially positioned off the bottom */
+  transform: translateY(42%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 1200px) {
-    transform: translateY(94%);
-  }
-
-  @media (max-width: 1000px) {
-    transform: translateY(94%);
-  }
-
-  @media (max-width: 960px) {
-    transform: translateY(54%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(66%);
-  }
-
   @media (max-width: 478px) {
-    transform: translateY(78%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(94%);
+    padding: 0em 2em 0.5em 1em;
   }
 `;
 
@@ -65,6 +46,10 @@ const StyledCaseMain = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -93,14 +78,10 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
-const Styledp = styled.p`
-  font-size: 16px;
-`;
-
 const StyledHover = styled.div`
-&:hover {
+  &:hover {
     color: var(--main-button-hover-color);
-    }
+  }
 `;
 
 const UxCard = () => {
@@ -119,9 +100,7 @@ const UxCard = () => {
                 elevate brand impact.
               </Styledp>
               <StyledHover>
-              <Styledp>
-                See case studies ..
-              </Styledp>
+                <Styledp>See case studies ..</Styledp>
               </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>

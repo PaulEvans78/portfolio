@@ -94,7 +94,6 @@ const StyledIdent = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  /* width: 100%; */
   padding-left: 1em;
 
   @media screen and (max-width: 960px) {

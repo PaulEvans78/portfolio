@@ -32,6 +32,10 @@ const StyledCaseContents = styled.div`
   width: 90%;
   height: 100%;
   padding: 0em 2em 0.5em 2em;
+
+  @media (max-width: 478px) {
+    padding: 0em 2em 0.5em 1em;
+  }
 `;
 
 const StyledCaseMain = styled.section`

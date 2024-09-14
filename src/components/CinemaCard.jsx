@@ -15,6 +15,11 @@ const StyledWrapper = styled.div`
   width: 100%;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledCaseContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,39 +30,11 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(56%); /* Initially positioned off the bottom */
+  transform: translateY(46%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 1500px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1200px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1000px) {
-    transform: translateY(70%);
-  }
-
-  @media (max-width: 960px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(66%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(76%);
-  }
-
   @media (max-width: 478px) {
-    transform: translateY(82%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(108%);
+    padding: 0em 2em 0.5em 1em;
   }
 `;
 
@@ -75,6 +52,10 @@ const StyledCaseMain = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -133,13 +114,13 @@ function CinemaCard(props) {
           <StyledOpacity>
             <StyledCaseContents>
               <h5>Cinematography</h5>
-              <p>
+              <Styledp>
                 Member of fsf, Föreningen Severiges Filmfotografer (The
                 Association of Swedish Film Cinematographers). Working in
                 Narrative, Commercials, Music Videos and Still Photography.
-              </p>
+              </Styledp>
               <StyledHover>
-                <p>See work ..</p>
+                <Styledp>See work ..</Styledp>
               </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>

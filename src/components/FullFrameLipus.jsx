@@ -11,21 +11,42 @@ const StyledWrapper = styled.div`
   width: 100%;
 `;
 
+const StyledButtonContainer = styled.div`
+  width: auto;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 20px;
+
+  @media screen and (max-width: 478px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledContentsContainer = styled.div`
-  width: 100%;
-  height: 500px;
-  padding-top: 180px;
-  padding-left: 40px;
-  padding-right: 160px;
-  padding-bottom: 180px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  padding: 0em 2em 0.5em 2em;
   z-index: 3;
 
-  transform: translateY(111%); /* Initially positioned off the bottom */
+  transform: translateY(48%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  
+  @media (max-width: 478px) {
+    padding: 0em 2em 0.5em 1em;
+  }
 `;
 
 const StyledContents = styled.div`
@@ -52,6 +73,14 @@ const StyledMainContainer = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
+  }
+
+  &:hover ${StyledButtonContainer} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -81,21 +110,6 @@ const StyledOpacity = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.32);
   z-index: 2;
-`;
-
-
-const StyledButtonContainer = styled.div`
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-top: 20px;
-
-  @media screen and (max-width: 478px) {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
 `;
 
 const Film = ({ scrollToEvent }) => {
@@ -198,10 +212,10 @@ const Film = ({ scrollToEvent }) => {
           <StyledContents>
             <h5>LIPUSPLUS</h5>
 
-            <p>
+            <Styledp>
               Brand film highlighting LipusPlus's partnership with Hammarby
-              Handball. 
-            </p>
+              Handball.
+            </Styledp>
             <StyledButtonContainer>
               <ButtonFilm onClick={handleButtonClick} />
               <ButtonCase onClick={scrollToEvent} />
