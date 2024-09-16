@@ -89,7 +89,7 @@ const Card = () => {
         </StyledIconContainer>
 
         <StyledCaseContents>
-          <h5>Design Tools</h5>
+          <h2>Design Tools</h2>
         </StyledCaseContents>
       </StyledCaseMain>
     </StyledWrapper>

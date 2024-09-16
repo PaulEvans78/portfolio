@@ -96,7 +96,7 @@ const UxCard = () => {
           <StyledImg src={uxImg} alt="Mobile prototype frames." />
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>UX Case Studies</h5>
+              <h2>UX Case Studies</h2>
 
               <Styledp>
                 As a UX/UI designer with storytelling expertise, I create

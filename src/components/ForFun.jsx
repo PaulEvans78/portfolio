@@ -112,7 +112,7 @@ const ForFun = () => {
     <StyledCaseMain>
       <StyledContentsContainer>
         <StyledCaseContents>
-          <h3>For fun</h3>
+          <h2>For fun</h2>
           <p>
             Surfing and traveling are my two biggest passions. When I'm not
             paddling out into the sea I like to work out at the gym or swim in

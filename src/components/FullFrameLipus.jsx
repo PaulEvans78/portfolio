@@ -212,7 +212,7 @@ const Film = ({ scrollToEvent }) => {
 
         <StyledContentsContainer>
           <StyledContents>
-            <h5>LIPUSPLUS</h5>
+            <h2>LIPUSPLUS</h2>
 
             <Styledp>
               Brand film highlighting LipusPlus's partnership with Hammarby

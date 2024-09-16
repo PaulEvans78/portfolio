@@ -122,7 +122,7 @@ const Storytelling = ({ scrollToEvent }) => {
 
         <StyledOpacity>
           <StyledCaseContents>
-            <h5>Storytelling</h5>
+            <h2>Storytelling</h2>
 
             <Styledp>
               Storytelling is at the heart of everything I do. I've applied this

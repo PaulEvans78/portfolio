@@ -93,9 +93,18 @@ const StyledIdent = styled.div`
 
 const StyledTitle = styled.div`
   padding-left: 1em;
+  padding-top: 0.5em;
+  
+  @media screen and (max-width: 1080px) {
+    padding-top: 0.5em;
+    }
 
   @media screen and (max-width: 960px) {
-    padding-top: 1em;
+    padding-top: 2em;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 1.5em;
   }
 
   @media screen and (max-width: 478px) {
@@ -104,22 +113,6 @@ const StyledTitle = styled.div`
 
   &:hover {
     color: var(--main-button-hover-color);
-  }
-`;
-
-const Styledp = styled.p`
-  font-family: "Trispace", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
-  margin: 0;
-
-  @media screen and (max-width: 1080px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 24px;
   }
 `;
 
@@ -298,8 +291,8 @@ const Navbar = ({ footerRef }) => {
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
             />
             <StyledTitle>
-              <Styledp>Paul Evans</Styledp>
-              <Styledp>Experience Designer</Styledp>
+              <h1>Paul Evans</h1>
+              <h1>Experience Designer</h1>
             </StyledTitle>
           </StyledIdent>
         </Link>

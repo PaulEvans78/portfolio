@@ -99,7 +99,7 @@ const Card = () => {
         </StyledIconContainer>
 
         <StyledCaseContents>
-          <h5>Frontend Tools</h5>
+          <h2>Frontend Tools</h2>
         </StyledCaseContents>
       </StyledCaseMain>
     </StyledWrapper>

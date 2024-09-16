@@ -117,7 +117,7 @@ function CinemaCard(props) {
 
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>Cinematography</h5>
+              <h2>Cinematography</h2>
               <Styledp>
                 Member of fsf, Föreningen Severiges Filmfotografer (The
                 Association of Swedish Film Cinematographers). Working in

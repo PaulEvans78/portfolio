@@ -131,7 +131,7 @@ const Case = () => {
     <StyledCaseContainer>
       <StyledBox>
         <StyledCaseContents>
-          <h5>My role</h5>
+          <h2>My role</h2>
 
           <Styledp>UX Designer</Styledp>
           <Styledp>UI Designer</Styledp>
@@ -148,7 +148,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Challenges</h5>
+          <h2>Challenges</h2>
 
           <Styledp>
             * Lack of indepth knowledge of the real estate industry.
@@ -176,7 +176,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Brief</h5>
+          <h2>Brief</h2>
 
           <Styledp>
             Create and implement a completely new and user-friendly function
@@ -201,7 +201,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Target Group</h5>
+          <h2>Target Group</h2>
 
           <Styledp>Lessor</Styledp>
           <Styledp>Property Owner</Styledp>
@@ -216,7 +216,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Research</h5>
+          <h2>Research</h2>
 
           <Styledp>
             Carrying out research with Ebies clients proved challenging due to
@@ -246,7 +246,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Improvement Areas</h5>
+          <h2>Improvement Areas</h2>
 
           <Styledp>
             <span className="bold">The application process </span> posed our
@@ -273,7 +273,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Improvement Areas</h5>
+          <h2>Improvement Areas</h2>
 
           <Styledp>
             <span className="bold">The new design</span> received a more
@@ -311,7 +311,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Improvement Areas</h5>
+          <h2>Improvement Areas</h2>
 
           <Styledp>
             <span className="bold">Sort Function: </span> Property owners and
@@ -334,7 +334,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Improvement Areas</h5>
+          <h2>Improvement Areas</h2>
 
           <Styledp>
             <span className="bold">Overview: </span>
@@ -388,7 +388,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Reflection</h5>
+          <h2>Reflection</h2>
 
           <Styledp>
             The biggest challenge was understanding the intricacies of the real
@@ -401,7 +401,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Reflection</h5>
+          <h2>Reflection</h2>
 
           <Styledp>
             What I enjoyed most about this project was developing the sorting

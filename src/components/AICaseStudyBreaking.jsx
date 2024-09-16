@@ -13,6 +13,11 @@ const StyledWrapper = styled.div`
   display: inline-block;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledCaseContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,31 +28,11 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(52%); /* Initially positioned off the bottom */
+  transform: translateY(44%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 1200px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1000px) {
-    transform: translateY(64%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(66%);
-  }
-
   @media (max-width: 478px) {
-    transform: translateY(78%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(94%);
+    transform: translateY(40%);
   }
 `;
 
@@ -65,6 +50,10 @@ const StyledCaseMain = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -90,10 +79,6 @@ const StyledOpacity = styled.div`
   width: 100%;
   height: 100%;
   background-color: #00000056;
-`;
-
-const Styledp = styled.p`
-  font-size: 16px;
 `;
 
 const StyledHover = styled.div`
@@ -126,11 +111,11 @@ function AICaseStudyTides(props) {
 
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>CONSISTENCY IN AI</h5>
-              <p>
+              <h2>CONSISTENCY IN AI</h2>
+              <Styledp>
                 How I am achieving consistency in AI video generation. See case
                 on linkedIn..
-              </p>
+              </Styledp>
               <StyledHover>
                 <Styledp>Go to case study ..</Styledp>
               </StyledHover>

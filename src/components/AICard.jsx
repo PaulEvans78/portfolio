@@ -114,7 +114,7 @@ function AiCard(props) {
           />
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>AI Case Studies</h5>
+              <h2>AI Case Studies</h2>
 
               <Styledp>
                 I see AI not as a threat but as an opportunity. Though still

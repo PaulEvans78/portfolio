@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import styled from "styled-components";
-// import Hero from "../components/Hero";
 import CinemaCard from "../components/CinemaCard";
 import UxUiCard from "../components/UxUiCard";
 import AICard from "../components/AICard";
@@ -38,7 +37,6 @@ const Home = () => {
 
   return (
     <StyledHomeContainer>
-      {/* <Hero /> */}
       <StyledThreeSquaresContainer
         ref={squaresRef1}
         isVisible={isSquaresVisible1}

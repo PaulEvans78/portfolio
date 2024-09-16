@@ -107,7 +107,7 @@ const AboutMe = () => {
     <StyledCaseMain>
       <StyledContentsContainer>
         <StyledCaseContents>
-          <h3>About me </h3>
+          <h2>About me </h2>
 
           <p>
             Hi, I’m Paul! A creative with over 20 years of experience in

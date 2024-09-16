@@ -145,7 +145,7 @@ const Case = () => {
     <StyledCaseContainer>
       <StyledBox>
         <StyledCaseContents>
-          <h5>My role</h5>
+          <h2>My role</h2>
 
           <Styledp>UX / UI Designer</Styledp>
           <Styledp>Frontend Developer</Styledp>
@@ -163,7 +163,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Challenges</h5>
+          <h2>Challenges</h2>
 
           <Styledp>
             * Understanding Elite Athletes and Physiotherapists everyday
@@ -184,7 +184,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Brief</h5>
+          <h2>Brief</h2>
 
           <Styledp>
             LipusPlus aims to attract physiotherapists and elite athletes to its
@@ -205,7 +205,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Goal</h5>
+          <h2>Goal</h2>
 
           <Styledp>
             Create a user-friendly landing page. Connect with the target group.
@@ -225,7 +225,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Key Questions</h5>
+          <h2>Key Questions</h2>
 
           <Styledp>
             1. How can we make the message and the offer clear and attractive to
@@ -250,7 +250,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Qualitative Research</h5>
+          <h2>Qualitative Research</h2>
 
           <Styledp>
             <span className="bold">Seminar: </span> LipusPlus
@@ -278,7 +278,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Results</h5>
+          <h2>Results</h2>
 
           <Styledp>
             <span className="bold">LipusPlus</span>
@@ -298,7 +298,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Results</h5>
+          <h2>Results</h2>
 
           <Styledp>
             <span className="bold">Physiotherapist</span>
@@ -319,7 +319,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Results</h5>
+          <h2>Results</h2>
 
           <Styledp>
             <span className="bold">Athlete</span>
@@ -347,7 +347,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Insights</h5>
+          <h2>Insights</h2>
 
           <Styledp>* There is skepticism towards Medtech companies.</Styledp>
           <Styledp>* Build trust, understanding the users struggles.</Styledp>
@@ -375,7 +375,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Webinar Requirements</h5>
+          <h2>Webinar Requirements</h2>
 
           <Styledp>
             * The webinar platform should be a stable and proven streaming
@@ -415,7 +415,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Design</h5>
+          <h2>Design</h2>
 
           <Styledp>Build and improve upon an existing design system. </Styledp>
           <Styledp>
@@ -447,7 +447,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Frontend</h5>
+          <h2>Frontend</h2>
 
           <Styledp>
             A key stipulation for this project was to continue using Webflow.{" "}
@@ -467,7 +467,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Reflection</h5>
+          <h2>Reflection</h2>
 
           <Styledp>
             This project was incredibly exciting for me for several reasons.
@@ -484,7 +484,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Reflection</h5>
+          <h2>Reflection</h2>
 
           <Styledp>
             In conclusion, this project has not only met its goals but also
@@ -499,7 +499,7 @@ const Case = () => {
 
       <StyledBox>
         <StyledCaseContents>
-          <h5>Reflection</h5>
+          <h2>Reflection</h2>
 
           <Styledp>
             This project has been a valuable learning experience. It

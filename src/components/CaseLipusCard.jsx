@@ -18,6 +18,11 @@ const StyledWrapper = styled.div`
   display: inline-block;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledCaseContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,35 +33,11 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(60%); /* Initially positioned off the bottom */
+  transform: translateY(44%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 1200px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1160px) {
-    transform: translateY(68%);
-  }
-
-  @media (max-width: 960px) {
-    transform: translateY(55%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(66%);
-  }
-
   @media (max-width: 478px) {
-    transform: translateY(78%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(94%);
+    transform: translateY(40%);
   }
 `;
 
@@ -74,6 +55,10 @@ const StyledCaseMain = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -106,10 +91,6 @@ const StyledOpacity = styled.div`
   width: 100%;
   height: 100%;
   background-color: #00000056;
-`;
-
-const Styledp = styled.p`
-  font-size: 16px;
 `;
 
 const StyledHover = styled.div`
@@ -155,14 +136,14 @@ const LipusPlus = () => {
           />
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>LIPUSPLUS | A UX CASE STUDY</h5>
+              <h2>LIPUSPLUS | A UX CASE STUDY</h2>
 
-              <p>
+              <Styledp>
                 LipusPlus aims to attract physiotherapists and elite athletes to
                 its webinars on the Return to Play concept. An enticing and
                 informative landing page is needed to generate leads for these
                 webinars.
-              </p>
+              </Styledp>
 
               <StyledHover>
                 <Styledp>Go to case study ..</Styledp>

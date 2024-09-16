@@ -18,6 +18,11 @@ const StyledWrapper = styled.div`
   display: inline-block;
 `;
 
+const Styledp = styled.p`
+  font-size: 16px;
+  display: none;
+`;
+
 const StyledCaseContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,35 +33,11 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(60%); /* Initially positioned off the bottom */
+  transform: translateY(44%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 1200px) {
-    transform: translateY(60%);
-  }
-
-  @media (max-width: 1160px) {
-    transform: translateY(68%);
-  }
-
-  @media (max-width: 960px) {
-    transform: translateY(55%);
-  }
-
-  @media (max-width: 767px) {
-    transform: translateY(58%);
-  }
-
-  @media (max-width: 600px) {
-    transform: translateY(66%);
-  }
-
   @media (max-width: 478px) {
-    transform: translateY(78%);
-  }
-
-  @media (max-width: 360px) {
-    transform: translateY(94%);
+    transform: translateY(40%);
   }
 `;
 
@@ -74,6 +55,10 @@ const StyledCaseMain = styled.section`
     transform: translateY(0%); /* Slide up into view */
     background-color: #060606ac;
     justify-content: center;
+  }
+
+  &:hover ${Styledp} {
+    display: flex;
   }
 
   @media (max-width: 960px) {
@@ -108,14 +93,10 @@ const StyledOpacity = styled.div`
   background-color: #00000056;
 `;
 
-const Styledp = styled.p`
-  font-size: 16px;
-`;
-
 const StyledHover = styled.div`
-&:hover {
+  &:hover {
     color: var(--main-button-hover-color);
-    }
+  }
 `;
 
 const Case = () => {
@@ -155,18 +136,16 @@ const Case = () => {
           />
           <StyledOpacity>
             <StyledCaseContents>
-              <h5>EBIE | A UX CASE STUDY</h5>
+              <h2>EBIE | A UX CASE STUDY</h2>
 
-              <p>
+              <Styledp>
                 Create a user-friendly function within the platform that makes
                 it easy for property owners to apply for, and manage group
                 insurance. Simplify the application and the overview for
                 insurance status.
-              </p>
-              <StyledHover>
-              <Styledp>
-                Go to case study ..
               </Styledp>
+              <StyledHover>
+                <Styledp>Go to case study ..</Styledp>
               </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>

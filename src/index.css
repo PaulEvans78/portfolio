@@ -30,6 +30,7 @@ body {
 
 
 a { 
+  font-size: 16px;
   color: inherit; 
   text-decoration: none; 
 } 
@@ -47,113 +48,23 @@ a {
 
 
 
-
 h1 {
-  background-image: url('./assets/smoke.gif');
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  font-size: 180px;
-  margin: 0;
-
-  @media screen and (max-width: 1225px) {
-    font-size: 150px;
-    } 
-
-    @media screen and (max-width: 1025px) {
-      font-size: 120px;
-      } 
-
-      @media screen and (max-width: 960px) {
-        font-size: 110px;
-        } 
-
-        @media screen and (max-width: 767px) {
-          font-size: 120px;
-          line-height: 7rem;
-          margin-bottom: 1rem;          } 
-
-          @media screen and (max-width: 478px) {
-            font-size: 80px;
-            line-height: 5rem;
-            } 
-
-            @media screen and (max-width: 320px) {
-              font-size: 68px;
-              line-height: 4rem;
-              } 
-}
-
-
-h2 {
-  font-family: 'Trispace', sans-serif;
-  font-size: 54px;
-  font-weight: 200;
-  font-style: normal;
-  line-height: 1.2;
-  margin:0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-
-  @media screen and (max-width: 960px) {
-    font-size: 48px;
-    } 
-
-    @media screen and (max-width: 478px) {
-      font-size: 32px;
-      } 
-
-      @media screen and (max-width: 320px) {
-        font-size: 28px;
-        } 
-
-  
-}
-
-h3 {
-  font-size: 48px;
+  font-family: "Trispace", sans-serif;
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.2;
-  margin:0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  /* color: var(--h3-font-color); */
+  margin: 0;
 
-  @media screen and (max-width: 960px) {
-    font-size: 40px;
+  @media screen and (max-width: 1080px) {
+    font-size: 20px;
     } 
 
-  @media screen and (max-width: 478px) {
-    font-size: 32px;
-    } 
-
-    @media screen and (max-width: 320px) {
-      font-size: 28px;
-      } 
+    @media screen and (max-width: 960px) {
+      font-size: 24px;
+    }
 }
 
-h4 {
-  font-size: 48px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.1;
-  margin:0;
-
-  @media screen and (max-width: 478px) {
-    font-size: 36px;
-    } 
-
-    @media screen and (max-width: 320px) {
-      font-size: 28px;
-      } 
-}
-
-
-
-h5 {
+h2 {
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -188,7 +99,6 @@ p {
 
 ul {
   padding-bottom: 4em;
-  /* margin-top: 0em; */
 
   @media (max-width: 960px) {
     margin-top: 0em;
@@ -209,10 +119,6 @@ li {
   
 }
 
-
-a {
-  font-size: 16px;
-}
 
 .bold {
   font-weight: bold;
