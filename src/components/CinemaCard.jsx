@@ -33,6 +33,10 @@ const StyledCaseContents = styled.div`
   transform: translateY(46%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
+  @media (max-width: 960px) {
+    transform: translateY(42%);
+  }
+
   @media (max-width: 478px) {
     padding: 0em 2em 0.5em 1em;
   }
@@ -63,7 +67,7 @@ const StyledCaseMain = styled.section`
   }
 
   @media (max-width: 960px) {
-    &:hover {
+    &:hover ${StyledCaseContents} {
       transform: none;
       color: inherit;
     }

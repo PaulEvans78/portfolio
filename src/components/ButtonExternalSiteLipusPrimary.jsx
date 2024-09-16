@@ -30,7 +30,15 @@ const StyledWrapper = styled.div`
 const Styledp = styled.p`
   color: var(--main-font-color);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
+
+  @media screen and (max-width: 650px) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: 478px) {
+    font-size: 14px;
+  }
 `;
 
 const Button = ({ onClick }) => {
@@ -46,7 +54,7 @@ const Button = ({ onClick }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaArrowCircleRight onClick={onClick} size={70} />
+          <FaArrowCircleRight onClick={onClick} size={60} />
         </a>
       </StyledWrapper>
       <Styledp>LipusPlus.com</Styledp>

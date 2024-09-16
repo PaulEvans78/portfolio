@@ -42,7 +42,12 @@ const StyledContentsContainer = styled.div`
   transform: translateY(48%); /* Initially positioned off the bottom */
   transition: transform 0.5s ease-in-out;
 
+  @media (max-width: 960px) {
+    transform: translateY(44%);
+  }
+
   @media (max-width: 478px) {
+    transform: translateY(48%);
     padding: 0em 2em 0.5em 1em;
   }
 `;
