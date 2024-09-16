@@ -111,14 +111,16 @@ const AboutMe = () => {
 
           <p>
             Hi, I’m Paul! A creative with over 20 years of experience in
-            branding, storytelling, and commercial and narrative production, now
+            branding, storytelling and commercial and narrative production, now
             specializing in Experience Design. I bring a unique combination of
             creative and technical expertise, allowing me to design visually
-            engaging and user-centric experiences. My interests extend into AI,
-            particularly image and video generation. Merging traditional
+            engaging and user-centric experiences. I am competent with design tools such as Figma and Adobe
+            as well as Useberry for testing. When it comes to frontend I am skilled in html, css, javascript and React. 
+            My interests also extend into AI,
+            particularly image and video generation, using programs such as Midjourney and Runway. Merging traditional
             filmmaking techniques with the latest technologies. I have a calm
             and methodical approach to life, which enables me to navigate
-            challenges with ease. My strong willpower and determination help me
+            challenges with ease. My strong willpower and determination helps me
             stay focused on the goals, even during difficult times.
           </p>
         </StyledCaseContents>

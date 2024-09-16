@@ -11,8 +11,8 @@ const StyledButtonContainer = styled.div`
   padding-top: 30px;
   color: var(--secondary-button-color);
 
-  @media screen and (max-width: 478px) {
-    align-items: center;
+  @media screen and (max-width: 650px) {
+    padding-top: 0px;
   }
 `;
 
@@ -34,11 +34,15 @@ const StyledWrapper = styled.div`
 
 const Styledp = styled.p`
   color: var(--main-font-color);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 
-  @media (max-width: 960px) {
-    font-size: 18px;
+  @media screen and (max-width: 650px) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: 478px) {
+    font-size: 14px;
   }
 `;
 
@@ -47,7 +51,7 @@ const Button = ({ onClick }) => {
     <StyledButtonContainer>
       <StyledWrapper>
         <Link to="/lipusplus">
-          <FaArrowCircleRight onClick={onClick} size={70} />
+          <FaArrowCircleRight onClick={onClick} size={60} />
         </Link>
       </StyledWrapper>
       <Styledp>See Case Study</Styledp>

@@ -116,7 +116,7 @@ const ForFun = () => {
           <p>
             Surfing and traveling are my two biggest passions. When I'm not
             paddling out into the sea I like to work out at the gym or swim in
-            the lake. I also cherish the time I spend with my family, friends
+            the lake. I also cherish the time I spend with my family and friends,
             cooking and watching movies and TV shows.
           </p>
         </StyledCaseContents>

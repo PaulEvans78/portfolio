@@ -19,9 +19,7 @@ const StyledButtonContainer = styled.div`
   padding-top: 20px;
 
   @media screen and (max-width: 478px) {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 0px;
   }
 `;
 
@@ -88,6 +86,10 @@ const StyledMainContainer = styled.section`
       transform: none;
       color: inherit;
     }
+  }
+
+  @media (max-width: 478px) {
+    aspect-ratio: 4 / 5;
   }
 `;
 

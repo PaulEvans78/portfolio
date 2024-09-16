@@ -1,9 +1,7 @@
-// Navbar.jsx
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
-import logoInverted from "../assets/paulEvansCreativeLogo.avif";
 import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const StyledNav = styled.nav`
@@ -169,7 +167,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   text-align: right;
   margin: 1em 2em 0em 0em;
-  color: var(--main-button-color);
+  color: var(--main-font-color);
 
   &:hover {
     text-decoration: underline;
@@ -197,11 +195,10 @@ const StyledLink = styled(Link)`
 const ExternalStyledLink = styled.a`
   display: flex;
   align-self: flex-end;
-  color: var(--main-font-color);
   text-decoration: none;
   text-align: right;
   margin: 0em 2em 0em 0em;
-  color: var(--main-button-color);
+  color: var(--main-font-color);
 
   &:hover {
     text-decoration: underline;
@@ -297,7 +294,7 @@ const Navbar = ({ footerRef }) => {
         <Link to="/" onClick={handleLinkClick}>
           <StyledIdent>
             <StyledNavLogo
-              src={logoInverted}
+              src={logo}
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
             />
             <StyledTitle>

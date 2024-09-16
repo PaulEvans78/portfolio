@@ -58,6 +58,10 @@ const StyledCaseMain = styled.section`
     display: flex;
   }
 
+  @media (min-width: 2050px) {
+    aspect-ratio: 5 / 3;
+  }
+
   @media (max-width: 960px) {
     &:hover {
       transform: none;

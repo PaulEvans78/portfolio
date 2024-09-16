@@ -55,12 +55,16 @@ export const StyledThreeSquaresContainer = styled.section`
       animation: ${fadeIn} 2s forwards;
     `}
 
+  @media (min-width: 2050px) {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
   @media screen and (max-width: 960px) {
     padding-top: 130px;
     grid-template-areas:
-    "cinema "
-    "ux"
-    "ai";
+      "cinema "
+      "ux"
+      "ai";
   }
 `;
 
@@ -74,7 +78,7 @@ export const StyledThreeSquaresReverseContainer = styled.section`
   grid-template-areas:
     "design storytelling storytelling"
     "frontend storytelling storytelling";
-    
+
   row-gap: 20px;
   column-gap: 2%;
   padding-left: 2%;
@@ -90,9 +94,9 @@ export const StyledThreeSquaresReverseContainer = styled.section`
   @media screen and (max-width: 960px) {
     grid-template-columns: 100%;
     grid-template-areas:
-    "storytelling"
-    "design"
-    "frontend";
+      "storytelling"
+      "design"
+      "frontend";
   }
 `;
 
