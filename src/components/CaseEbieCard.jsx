@@ -62,9 +62,19 @@ const StyledCaseMain = styled.section`
   }
 
   @media (max-width: 960px) {
-    &:hover {
-      transform: none;
-      color: inherit;
+    &:hover ${StyledCaseContents} {
+      transform: translateY(44%);
+      background-color: transparent;
+    }
+
+    &:hover ${Styledp} {
+      display: none;
+    }
+  }
+
+  @media (max-width: 478px) {
+    &:hover ${StyledCaseContents} {
+      transform: translateY(40%);
     }
   }
 `;

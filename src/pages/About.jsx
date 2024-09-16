@@ -13,6 +13,10 @@ const StyledHomeContainer = styled.section`
   align-content: center;
   margin-top: 180px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 120px;
+  }
 `;
 
 const About = () => {

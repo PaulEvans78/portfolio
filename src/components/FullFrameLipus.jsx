@@ -62,7 +62,7 @@ const StyledContents = styled.div`
 
 const StyledMainContainer = styled.section`
   position: relative;
-  max-width: 95%;
+  max-width: 96%;
   aspect-ratio: 16 / 9;
   margin-left: 2%;
   margin-right: 2%;
@@ -87,9 +87,20 @@ const StyledMainContainer = styled.section`
   }
 
   @media (max-width: 960px) {
-    &:hover {
-      transform: none;
-      color: inherit;
+    ${StyledContentsContainer} {
+      transform: translateY(0%);
+    }
+    ${StyledButtonContainer} {
+      display: flex;
+    }
+
+    &:hover ${StyledContentsContainer} {
+      transform: translateY(0%);
+      background-color: transparent;
+    }
+
+    &:hover ${Styledp} {
+      display: none;
     }
   }
 

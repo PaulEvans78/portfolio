@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
 
@@ -14,6 +14,7 @@ const StyledWrapper = styled.div`
   display: inline-block;
   width: 100%;
 `;
+
 
 const Styledp = styled.p`
   font-size: 16px;
@@ -68,8 +69,12 @@ const StyledCaseMain = styled.section`
 
   @media (max-width: 960px) {
     &:hover ${StyledCaseContents} {
-      transform: none;
-      color: inherit;
+      transform: translateY(42%);
+      background-color: transparent;
+    }
+
+    &:hover ${Styledp} {
+      display: none;
     }
   }
 `;
@@ -102,6 +107,8 @@ function CinemaCard(props) {
     preloadVideo(dopReel);
   }, []);
 
+
+
   return (
     <StyledWrapper>
       <a
@@ -109,6 +116,7 @@ function CinemaCard(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
+      
         <StyledCaseMain>
           <StyledCinemaVideo
             src={dopReel}

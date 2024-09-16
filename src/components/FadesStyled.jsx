@@ -10,7 +10,7 @@ const fadeIn = keyframes`
 `;
 
 export const StyledSquaresContainer = styled.section`
-  max-width: 93.5%;
+  max-width: 94.5%;
   height: auto;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -35,7 +35,7 @@ export const StyledSquaresContainer = styled.section`
 `;
 
 export const StyledThreeSquaresContainer = styled.section`
-  max-width: 95%;
+  max-width: 96%;
   height: auto;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -69,7 +69,7 @@ export const StyledThreeSquaresContainer = styled.section`
 `;
 
 export const StyledThreeSquaresReverseContainer = styled.section`
-  max-width: 95%;
+  max-width: 96%;
   height: auto;
   overflow-x: hidden;
   overflow-y: hidden;

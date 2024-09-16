@@ -65,9 +65,13 @@ const StyledCaseMain = styled.section`
   }
 
   @media (max-width: 960px) {
-    &:hover {
-      transform: none;
-      color: inherit;
+    &:hover ${StyledCaseContents} {
+      transform: translateY(42%);
+      background-color: transparent;
+    }
+
+    &:hover ${Styledp} {
+      display: none;
     }
   }
 `;

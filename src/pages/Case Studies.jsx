@@ -18,21 +18,19 @@ const StyledCaseStudiesContainer = styled.section`
   align-content: center;
   margin-top: 180px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 120px;
+  }
 `;
 
 
 const CaseStudies = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
-  // const [posterRef, isPosterVisible] = useIntersectionObserver();
 
   const caseRef = useRef(null);
 
-  // const scrollToEvent = () => {
-  //   if (caseRef.current) {
-  //     caseRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
 
   return (
     <StyledCaseStudiesContainer>
