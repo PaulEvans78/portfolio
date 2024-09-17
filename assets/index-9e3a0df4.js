@@ -2013,7 +2013,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 960px) {
     margin: 8px;
   }
-`,lx=ye.forwardRef((e,t)=>a.jsxs(Zy,{ref:t,children:[a.jsx(ix,{children:a.jsx(An,{to:"/",children:a.jsx(ox,{src:Po,alt:"the letters P and E merged together to form the logo Paul Evans Creative"})})}),a.jsx(ax,{}),a.jsxs(qy,{children:[a.jsx(Zc,{children:"Copyright 2024."}),a.jsx(Zc,{children:"Paul Evans."}),a.jsx(Jy,{children:a.jsx("a",{href:"mailto:paul.evans.creative@gmail.com",children:"paul.evans.creative@gmail.com"})}),a.jsx(ex,{children:a.jsx("a",{href:"tel:+46739908858",children:"+46739908858"})})]})]})),ax=()=>a.jsx(tx,{children:a.jsx(os.Provider,{value:{size:"2em"},children:Ky.map(e=>a.jsxs(nx,{href:e.href,target:e.target,rel:e.rel,children:[e.icon,a.jsx(rx,{children:e.des})]},e.id))})}),sx=()=>{const{pathname:e}=mr();return j.useEffect(()=>{window.scrollTo(0,0)},[e]),null},ux=g.div`
+`,lx=ye.forwardRef((e,t)=>a.jsxs(Zy,{ref:t,children:[a.jsx(ix,{children:a.jsx(An,{to:"/",children:a.jsx(ox,{src:Po,alt:"the letters P and E merged together to form the logo Paul Evans Creative"})})}),a.jsx(ax,{}),a.jsxs(qy,{children:[a.jsx(Zc,{children:"Copyright 2024."}),a.jsx(Zc,{children:"Paul Evans."}),a.jsx(Jy,{children:a.jsx("a",{href:"mailto:paul@paulevans.se",children:"paul@paulevans.se"})}),a.jsx(ex,{children:a.jsx("a",{href:"tel:+46739908858",children:"+46739908858"})})]})]})),ax=()=>a.jsx(tx,{children:a.jsx(os.Provider,{value:{size:"2em"},children:Ky.map(e=>a.jsxs(nx,{href:e.href,target:e.target,rel:e.rel,children:[e.icon,a.jsx(rx,{children:e.des})]},e.id))})}),sx=()=>{const{pathname:e}=mr();return j.useEffect(()=>{window.scrollTo(0,0)},[e]),null},ux=g.div`
   min-height: 100%;
   max-width: 100vw;
 `,cx=g.div`
