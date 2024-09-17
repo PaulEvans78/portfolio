@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import styled from "styled-components";
+import { useRef, useState, useEffect } from "react";
+import styled, { keyframes } from "styled-components";
 import CinemaCard from "../components/CinemaCard";
 import UxUiCard from "../components/UxUiCard";
 import AICard from "../components/AICard";
@@ -10,6 +10,8 @@ import Storytelling from "../components/StoryTelling";
 import {
   StyledThreeSquaresContainer,
   StyledThreeSquaresReverseContainer,
+  StyledLoadingContainer,
+  StyledLogo,
 } from "../components/FadesStyled";
 import useIntersectionObserver from "../components/useIntersectionObserver";
 
@@ -25,42 +27,39 @@ const StyledHomeContainer = styled.section`
 const Home = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
-  
+  const [isLoading, setIsLoading] = useState(true);
 
-  const caseRef = useRef(null);
-
-  const scrollToEvent = () => {
-    if (caseRef.current) {
-      caseRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleContentLoad = () => {
+    setIsLoading(false);
   };
 
   return (
     <StyledHomeContainer>
+      {isLoading && (
+        <StyledLoadingContainer>
+          <StyledLogo />
+        </StyledLoadingContainer>
+      )}
+
       <StyledThreeSquaresContainer
         ref={squaresRef1}
         isVisible={isSquaresVisible1}
       >
-        <CinemaCard />
+        <CinemaCard onLoadedData={handleContentLoad} />
         <UxUiCard />
         <AICard />
       </StyledThreeSquaresContainer>
-    
-  
-      <FullFrameBranding scrollToEvent={scrollToEvent} />
 
-     
+      <FullFrameBranding />
 
       <StyledThreeSquaresReverseContainer
         ref={squaresRef2}
         isVisible={isSquaresVisible2}
       >
         <Storytelling />
-        <DesignCard/>
+        <DesignCard />
         <FrontendCard />
       </StyledThreeSquaresReverseContainer>
-
-   
     </StyledHomeContainer>
   );
 };

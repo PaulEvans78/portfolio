@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
 
@@ -15,7 +15,6 @@ const StyledWrapper = styled.div`
   width: 100%;
 `;
 
-
 const Styledp = styled.p`
   font-size: 16px;
   display: none;
@@ -31,7 +30,7 @@ const StyledCaseContents = styled.div`
   height: 100%;
   padding: 0em 2em 0.5em 2em;
 
-  transform: translateY(46%); /* Initially positioned off the bottom */
+  transform: translateY(46%); //Intial state
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 960px) {
@@ -54,7 +53,7 @@ const StyledCaseMain = styled.section`
   overflow: hidden;
 
   &:hover ${StyledCaseContents} {
-    transform: translateY(0%); /* Slide up into view */
+    transform: translateY(0%); // Slide up
     background-color: #060606ac;
     justify-content: center;
   }
@@ -102,12 +101,10 @@ const StyledHover = styled.div`
   }
 `;
 
-function CinemaCard(props) {
+function CinemaCard({ onLoadedData }) {
   useEffect(() => {
     preloadVideo(dopReel);
   }, []);
-
-
 
   return (
     <StyledWrapper>
@@ -116,7 +113,6 @@ function CinemaCard(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-      
         <StyledCaseMain>
           <StyledCinemaVideo
             src={dopReel}
@@ -125,6 +121,7 @@ function CinemaCard(props) {
             muted
             playsInline
             alt="A showreel showing clips from different productions."
+            onLoadedData={onLoadedData}
           />
 
           <StyledOpacity>
