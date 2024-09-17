@@ -247,8 +247,8 @@ const Footer = React.forwardRef((props, ref) => (
       <Styledp>Copyright 2024.</Styledp>
       <Styledp>Paul Evans.</Styledp>
       <StyledMailLink>
-        <a href="mailto:paul.evans.creative@gmail.com">
-          paul.evans.creative@gmail.com
+        <a href="mailto:paul@paulevans.se">
+        paul@paulevans.se
         </a>
       </StyledMailLink>
       <StyledTelLink>
