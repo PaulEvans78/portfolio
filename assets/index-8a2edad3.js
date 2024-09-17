@@ -831,14 +831,13 @@ Error generating stack: `+o.message+`
     ${ls} {
       display: flex;
     }
+    ${as} {
+      display: flex;
+    }
 
     &:hover ${Xi} {
       transform: translateY(0%);
       background-color: transparent;
-    }
-
-    &:hover ${as} {
-      display: none;
     }
   }
 
