@@ -93,14 +93,13 @@ const StyledMainContainer = styled.section`
     ${StyledButtonContainer} {
       display: flex;
     }
+    ${Styledp} {
+      display: flex;
+    }
 
     &:hover ${StyledContentsContainer} {
       transform: translateY(0%);
       background-color: transparent;
-    }
-
-    &:hover ${Styledp} {
-      display: none;
     }
   }
 
