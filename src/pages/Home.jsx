@@ -1,5 +1,5 @@
-import { useRef, useState, useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import { useState } from "react";
+import styled from "styled-components";
 import CinemaCard from "../components/CinemaCard";
 import UxUiCard from "../components/UxUiCard";
 import AICard from "../components/AICard";

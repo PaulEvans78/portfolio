@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import CaseLipus from "../components/CaseLipusCard";
@@ -27,16 +27,17 @@ const CaseStudies = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
 
-  const aiCaseStudyRef = useRef(null);
+ 
 
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    const target = searchParams.get("target"); //  Check for target
-    if (target === "AICaseStudyBreaking" && aiCaseStudyRef.current) {
-      aiCaseStudyRef.current.scrollIntoView({ behavior: "smooth" });
+    const target = searchParams.get("target"); // Check for target 
+    if (target === "CaseStudySection2" && squaresRef2.current) {
+      //  Scroll to squaresRef2
+      squaresRef2.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [searchParams]);
+  }, [searchParams]); 
 
   return (
     <StyledCaseStudiesContainer>
@@ -45,7 +46,7 @@ const CaseStudies = () => {
         <CaseEbie />
       </StyledSquaresContainer>
       <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        <AICaseStudyBreaking ref={aiCaseStudyRef} />
+        <AICaseStudyBreaking />
         <AICaseStudyTides />
       </StyledSquaresContainer>
     </StyledCaseStudiesContainer>

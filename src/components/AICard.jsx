@@ -110,7 +110,7 @@ function AiCard(props) {
       <Link
         to={{
           pathname: "/casestudies",
-          search: "?target=AICaseStudyBreaking", // Use search params instead of state
+          search: "?target=CaseStudySection2",
         }}
       >
         <StyledCaseMain>
