@@ -106,7 +106,13 @@ function AiCard(props) {
 
   return (
     <StyledWrapper>
-      <Link to="/casestudies">
+      {/* <Link to="/casestudies"> */}
+      <Link
+        to={{
+          pathname: "/casestudies",
+          search: "?target=AICaseStudyBreaking", // Use search params instead of state
+        }}
+      >
         <StyledCaseMain>
           <StyledVideo
             src={AIVideo}

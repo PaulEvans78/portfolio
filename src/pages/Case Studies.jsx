@@ -1,12 +1,11 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import CaseLipus from "../components/CaseLipusCard";
 import CaseEbie from "../components/CaseEbieCard";
 import AICaseStudyTides from "../components/AICaseStudyTides";
 import AICaseStudyBreaking from "../components/AICaseStudyBreaking";
-import {
-  StyledSquaresContainer,
-} from "../components/FadesStyled";
+import { StyledSquaresContainer } from "../components/FadesStyled";
 import useIntersectionObserver from "../components/useIntersectionObserver";
 
 const StyledCaseStudiesContainer = styled.section`
@@ -24,27 +23,32 @@ const StyledCaseStudiesContainer = styled.section`
   }
 `;
 
-
 const CaseStudies = () => {
   const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
 
-  const caseRef = useRef(null);
+  const aiCaseStudyRef = useRef(null);
 
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const target = searchParams.get("target"); //  Check for target
+    if (target === "AICaseStudyBreaking" && aiCaseStudyRef.current) {
+      aiCaseStudyRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [searchParams]);
 
   return (
     <StyledCaseStudiesContainer>
       <StyledSquaresContainer ref={squaresRef1} isVisible={isSquaresVisible1}>
-      <CaseLipus />
-      <AICaseStudyTides />
-      </StyledSquaresContainer>
-      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
-        
-        <AICaseStudyBreaking />
+        <CaseLipus />
         <CaseEbie />
       </StyledSquaresContainer>
+      <StyledSquaresContainer ref={squaresRef2} isVisible={isSquaresVisible2}>
+        <AICaseStudyBreaking ref={aiCaseStudyRef} />
+        <AICaseStudyTides />
+      </StyledSquaresContainer>
     </StyledCaseStudiesContainer>
-
   );
 };
 

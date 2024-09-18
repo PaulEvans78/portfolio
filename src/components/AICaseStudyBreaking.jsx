@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AiCase from "../assets/NaomiBreakin.mp4";
 import styled from "styled-components";
+import { forwardRef } from "react";
 
 const preloadVideo = (url) => {
   const video = document.createElement("video");
@@ -56,7 +57,7 @@ const StyledCaseMain = styled.section`
     display: flex;
   }
 
-    @media (max-width: 960px) {
+  @media (max-width: 960px) {
     &:hover ${StyledCaseContents} {
       transform: translateY(44%);
       background-color: transparent;
@@ -97,13 +98,19 @@ const StyledHover = styled.div`
   }
 `;
 
-function AICaseStudyTides(props) {
+// function AICaseStudyBreakdancing(props) {
+//   useEffect(() => {
+//     preloadVideo(AiCase);
+//   }, []);
+
+const AICaseStudyBreakdancing = forwardRef((props, ref) => {
+  // Wrapped component with forwardRef**
   useEffect(() => {
     preloadVideo(AiCase);
   }, []);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper ref={ref}>
       <a
         href="https://www.linkedin.com/posts/paul-evans-3a74605_aiart-generativeai-runwayai-activity-7232706903896690689-JL51?utm_source=share&utm_medium=member_desktop"
         target="_blank"
@@ -135,6 +142,6 @@ function AICaseStudyTides(props) {
       </a>
     </StyledWrapper>
   );
-}
+});
 
-export default AICaseStudyTides;
+export default AICaseStudyBreakdancing;
