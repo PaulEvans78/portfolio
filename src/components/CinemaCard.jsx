@@ -142,6 +142,7 @@ const StyledCinemaVideo = styled.video`
   position: relative;
   align-self: center;
   object-fit: cover;
+  border-radius: 24px;
 `;
 
 const StyledInfoText = styled.p`
@@ -159,6 +160,7 @@ const StyledOpacity = styled.div`
   width: 100%;
   height: 100%;
   background-color: #00000056;
+  border-radius: 24px;
 `;
 
 const StyledHover = styled.div`
@@ -167,12 +169,12 @@ const StyledHover = styled.div`
   }
 `;
 
-const StyledBorderBox =styled.div`
-  width: 95%;
-  height: 80px;
-  margin: 0em 0em 0em 2em;
-  border-bottom: 1px solid #1e1e1ee6;
-  `;
+// const StyledBorderBox =styled.div`
+//   width: 95%;
+//   height: 80px;
+//   margin: 0em 0em 0em 2em;
+//   border-bottom: 1px solid #1e1e1ee6;
+//   `;
 
 function CinemaCard({ onLoadedData }) {
   useEffect(() => {
@@ -253,8 +255,8 @@ function CinemaCard({ onLoadedData }) {
           </StyledOpacity>
         </StyledCaseMain>
       </a>
-      <StyledBorderBox>
-      </StyledBorderBox>
+      {/* <StyledBorderBox>
+      </StyledBorderBox> */}
     </StyledWrapper>
   );
 }

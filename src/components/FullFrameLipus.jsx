@@ -3,7 +3,11 @@ import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
 import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
 import ButtonFilm from "./ButtonPlayLipusPrimary";
-import ButtonCase from "./ButtonLipusPlusSecondary";
+import Img1 from "../assets/lipusImg1.avif";
+import Img2 from "../assets/lipusImg2.avif";
+import Img3 from "../assets/lipusImg3.avif";
+import Img4 from "../assets/lipusImg4.avif";
+// import ButtonCase from "./ButtonLipusPlusSecondary";
 import Modal from "./ModalLipus";
 
 const StyledWrapper = styled.div`
@@ -108,6 +112,134 @@ const StyledMainContainer = styled.section`
   }
 `;
 
+const StyledInfoContainer = styled.div`
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ color: var(--main-font-color);
+ padding: 0em 0em 2em 0em;
+
+ @media (max-width: 960px) {
+  flex-direction: column;
+  padding: 0em 0em 2em 2em;
+  }
+
+  @media (max-width: 767px) {
+  flex-direction: column;
+  padding: 0em 0em 2em 1em;
+  }
+`;
+
+const StyledDescription = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+
+`;
+
+const StyledRole= styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
+
+const StyledToolsSkills = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
+
+const StyledMore = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
+
+const StyledInfoText = styled.p`
+  font-size: 16px;
+`;
+
+const StyledInfoTitle = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  `;
+
+  const StyledLink = styled.a`
+  font-size: 16px;
+  `;
+
+const StyledImgContent = styled.div`
+display: Grid;
+grid-template-areas:
+    "image1 image2"
+    "image3 image4";
+  row-gap: 40px;
+  column-gap: 4%;
+width: 95%;
+padding: 1em 2em 4em 2em;
+
+
+
+/* @media (max-width: 960px) {
+ width: 90%;
+ } */
+`;
+
+const StyledImage1Wrapper = styled.div`
+  grid-area: image1;
+  display: flex;
+  justify-content: flex-end;
+  /* width: 20%; */
+  height: 100%;
+`;
+
+const StyledImage2Wrapper = styled.div`
+  grid-area: image2;
+  display: flex;
+  justify-content: flex-start;
+  /* width: 20%; */
+  height: 100%;
+`;
+
+const StyledImage3Wrapper = styled.div`
+  grid-area: image3;
+  display: flex;
+  justify-content: flex-end;
+  /* width: 20%; */
+  height: 100%;
+`;
+
+const StyledImage4Wrapper = styled.div`
+  grid-area: image4;
+  display: flex;
+  justify-content: flex-start;
+  /* width: 20%; */
+  height: 100%;
+`;
+
+const StyledImg = styled.img`
+  width: 80%;
+  /* height: 100%; */
+  object-fit: cover;
+  border-radius: 24px;
+
+  /* @media (max-width: 767px) {
+    display: none;
+  } */
+`;
+
 const StyledVideo = styled.video`
   position: absolute;
   top: 50%;
@@ -128,6 +260,13 @@ const StyledOpacity = styled.div`
   background-color: rgba(0, 0, 0, 0.32);
   z-index: 2;
 `;
+
+// const StyledBorderBox =styled.div`
+//   width: 91%;
+//   height: 80px;
+//   margin: 0em 0em 0em 4em;
+//   border-bottom: 1px solid #1e1e1ee6;
+//   `;
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
@@ -212,6 +351,71 @@ const Film = ({ scrollToEvent }) => {
 
   return (
     <StyledWrapper>
+      <StyledInfoContainer>
+            <StyledDescription>
+              <StyledInfoTitle> 
+              HealthTech Positioning
+              </StyledInfoTitle>
+              <StyledInfoText>
+              Designed and created an enticing and informative landing page, to attract physiotherapists 
+              and elite athletes to LipusPlus webinars on the Return to Play concept. 
+              </StyledInfoText>
+              </StyledDescription>
+            <StyledRole>
+            <StyledInfoTitle>
+                Role 
+              </StyledInfoTitle>
+              <StyledInfoText>
+              UX / UI Designer | 
+              Frontend Developer | 
+              Content Creator
+              </StyledInfoText>
+            </StyledRole>
+            <StyledToolsSkills>
+            <StyledInfoTitle>
+                Tools & Skills
+              </StyledInfoTitle>
+            <StyledInfoText>
+                Figma | Webflow | Vimeo | JavaScript | Adobe Creative Suite | Cinemtography |
+                Storytelling
+              </StyledInfoText>
+            </StyledToolsSkills>
+            <StyledMore>
+            <StyledInfoTitle>
+                Website
+              </StyledInfoTitle>
+            <StyledLink href="https://www.lipusplus.com/casestudies/hammarby" target="_blank" rel="noopener noreferrer">
+    lipusplus.com
+              </StyledLink>
+            </StyledMore>
+          </StyledInfoContainer>
+
+          <StyledImgContent>
+<StyledImage1Wrapper>
+          <StyledImg
+          src={Img1}
+          alt="A short film poster. A Man sits with his back to camera contemplating"
+        />
+</StyledImage1Wrapper>
+<StyledImage2Wrapper>
+<StyledImg
+          src={Img2}
+          alt="A short film poster. A Man sits with his back to camera contemplating"
+        />
+</StyledImage2Wrapper>
+<StyledImage3Wrapper>
+<StyledImg
+          src={Img3}
+          alt="A short film poster. A Man sits with his back to camera contemplating"
+        />
+</StyledImage3Wrapper>
+<StyledImage4Wrapper>
+<StyledImg
+          src={Img4}
+          alt="A short film poster. A Man sits with his back to camera contemplating"
+        />
+</StyledImage4Wrapper>
+          </StyledImgContent>
       <StyledMainContainer>
         <StyledVideo
           ref={videoRef}
@@ -235,7 +439,7 @@ const Film = ({ scrollToEvent }) => {
             </Styledp>
             <StyledButtonContainer>
               <ButtonFilm onClick={handleButtonClick} />
-              <ButtonCase onClick={scrollToEvent} />
+              {/* <ButtonCase onClick={scrollToEvent} /> */}
             </StyledButtonContainer>
           </StyledContents>
         </StyledContentsContainer>
@@ -255,6 +459,8 @@ const Film = ({ scrollToEvent }) => {
           preload="auto"
         />
       </StyledMainContainer>
+      {/* <StyledBorderBox>
+      </StyledBorderBox> */}
     </StyledWrapper>
   );
 };

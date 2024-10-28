@@ -34,7 +34,7 @@ const StyledWrapper = styled.div`
 `;
 
 const Styledp = styled.p`
-  color: var(--main-font-color);
+  color: var(--secondary-font-color);
   font-size: 16px;
   font-weight: 600;
 
