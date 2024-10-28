@@ -94,6 +94,7 @@ const StyledIdent = styled.div`
 const StyledTitle = styled.div`
   padding-left: 1em;
   padding-top: 0.5em;
+  color: var(--main-font-color);
   
   @media screen and (max-width: 1080px) {
     padding-top: 0.5em;
@@ -290,10 +291,10 @@ const Navbar = ({ footerRef }) => {
               src={logo}
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
             />
-            <StyledTitle>
+            {/* <StyledTitle>
               <h1>Paul Evans</h1>
               <h1>Experience Designer</h1>
-            </StyledTitle>
+            </StyledTitle> */}
           </StyledIdent>
         </Link>
       </StyledImageandName>

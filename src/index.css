@@ -1,8 +1,9 @@
 :root {
-  --main-font-color: whitesmoke;
+  --main-font-color:#1e1e1ee6;
   --secondary-font-color: #2c2c2c;
   --main-notation-font-color: #cdcccc;
   --main-notation-background-color: #1e1e1ee6;
+  --main-p-color: #1e1e1ee6;
   --main-casecard-background-color: #f9f9f9;
   --main-button-color: #f3c51e;
   --main-button-hover-color: #f3a11e;
@@ -10,7 +11,7 @@
   --secondary-button-hover-color: #f3a11e;
   --main-navbar-hover-color: #f3a11e;
   --main-navbar-active-color: #f3c51e;
-  --main-hero-backgroundcolor: #171717;
+  --main-hero-backgroundcolor: #ffffff;
   --main-modal-backgroundcolor: #171717;
   --main-infoBackground-backgroundcolor: #171717ac;
 
@@ -49,22 +50,25 @@ a {
 
 
 h1 {
-  font-family: "Trispace", sans-serif;
-  font-size: 24px;
+  font-family: "Gravitas One", serif;
+  font-size: 48px;
   font-weight: 500;
   font-style: normal;
   margin: 0;
+  margin-bottom: 0.25em;
+  color: var(--main-font-color);
 
   @media screen and (max-width: 1080px) {
-    font-size: 20px;
+    /* font-size: 20px; */
     } 
 
     @media screen and (max-width: 960px) {
-      font-size: 24px;
+      /* font-size: 24px; */
     }
 }
 
 h2 {
+  font-family: "Gravitas One", serif;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -81,9 +85,9 @@ h2 {
 
 p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  line-height: 1.4;
+  line-height: 1.6;
 
   
 

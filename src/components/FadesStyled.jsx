@@ -84,11 +84,13 @@ export const StyledThreeSquaresContainer = styled.section`
   overflow-y: hidden;
   display: Grid;
   grid-template-areas:
-    "cinema cinema ux"
-    "cinema cinema ai";
+    "hero"
+    "cinema"
+    "ux"
+    "ai";
   row-gap: 20px;
   column-gap: 2%;
-  padding-top: 180px;
+  padding-top: 140px;
   padding-left: 2%;
   padding-right: 2%;
   opacity: 0;
@@ -103,11 +105,16 @@ export const StyledThreeSquaresContainer = styled.section`
   }
 
   @media screen and (max-width: 960px) {
-    padding-top: 130px;
+    padding-top: 110px;
     grid-template-areas:
-      "cinema "
+      "hero"
+      "cinema"
       "ux"
       "ai";
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-top: 90px;
   }
 `;
 

@@ -54,12 +54,15 @@ const StyledCaseMain = styled.section`
 
   &:hover ${StyledCaseContents} {
     transform: translateY(0%); // Slide up
-    background-color: #060606ac;
+    /* background-color: #060606ac; */
+    background-color: #ffffffb5;
+    color: var(--main-font-color);
     justify-content: center;
   }
 
   &:hover ${Styledp} {
     display: flex;
+    color: var(--main-font-color);
   }
 
   @media (min-width: 2050px) {
@@ -78,6 +81,60 @@ const StyledCaseMain = styled.section`
   }
 `;
 
+const StyledInfoContainer = styled.div`
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ color: var(--main-font-color);
+ padding: 0em 0em 2em 0em;
+
+ @media (max-width: 960px) {
+  flex-direction: column;
+  padding: 0em 0em 2em 2em;
+  }
+
+  @media (max-width: 767px) {
+  flex-direction: column;
+  padding: 0em 0em 2em 1em;
+  }
+`;
+
+const StyledDescription = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+
+`;
+
+const StyledNarrative= styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
+
+const StyledCommercials = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
+
+const StyledMusicVideos = styled.div`
+ width: 20%;
+ text-align: justify;
+
+ @media (max-width: 960px) {
+  width: 90%;
+  }
+`;
 const StyledCinemaVideo = styled.video`
   position: absolute;
   width: 100%;
@@ -85,6 +142,15 @@ const StyledCinemaVideo = styled.video`
   position: relative;
   align-self: center;
   object-fit: cover;
+`;
+
+const StyledInfoText = styled.p`
+  font-size: 16px;
+`;
+
+const StyledInfoTitle = styled.p`
+  font-size: 16px;
+  font-weight: 600;
 `;
 
 const StyledOpacity = styled.div`
@@ -101,19 +167,67 @@ const StyledHover = styled.div`
   }
 `;
 
+const StyledBorderBox =styled.div`
+  width: 95%;
+  height: 80px;
+  margin: 0em 0em 0em 2em;
+  border-bottom: 1px solid #1e1e1ee6;
+  `;
+
 function CinemaCard({ onLoadedData }) {
   useEffect(() => {
     preloadVideo(dopReel);
   }, []);
 
   return (
+    
     <StyledWrapper>
+      <StyledInfoContainer>
+            <StyledDescription>
+              <StyledInfoTitle> 
+              Paul Evans FSF.
+              </StyledInfoTitle>
+              <StyledInfoText>
+              Expertise in both film and digital formats. Thrives on blending live-action footage with VFX, 
+              creating visually captivating worlds that amplify storytelling. 
+              </StyledInfoText>
+              </StyledDescription>
+            <StyledNarrative>
+            <StyledInfoTitle>
+                Narrative Selected Titles:
+              </StyledInfoTitle>
+              <StyledInfoText>
+                The Last Journey or the Vikings, Viaplay |
+                Streams, SVT |
+                Vi Forever, SVT
+              </StyledInfoText>
+            </StyledNarrative>
+            <StyledCommercials>
+            <StyledInfoTitle>
+                Commercials Selected Brands:
+              </StyledInfoTitle>
+            <StyledInfoText>
+                Volvo | Ikea | Fruit-Tella | Burger King | Call of Duty | Renault |
+                Stadium | Gant | Doritos | ICA | Verisure | Aller Media | Grandiosa
+              </StyledInfoText>
+            </StyledCommercials>
+            <StyledMusicVideos>
+            <StyledInfoTitle>
+                Music Promos Selected Artists:
+              </StyledInfoTitle>
+            <StyledInfoText>
+                Katy Perry| Ghost | MØ | Viagra Boys | Darin | Albin Lee Meldau  |
+                Ansiktet 
+              </StyledInfoText>
+            </StyledMusicVideos>
+          </StyledInfoContainer>
       <a
         href="https://paulevans-dop.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <StyledCaseMain>
+          
           <StyledCinemaVideo
             src={dopReel}
             autoPlay
@@ -128,9 +242,9 @@ function CinemaCard({ onLoadedData }) {
             <StyledCaseContents>
               <h2>Cinematography</h2>
               <Styledp>
-                Member of fsf, Föreningen Severiges Filmfotografer (The
-                Association of Swedish Film Cinematographers). Working in
-                Narrative, Commercials, Music Videos and Still Photography.
+              Paul’s artistry captivates audiences and elevates stories.
+              Working in Narrative, Commercials, Music Videos and Still Photography. 
+                
               </Styledp>
               <StyledHover>
                 <Styledp>See work ..</Styledp>
@@ -139,6 +253,8 @@ function CinemaCard({ onLoadedData }) {
           </StyledOpacity>
         </StyledCaseMain>
       </a>
+      <StyledBorderBox>
+      </StyledBorderBox>
     </StyledWrapper>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import CinemaCard from "../components/CinemaCard";
+import Hero from "../components/Hero";
 import UxUiCard from "../components/UxUiCard";
 import AICard from "../components/AICard";
 import DesignCard from "../components/DesignCard";
@@ -45,6 +46,7 @@ const Home = () => {
         ref={squaresRef1}
         isVisible={isSquaresVisible1}
       >
+        <Hero />
         <CinemaCard onLoadedData={handleContentLoad} />
         <UxUiCard />
         <AICard />
