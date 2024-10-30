@@ -63,7 +63,7 @@ const Home = () => {
         {/* <StyledBorderBox></StyledBorderBox> */}
         
         {/* <UxUiCard /> */}
-        <AICard />
+        {/* <AICard /> */}
       </StyledThreeSquaresContainer>
       
 
