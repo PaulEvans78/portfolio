@@ -11,7 +11,10 @@ const preloadVideo = (url) => {
 
 const StyledWrapper = styled.div`
   grid-area: cinema;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
@@ -29,6 +32,8 @@ const StyledCaseContents = styled.div`
   width: 100%;
   height: 100%;
   padding: 0em 2em 0.5em 2em;
+  padding-bottom: 0.5em;
+  border-radius: 24px;
 
   transform: translateY(46%); //Intial state
   transition: transform 0.5s ease-in-out;
@@ -46,30 +51,32 @@ const StyledCaseMain = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  justify-self: center;
   width: 100%;
   aspect-ratio: 5 / 3;
   font-size: 1.2rem;
   overflow: hidden;
+  border-radius: 24px;
 
   &:hover ${StyledCaseContents} {
     transform: translateY(0%); // Slide up
-    /* background-color: #060606ac; */
-    background-color: #ffffffb5;
-    color: var(--main-font-color);
+    background-color: #060606ac;
     justify-content: center;
   }
 
   &:hover ${Styledp} {
     display: flex;
-    color: var(--main-font-color);
+    /* color: var(--main-font-color); */
   }
 
-  @media (min-width: 2050px) {
+  /* @media (min-width: 2050px) {
     aspect-ratio: 5 / 3;
-  }
+  } */
 
   @media (max-width: 960px) {
+    /* width: 96%; */
+
     &:hover ${StyledCaseContents} {
       transform: translateY(42%);
       background-color: transparent;
@@ -82,6 +89,7 @@ const StyledCaseMain = styled.section`
 `;
 
 const StyledInfoContainer = styled.div`
+ width: 100%;
  display: flex;
  flex-direction: row;
  justify-content: space-evenly;
@@ -90,13 +98,15 @@ const StyledInfoContainer = styled.div`
 
  @media (max-width: 960px) {
   flex-direction: column;
-  padding: 0em 0em 2em 2em;
+  align-items: center;
+  padding: 0em 0em 2em 0em;
+  /* text-align: center; */
   }
 
-  @media (max-width: 767px) {
+  /* @media (max-width: 767px) {
   flex-direction: column;
-  padding: 0em 0em 2em 1em;
-  }
+  padding: 0em 0em 2em 0em;
+  } */
 `;
 
 const StyledDescription = styled.div`
@@ -105,9 +115,18 @@ const StyledDescription = styled.div`
 
  @media (max-width: 960px) {
   width: 90%;
+  text-align: center;
   }
 
 `;
+
+const StyledSectionTitle = styled.div`
+ display: flex;
+ justify-content: center;
+ color: var(--main-font-color);
+ padding: 2em 0em 2em 0em;
+`;
+
 
 const StyledNarrative= styled.div`
  width: 20%;
@@ -115,6 +134,7 @@ const StyledNarrative= styled.div`
 
  @media (max-width: 960px) {
   width: 90%;
+  text-align: center;
   }
 `;
 
@@ -124,6 +144,7 @@ const StyledCommercials = styled.div`
 
  @media (max-width: 960px) {
   width: 90%;
+  text-align: center;
   }
 `;
 
@@ -133,6 +154,7 @@ const StyledMusicVideos = styled.div`
 
  @media (max-width: 960px) {
   width: 90%;
+  text-align: center;
   }
 `;
 const StyledCinemaVideo = styled.video`
@@ -184,6 +206,9 @@ function CinemaCard({ onLoadedData }) {
   return (
     
     <StyledWrapper>
+      <StyledSectionTitle>
+      <h2>Cinematography</h2>
+      </StyledSectionTitle>
       <StyledInfoContainer>
             <StyledDescription>
               <StyledInfoTitle> 
@@ -242,9 +267,9 @@ function CinemaCard({ onLoadedData }) {
 
           <StyledOpacity>
             <StyledCaseContents>
-              <h2>Cinematography</h2>
+              <h3>Paul Evans fsf</h3>
               <Styledp>
-              Paul’s artistry captivates audiences and elevates stories.
+              Captivating audiences and elevating stories.
               Working in Narrative, Commercials, Music Videos and Still Photography. 
                 
               </Styledp>

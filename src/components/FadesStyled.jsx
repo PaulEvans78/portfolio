@@ -78,7 +78,7 @@ export const StyledSquaresContainer = styled.section`
 `;
 
 export const StyledThreeSquaresContainer = styled.section`
-  max-width: 96%;
+  max-width: 100%;
   height: auto;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -89,10 +89,11 @@ export const StyledThreeSquaresContainer = styled.section`
     "ux"
     "ai";
   row-gap: 20px;
-  column-gap: 2%;
+  /* column-gap: 2%; */
   padding-top: 140px;
-  padding-left: 2%;
-  padding-right: 2%;
+  /* box-sizing: border-box;  */
+  /* padding-left: 2%;
+  padding-right: 2%; */
   opacity: 0;
   ${({ isVisible }) =>
     isVisible &&
@@ -100,12 +101,12 @@ export const StyledThreeSquaresContainer = styled.section`
       animation: ${fadeIn} 2s forwards;
     `}
 
-  @media (min-width: 2050px) {
+  /* @media (min-width: 2050px) {
     grid-template-columns: 1.5fr 1fr 1fr;
-  }
+  } */
 
   @media screen and (max-width: 960px) {
-    padding-top: 110px;
+    padding-top: 90px;
     grid-template-areas:
       "hero"
       "cinema"
@@ -113,8 +114,8 @@ export const StyledThreeSquaresContainer = styled.section`
       "ai";
   }
 
-  @media screen and (max-width: 960px) {
-    padding-top: 90px;
+  @media screen and (max-width: 767px) {
+    padding-top: 70px;
   }
 `;
 
@@ -131,8 +132,8 @@ export const StyledThreeSquaresReverseContainer = styled.section`
 
   row-gap: 20px;
   column-gap: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
+  /* padding-left: 2%;
+  padding-right: 2%; */
   padding-bottom: 28px;
   opacity: 0;
   ${({ isVisible }) =>

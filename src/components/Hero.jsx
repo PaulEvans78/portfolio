@@ -7,12 +7,17 @@ const StyledContentsContainer = styled.div`
   justify-content: center;
   text-align: left;
   width: 100%;
-  /* height: 100%; */
-  padding: 8em 2em 0.5em 2em;
+  padding: 8em 1em 0.5em 1em;
 
-  @media (max-width: 767px) {
-    padding: 8em 2em 0.5em 1em;
+  @media (max-width: 960px) {
+    align-items: center;
+    text-align: center;
   }
+  @media (max-width: 767px) {
+    padding: 8em 0em 0.5em 0em;
+  }
+
+ 
   
 
   /* transform: translateY(46%); //Intial state
@@ -36,12 +41,13 @@ const StyledIntro = styled.section`
   min-height: 550px;
   font-size: 1.2rem;
   overflow: hidden;
-  padding: 0em 2em 0em 0em;
+  /* padding: 0em 2em 0em 0em; */
 
   @media (max-width: 960px) {
     width: 90%;
+    align-items: center;
     min-height: 400px;
-    padding: 0em 2em 1em 0em;
+    padding: 0em 0em 1em 0em;
   }
 `;
 
@@ -65,7 +71,7 @@ color: var(--main-p-color);
   `;
 
 const StyledBorderBox =styled.div`
-  width: 95%;
+  width: 98%;
   border-bottom: 1px solid #1e1e1ee6;
   `;
 

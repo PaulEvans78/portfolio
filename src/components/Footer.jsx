@@ -88,7 +88,7 @@ const StyledMailLink = styled.p`
   color: var(--main-font-color);
 
   margin-bottom: -0.5em;
-  text-shadow: 2px 2px 4px black;
+  
 
   &:hover {
     color: var(--main-button-hover-color);
@@ -110,7 +110,7 @@ const StyledTelLink = styled.p`
   flex-direction: column;
   color: var(--main-font-color);
 
-  text-shadow: 2px 2px 4px black;
+  
 
   &:hover {
     color: var(--main-button-hover-color);

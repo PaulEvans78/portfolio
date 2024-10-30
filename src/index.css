@@ -18,11 +18,15 @@
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 100vw;
   min-width: 100vw;
   margin:0;
-  padding:0;
+  /* padding: 0em 2em 0em 2em; */
   overflow-x: hidden;
   color: whitesmoke;
   font-family: 'Poppins', sans-serif;
@@ -51,7 +55,7 @@ a {
 
 h1 {
   font-family: "Gravitas One", serif;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 500;
   font-style: normal;
   margin: 0;
@@ -62,25 +66,54 @@ h1 {
     /* font-size: 20px; */
     } 
 
-    @media screen and (max-width: 960px) {
-      /* font-size: 24px; */
+    @media screen and (max-width: 767px) {
+      font-size: 48px;
     }
 }
 
 h2 {
   font-family: "Gravitas One", serif;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
   margin:0;
   margin-bottom: 1em;
 
-  @media screen and (max-width: 360px) {
-    font-size: 18px;
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
     } 
+
+  @media screen and (max-width: 478px) {
+    font-size: 28px;
+    } 
+
+    @media screen and (max-width: 478px) {
+      font-size: 24px;
+      } 
 }
 
+h3 {
+  /* font-family: "Gravitas One", serif; */
+  font-size: 32px;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.1;
+  margin:0;
+  margin-bottom: 1em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    } 
+
+  @media screen and (max-width: 478px) {
+    font-size: 24px;
+    } 
+
+    /* @media screen and (max-width: 478px) {
+      font-size: 24px;
+      }  */
+}
 
 
 p {

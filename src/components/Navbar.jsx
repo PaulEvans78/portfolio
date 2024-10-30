@@ -5,7 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const StyledNav = styled.nav`
-  position: fixed;
+  position: absolute;
+  left: 0%;
   grid-area: top;
   width: 100%;
   max-width: 100%;
@@ -18,12 +19,14 @@ const StyledNav = styled.nav`
   align-items: center;
   padding-bottom: 1em;
   padding-left: 1em;
+  box-sizing: border-box;
   background-color: var(--main-hero-backgroundcolor);
+  /* background-color: green; */
   top: ${({ visible }) => (visible ? "0" : "-160px")};
   transition: top 0.6s;
 
   @media screen and (max-width: 960px) {
-    width: 100%;
+    /* width: 100%; */
     font-size: 16px;
   }
 
@@ -91,38 +94,38 @@ const StyledIdent = styled.div`
   }
 `;
 
-const StyledTitle = styled.div`
-  padding-left: 1em;
-  padding-top: 0.5em;
-  color: var(--main-font-color);
+// const StyledTitle = styled.div`
+//   padding-left: 1em;
+//   padding-top: 0.5em;
+//   color: var(--main-font-color);
   
-  @media screen and (max-width: 1080px) {
-    padding-top: 0.5em;
-    }
+//   @media screen and (max-width: 1080px) {
+//     padding-top: 0.5em;
+//     }
 
-  @media screen and (max-width: 960px) {
-    padding-top: 2em;
-  }
+//   @media screen and (max-width: 960px) {
+//     padding-top: 2em;
+//   }
 
-  @media screen and (max-width: 767px) {
-    padding-top: 1.5em;
-  }
+//   @media screen and (max-width: 767px) {
+//     padding-top: 1.5em;
+//   }
 
-  @media screen and (max-width: 478px) {
-    visibility: hidden;
-  }
+//   @media screen and (max-width: 478px) {
+//     visibility: hidden;
+//   }
 
-  &:hover {
-    color: var(--main-button-hover-color);
-  }
-`;
+//   &:hover {
+//     color: var(--main-button-hover-color);
+//   }
+// `;
 
 const StyledNavul = styled.ul`
   width: auto;
   display: flex;
   list-style-type: none;
   margin-left: 1em;
-  padding-right: 2.5em;
+  /* padding-right: 1em; */
 
   @media screen and (max-width: 960px) {
     position: fixed;
@@ -222,16 +225,19 @@ const StyledHamburger = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     justify-content: center;
+    /* justify-items: center; */
+    color: var(--main-font-color);
+    /* padding-left: 1em; */
     margin-top: 1em;
-    margin-right: 6em;
+    margin-right: 2em;
   }
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     margin-top: 1em;
     margin-right: 2em;
-  }
+  } */
 `;
 
 const Navbar = ({ footerRef }) => {
