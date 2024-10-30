@@ -25,6 +25,15 @@ const StyledHomeContainer = styled.section`
   align-self: center;
   row-gap: 28px;
   align-content: center;
+  padding-top: 140px;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 90px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 70px;
+  }
 `;
 
 const StyledBorderBox =styled.div`
@@ -51,20 +60,20 @@ const Home = () => {
         </StyledLoadingContainer>
       )}
 
-      <StyledThreeSquaresContainer
+      {/* <StyledThreeSquaresContainer
         ref={squaresRef1}
         isVisible={isSquaresVisible1}
-      >
+      > */}
         
         <Hero />
         <StyledBorderBox></StyledBorderBox>
         
         <CinemaCard onLoadedData={handleContentLoad} />
-        {/* <StyledBorderBox></StyledBorderBox> */}
+        <StyledBorderBox></StyledBorderBox>
         
         {/* <UxUiCard /> */}
         {/* <AICard /> */}
-      </StyledThreeSquaresContainer>
+      {/* </StyledThreeSquaresContainer> */}
       
 
       {/* <StyledThreeSquaresContainer> */}

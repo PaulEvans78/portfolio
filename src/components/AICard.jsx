@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import dopReel from "../assets/showcase1.mp4";
+import aiReel from "../assets/aiReel.mp4";
 import styled from "styled-components";
 
 const preloadVideo = (url) => {
@@ -32,7 +32,6 @@ const StyledCaseContents = styled.div`
   width: 100%;
   height: 100%;
   padding: 0em 2em 0.5em 2em;
-  padding-bottom: 0.5em;
   border-radius: 24px;
 
   transform: translateY(46%); //Intial state
@@ -40,6 +39,7 @@ const StyledCaseContents = styled.div`
 
   @media (max-width: 960px) {
     transform: translateY(42%);
+    padding: 0em 2em 0.5em 1em;
   }
 
   @media (max-width: 478px) {
@@ -54,7 +54,7 @@ const StyledCaseMain = styled.section`
   /* align-items: flex-start; */
   justify-self: center;
   width: 100%;
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 16 / 9;
   font-size: 1.2rem;
   overflow: hidden;
   border-radius: 24px;
@@ -77,8 +77,16 @@ const StyledCaseMain = styled.section`
   @media (max-width: 960px) {
     /* width: 96%; */
 
+    ${StyledCaseContents} {
+      transform: translateY(0%);
+    }
+
+    ${Styledp} {
+      display: flex;
+    }
+
     &:hover ${StyledCaseContents} {
-      transform: translateY(42%);
+      transform: translateY(0%);
       background-color: transparent;
     }
 
@@ -110,7 +118,7 @@ const StyledInfoContainer = styled.div`
 `;
 
 const StyledDescription = styled.div`
- width: 20%;
+ width: 90%;
  text-align: justify;
 
  @media (max-width: 960px) {
@@ -128,35 +136,9 @@ const StyledSectionTitle = styled.div`
 `;
 
 
-const StyledNarrative= styled.div`
- width: 20%;
- text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
-  }
-`;
 
-const StyledCommercials = styled.div`
- width: 20%;
- text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
-  }
-`;
-
-const StyledMusicVideos = styled.div`
- width: 20%;
- text-align: justify;
-
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
-  }
-`;
 const StyledCinemaVideo = styled.video`
   position: absolute;
   width: 100%;
@@ -171,10 +153,7 @@ const StyledInfoText = styled.p`
   font-size: 16px;
 `;
 
-const StyledInfoTitle = styled.p`
-  font-size: 16px;
-  font-weight: 600;
-`;
+
 
 const StyledOpacity = styled.div`
   position: absolute;
@@ -191,6 +170,30 @@ const StyledHover = styled.div`
   }
 `;
 
+const StyledLink = styled.a`
+font-size: 16px;
+color:var(--main-button-color);
+
+&:hover {
+  color: var(--main-button-hover-color);
+}
+
+`;
+
+const StyledSectionNotation = styled.div`
+ display: flex;
+ justify-self: center;
+ justify-content: center;
+ width: 90%;
+ color: var(--main-font-color);
+ padding: 3em 0em 3em 0em;
+`;
+
+const StyledNotation = styled.p`
+ font-size: 14px;
+ text-align: center;
+`;
+
 const StyledBorderBox =styled.div`
   width: 95%;
   height: 80px;
@@ -198,9 +201,9 @@ const StyledBorderBox =styled.div`
   border-bottom: 1px solid #1e1e1ee6;
   `;
 
-function CinemaCard({ onLoadedData }) {
+function CinemaCard() {
   useEffect(() => {
-    preloadVideo(dopReel);
+    preloadVideo(aiReel);
   }, []);
 
   return (
@@ -211,75 +214,56 @@ function CinemaCard({ onLoadedData }) {
       </StyledSectionTitle>
       <StyledInfoContainer>
             <StyledDescription>
-              <StyledInfoTitle> 
-              Paul Evans FSF.
-              </StyledInfoTitle>
+              
               <StyledInfoText>
-              Expertise in both film and digital formats. Thrives on blending live-action footage with VFX, 
-              creating visually captivating worlds that amplify storytelling. 
+              My interests expand into emerging technologies such as AI, augmented reality (AR), digital signage, and projection, 
+              with a strong focus on how they can be used to create captivating, immersive experiences. Coming from a background 
+              in traditional film and photography, I deeply value the importance of responsible AI use. I view AI as a powerful 
+              tool to complement our creative work, not replace it—challenging us, expanding our creative boundaries, and 
+              increasing efficiency. Through this lens, I explore how technology can redefine visual storytelling and audience 
+              engagement without losing the human touch. 
+              I regularly share insights and industry trends on LinkedIn—join me there to see more of what I’m exploring in this space. 
               </StyledInfoText>
+              <StyledLink href="https://www.linkedin.com/in/paul-evans-3a74605/" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+              </StyledLink>
               </StyledDescription>
-            <StyledNarrative>
-            <StyledInfoTitle>
-                Narrative Selected Titles:
-              </StyledInfoTitle>
-              <StyledInfoText>
-                The Last Journey or the Vikings, Viaplay |
-                Streams, SVT |
-                Vi Forever, SVT
-              </StyledInfoText>
-            </StyledNarrative>
-            <StyledCommercials>
-            <StyledInfoTitle>
-                Commercials Selected Brands:
-              </StyledInfoTitle>
-            <StyledInfoText>
-                Volvo | Ikea | Fruit-Tella | Burger King | Call of Duty | Renault |
-                Stadium | Gant | Doritos | ICA | Verisure | Aller Media | Grandiosa
-              </StyledInfoText>
-            </StyledCommercials>
-            <StyledMusicVideos>
-            <StyledInfoTitle>
-                Music Promos Selected Artists:
-              </StyledInfoTitle>
-            <StyledInfoText>
-                Katy Perry| Ghost | MØ | Viagra Boys | Darin | Albin Lee Meldau  |
-                Ansiktet 
-              </StyledInfoText>
-            </StyledMusicVideos>
+           
           </StyledInfoContainer>
       <a
-        href="https://paulevans-dop.com/"
+        href="https://www.linkedin.com/in/paul-evans-3a74605/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <StyledCaseMain>
           
           <StyledCinemaVideo
-            src={dopReel}
+            src={aiReel}
             autoPlay
             loop
             muted
             playsInline
-            alt="A showreel showing clips from different productions."
-            onLoadedData={onLoadedData}
+            alt="A showreel of Ai generated video."
           />
 
           <StyledOpacity>
             <StyledCaseContents>
-              <h3>Paul Evans fsf</h3>
+              <h3>AI</h3>
               <Styledp>
-              Captivating audiences and elevating stories.
-              Working in Narrative, Commercials, Music Videos and Still Photography. 
+               Keeping up to date with emerging technologies such as AI and implenting them into my creative process.
                 
               </Styledp>
               <StyledHover>
-                <Styledp>See work ..</Styledp>
+                <Styledp>LinkedIn ..</Styledp>
               </StyledHover>
             </StyledCaseContents>
           </StyledOpacity>
         </StyledCaseMain>
       </a>
+      <StyledSectionNotation>
+      <StyledNotation>AI generated video for concepts. 
+        Disclaimer: This video was created independently and is not affiliated with or endorsed by any brands. </StyledNotation>
+      </StyledSectionNotation>
       <StyledBorderBox>
       </StyledBorderBox>
     </StyledWrapper>

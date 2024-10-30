@@ -35,6 +35,7 @@ const StyledContentsContainer = styled.div`
   padding-left: 4%;
   padding-right: 4%;
   background-color: var(--main-hero-backgroundcolor);
+  color: var(--main-font-color);
 `;
 
 const StyledCaseContents = styled.div`
@@ -46,19 +47,23 @@ const StyledCaseContents = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
 
+  @media screen and (max-width: 960px) {
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   @media screen and (max-width: 767px) {
-    padding-left: 30px;
+    width: 90%;
   }
 
   @media screen and (max-width: 478px) {
-    padding-top: 20px;
-    padding-left: 20px;
+    width: 95%;
   }
+`;
 
-  @media screen and (max-width: 360px) {
-    width: 80%;
-    padding-top: 15px;
-  }
+const Styledp = styled.p`
+text-align: justify;
 `;
 
 const StyledImageContainer = styled.div`
@@ -67,6 +72,7 @@ const StyledImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  border-radius: 24px;
 `;
 
 const StyledImg = styled.img`
@@ -74,6 +80,7 @@ const StyledImg = styled.img`
   height: 100%;
   object-fit: cover;
   visibility: hidden;
+  border-radius: 24px;
 
   ${({ isInView }) =>
     isInView &&
@@ -113,12 +120,12 @@ const ForFun = () => {
       <StyledContentsContainer>
         <StyledCaseContents>
           <h2>For fun</h2>
-          <p>
+          <Styledp>
             Surfing and traveling are my two biggest passions. When I'm not
             paddling out into the sea I like to work out at the gym or swim in
             the lake. I also cherish the time I spend with my family and friends,
             cooking and watching movies and TV shows.
-          </p>
+          </Styledp>
         </StyledCaseContents>
       </StyledContentsContainer>
       <StyledImageContainer>

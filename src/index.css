@@ -5,12 +5,12 @@
   --main-notation-background-color: #1e1e1ee6;
   --main-p-color: #1e1e1ee6;
   --main-casecard-background-color: #f9f9f9;
-  --main-button-color: #f3c51e;
-  --main-button-hover-color: #f3a11e;
+  --main-button-color: #ea3de4;
+  --main-button-hover-color: #e287df;
   --secondary-button-color: #d5d5d5;
   --secondary-button-hover-color: #f3a11e;
-  --main-navbar-hover-color: #f3a11e;
-  --main-navbar-active-color: #f3c51e;
+  --main-navbar-hover-color: #e287df;
+  --main-navbar-active-color: #f196ee;
   --main-hero-backgroundcolor: #ffffff;
   --main-modal-backgroundcolor: #171717;
   --main-infoBackground-backgroundcolor: #171717ac;
@@ -94,8 +94,8 @@ h2 {
 }
 
 h3 {
-  /* font-family: "Gravitas One", serif; */
-  font-size: 32px;
+  font-family: "Gravitas One", serif;
+  font-size: 36px;
   font-weight: 200;
   font-style: normal;
   line-height: 1.1;

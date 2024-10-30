@@ -35,6 +35,7 @@ const StyledContentsContainer = styled.div`
   padding-left: 4%;
   padding-right: 4%;
   background-color: var(--main-hero-backgroundcolor);
+  color: var(--main-font-color);
 `;
 
 const StyledCaseContents = styled.div`
@@ -46,19 +47,25 @@ const StyledCaseContents = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
 
+  @media screen and (max-width: 960px) {
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   @media screen and (max-width: 767px) {
-    padding-left: 30px;
+    width: 90%;
   }
 
   @media screen and (max-width: 478px) {
-    padding-top: 30px;
-    padding-left: 20px;
+    width: 95%;
   }
 
-  @media screen and (max-width: 360px) {
-    width: 80%;
-    padding-top: 15px;
-  }
+  
+`;
+
+const Styledp = styled.p`
+text-align: justify;
 `;
 
 const StyledImageContainer = styled.div`
@@ -67,12 +74,14 @@ const StyledImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  border-radius: 24px;
 `;
 
 const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 24px;
 
   ${({ isLoaded }) =>
     isLoaded &&
@@ -109,7 +118,7 @@ const AboutMe = () => {
         <StyledCaseContents>
           <h2>About me </h2>
 
-          <p>
+          <Styledp>
             Hi, I’m Paul! A creative with over 20 years of experience in
             branding, storytelling and commercial and narrative production, now
             specializing in Experience Design. I bring a unique combination of
@@ -122,7 +131,7 @@ const AboutMe = () => {
             and methodical approach to life, which enables me to navigate
             challenges with ease. My strong willpower and determination helps me
             stay focused on the goals, even during difficult times.
-          </p>
+          </Styledp>
         </StyledCaseContents>
       </StyledContentsContainer>
       <StyledImageContainer>

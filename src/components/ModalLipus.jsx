@@ -40,7 +40,7 @@ const CloseButton = styled.button`
   background: transparent;
   border: none;
   font-size: 2rem;
-  color: var(--main-font-color);
+  color: var(--secondary-font-color);
   cursor: pointer;
   z-index: 100;
 `;

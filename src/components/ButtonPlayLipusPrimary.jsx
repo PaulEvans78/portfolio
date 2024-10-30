@@ -7,7 +7,7 @@ const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  cursor:pointer;
   padding-top: 30px;
   color: var(--main-button-color);
 

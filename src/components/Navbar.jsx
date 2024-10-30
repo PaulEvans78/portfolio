@@ -277,15 +277,15 @@ const Navbar = ({ footerRef }) => {
 
   const links = [
     { id: 1, to: "/", text: "Home" },
-    { id: 2, to: "/casestudies", text: "Case Studies" },
+    // { id: 2, to: "/casestudies", text: "Case Studies" },
     {
-      id: 3,
+      id: 2,
       to: "https://www.paulevans-dop.com/",
       text: "Cinematography",
       isExternal: true,
     },
-    { id: 4, to: "/about", text: "About" },
-    { id: 5, to: "#", text: "Contact", onClick: scrollToFooter }, // Updated Contact link
+    { id: 3, to: "/about", text: "About" },
+    { id: 4, to: "#", text: "Contact", onClick: scrollToFooter }, // Updated Contact link
   ];
 
   return (

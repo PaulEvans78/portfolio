@@ -97,7 +97,7 @@ const Hero = () => {
               </Styledp>
 
               </StyledIntro>
-              <StyledBorderBox></StyledBorderBox>
+              {/* <StyledBorderBox></StyledBorderBox> */}
             </StyledContentsContainer>
          
   );

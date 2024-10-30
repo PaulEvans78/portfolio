@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import CaseStudies from "./pages/Case Studies";
+// import CaseStudies from "./pages/Case Studies";
 import About from "./pages/About";
 import LipusPlus from "./pages/LipusPlus";
 import Ebie from "./pages/Ebie";
@@ -37,7 +37,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             
-            <Route path="/casestudies" element={<CaseStudies />} />
+            {/* <Route path="/casestudies" element={<CaseStudies />} /> */}
 
             <Route path="/about" element={<About />} />
 

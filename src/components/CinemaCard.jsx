@@ -10,7 +10,7 @@ const preloadVideo = (url) => {
 };
 
 const StyledWrapper = styled.div`
-  grid-area: cinema;
+  /* grid-area: cinema; */
   /* display: inline-block; */
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ const StyledCaseContents = styled.div`
   text-align: left;
   width: 100%;
   height: 100%;
-  padding: 0em 2em 0.5em 2em;
+  padding: 0em 2em 1em 3em;
   padding-bottom: 0.5em;
   border-radius: 24px;
 
@@ -40,6 +40,7 @@ const StyledCaseContents = styled.div`
 
   @media (max-width: 960px) {
     transform: translateY(42%);
+    padding: 0em 2em 1em 2em;
   }
 
   @media (max-width: 478px) {
@@ -54,7 +55,7 @@ const StyledCaseMain = styled.section`
   /* align-items: flex-start; */
   justify-self: center;
   width: 100%;
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 16 / 9;
   font-size: 1.2rem;
   overflow: hidden;
   border-radius: 24px;
@@ -77,8 +78,16 @@ const StyledCaseMain = styled.section`
   @media (max-width: 960px) {
     /* width: 96%; */
 
+    ${StyledCaseContents} {
+      transform: translateY(0%);
+    }
+
+    ${Styledp} {
+      display: flex;
+    }
+
     &:hover ${StyledCaseContents} {
-      transform: translateY(42%);
+      transform: translateY(0%);
       background-color: transparent;
     }
 
