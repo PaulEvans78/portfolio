@@ -21,12 +21,10 @@ const StyledNav = styled.nav`
   padding-left: 1em;
   box-sizing: border-box;
   background-color: var(--main-hero-backgroundcolor);
-  /* background-color: green; */
   top: ${({ visible }) => (visible ? "0" : "-160px")};
   transition: top 0.6s;
 
   @media screen and (max-width: 960px) {
-    /* width: 100%; */
     font-size: 16px;
   }
 
@@ -94,38 +92,11 @@ const StyledIdent = styled.div`
   }
 `;
 
-// const StyledTitle = styled.div`
-//   padding-left: 1em;
-//   padding-top: 0.5em;
-//   color: var(--main-font-color);
-  
-//   @media screen and (max-width: 1080px) {
-//     padding-top: 0.5em;
-//     }
-
-//   @media screen and (max-width: 960px) {
-//     padding-top: 2em;
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     padding-top: 1.5em;
-//   }
-
-//   @media screen and (max-width: 478px) {
-//     visibility: hidden;
-//   }
-
-//   &:hover {
-//     color: var(--main-button-hover-color);
-//   }
-// `;
-
 const StyledNavul = styled.ul`
   width: auto;
   display: flex;
   list-style-type: none;
   margin-left: 1em;
-  /* padding-right: 1em; */
 
   @media screen and (max-width: 960px) {
     position: fixed;
@@ -225,19 +196,10 @@ const StyledHamburger = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     justify-content: center;
-    /* justify-items: center; */
     color: var(--main-font-color);
-    /* padding-left: 1em; */
     margin-top: 1em;
     margin-right: 2em;
   }
-
-  /* @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-    margin-right: 2em;
-  } */
 `;
 
 const Navbar = ({ footerRef }) => {
@@ -277,7 +239,7 @@ const Navbar = ({ footerRef }) => {
 
   const links = [
     { id: 1, to: "/", text: "Home" },
-    // { id: 2, to: "/casestudies", text: "Case Studies" },
+
     {
       id: 2,
       to: "https://www.paulevans-dop.com/",
@@ -297,10 +259,6 @@ const Navbar = ({ footerRef }) => {
               src={logo}
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
             />
-            {/* <StyledTitle>
-              <h1>Paul Evans</h1>
-              <h1>Experience Designer</h1>
-            </StyledTitle> */}
           </StyledIdent>
         </Link>
       </StyledImageandName>

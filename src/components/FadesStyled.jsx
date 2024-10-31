@@ -89,21 +89,13 @@ export const StyledThreeSquaresContainer = styled.section`
     "ux"
     "ai";
   row-gap: 20px;
-  /* column-gap: 2%; */
   padding-top: 140px;
-  /* box-sizing: border-box;  */
-  /* padding-left: 2%;
-  padding-right: 2%; */
   opacity: 0;
   ${({ isVisible }) =>
     isVisible &&
     css`
       animation: ${fadeIn} 2s forwards;
     `}
-
-  /* @media (min-width: 2050px) {
-    grid-template-columns: 1.5fr 1fr 1fr;
-  } */
 
   @media screen and (max-width: 960px) {
     padding-top: 90px;
@@ -132,8 +124,6 @@ export const StyledThreeSquaresReverseContainer = styled.section`
 
   row-gap: 20px;
   column-gap: 2%;
-  /* padding-left: 2%;
-  padding-right: 2%; */
   padding-bottom: 28px;
   opacity: 0;
   ${({ isVisible }) =>

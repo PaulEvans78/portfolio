@@ -63,7 +63,16 @@ const StyledCaseContents = styled.div`
 `;
 
 const Styledp = styled.p`
-text-align: justify;
+  text-align: justify;
+`;
+
+const StyledQuote = styled.p`
+  text-align: justify;
+  margin-top: 2em;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
 const StyledImageContainer = styled.div`
@@ -123,9 +132,12 @@ const ForFun = () => {
           <Styledp>
             Surfing and traveling are my two biggest passions. When I'm not
             paddling out into the sea I like to work out at the gym or swim in
-            the lake. I also cherish the time I spend with my family and friends,
-            cooking and watching movies and TV shows.
+            the lake. I also cherish the time I spend with my family and
+            friends, cooking and watching movies and TV shows.
           </Styledp>
+          <StyledQuote>
+            "Work like a captain, play like a pirate" - Christina Lauren
+          </StyledQuote>
         </StyledCaseContents>
       </StyledContentsContainer>
       <StyledImageContainer>

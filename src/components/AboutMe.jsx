@@ -60,12 +60,10 @@ const StyledCaseContents = styled.div`
   @media screen and (max-width: 478px) {
     width: 95%;
   }
-
-  
 `;
 
 const Styledp = styled.p`
-text-align: justify;
+  text-align: justify;
 `;
 
 const StyledImageContainer = styled.div`
@@ -119,18 +117,17 @@ const AboutMe = () => {
           <h2>About me </h2>
 
           <Styledp>
-            Hi, I’m Paul! A creative with over 20 years of experience in
-            branding, storytelling and commercial and narrative production, now
-            specializing in Experience Design. I bring a unique combination of
-            creative and technical expertise, allowing me to design visually
-            engaging and user-centric experiences. I am competent with design tools such as Figma and Adobe
-            as well as Useberry for testing. When it comes to frontend I am skilled in html, css, javascript and React. 
-            My interests also extend into AI,
-            particularly image and video generation, using programs such as Midjourney and Runway. Merging traditional
-            filmmaking techniques with the latest technologies. I have a calm
-            and methodical approach to life, which enables me to navigate
-            challenges with ease. My strong willpower and determination helps me
-            stay focused on the goals, even during difficult times.
+            I bring a unique combination of creative and technical expertise. I
+            am competent with design tools such as Figma and Adobe Creative
+            Suite as well as Useberry for testing. When it comes to frontend I
+            am skilled in html, css, javascript and React. My interests also
+            extend into AI, particularly image and video generation, and AR.
+            Merging traditional filmmaking techniques with the latest
+            technologies. I have a calm and methodical approach to life, which
+            enables me to navigate challenges with ease. I enjoy working with
+            people from diverse backgrounds and ages. Something thats engerises
+            ans inspires immensely. My strong willpower and determination helps
+            me stay focused on the goals, even during difficult times.
           </Styledp>
         </StyledCaseContents>
       </StyledContentsContainer>

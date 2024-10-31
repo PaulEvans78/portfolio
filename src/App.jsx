@@ -2,10 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-// import CaseStudies from "./pages/Case Studies";
 import About from "./pages/About";
-import LipusPlus from "./pages/LipusPlus";
-import Ebie from "./pages/Ebie";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -36,14 +33,10 @@ const App = () => {
         <MainContainer>
           <Routes>
             <Route path="/" element={<Home />} />
-            
-            {/* <Route path="/casestudies" element={<CaseStudies />} /> */}
 
             <Route path="/about" element={<About />} />
 
-            <Route path="/lipusplus" element={<LipusPlus />} />
-
-            <Route path="/ebie" element={<Ebie />} />
+           
           </Routes>
 
           <Footer ref={footerRef} />

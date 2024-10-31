@@ -88,7 +88,6 @@ const StyledMailLink = styled.p`
   color: var(--main-button-color);
 
   margin-bottom: -0.5em;
-  
 
   &:hover {
     color: var(--main-button-hover-color);
@@ -110,8 +109,6 @@ const StyledTelLink = styled.p`
   flex-direction: column;
   color: var(--main-button-color);
 
-  
-
   &:hover {
     color: var(--main-button-hover-color);
   }
@@ -132,13 +129,11 @@ const IconContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   justify-items: center;
-  /* margin-left: 6em; */
   padding-top: 4em;
 
   @media screen and (max-width: 960px) {
     padding-top: 2em;
     margin-left: 0em;
-    /* margin-right: 24px; */
   }
 
   @media screen and (max-width: 478px) {
@@ -247,9 +242,7 @@ const Footer = React.forwardRef((props, ref) => (
       <Styledp>Copyright 2024.</Styledp>
       <Styledp>Paul Evans.</Styledp>
       <StyledMailLink>
-        <a href="mailto:paul@paulevans.se">
-        paul@paulevans.se
-        </a>
+        <a href="mailto:paul@paulevans.se">paul@paulevans.se</a>
       </StyledMailLink>
       <StyledTelLink>
         <a href="tel:+46739908858">+46739908858</a>

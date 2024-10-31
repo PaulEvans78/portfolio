@@ -11,7 +11,6 @@ const preloadVideo = (url) => {
 
 const StyledWrapper = styled.div`
   grid-area: cinema;
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +50,6 @@ const StyledCaseMain = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-self: center;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -67,16 +65,9 @@ const StyledCaseMain = styled.section`
 
   &:hover ${Styledp} {
     display: flex;
-    /* color: var(--main-font-color); */
   }
 
-  /* @media (min-width: 2050px) {
-    aspect-ratio: 5 / 3;
-  } */
-
   @media (max-width: 960px) {
-    /* width: 96%; */
-
     ${StyledCaseContents} {
       transform: translateY(0%);
     }
@@ -97,47 +88,36 @@ const StyledCaseMain = styled.section`
 `;
 
 const StyledInfoContainer = styled.div`
- width: 100%;
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- color: var(--main-font-color);
- padding: 0em 0em 2em 0em;
-
- @media (max-width: 960px) {
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: var(--main-font-color);
   padding: 0em 0em 2em 0em;
-  /* text-align: center; */
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 0em 2em 0em;
   }
-
-  /* @media (max-width: 767px) {
-  flex-direction: column;
-  padding: 0em 0em 2em 0em;
-  } */
 `;
 
 const StyledDescription = styled.div`
- width: 90%;
- text-align: justify;
-
- @media (max-width: 960px) {
   width: 90%;
-  text-align: center;
-  }
+  text-align: justify;
 
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
+  }
 `;
 
 const StyledSectionTitle = styled.div`
- display: flex;
- justify-content: center;
- color: var(--main-font-color);
- padding: 2em 0em 2em 0em;
+  display: flex;
+  justify-content: center;
+  color: var(--main-font-color);
+  padding: 2em 0em 2em 0em;
 `;
-
-
-
-
 
 const StyledCinemaVideo = styled.video`
   position: absolute;
@@ -152,8 +132,6 @@ const StyledCinemaVideo = styled.video`
 const StyledInfoText = styled.p`
   font-size: 16px;
 `;
-
-
 
 const StyledOpacity = styled.div`
   position: absolute;
@@ -171,72 +149,76 @@ const StyledHover = styled.div`
 `;
 
 const StyledLink = styled.a`
-font-size: 16px;
-color:var(--main-button-color);
+  font-size: 16px;
+  color: var(--main-button-color);
 
-&:hover {
-  color: var(--main-button-hover-color);
-}
-
+  &:hover {
+    color: var(--main-button-hover-color);
+  }
 `;
 
 const StyledSectionNotation = styled.div`
- display: flex;
- justify-self: center;
- justify-content: center;
- width: 90%;
- color: var(--main-font-color);
- padding: 3em 0em 3em 0em;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  width: 90%;
+  color: var(--main-font-color);
+  padding: 3em 0em 3em 0em;
 `;
 
 const StyledNotation = styled.p`
- font-size: 14px;
- text-align: center;
+  font-size: 14px;
+  text-align: center;
 `;
 
-const StyledBorderBox =styled.div`
+const StyledBorderBox = styled.div`
   width: 95%;
   height: 80px;
   margin: 0em 0em 0em 1em;
   border-bottom: 1px solid #1e1e1ee6;
-  `;
+`;
 
-function CinemaCard() {
+function AiCard() {
   useEffect(() => {
     preloadVideo(aiReel);
   }, []);
 
   return (
-    
     <StyledWrapper>
       <StyledSectionTitle>
-      <h2>Emerging Tech</h2>
+        <h2>Emerging Tech</h2>
       </StyledSectionTitle>
       <StyledInfoContainer>
-            <StyledDescription>
-              
-              <StyledInfoText>
-              My interests expand into emerging technologies such as AI, augmented reality (AR), digital signage, and projection, 
-              with a strong focus on how they can be used to create captivating, immersive experiences. Coming from a background 
-              in traditional film and photography, I deeply value the importance of responsible AI use. I view AI as a powerful 
-              tool to complement our creative work, not replace it—challenging us, expanding our creative boundaries, and 
-              increasing efficiency. Through this lens, I explore how technology can redefine visual storytelling and audience 
-              engagement without losing the human touch. 
-              I regularly share insights and industry trends on LinkedIn—join me there to see more of what I’m exploring in this space. 
-              </StyledInfoText>
-              <StyledLink href="https://www.linkedin.com/in/paul-evans-3a74605/" target="_blank" rel="noopener noreferrer">
-    LinkedIn
-              </StyledLink>
-              </StyledDescription>
-           
-          </StyledInfoContainer>
+        <StyledDescription>
+          <StyledInfoText>
+            My interests expand into emerging technologies such as AI, augmented
+            reality (AR), digital signage, and projection, with a strong focus
+            on how they can be used to create captivating, immersive
+            experiences. Coming from a background in traditional film and
+            photography, I deeply value the importance of responsible AI use. I
+            view AI as a powerful tool to complement our creative work, not
+            replace it—challenging us, expanding our creative boundaries, and
+            increasing efficiency. Through this lens, I explore how technology
+            can redefine visual storytelling and audience engagement without
+            losing the human touch. I regularly share insights and industry
+            trends on LinkedIn—join me there to see more of what I’m exploring
+            in this space.
+          </StyledInfoText>
+          <StyledLink
+            href="https://www.linkedin.com/in/paul-evans-3a74605/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </StyledLink>
+        </StyledDescription>
+      </StyledInfoContainer>
       <a
         href="https://www.linkedin.com/in/paul-evans-3a74605/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <StyledCaseMain>
-          
           <StyledCinemaVideo
             src={aiReel}
             autoPlay
@@ -250,8 +232,8 @@ function CinemaCard() {
             <StyledCaseContents>
               <h3>AI</h3>
               <Styledp>
-               Keeping up to date with emerging technologies such as AI and implenting them into my creative process.
-                
+                Keeping up to date with emerging technologies such as AI and
+                implenting them into my creative process.
               </Styledp>
               <StyledHover>
                 <Styledp>LinkedIn ..</Styledp>
@@ -261,13 +243,14 @@ function CinemaCard() {
         </StyledCaseMain>
       </a>
       <StyledSectionNotation>
-      <StyledNotation>AI generated video for concepts. 
-        Disclaimer: This video was created independently and is not affiliated with or endorsed by any brands. </StyledNotation>
+        <StyledNotation>
+          AI generated video for concepts. Disclaimer: This video was created
+          independently and is not affiliated with or endorsed by any brands.{" "}
+        </StyledNotation>
       </StyledSectionNotation>
-      <StyledBorderBox>
-      </StyledBorderBox>
+      <StyledBorderBox></StyledBorderBox>
     </StyledWrapper>
   );
 }
 
-export default CinemaCard;
+export default AiCard;

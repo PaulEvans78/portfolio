@@ -2,17 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import BackgroundVideo from "../assets/lipusplus_brand_film_hammarby-2024_short.mp4";
 import Showcase from "../assets/lipusplus_brand_film_hammarby-2024.mp4";
-// import ButtonFilm from "./ButtonPlayLipusPrimary";
 import Img1 from "../assets/lipusImg1.avif";
 import Img2 from "../assets/lipusImg2.avif";
 import Img3 from "../assets/lipusImg3.avif";
 import Img4 from "../assets/lipusImg4.avif";
-// import ButtonCase from "./ButtonLipusPlusSecondary";
 import Modal from "./ModalLipus";
 
 const StyledWrapper = styled.div`
-  /* display: inline-block;
-  width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,14 +98,10 @@ const StyledMainContainer = styled.section`
   }
 
   @media (max-width: 960px) {
-    
-
     ${StyledContentsContainer} {
       transform: translateY(0%);
     }
-    /* ${StyledButtonContainer} {
-      display: flex;
-    } */
+
     ${Styledp} {
       display: flex;
     }
@@ -125,89 +117,76 @@ const StyledMainContainer = styled.section`
   }
 `;
 
-
 const StyledInfoContainer = styled.div`
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- color: var(--main-font-color);
- padding: 0em 0em 2em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: var(--main-font-color);
+  padding: 0em 0em 2em 0em;
 
- @media (max-width: 960px) {
-  /* width: 90%; */
-  flex-direction: column;
-  justify-items: center;
-  /* align-self: center; */
-  padding: 0em 0em 2em 4em;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    justify-items: center;
+    padding: 0em 0em 2em 4em;
   }
 
   @media (max-width: 478px) {
-  flex-direction: column;
-  padding: 0em 0em 2em 3em;
+    flex-direction: column;
+    padding: 0em 0em 2em 3em;
   }
 `;
 
 const StyledSectionTitle = styled.div`
- display: flex;
- justify-content: center;
- color: var(--main-font-color);
- padding: 2em 0em 2em 0em;
+  display: flex;
+  justify-content: center;
+  color: var(--main-font-color);
+  padding: 2em 0em 2em 0em;
 `;
 
 const StyledSectionNotation = styled.div`
- display: flex;
- justify-self: center;
- justify-content: center;
- width: 90%;
- color: var(--main-font-color);
- padding: 0em 0em 3em 0em;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  width: 90%;
+  color: var(--main-font-color);
+  padding: 0em 0em 3em 0em;
 `;
 
 const StyledNotation = styled.p`
- font-size: 14px;
- text-align: center;
+  font-size: 14px;
+  text-align: center;
 `;
 
 const StyledDescription = styled.div`
- width: 20%;
- text-align: justify;
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
-
 `;
 
-const StyledRole= styled.div`
- width: 20%;
- text-align: justify;
+const StyledRole = styled.div`
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
-  margin-top: 1em;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
+    margin-top: 1em;
   }
 `;
 
 const StyledToolsSkills = styled.div`
- width: 20%;
- text-align: justify;
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
 `;
-
-// const StyledMore = styled.div`
-//  width: 20%;
-//  text-align: justify;
-
-//  @media (max-width: 960px) {
-//   width: 90%;
-//   }
-// `;
 
 const StyledInfoText = styled.p`
   font-size: 16px;
@@ -216,94 +195,84 @@ const StyledInfoText = styled.p`
 const StyledInfoTitle = styled.p`
   font-size: 16px;
   font-weight: 600;
-  `;
+`;
 
-  const StyledLink = styled.a`
+const StyledLink = styled.a`
   font-size: 16px;
-  color:var(--main-button-color);
+  color: var(--main-button-color);
 
   &:hover {
     color: var(--main-button-hover-color);
   }
-
-  `;
+`;
 
 const StyledImgContent = styled.div`
-display: Grid;
-grid-template-areas:
+  display: Grid;
+  grid-template-areas:
     "image1 image2"
     "image3 image4";
   row-gap: 40px;
   column-gap: 4%;
-width: 100%;
-padding: 1em 0em 3em 0em;
+  width: 100%;
+  padding: 1em 0em 3em 0em;
 
-@media (max-width: 767px) {
-  grid-template-areas:
-    "image1"
-    "image2"
-    "image3"
-    "image4";
- }
+  @media (max-width: 767px) {
+    grid-template-areas:
+      "image1"
+      "image2"
+      "image3"
+      "image4";
+  }
 `;
 
 const StyledImage1Wrapper = styled.div`
   grid-area: image1;
   display: flex;
   justify-content: flex-end;
-  /* width: 20%; */
   height: 100%;
 
   @media (max-width: 767px) {
     justify-content: center;
- }
+  }
 `;
 
 const StyledImage2Wrapper = styled.div`
   grid-area: image2;
   display: flex;
   justify-content: flex-start;
-  /* width: 20%; */
   height: 100%;
 
   @media (max-width: 767px) {
     justify-content: center;
- }
+  }
 `;
 
 const StyledImage3Wrapper = styled.div`
   grid-area: image3;
   display: flex;
   justify-content: flex-end;
-  /* width: 20%; */
   height: 100%;
 
   @media (max-width: 767px) {
     justify-content: center;
- }
+  }
 `;
 
 const StyledImage4Wrapper = styled.div`
   grid-area: image4;
   display: flex;
   justify-content: flex-start;
-  /* width: 20%; */
   height: 100%;
 
   @media (max-width: 767px) {
     justify-content: center;
- }
+  }
 `;
 
 const StyledImg = styled.img`
   width: 80%;
-  /* height: 100%; */
   object-fit: cover;
   border-radius: 24px;
-
-  /* @media (max-width: 767px) {
-    display: none;
-  } */
 `;
 
 const StyledVideo = styled.video`
@@ -330,14 +299,8 @@ const StyledOpacity = styled.div`
 const StyledHover = styled.div`
   &:hover {
     color: var(--main-button-hover-color);
-  };
-  `;
-// const StyledBorderBox =styled.div`
-//   width: 91%;
-//   height: 80px;
-//   margin: 0em 0em 0em 4em;
-//   border-bottom: 1px solid #1e1e1ee6;
-//   `;
+  }
+`;
 
 const Film = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
@@ -423,76 +386,60 @@ const Film = ({ scrollToEvent }) => {
   return (
     <StyledWrapper>
       <StyledSectionTitle>
-      <h2>UX / UI & Frontend</h2>
+        <h2>UX / UI & Frontend</h2>
       </StyledSectionTitle>
       <StyledInfoContainer>
-            <StyledDescription>
-              <StyledInfoTitle> 
-              LipusPlus - Positioning in Healthtech
-              </StyledInfoTitle>
-              <StyledInfoText>
-              Designed and created an enticing and informative landing page, to attract physiotherapists 
-              and elite athletes to LipusPlus webinars on the Return to Play concept. 
-              </StyledInfoText>
-              <StyledLink href="https://www.lipusplus.com/casestudies/hammarby" target="_blank" rel="noopener noreferrer">
-    lipusplus.com
-              </StyledLink>
-              </StyledDescription>
-            <StyledRole>
-            <StyledInfoTitle>
-                Role 
-              </StyledInfoTitle>
-              <StyledInfoText>
-              UX / UI Designer | Frontend Developer | Content Creator
-              </StyledInfoText>
-            </StyledRole>
-            <StyledToolsSkills>
-            <StyledInfoTitle>
-                Tools & Skills
-              </StyledInfoTitle>
-            <StyledInfoText>
-                Figma | Webflow | Vimeo | JavaScript | Adobe Creative Suite | Cinematography |
-                Storytelling
-              </StyledInfoText>
-            </StyledToolsSkills>
-            {/* <StyledMore>
-            <StyledInfoTitle>
-                Website
-              </StyledInfoTitle>
-            <StyledLink href="https://www.lipusplus.com/casestudies/hammarby" target="_blank" rel="noopener noreferrer">
-    lipusplus.com
-              </StyledLink>
-            </StyledMore> */}
-          </StyledInfoContainer>
+        <StyledDescription>
+          <StyledInfoTitle>
+            LipusPlus - Positioning in Healthtech
+          </StyledInfoTitle>
+          <StyledInfoText>
+            Designed and created an enticing and informative landing page, to
+            attract physiotherapists and elite athletes to LipusPlus webinars on
+            the Return to Play concept.
+          </StyledInfoText>
+          <StyledLink
+            href="https://www.lipusplus.com/casestudies/hammarby"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            lipusplus.com
+          </StyledLink>
+        </StyledDescription>
+        <StyledRole>
+          <StyledInfoTitle>Role</StyledInfoTitle>
+          <StyledInfoText>
+            UX / UI Designer | Frontend Developer | Content Creator
+          </StyledInfoText>
+        </StyledRole>
+        <StyledToolsSkills>
+          <StyledInfoTitle>Tools & Skills</StyledInfoTitle>
+          <StyledInfoText>
+            Figma | Webflow | Vimeo | JavaScript | Adobe Creative Suite |
+            Cinematography | Storytelling
+          </StyledInfoText>
+        </StyledToolsSkills>
+      </StyledInfoContainer>
 
-          <StyledImgContent>
-<StyledImage1Wrapper>
-          <StyledImg
-          src={Img1}
-          alt="A screen shot from LipusPlus homepage."
-        />
-</StyledImage1Wrapper>
-<StyledImage2Wrapper>
-<StyledImg
-          src={Img2}
-          alt="A screen shot from LipusPlus homepage."
-        />
-</StyledImage2Wrapper>
-<StyledImage3Wrapper>
-<StyledImg
-          src={Img4}
-          alt="A screen shot from LipusPlus homepage."
-        />
-</StyledImage3Wrapper>
-<StyledImage4Wrapper>
-<StyledImg
-          src={Img3}
-          alt="A screen shot from LipusPlus homepage."
-        />
-</StyledImage4Wrapper>
-          </StyledImgContent>
-          <StyledSectionNotation>
-      <StyledNotation>Screen shots from LipusPlus.com. A Landingpage showcasing the partnership between LipusPlus and Hammarby Handball.</StyledNotation>
+      <StyledImgContent>
+        <StyledImage1Wrapper>
+          <StyledImg src={Img1} alt="A screen shot from LipusPlus homepage." />
+        </StyledImage1Wrapper>
+        <StyledImage2Wrapper>
+          <StyledImg src={Img2} alt="A screen shot from LipusPlus homepage." />
+        </StyledImage2Wrapper>
+        <StyledImage3Wrapper>
+          <StyledImg src={Img4} alt="A screen shot from LipusPlus homepage." />
+        </StyledImage3Wrapper>
+        <StyledImage4Wrapper>
+          <StyledImg src={Img3} alt="A screen shot from LipusPlus homepage." />
+        </StyledImage4Wrapper>
+      </StyledImgContent>
+      <StyledSectionNotation>
+        <StyledNotation>
+          Screen shots from LipusPlus.com. A Landingpage showcasing the
+          partnership between LipusPlus and Hammarby Handball.
+        </StyledNotation>
       </StyledSectionNotation>
       <StyledMainContainer onClick={handleButtonClick}>
         <StyledVideo
@@ -517,12 +464,8 @@ const Film = ({ scrollToEvent }) => {
             </Styledp>
 
             <StyledHover>
-                <Styledp>Watch here</Styledp>
-              </StyledHover>
-            {/* <StyledButtonContainer>
-              <ButtonFilm onClick={handleButtonClick} />
-              
-            </StyledButtonContainer> */}
+              <Styledp>Watch here</Styledp>
+            </StyledHover>
           </StyledContents>
         </StyledContentsContainer>
 
@@ -541,8 +484,6 @@ const Film = ({ scrollToEvent }) => {
           preload="auto"
         />
       </StyledMainContainer>
-      {/* <StyledBorderBox>
-      </StyledBorderBox> */}
     </StyledWrapper>
   );
 };

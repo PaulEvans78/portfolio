@@ -10,8 +10,6 @@ const preloadVideo = (url) => {
 };
 
 const StyledWrapper = styled.div`
-  /* grid-area: cinema; */
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +50,6 @@ const StyledCaseMain = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-self: center;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -68,16 +65,9 @@ const StyledCaseMain = styled.section`
 
   &:hover ${Styledp} {
     display: flex;
-    /* color: var(--main-font-color); */
   }
 
-  /* @media (min-width: 2050px) {
-    aspect-ratio: 5 / 3;
-  } */
-
   @media (max-width: 960px) {
-    /* width: 96%; */
-
     ${StyledCaseContents} {
       transform: translateY(0%);
     }
@@ -98,72 +88,64 @@ const StyledCaseMain = styled.section`
 `;
 
 const StyledInfoContainer = styled.div`
- width: 100%;
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- color: var(--main-font-color);
- padding: 0em 0em 2em 0em;
-
- @media (max-width: 960px) {
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: var(--main-font-color);
   padding: 0em 0em 2em 0em;
-  /* text-align: center; */
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 0em 2em 0em;
   }
-
-  /* @media (max-width: 767px) {
-  flex-direction: column;
-  padding: 0em 0em 2em 0em;
-  } */
 `;
 
 const StyledDescription = styled.div`
- width: 20%;
- text-align: justify;
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
-
 `;
 
 const StyledSectionTitle = styled.div`
- display: flex;
- justify-content: center;
- color: var(--main-font-color);
- padding: 2em 0em 2em 0em;
+  display: flex;
+  justify-content: center;
+  color: var(--main-font-color);
+  padding: 2em 0em 2em 0em;
 `;
 
+const StyledNarrative = styled.div`
+  width: 20%;
+  text-align: justify;
 
-const StyledNarrative= styled.div`
- width: 20%;
- text-align: justify;
-
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
 `;
 
 const StyledCommercials = styled.div`
- width: 20%;
- text-align: justify;
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
 `;
 
 const StyledMusicVideos = styled.div`
- width: 20%;
- text-align: justify;
+  width: 20%;
+  text-align: justify;
 
- @media (max-width: 960px) {
-  width: 90%;
-  text-align: center;
+  @media (max-width: 960px) {
+    width: 90%;
+    text-align: center;
   }
 `;
 const StyledCinemaVideo = styled.video`
@@ -200,70 +182,53 @@ const StyledHover = styled.div`
   }
 `;
 
-// const StyledBorderBox =styled.div`
-//   width: 95%;
-//   height: 80px;
-//   margin: 0em 0em 0em 2em;
-//   border-bottom: 1px solid #1e1e1ee6;
-//   `;
-
 function CinemaCard({ onLoadedData }) {
   useEffect(() => {
     preloadVideo(dopReel);
   }, []);
 
   return (
-    
     <StyledWrapper>
       <StyledSectionTitle>
-      <h2>Cinematography</h2>
+        <h2>Cinematography</h2>
       </StyledSectionTitle>
       <StyledInfoContainer>
-            <StyledDescription>
-              <StyledInfoTitle> 
-              Paul Evans FSF.
-              </StyledInfoTitle>
-              <StyledInfoText>
-              Expertise in both film and digital formats. Thrives on blending live-action footage with VFX, 
-              creating visually captivating worlds that amplify storytelling. 
-              </StyledInfoText>
-              </StyledDescription>
-            <StyledNarrative>
-            <StyledInfoTitle>
-                Narrative Selected Titles:
-              </StyledInfoTitle>
-              <StyledInfoText>
-                The Last Journey or the Vikings, Viaplay |
-                Streams, SVT |
-                Vi Forever, SVT
-              </StyledInfoText>
-            </StyledNarrative>
-            <StyledCommercials>
-            <StyledInfoTitle>
-                Commercials Selected Brands:
-              </StyledInfoTitle>
-            <StyledInfoText>
-                Volvo | Ikea | Fruit-Tella | Burger King | Call of Duty | Renault |
-                Stadium | Gant | Doritos | ICA | Verisure | Aller Media | Grandiosa
-              </StyledInfoText>
-            </StyledCommercials>
-            <StyledMusicVideos>
-            <StyledInfoTitle>
-                Music Promos Selected Artists:
-              </StyledInfoTitle>
-            <StyledInfoText>
-                Katy Perry| Ghost | MØ | Viagra Boys | Darin | Albin Lee Meldau  |
-                Ansiktet 
-              </StyledInfoText>
-            </StyledMusicVideos>
-          </StyledInfoContainer>
+        <StyledDescription>
+          <StyledInfoTitle>Paul Evans FSF.</StyledInfoTitle>
+          <StyledInfoText>
+            Expertise in both film and digital formats. Thrives on blending
+            live-action footage with VFX, creating visually captivating worlds
+            that amplify storytelling.
+          </StyledInfoText>
+        </StyledDescription>
+        <StyledNarrative>
+          <StyledInfoTitle>Narrative Selected Titles:</StyledInfoTitle>
+          <StyledInfoText>
+            The Last Journey or the Vikings, Viaplay | Streams, SVT | Vi
+            Forever, SVT
+          </StyledInfoText>
+        </StyledNarrative>
+        <StyledCommercials>
+          <StyledInfoTitle>Commercials Selected Brands:</StyledInfoTitle>
+          <StyledInfoText>
+            Volvo | Ikea | Fruit-Tella | Burger King | Call of Duty | Renault |
+            Stadium | Gant | Doritos | ICA | Verisure | Aller Media | Grandiosa
+          </StyledInfoText>
+        </StyledCommercials>
+        <StyledMusicVideos>
+          <StyledInfoTitle>Music Promos Selected Artists:</StyledInfoTitle>
+          <StyledInfoText>
+            Katy Perry| Ghost | MØ | Viagra Boys | Darin | Albin Lee Meldau |
+            Ansiktet
+          </StyledInfoText>
+        </StyledMusicVideos>
+      </StyledInfoContainer>
       <a
         href="https://paulevans-dop.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <StyledCaseMain>
-          
           <StyledCinemaVideo
             src={dopReel}
             autoPlay
@@ -278,9 +243,8 @@ function CinemaCard({ onLoadedData }) {
             <StyledCaseContents>
               <h3>Paul Evans fsf</h3>
               <Styledp>
-              Captivating audiences and elevating stories.
-              Working in Narrative, Commercials, Music Videos and Still Photography. 
-                
+                Captivating audiences and elevating stories. Working in
+                Narrative, Commercials, Music Videos and Still Photography.
               </Styledp>
               <StyledHover>
                 <Styledp>See work ..</Styledp>
@@ -289,8 +253,6 @@ function CinemaCard({ onLoadedData }) {
           </StyledOpacity>
         </StyledCaseMain>
       </a>
-      {/* <StyledBorderBox>
-      </StyledBorderBox> */}
     </StyledWrapper>
   );
 }
