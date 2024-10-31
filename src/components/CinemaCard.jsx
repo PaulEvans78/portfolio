@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
 
-const preloadVideo = (url) => {
-  const video = document.createElement("video");
-  video.src = url;
-  video.preload = "auto";
-  video.load();
-};
+
+
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -182,10 +178,9 @@ const StyledHover = styled.div`
   }
 `;
 
-function CinemaCard({ onLoadedData }) {
-  useEffect(() => {
-    preloadVideo(dopReel);
-  }, []);
+const CinemaCard = () => {
+  
+
 
   return (
     <StyledWrapper>
@@ -236,7 +231,7 @@ function CinemaCard({ onLoadedData }) {
             muted
             playsInline
             alt="A showreel showing clips from different productions."
-            onLoadedData={onLoadedData}
+          
           />
 
           <StyledOpacity>

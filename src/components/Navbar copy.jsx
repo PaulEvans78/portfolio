@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
-import SplineLogo from "../components/Spline";
-// import logo from "../assets/paulEvansCreativeLogo.avif";
+import logo from "../assets/paulEvansCreativeLogo.avif";
 
 const StyledNav = styled.nav`
   position: absolute;
@@ -57,7 +56,7 @@ const StyledImgContainer = styled.div`
   }
 `;
 
-const StyledNavLogo = styled.div`
+const StyledNavLogo = styled.img`
   text-align: center;
   width: 70px;
   margin-top: 0em;
@@ -256,13 +255,10 @@ const Navbar = ({ footerRef }) => {
       <StyledImageandName>
         <Link to="/" onClick={handleLinkClick}>
           <StyledIdent>
-          <StyledNavLogo>
-          <SplineLogo />
-          </StyledNavLogo>
-            {/* <StyledNavLogo
+            <StyledNavLogo
               src={logo}
               alt="the letters P and E merged together to form the logo Paul Evans Creative"
-            /> */}
+            />
           </StyledIdent>
         </Link>
       </StyledImageandName>

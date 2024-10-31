@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import AICard from "../components/AICard";
 import LipusPlus from "../components/LipusPlus";
 import Ebie from "../components/Ebie";
-import { StyledLoadingContainer, StyledLogo } from "../components/FadesStyled";
 
 const StyledHomeContainer = styled.section`
   max-width: 94vw;
@@ -36,19 +35,11 @@ const StyledBorderBox = styled.div`
 const Home = () => {
   // const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   // const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleContentLoad = () => {
-    setIsLoading(false);
-  };
+ 
 
   return (
     <StyledHomeContainer>
-      {isLoading && (
-        <StyledLoadingContainer>
-          <StyledLogo />
-        </StyledLoadingContainer>
-      )}
+   
 
       {/* <StyledThreeSquaresContainer
         ref={squaresRef1}
@@ -58,7 +49,7 @@ const Home = () => {
       <Hero />
       <StyledBorderBox></StyledBorderBox>
 
-      <CinemaCard onLoadedData={handleContentLoad} />
+      <CinemaCard />
 
       <StyledBorderBox></StyledBorderBox>
 

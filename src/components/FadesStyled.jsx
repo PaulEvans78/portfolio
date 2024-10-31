@@ -1,56 +1,5 @@
-import styled, { keyframes, css } from "styled-components";
-import logo from "../assets/paulEvansCreativeLogo.avif";
+import styled, { css } from "styled-components";
 
-const rotate = keyframes` 
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-`;
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-export const StyledLoadingContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #171717;
-  z-index: 9999;
-`;
-
-export const StyledLogo = styled.img.attrs({
-  src: logo,
-  alt: "Paul Evans Creative Logo",
-})`
-  width: 400px;
-  height: 400px;
-  animation: ${rotate} 1.5s linear infinite;
-  border-radius: 50%;
-
-  @media (max-width: 767px) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @media (max-width: 478px) {
-    width: 200px;
-    height: 200px;
-  }
-`;
 
 export const StyledSquaresContainer = styled.section`
   max-width: 94.5%;
