@@ -1,21 +1,19 @@
 :root {
-  --main-font-color:#1e1e1ee6;
+  --main-font-color: #1e1e1ee6;
   --secondary-font-color: whitesmoke;
   --main-notation-font-color: #cdcccc;
   --main-notation-background-color: #1e1e1ee6;
   --main-p-color: #1e1e1ee6;
   --main-casecard-background-color: #f9f9f9;
-  --main-button-color: #F5612A;
+  --main-button-color: #f9c60c;
   --main-button-hover-color: #f67f54;
   --secondary-button-color: #d5d5d5;
   --secondary-button-hover-color: #f67f54;
   --main-navbar-hover-color: #f67f54;
-  --main-navbar-active-color: #F5612A;
+  --main-navbar-active-color: #f9c60c;
   --main-hero-backgroundcolor: #ffffff;
   --main-modal-backgroundcolor: #171717;
   --main-infoBackground-backgroundcolor: #171717ac;
-
-
 }
 
 * {
@@ -25,22 +23,17 @@
 body {
   max-width: 100vw;
   min-width: 100vw;
-  margin:0;
-  /* padding: 0em 2em 0em 2em; */
+  margin: 0;
   overflow-x: hidden;
   color: whitesmoke;
-  font-family: 'Poppins', sans-serif;
- }
+  font-family: "Poppins", sans-serif;
+}
 
-
-
-a { 
+a {
   font-size: 16px;
-  color: inherit; 
-  text-decoration: none; 
-} 
-
-
+  color: inherit;
+  text-decoration: none;
+}
 
 @keyframes textGradient {
   0% {
@@ -51,8 +44,6 @@ a {
   }
 }
 
-
-
 h1 {
   font-family: "Gravitas One", serif;
   font-size: 64px;
@@ -62,13 +53,9 @@ h1 {
   margin-bottom: 0.25em;
   color: var(--main-font-color);
 
-  @media screen and (max-width: 1080px) {
-    /* font-size: 20px; */
-    } 
-
-    @media screen and (max-width: 767px) {
-      font-size: 48px;
-    }
+  @media screen and (max-width: 767px) {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -77,20 +64,20 @@ h2 {
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
-  margin:0;
+  margin: 0;
   margin-bottom: 1em;
 
   @media screen and (max-width: 767px) {
     font-size: 32px;
-    } 
+  }
 
   @media screen and (max-width: 478px) {
     font-size: 28px;
-    } 
+  }
 
-    @media screen and (max-width: 478px) {
-      font-size: 24px;
-      } 
+  @media screen and (max-width: 478px) {
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -99,22 +86,17 @@ h3 {
   font-weight: 200;
   font-style: normal;
   line-height: 1.1;
-  margin:0;
+  margin: 0;
   margin-bottom: 1em;
 
   @media screen and (max-width: 767px) {
     font-size: 28px;
-    } 
+  }
 
   @media screen and (max-width: 478px) {
     font-size: 24px;
-    } 
-
-    /* @media screen and (max-width: 478px) {
-      font-size: 24px;
-      }  */
+  }
 }
-
 
 p {
   font-size: 18px;
@@ -122,16 +104,13 @@ p {
   font-style: normal;
   line-height: 1.6;
 
-  
-
   @media screen and (max-width: 478px) {
     font-size: 18px;
-    } 
+  }
 
-    @media screen and (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     font-size: 16px;
-    } 
-
+  }
 }
 
 ul {
@@ -140,7 +119,6 @@ ul {
   @media (max-width: 960px) {
     margin-top: 0em;
   }
-  
 }
 
 li {
@@ -153,9 +131,7 @@ li {
   list-style-type: none;
   list-style-position: inside;
   text-indent: -1.25em;
-  
 }
-
 
 .bold {
   font-weight: bold;

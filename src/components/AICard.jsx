@@ -150,6 +150,8 @@ const StyledHover = styled.div`
 
 const StyledLink = styled.a`
   font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
   color: var(--main-button-color);
 
   &:hover {

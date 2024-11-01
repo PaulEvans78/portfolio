@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
-import SplineLogo from "../components/Spline";
-// import logo from "../assets/paulEvansCreativeLogo.avif";
+import logo from "../assets/Spline_logo.mp4";
 
 const StyledNav = styled.nav`
   position: absolute;
@@ -57,9 +56,9 @@ const StyledImgContainer = styled.div`
   }
 `;
 
-const StyledNavLogo = styled.div`
+const StyledNavLogo = styled.video`
   text-align: center;
-  width: 70px;
+  width: 80px;
   margin-top: 0em;
 
   @media screen and (max-width: 960px) {
@@ -71,7 +70,7 @@ const StyledNavLogo = styled.div`
   }
 `;
 
-const StyledHamburgerPELogo = styled.img`
+const StyledHamburgerPELogo = styled.video`
   display: none;
 
   @media screen and (max-width: 960px) {
@@ -256,13 +255,14 @@ const Navbar = ({ footerRef }) => {
       <StyledImageandName>
         <Link to="/" onClick={handleLinkClick}>
           <StyledIdent>
-          <StyledNavLogo>
-          <SplineLogo />
-          </StyledNavLogo>
-            {/* <StyledNavLogo
+            <StyledNavLogo
               src={logo}
-              alt="the letters P and E merged together to form the logo Paul Evans Creative"
-            /> */}
+              autoPlay
+              loop
+              muted
+              playsInline
+              alt="A revolving logo showing the initals PE and a cartton version of Paul Evans.."
+            />
           </StyledIdent>
         </Link>
       </StyledImageandName>
@@ -293,7 +293,11 @@ const Navbar = ({ footerRef }) => {
         <StyledImgContainer>
           <StyledHamburgerPELogo
             src={logo}
-            alt="the letters P and E merged together to form the logo Paul Evans Creative"
+            autoPlay
+            loop
+            muted
+            playsInline
+            alt="A revolving logo showing the initals PE and a cartton version of Paul Evans.."
           />
         </StyledImgContainer>
       </StyledNavul>

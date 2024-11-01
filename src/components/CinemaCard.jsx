@@ -2,9 +2,6 @@ import React from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
 
-
-
-
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -179,9 +176,6 @@ const StyledHover = styled.div`
 `;
 
 const CinemaCard = () => {
-  
-
-
   return (
     <StyledWrapper>
       <StyledSectionTitle>
@@ -231,7 +225,6 @@ const CinemaCard = () => {
             muted
             playsInline
             alt="A showreel showing clips from different productions."
-          
           />
 
           <StyledOpacity>
@@ -250,6 +243,6 @@ const CinemaCard = () => {
       </a>
     </StyledWrapper>
   );
-}
+};
 
 export default CinemaCard;

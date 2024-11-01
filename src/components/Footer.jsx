@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaImdb, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import logo from "../assets/paulEvansCreativeLogo.avif";
+import logo from "../assets/Spline_logo.mp4";
 import { Link } from "react-router-dom";
 
 const footerData = [
@@ -205,7 +205,7 @@ const StyledLogoContainer = styled.div`
   }
 `;
 
-const StyledFooterLogo = styled.img`
+const StyledFooterLogo = styled.video`
   text-align: center;
   justify-self: center;
   width: 120px;
@@ -232,7 +232,11 @@ const Footer = React.forwardRef((props, ref) => (
       <Link to="/">
         <StyledFooterLogo
           src={logo}
-          alt="the letters P and E merged together to form the logo Paul Evans Creative"
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="A revolving logo showing the initals PE and a cartton version of Paul Evans.."
         />
       </Link>
     </StyledLogoContainer>

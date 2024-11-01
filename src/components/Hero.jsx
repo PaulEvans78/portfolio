@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import heroFilm from "../assets/heroFilm1.1.mp4";
 
-const StyledContentsContainer = styled.div`
+const StyledContentsContainer = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
   text-align: left;
   width: 100%;
   padding: 8em 1em 0.5em 1em;
 
   @media (max-width: 960px) {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -18,12 +20,28 @@ const StyledContentsContainer = styled.div`
   }
 `;
 
-const StyledIntro = styled.section`
+const StyledVideoContainer = styled.div`
+  width: 50%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+`;
+
+const StyledVideo = styled.video`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const StyledIntro = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 45%;
+  width: 50%;
   min-height: 550px;
   font-size: 1.2rem;
   overflow: hidden;
@@ -51,11 +69,6 @@ const Styledp = styled.p`
   }
 `;
 
-const StyledBorderBox = styled.div`
-  width: 98%;
-  border-bottom: 1px solid #1e1e1ee6;
-`;
-
 const Hero = () => {
   return (
     <StyledContentsContainer>
@@ -76,6 +89,16 @@ const Hero = () => {
           across digital and physical platforms.
         </Styledp>
       </StyledIntro>
+      <StyledVideoContainer>
+        <StyledVideo
+          src={heroFilm}
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="A showreel showing clips from different productions."
+        />
+      </StyledVideoContainer>
     </StyledContentsContainer>
   );
 };

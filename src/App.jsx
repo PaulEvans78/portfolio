@@ -7,6 +7,7 @@ import ScrollButton from "./components/ScrollButton/ScrollButton";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+// import DebounceTest from "./components/DebounceTest";
 
 const GridContainer = styled.div`
   min-height: 100%;

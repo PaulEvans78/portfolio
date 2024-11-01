@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/portfolio/', //Github deploy remove for live build
+  // optimizeDeps: {
+  //   exclude: ['@splinetool/react-spline'],
+  // },
 })
