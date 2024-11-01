@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroFilm from "../assets/heroFilm1.1.mp4";
+import heroFilm from "../assets/heroFilm.mp4";
 
 const StyledContentsContainer = styled.section`
   display: flex;

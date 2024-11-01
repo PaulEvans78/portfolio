@@ -18,13 +18,7 @@ const StyledInfoContainer = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
     justify-items: center;
-
-    padding: 0em 0em 2em 4em;
-  }
-
-  @media (max-width: 478px) {
-    flex-direction: column;
-    padding: 0em 0em 2em 3em;
+    align-items: center;
   }
 `;
 

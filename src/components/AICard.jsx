@@ -38,11 +38,12 @@ const StyledCaseContents = styled.div`
 
   @media (max-width: 960px) {
     transform: translateY(42%);
-    padding: 0em 2em 0.5em 1em;
+    padding: 0em 2em 1em 1em;
   }
 
   @media (max-width: 478px) {
-    padding: 8em 2em 0.5em 1em; // 8 padding temporary
+    justify-content: flex-end;
+    padding: 0em 2em 2em 1em;
   }
 `;
 
@@ -86,10 +87,8 @@ const StyledCaseMain = styled.section`
     }
   }
 
-  @media (max-width: 478px) { // temp
-    ${Styledp} {
-      display: none;
-    }
+  @media (max-width: 478px) {
+    aspect-ratio: 4 / 5;
   }
 `;
 

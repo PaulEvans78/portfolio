@@ -22,8 +22,7 @@ const StyledCaseContents = styled.div`
   text-align: left;
   width: 100%;
   height: 100%;
-  padding: 0em 2em 1em 3em;
-  padding-bottom: 0.5em;
+  padding: 0em 2em 0.5em 3em;
   border-radius: 24px;
 
   transform: translateY(46%); //Intial state
@@ -35,7 +34,8 @@ const StyledCaseContents = styled.div`
   }
 
   @media (max-width: 478px) {
-    padding: 8em 2em 0.5em 1em; // 8 padding temporary
+    justify-content: flex-end;
+    padding: 0em 2em 2em 1em;
   }
 `;
 
@@ -79,10 +79,8 @@ const StyledCaseMain = styled.section`
     }
   }
 
-  @media (max-width: 478px) { // temp
-    ${Styledp} {
-      display: none;
-    }
+  @media (max-width: 478px) {
+    aspect-ratio: 4 / 5;
   }
 `;
 

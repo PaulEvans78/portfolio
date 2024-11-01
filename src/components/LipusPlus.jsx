@@ -58,13 +58,21 @@ const StyledContentsContainer = styled.div`
 `;
 
 const StyledContents = styled.div`
-  width: 60%;
-  padding-left: 2em;
-  padding-bottom: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0em 2em 0.5em 1em;
 
   @media screen and (max-width: 960px) {
-    width: 90%;
-    padding-left: 1em;
+    padding: 0em 2em 1em 1em;
+  }
+
+  @media (max-width: 478px) {
+    justify-content: flex-end;
+    padding: 12em 2em 2em 1em;
   }
 `;
 
@@ -127,12 +135,7 @@ const StyledInfoContainer = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
     justify-items: center;
-    padding: 0em 0em 2em 4em;
-  }
-
-  @media (max-width: 478px) {
-    flex-direction: column;
-    padding: 0em 0em 2em 3em;
+    align-items: center;
   }
 `;
 
