@@ -61,6 +61,10 @@ const StyledFooter = styled.footer`
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 4em;
+  }
 `;
 
 const StyledContactContainer = styled.div`

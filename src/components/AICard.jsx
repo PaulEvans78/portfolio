@@ -42,7 +42,7 @@ const StyledCaseContents = styled.div`
   }
 
   @media (max-width: 478px) {
-    padding: 0em 2em 0.5em 1em;
+    padding: 8em 2em 0.5em 1em; // 8 padding temporary
   }
 `;
 
@@ -82,6 +82,12 @@ const StyledCaseMain = styled.section`
     }
 
     &:hover ${Styledp} {
+      display: none;
+    }
+  }
+
+  @media (max-width: 478px) { // temp
+    ${Styledp} {
       display: none;
     }
   }
