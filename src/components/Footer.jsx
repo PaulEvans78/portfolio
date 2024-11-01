@@ -85,8 +85,9 @@ const StyledContactContainer = styled.div`
 const StyledMailLink = styled.p`
   display: flex;
   flex-direction: column;
+  font-weight: 500;
+  text-decoration: underline;
   color: var(--main-button-color);
-
   margin-bottom: -0.5em;
 
   &:hover {
@@ -107,6 +108,8 @@ const StyledMailLink = styled.p`
 const StyledTelLink = styled.p`
   display: flex;
   flex-direction: column;
+  font-weight: 500;
+  text-decoration: underline;
   color: var(--main-button-color);
 
   &:hover {
