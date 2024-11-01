@@ -23,10 +23,15 @@ const StyledContentsContainer = styled.section`
 const StyledVideoContainer = styled.div`
   width: 50%;
   height: 100%;
+  min-height: 550px;
   overflow-x: hidden;
   display: flex;
   align-content: center;
   justify-items: center;
+
+  @media (max-width: 960px) {
+    min-height: 200px;
+  }
 `;
 
 const StyledVideo = styled.video`
@@ -38,6 +43,7 @@ const StyledVideo = styled.video`
 
 const StyledIntro = styled.div`
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -96,7 +102,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          alt="A showreel showing clips from different productions."
+          alt="A animated sketch of aa man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."
         />
       </StyledVideoContainer>
     </StyledContentsContainer>
