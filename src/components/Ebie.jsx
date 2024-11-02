@@ -33,12 +33,13 @@ const StyledSectionNotation = styled.div`
   display: flex;
   justify-self: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   color: var(--main-font-color);
   padding: 0em 0em 3em 0em;
 
   @media (max-width: 767px) {
     padding: 0em 0em 0em 0em;
+    height: 20px;
   }
 `;
 
@@ -150,13 +151,6 @@ const StyledVideo = styled.video`
   }
 `;
 
-const StyledBorderBox = styled.div`
-  width: 95%;
-  height: 80px;
-  margin: 0em 0em 0em 1em;
-  border-bottom: 1px solid #1e1e1ee6;
-`;
-
 const Case = ({ scrollToEvent }) => {
   const videoRef = useRef(null);
   const filmRef = useRef(null);
@@ -247,10 +241,8 @@ const Case = ({ scrollToEvent }) => {
         </StyledImage2Wrapper>
       </StyledImgContent>
       <StyledSectionNotation>
-        <StyledNotation>Prototypes for Ebie's Grop Insurance. </StyledNotation>
+        <StyledNotation>Prototypes for Ebie's Group Insurance. </StyledNotation>
       </StyledSectionNotation>
-
-      <StyledBorderBox></StyledBorderBox>
     </StyledWrapper>
   );
 };

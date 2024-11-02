@@ -28,7 +28,8 @@ const StyledHomeContainer = styled.section`
 const StyledBorderBox = styled.div`
   width: 95%;
   height: 80px;
-  margin: 0em 0em 0em 1em;
+  align-self: center;
+  margin: 0em 0em 2em 0em;
   border-bottom: 1px solid #1e1e1ee6;
 `;
 
@@ -61,7 +62,10 @@ const Home = () => {
 
       <Ebie />
 
+      <StyledBorderBox></StyledBorderBox>
+
       <AICard />
+      <StyledBorderBox></StyledBorderBox>
     </StyledHomeContainer>
   );
 };

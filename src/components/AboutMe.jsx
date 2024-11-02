@@ -31,18 +31,24 @@ const StyledCaseMain = styled.section`
   }
 `;
 const StyledContentsContainer = styled.div`
-  width: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
   padding-left: 4%;
   padding-right: 4%;
   background-color: var(--main-hero-backgroundcolor);
   color: var(--main-font-color);
+
+  @media screen and (max-width: 960px) {
+    justify-self: center;
+  }
 `;
 
 const StyledCaseContents = styled.div`
   grid-area: Context;
   display: flex;
   flex-direction: column;
-  width: 84%;
+  width: 100%;
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -51,14 +57,6 @@ const StyledCaseContents = styled.div`
     justify-self: center;
     justify-content: center;
     text-align: center;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 478px) {
-    width: 95%;
   }
 `;
 

@@ -176,13 +176,7 @@ const StyledSectionNotation = styled.div`
 const StyledNotation = styled.p`
   font-size: 14px;
   text-align: center;
-`;
-
-const StyledBorderBox = styled.div`
-  width: 95%;
-  height: 80px;
-  margin: 0em 0em 0em 1em;
-  border-bottom: 1px solid #1e1e1ee6;
+  height: 20px;
 `;
 
 function AiCard() {
@@ -255,7 +249,6 @@ function AiCard() {
           independently and is not affiliated with or endorsed by any brands.{" "}
         </StyledNotation>
       </StyledSectionNotation>
-      <StyledBorderBox></StyledBorderBox>
     </StyledWrapper>
   );
 }
