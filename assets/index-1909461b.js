@@ -471,7 +471,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 960px) {
     font-size: 16px;
   }
-`,Cg=()=>m.jsxs(yg,{children:[m.jsxs(Sg,{children:[m.jsxs(kg,{children:[m.jsx("h1",{children:"Paul Evans"}),m.jsx(Tl,{children:"Experience Designer"})]}),m.jsx(Tl,{children:"Hi!"}),m.jsx(Tl,{children:"I am a passionate creative with over 20 years of experience in branding, storytelling, and content creation, blending my background in film with UX/UI design and web development. My passion for storytelling continues to inform my approach, allowing me to create compelling narratives and experiences that connect with audiences across digital and physical platforms."})]}),m.jsx(xg,{children:m.jsx(wg,{src:vg,autoPlay:!0,loop:!0,muted:!0,playsInline:!0,alt:"A animated sketch of aa man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."})})]}),Ec="/portfolio/assets/aiReel-5e8dda4f.mp4",Eg=e=>{const t=document.createElement("video");t.src=e,t.preload="auto",t.load()},jg=S.div`
+`,Cg=()=>m.jsxs(yg,{children:[m.jsxs(Sg,{children:[m.jsxs(kg,{children:[m.jsx("h1",{children:"Paul Evans"}),m.jsx(Tl,{children:"Experience Designer"})]}),m.jsx(Tl,{children:"Hi!"}),m.jsx(Tl,{children:"I am a passionate creative with over 20 years of experience in branding, storytelling, and content creation, blending my background in film production with UX/UI design and web development. My passion for storytelling continues to inform my approach, allowing me to create compelling narratives and experiences that connect with audiences across digital and physical platforms."})]}),m.jsx(xg,{children:m.jsx(wg,{src:vg,autoPlay:!0,loop:!0,muted:!0,playsInline:!0,alt:"An animated sketch of a man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."})})]}),Ec="/portfolio/assets/aiReel-5e8dda4f.mp4",Eg=e=>{const t=document.createElement("video");t.src=e,t.preload="auto",t.load()},jg=S.div`
   grid-area: cinema;
   display: flex;
   flex-direction: column;
@@ -1041,7 +1041,7 @@ Error generating stack: `+o.message+`
   align-self: center;
   margin: 0em 0em 2em 0em;
   border-bottom: 1px solid #1e1e1ee6;
-`,Fv=()=>m.jsxs(Mv,{children:[m.jsx(Cg,{}),m.jsx(cr,{}),m.jsx(gg,{}),m.jsx(cr,{}),m.jsx(kv,{}),m.jsx(cr,{}),m.jsx(Av,{}),m.jsx(cr,{}),m.jsx(Mg,{}),m.jsx(cr,{})]}),Dv="/portfolio/assets/meAbout-b0dd0af4.avif",Uv=Qs`
+`,Fv=()=>m.jsxs(Mv,{children:[m.jsx(Cg,{}),m.jsx(cr,{}),m.jsx(gg,{}),m.jsx(cr,{}),m.jsx(kv,{}),m.jsx(cr,{}),m.jsx(Mg,{}),m.jsx(cr,{}),m.jsx(Av,{}),m.jsx(cr,{})]}),Dv="/portfolio/assets/meAbout-b0dd0af4.avif",Uv=Qs`
   0% {
     transform: translateX(-100%);
     opacity: 0;
