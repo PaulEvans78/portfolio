@@ -142,6 +142,7 @@ const StyledInfoContainer = styled.div`
 const StyledSectionTitle = styled.div`
   display: flex;
   justify-content: center;
+  text-align: center;
   color: var(--main-font-color);
   padding: 2em 0em 2em 0em;
 `;

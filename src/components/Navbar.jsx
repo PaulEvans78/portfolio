@@ -257,10 +257,10 @@ const Navbar = ({ footerRef }) => {
           <StyledIdent>
             <StyledNavLogo
               src={logo}
-              autoPlay
-              loop
-              muted
-              playsInline
+              // autoPlay
+              // loop
+              // muted
+              // playsInline
               alt="A revolving logo showing the initals PE and a cartton version of Paul Evans.."
             />
           </StyledIdent>

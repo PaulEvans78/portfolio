@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaImdb, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import logo from "../assets/Spline_logo.mp4";
+import logo from "../assets/Spline_logo.gif";
 import { Link } from "react-router-dom";
 
 const footerData = [
@@ -212,7 +212,7 @@ const StyledLogoContainer = styled.div`
   }
 `;
 
-const StyledFooterLogo = styled.video`
+const StyledFooterLogo = styled.img`
   text-align: center;
   justify-self: center;
   width: 120px;
