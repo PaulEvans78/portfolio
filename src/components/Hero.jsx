@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import heroFilm from "../assets/heroFilm.mp4";
+import faceHat from "../assets/faceHat.png";
+import palm from "../assets/palm.png";
+import pen from "../assets/pen.png";
+import mobile from "../assets/mobile.png";
+import camera from "../assets/camera.png";
+import film from "../assets/film.png";
+import lines from "../assets/lines.png";
+
 
 const StyledContentsContainer = styled.section`
   display: flex;
@@ -20,27 +27,299 @@ const StyledContentsContainer = styled.section`
   }
 `;
 
-const StyledVideoContainer = styled.div`
-  width: 50%;
-  height: 100%;
-  min-height: 550px;
-  overflow-x: hidden;
-  display: flex;
-  align-content: center;
-  justify-items: center;
+const StyledImgContainer = styled.div`
+position: relative;
+   width: 50%;
+   height: 100%;
+   min-height: 550px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 2em;
 
-  @media (max-width: 960px) {
-    min-height: 200px;
+   @media (max-width: 960px) {
+     min-height: 200px;
+     padding-left: 0em;
+   }
+`;
+
+const StyledImgAnimation1 = styled.img`
+  position: absolute;
+  bottom: -100%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+
+   animation: slideUpFade 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 2s;
+
+  @keyframes slideUpFade {
+    0% {
+      bottom: -100%;
+      opacity: 1;
+    }
+    10% {
+      bottom: 0;
+      opacity: 1;
+    }
+    50% {
+      bottom: 0;
+      opacity: 1;
+    }
+    60% {
+      bottom: 0;
+      opacity: 1;
+    }
+    85% {
+      bottom: 0;
+      opacity: 0; 
+    }
+    100% {
+      bottom: -100%;
+      opacity: 0; 
+    }
   }
 `;
 
-const StyledVideo = styled.video`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+const StyledImgAnimation2 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 3s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
 `;
+
+const StyledImgAnimation3 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 4s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+`;
+
+const StyledImgAnimation4 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 5s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+`;
+
+const StyledImgAnimation5 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 6s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+`;
+
+const StyledImgAnimation6 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 7s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+`;
+
+const StyledImgAnimation7 = styled.img`
+  position: absolute;
+  bottom: 0%;
+   width: 90%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   opacity: 0;
+   animation: fadeUp 30s ease-in-out infinite; /* Repeat animation */
+   animation-delay: 8s;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0; 
+    }
+    15% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    60% {
+      opacity: 0; 
+    }
+    85% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+`;
+
+// const StyledVideoContainer = styled.div`
+//   width: 50%;
+//   height: 100%;
+//   min-height: 550px;
+//   overflow-x: hidden;
+//   display: flex;
+//   align-content: center;
+//   justify-items: center;
+
+//   @media (max-width: 960px) {
+//     min-height: 200px;
+//   }
+// `;
+
+// const StyledVideo = styled.video`
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   aspect-ratio: 1 / 1;
+//   object-fit: cover;
+// `;
 
 const StyledIntro = styled.div`
   position: relative;
@@ -77,6 +356,7 @@ const Styledp = styled.p`
 `;
 
 const Hero = () => {
+  
   return (
     <StyledContentsContainer>
       <StyledIntro>
@@ -90,22 +370,31 @@ const Hero = () => {
         <Styledp>
           I am a passionate creative with over 20 years of experience in
           branding, storytelling, and content creation, blending my background
-          in film with UX/UI design and web development. My passion for
+          in film production with UX/UI design and web development. My passion for
           storytelling continues to inform my approach, allowing me to create
           compelling narratives and experiences that connect with audiences
           across digital and physical platforms.
         </Styledp>
       </StyledIntro>
-      <StyledVideoContainer>
+      <StyledImgContainer>
+        <StyledImgAnimation1  src={faceHat} />
+        <StyledImgAnimation2  src={palm} />
+        <StyledImgAnimation3  src={pen} />
+        <StyledImgAnimation4  src={mobile} />
+        <StyledImgAnimation5  src={camera} />
+        <StyledImgAnimation6  src={film} />
+        <StyledImgAnimation7  src={lines} />
+      </StyledImgContainer>
+      {/* <StyledVideoContainer>
         <StyledVideo
           src={heroFilm}
           autoPlay
           loop
           muted
           playsInline
-          alt="A animated sketch of aa man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."
+          alt="An animated sketch of a man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."
         />
-      </StyledVideoContainer>
+      </StyledVideoContainer> */}
     </StyledContentsContainer>
   );
 };

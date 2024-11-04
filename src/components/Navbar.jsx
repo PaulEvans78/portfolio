@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from "hamburger-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/Spline_logo.mp4";
+import logo from "../assets/Spline_logo.gif";
 
 const StyledNav = styled.nav`
   position: absolute;
@@ -56,7 +56,7 @@ const StyledImgContainer = styled.div`
   }
 `;
 
-const StyledNavLogo = styled.video`
+const StyledNavLogo = styled.img`
   text-align: center;
   width: 80px;
   margin-top: 0em;
@@ -70,7 +70,7 @@ const StyledNavLogo = styled.video`
   }
 `;
 
-const StyledHamburgerPELogo = styled.video`
+const StyledHamburgerPELogo = styled.img`
   display: none;
 
   @media screen and (max-width: 960px) {

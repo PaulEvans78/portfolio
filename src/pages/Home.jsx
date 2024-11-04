@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useRef } from "react";
 import styled from "styled-components";
 import CinemaCard from "../components/CinemaCard";
 import Hero from "../components/Hero";
 import AICard from "../components/AICard";
 import LipusPlus from "../components/LipusPlus";
 import Ebie from "../components/Ebie";
+import Offer from "../components/Offer";
 
 const StyledHomeContainer = styled.section`
   max-width: 94vw;
@@ -34,14 +35,12 @@ const StyledBorderBox = styled.div`
 `;
 
 const Home = () => {
+  const cinemaCardRef = useRef(null);
   // const [squaresRef1, isSquaresVisible1] = useIntersectionObserver();
   // const [squaresRef2, isSquaresVisible2] = useIntersectionObserver();
- 
 
   return (
     <StyledHomeContainer>
-   
-
       {/* <StyledThreeSquaresContainer
         ref={squaresRef1}
         isVisible={isSquaresVisible1}
@@ -50,21 +49,24 @@ const Home = () => {
       <Hero />
       <StyledBorderBox></StyledBorderBox>
 
-      <CinemaCard />
+      <Offer cinemaCardRef={cinemaCardRef} />
+      <StyledBorderBox></StyledBorderBox>
 
+
+      <CinemaCard ref={cinemaCardRef} />
       <StyledBorderBox></StyledBorderBox>
 
       {/* </StyledThreeSquaresContainer> */}
 
       <LipusPlus />
-
       <StyledBorderBox></StyledBorderBox>
 
-      <Ebie />
-
-      <StyledBorderBox></StyledBorderBox>
 
       <AICard />
+      <StyledBorderBox></StyledBorderBox>
+
+
+      <Ebie />
       <StyledBorderBox></StyledBorderBox>
     </StyledHomeContainer>
   );

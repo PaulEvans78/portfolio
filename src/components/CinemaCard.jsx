@@ -179,9 +179,9 @@ const StyledHover = styled.div`
   }
 `;
 
-const CinemaCard = () => {
+const CinemaCard = React.forwardRef((props, ref) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper ref={ref}>
       <StyledSectionTitle>
         <h2>Cinematography</h2>
       </StyledSectionTitle>
@@ -247,6 +247,6 @@ const CinemaCard = () => {
       </a>
     </StyledWrapper>
   );
-};
+});
 
 export default CinemaCard;
