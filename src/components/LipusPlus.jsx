@@ -78,7 +78,7 @@ const StyledContents = styled.div`
 
 const StyledMainContainer = styled.section`
   position: relative;
-  width: 100%;
+  width: 85%;
   aspect-ratio: 16 / 9;
   margin-left: 2%;
   margin-right: 2%;
@@ -106,7 +106,12 @@ const StyledMainContainer = styled.section`
     display: flex;
   }
 
+  @media (max-width: 1361px) {
+    width: 100%;
+  }
+
   @media (max-width: 960px) {
+
     ${StyledContentsContainer} {
       transform: translateY(0%);
     }
