@@ -50,8 +50,7 @@ const StyledCaseMain = styled.section`
   aspect-ratio: 16 / 9;
   font-size: 1.2rem;
   overflow: hidden;
-  border-radius: 24px;
-  box-shadow: 0px 30px 30px rgba(101, 101, 101, 0.321); 
+  border-radius: 24px; 
   transform: perspective(1000px) ${({ isVisible }) => (isVisible ? "rotateX(0deg)" : "rotateX(75deg)")};
   transition: transform 1s ease-in-out;
 

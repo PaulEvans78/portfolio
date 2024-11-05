@@ -90,7 +90,6 @@ const StyledMainContainer = styled.section`
   flex-direction: column;
   border-radius: 24px;
   cursor: pointer;
-  box-shadow: 0px 30px 30px rgba(101, 101, 101, 0.321); 
 
 
   &:hover ${StyledContentsContainer} {
