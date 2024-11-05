@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import aiReel from "../assets/aiReel.mp4";
 import styled from "styled-components";
+import { useInView } from 'react-intersection-observer';
 
 const preloadVideo = (url) => {
   const video = document.createElement("video");
@@ -15,6 +16,7 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 `;
 
 const Styledp = styled.p`
@@ -57,6 +59,9 @@ const StyledCaseMain = styled.section`
   font-size: 1.2rem;
   overflow: hidden;
   border-radius: 24px;
+  box-shadow: 0px 30px 30px rgba(101, 101, 101, 0.321); 
+  transform: perspective(1000px) ${({ isVisible }) => (isVisible ? "rotateX(0deg)" : "rotateX(75deg)")};
+  transition: transform 1s ease-in-out;
 
   &:hover ${StyledCaseContents} {
     transform: translateY(0%); // Slide up
@@ -184,6 +189,8 @@ function AiCard() {
     preloadVideo(aiReel);
   }, []);
 
+  const { ref: videoRef, inView } = useInView({ threshold: 0.5 });
+
   return (
     <StyledWrapper>
       <StyledSectionTitle>
@@ -219,7 +226,7 @@ function AiCard() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <StyledCaseMain>
+        <StyledCaseMain ref={videoRef}  isVisible={inView}>
           <StyledCinemaVideo
             src={aiReel}
             autoPlay

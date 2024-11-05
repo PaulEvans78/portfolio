@@ -1,12 +1,14 @@
 import React from "react";
 import dopReel from "../assets/showcase1.mp4";
 import styled from "styled-components";
+import { useInView } from 'react-intersection-observer';
 
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 `;
 
 const Styledp = styled.p`
@@ -49,6 +51,9 @@ const StyledCaseMain = styled.section`
   font-size: 1.2rem;
   overflow: hidden;
   border-radius: 24px;
+  box-shadow: 0px 30px 30px rgba(101, 101, 101, 0.321); 
+  transform: perspective(1000px) ${({ isVisible }) => (isVisible ? "rotateX(0deg)" : "rotateX(75deg)")};
+  transition: transform 1s ease-in-out;
 
   &:hover ${StyledCaseContents} {
     transform: translateY(0%); // Slide up
@@ -145,8 +150,8 @@ const StyledMusicVideos = styled.div`
     text-align: center;
   }
 `;
+
 const StyledCinemaVideo = styled.video`
-  position: absolute;
   width: 100%;
   height: 100%;
   position: relative;
@@ -179,10 +184,14 @@ const StyledHover = styled.div`
   }
 `;
 
+
 const CinemaCard = React.forwardRef((props, ref) => {
+  // video animation
+  const { ref: videoRef, inView } = useInView({ threshold: 0.5 });
+
   return (
     <StyledWrapper ref={ref}>
-      <StyledSectionTitle>
+        <StyledSectionTitle>
         <h2>Cinematography</h2>
       </StyledSectionTitle>
       <StyledInfoContainer>
@@ -221,7 +230,7 @@ const CinemaCard = React.forwardRef((props, ref) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <StyledCaseMain>
+        <StyledCaseMain ref={videoRef}  isVisible={inView}>
           <StyledCinemaVideo
             src={dopReel}
             autoPlay
@@ -229,14 +238,14 @@ const CinemaCard = React.forwardRef((props, ref) => {
             muted
             playsInline
             alt="A showreel showing clips from different productions."
+            // Pass visibility status as a prop
           />
-
           <StyledOpacity>
             <StyledCaseContents>
-              <h3>Paul Evans fsf</h3>
+              <h3>Paul Evans FSF</h3>
               <Styledp>
                 Captivating audiences and elevating stories. Working in
-                Narrative, Commercials, Music Videos and Still Photography.
+                Narrative, Commercials, Music Videos, and Still Photography.
               </Styledp>
               <StyledHover>
                 <Styledp>See work ..</Styledp>

@@ -90,6 +90,8 @@ const StyledMainContainer = styled.section`
   flex-direction: column;
   border-radius: 24px;
   cursor: pointer;
+  box-shadow: 0px 30px 30px rgba(101, 101, 101, 0.321); 
+
 
   &:hover ${StyledContentsContainer} {
     transform: translateY(0%); /* Slide up into view */
@@ -314,6 +316,7 @@ const Film = ({ scrollToEvent }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+
   useEffect(() => {
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth < 1024);
@@ -447,7 +450,7 @@ const Film = ({ scrollToEvent }) => {
           partnership between LipusPlus and Hammarby Handball.
         </StyledNotation>
       </StyledSectionNotation>
-      <StyledMainContainer onClick={handleButtonClick}>
+      <StyledMainContainer onClick={handleButtonClick} >
         <StyledVideo
           ref={videoRef}
           src={BackgroundVideo}
