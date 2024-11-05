@@ -952,7 +952,7 @@ position: relative;
   }
 `,Pv=S.section`
   position: relative;
-  width: 100%;
+  width: 85%;
   aspect-ratio: 16 / 9;
   margin-left: 2%;
   margin-right: 2%;
@@ -980,7 +980,12 @@ position: relative;
     display: flex;
   }
 
+  @media (max-width: 1361px) {
+    width: 100%;
+  }
+
   @media (max-width: 960px) {
+
     ${Di} {
       transform: translateY(0%);
     }
