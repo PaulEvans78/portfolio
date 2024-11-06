@@ -113,7 +113,7 @@ const StyledInfoContainer = styled.div`
 
 const StyledDescription = styled.div`
   width: 90%;
-  text-align: justify;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 90%;
