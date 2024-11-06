@@ -804,7 +804,7 @@ position: relative;
   }
 `,Xg=S.div`
   width: 90%;
-  text-align: justify;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 90%;
