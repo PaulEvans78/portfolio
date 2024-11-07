@@ -299,27 +299,6 @@ const StyledImgAnimation7 = styled.img`
   }
 `;
 
-// const StyledVideoContainer = styled.div`
-//   width: 50%;
-//   height: 100%;
-//   min-height: 550px;
-//   overflow-x: hidden;
-//   display: flex;
-//   align-content: center;
-//   justify-items: center;
-
-//   @media (max-width: 960px) {
-//     min-height: 200px;
-//   }
-// `;
-
-// const StyledVideo = styled.video`
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   aspect-ratio: 1 / 1;
-//   object-fit: cover;
-// `;
 
 const StyledIntro = styled.div`
   position: relative;
@@ -332,11 +311,26 @@ const StyledIntro = styled.div`
   font-size: 1.2rem;
   overflow: hidden;
 
+  /* Slide-in animation */
+  transform: translateX(-100%); 
+  animation: slideIn 1s ease-out forwards; 
+
   @media (max-width: 960px) {
     width: 90%;
     align-items: center;
     min-height: 400px;
     padding: 0em 0em 1em 0em;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 `;
 
@@ -385,16 +379,6 @@ const Hero = () => {
         <StyledImgAnimation6  src={film} />
         <StyledImgAnimation7  src={lines} />
       </StyledImgContainer>
-      {/* <StyledVideoContainer>
-        <StyledVideo
-          src={heroFilm}
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="An animated sketch of a man wearing a beanie with a pen, a camera, a mobile device and a palm tree floating around his head."
-        />
-      </StyledVideoContainer> */}
     </StyledContentsContainer>
   );
 };
