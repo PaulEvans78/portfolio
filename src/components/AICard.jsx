@@ -207,7 +207,7 @@ function AiCard() {
             replace it—challenging us, expanding our creative boundaries, and
             increasing efficiency. Through this lens, I explore how technology
             can redefine visual storytelling and audience engagement without
-            losing the human touch. I regularly share insights and industry
+            losing the human touch. I regularly share my work, insights and industry
             trends on LinkedIn—join me there to see more of what I’m exploring
             in this space.
           </StyledInfoText>
