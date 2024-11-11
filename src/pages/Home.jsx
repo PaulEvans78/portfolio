@@ -2,6 +2,7 @@ import { useRef } from "react";
 import styled from "styled-components";
 import CinemaCard from "../components/CinemaCard";
 import Hero from "../components/Hero";
+import Latest from "../components/Latest";
 import AICard from "../components/AICard";
 import LipusPlus from "../components/LipusPlus";
 import Ebie from "../components/Ebie";
@@ -49,9 +50,11 @@ const Home = () => {
       <Hero />
       <StyledBorderBox></StyledBorderBox>
 
-      <Offer cinemaCardRef={cinemaCardRef} />
+      <Latest />
       <StyledBorderBox></StyledBorderBox>
 
+      <Offer cinemaCardRef={cinemaCardRef} />
+      <StyledBorderBox></StyledBorderBox>
 
       <CinemaCard ref={cinemaCardRef} />
       <StyledBorderBox></StyledBorderBox>
