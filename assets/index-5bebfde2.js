@@ -1450,7 +1450,7 @@ position: relative;
   &:hover {
     color: var(--main-button-hover-color);
   }
-`,Cy=({cinemaCardRef:e})=>{const t=()=>{e.current&&e.current.scrollIntoView({behavior:"smooth"})};return d.jsx(xy,{children:d.jsx(wy,{children:d.jsxs(Sy,{children:[d.jsx("h2",{children:"What I Bring to the Table "}),d.jsx("p",{children:"Whether you’re looking to generate leads, raise conversion rates, or increase brand awareness and loyalty, my diverse expertise offers efficiency, creativity, and a friendly, collaborative attitude. I excel in ideation, content production, UX, UI, and implementation. My process begins with brainstorming and extends all the way through to the completion of immersive experiences."}),d.jsx(ky,{onClick:t,children:"See my work below"})]})})})},Ey=y.section`
+`,Cy=({cinemaCardRef:e})=>{const t=()=>{e.current&&e.current.scrollIntoView({behavior:"smooth"})};return d.jsx(xy,{children:d.jsx(wy,{children:d.jsxs(Sy,{children:[d.jsx("h2",{children:"What I Bring to the Table "}),d.jsx("p",{children:"Whether you’re looking to generate leads, raise conversion rates, or increase brand awareness and loyalty, my diverse expertise offers efficiency, creativity, and a friendly, collaborative attitude. I excel in ideation, content production, UX, UI, and implementation. My process begins with brainstorming and extends all the way through to the completion of immersive experiences."}),d.jsx(ky,{onClick:t,children:"See more below"})]})})})},Ey=y.section`
   max-width: 94vw;
   min-width: 94vw;
   display: flex;
