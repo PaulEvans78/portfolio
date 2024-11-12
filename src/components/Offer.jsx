@@ -63,7 +63,7 @@ const Offer = ({ cinemaCardRef }) => {
             to the completion of immersive experiences.
           </p>
 
-          <Styledp onClick={scrollToCinemaCard}>See my work below</Styledp>
+          <Styledp onClick={scrollToCinemaCard}>See more below</Styledp>
         </StyledCaseContents>
       </StyledContentsContainer>
     </StyledCaseMain>
