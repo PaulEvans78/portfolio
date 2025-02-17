@@ -356,18 +356,19 @@ const Hero = () => {
       <StyledIntro>
         <StyledTitle>
           <h1>Paul Evans</h1>
-          <Styledp>Creative Lead | Experience Designer</Styledp>
+          <Styledp>Creative Lead | AI Creative Specialist | Content Creator </Styledp>
         </StyledTitle>
 
         <Styledp>Hi!</Styledp>
 
         <Styledp>
-          I am a passionate creative with over 20 years of experience in
+          I am a passionate creative with extensive experience in
           branding, storytelling, and content creation, blending my background
           in film production with UX/UI design and web development. My passion for
           storytelling continues to inform my approach, allowing me to create
-          compelling narratives and experiences that connect with audiences
-          across digital and physical platforms.
+          compelling narratives and experiences that connect with audiences. 
+          As a creative producer, I’m excited about using emerging technologies 
+          like AI and AR to push creativity and enhance the experience.
         </Styledp>
       </StyledIntro>
       <StyledImgContainer>
