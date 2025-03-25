@@ -356,7 +356,7 @@ const Hero = () => {
       <StyledIntro>
         <StyledTitle>
           <h1>Paul Evans</h1>
-          <Styledp>Creative Lead | AI Creative Specialist | Content Creator </Styledp>
+          <Styledp>Content Designer | AI Creative Specialist | Experience Designer </Styledp>
         </StyledTitle>
 
         <Styledp>Hi!</Styledp>
